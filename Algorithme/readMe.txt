@@ -1,0 +1,1 @@
+Ce dossier "Algorithme" contient l'algorithme réalisé et le dictionnaire de données correspondant.
