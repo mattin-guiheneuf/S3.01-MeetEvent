@@ -3,9 +3,15 @@ const prompt = require('prompt-sync')();
 const contenuJSON = fs.readFileSync('donnees.json');
 const donnees = JSON.parse(contenuJSON);
 
+//CREATION D'UN TYPE ENUM POUR LE CHOIX DE L'AJOUT
+const typeAjout={
+    ajoutUtilisateur : 1,
+    ajoutEvenement : 2
+}
+
 
 // Saisie de l'ID utilisateur à rechercher
-const userId = 2;
+const userId = 1;
 
 // Recherche de l'utilisateur avec l'ID saisi
 for (let i = 0; i < donnees.utilisateurs.length; i++) {
@@ -27,9 +33,9 @@ for (let i = 0; i < donnees.evenements.length; i++) {
 // Extraction des ID des utilisateurs
 //const idsUtilisateurs = donnees.utilisateurs.map(user => user.id);
 //console.log("IDs des utilisateurs : ", idsUtilisateurs);
-const Ajout = function(utilisateur){
+const Ajout = function(choixAjout){
     // Instructions à exécuter
-    if(utilisateur == true){
+    if(choixAjout == ajoutUtilisateur){
         ajoutUtilisateur();
     }else{
         ajoutEvenement();
@@ -43,22 +49,30 @@ const ajoutEvenement = function(){
     // Saisie des détails de l'événement à ajouter
     const titre = prompt("Entrez le titre de l'événement :");
     const date = prompt("Entrez la date de l'événement (YYYY-MM-DD) :");
-    let tags = [];
-    let tagsX ="";
+    const heure = prompt("Entrez l'heure de l'évèenement (HH:MM) : ");
+    const lieu = prompt("Entrez l'endroit où a lieu l'évènement (adresse ou coordonnées GPS) : ");
+    let mots = [];
+    let motsX ="";
     while(true){
-        tagsX = prompt("Entrez un tag de l'evenement (quit pour quitter): ");
-        if (tagsX == "quit") {
+        motsX = prompt("Entrez un tag de l'evenement (quit pour quitter): ");
+        if (motsX == "quit") {
             break;
         }else{
-            tags.push(tagsX);
+            mots.push(motsX);
         }
     }
+    let tags = []
+    //ATTRIBUTION DES TAGS AVEC LES MOTS
+
     // Nouvel événement à ajouter
     const nouvelEvenement = {
-    "id": donnees.evenements[donnees.evenements.length - 1].id + 1,
-    "tags": tags,
-    "titre": titre,
-    "date": date
+        "id": donnees.evenements[donnees.evenements.length - 1].id + 1,
+        "titre": titre,
+        "date": date,
+        "heure": heure,
+        "lieu":lieu,
+        "mots": mots,
+        "tags": tags
     };
 
     // Ajouter le nouvel événement à la liste des événements existants
@@ -71,19 +85,25 @@ const ajoutEvenement = function(){
 
 const ajoutUtilisateur = function(){
     // Saisie des détails de l'événement à ajouter
-    let tags = [];
-    let tagsX ="";
+    let nom = prompt("Entrez votre nom : ");
+    let mots = [];
+    let motsX ="";
     while(true){
-        tagsX = prompt("Entrez un tag de l'utilisateur (quit pour quitter): ");
-        if (tagsX == "quit") {
+        motsX = prompt("Entrez un tag de l'utilisateur (quit pour quitter): ");
+        if (motsX == "quit") {
             break;
         }else{
-            tags.push(tagsX);
+            mots.push(motsX);
         }
     }
+    let tags = []
+    //ATTRIBUTION DES TAGS AVEC LES MOTS
+
     // Nouvel événement à ajouter
     const nouvelUtilisateur = {
     "id": donnees.utilisateurs[donnees.utilisateurs.length - 1].id + 1,
+    "nom":nom,
+    "mots":mots,
     "tags": tags
     };
 
@@ -97,4 +117,5 @@ const ajoutUtilisateur = function(){
 
 
 // Appel de la fonction : 1er argument = si true alors ajout d'un utilisateur
-Ajout(false);
+let choixAjout = ajoutEvenement;
+Ajout(choixAjout);

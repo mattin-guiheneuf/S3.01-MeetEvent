@@ -32,15 +32,20 @@ class Evenement {
     setTag(tag){this.#desTags = tag;}
 
     //METHODES SPECIFIQUE
-    definirTag(){
+    #definirTag(){
         listeTag = []
         //TRAITEMENT
         return listeTag;
     }
     definirDescription(){
         listeMot = []
+        //TRAITEMENT
         return listeMot;
     }
+    supprimerTag(){
+
+    }
+    modifierDescription(){}
     //METHODES USUELLES
     toSTring(message){
         resultat = message;
@@ -54,22 +59,28 @@ class Evenement {
 
 //Objet utilisateur utilisé pour le traitement
 class Utilisateur {
+
     //VARIABLES
-    #idUtilisateur = "";
-    #tagUtilisateur = [];
+    #id = "";
+    #nom = "";
+    #mesMots = [];
+    #desTags = [];
+
     //METHODES
     //CONSTRUCTEUR
     constructor(id, tag) {
         this.setId(id); // Attribut public
         this.setTag(tag); // Attribut public
     }
+
     //ENCAPSULATION
-    getId(){return this.#idUtilisateur;}
-    setId(id){this.#idUtilisateur = id;}
-    getTag(){return this.#tagUtilisateur;}
-    setTag(tag){this.#tagUtilisateur = tag;}
+    getId(){return this.#id;}
+    setId(id){this.#id = id;}
+    getTag(){return this.#desTags;}
+    setTag(tag){this.#desTags = tag;}
+
     //METHODES SPECIFIQUE
-    definirTag(){
+    #definirTag(){
         listeTag = []
         //TRAITEMENT
         return listeTag;
@@ -77,6 +88,13 @@ class Utilisateur {
     definirDescription(){
         listeMot = []
         return listeMot;
+    }
+    modifierDescription(){}
+    #creerListeSuggest(){
+
+    }
+    supprimerTag(){
+
     }
     //METHODES USUELLES
     toSTring(message){
@@ -218,29 +236,34 @@ function cosineSimilarity(vec1, vec2) {
     const dot = dotProduct(vec1, vec2);
     const normVec1 = norm(vec1);
     const normVec2 = norm(vec2);
-    return ((dot / (normVec1 * normVec2)) * 100).toFixed(0);
+    return ((dot / (normVec1 * normVec2))).toFixed(2);
 }
 
-// Supposons que la dernière ligne représente les préférences de l'utilisateur
-const userPreferences = eventsAndUserPreferences[eventsAndUserPreferences.length - 1];
+function ACM(){
+    // Supposons que la dernière ligne représente les préférences de l'utilisateur
+    const userPreferences = eventsAndUserPreferences[eventsAndUserPreferences.length - 1];
 
-//Création d'un dico pour le stockage
-let dicoEvents = {"user" : userId, "events" : []};
+    //Création d'un dico pour le stockage
+    let dicoEvents = {"user" : userId, "events" : []};
 
 
-// Comparaison des événements avec les préférences de l'utilisateur (similarité cosinus)
-for (let i = 0; i < eventsAndUserPreferences.length - 1; i++) {
-    const event = eventsAndUserPreferences[i];
-    const similarity = cosineSimilarity(userPreferences, event);
-    console.log(`Similarité entre l'événement ${objetEvenement[i].getId()} et l'utilisateur ${userId} : ${similarity}%`);
-    //Ajouter chaque évènement et sa similarité dans un dico
-    dicoEvents["events"].push([objetEvenement[i].getId(),similarity]);
+    // Comparaison des événements avec les préférences de l'utilisateur (similarité cosinus)
+    for (let i = 0; i < eventsAndUserPreferences.length - 1; i++) {
+        const event = eventsAndUserPreferences[i];
+        const similarity = cosineSimilarity(userPreferences, event);
+        console.log(`Similarité entre l'événement ${objetEvenement[i].getId()} et l'utilisateur ${userId} : ${similarity*100}%`);
+        //Ajouter chaque évènement et sa similarité dans un dico
+        dicoEvents["events"].push([objetEvenement[i].getId(),similarity]);
+    }
+
+    afficherContenuDicoEvent(dicoEvents);
+
+    //Création d'une liste pour le stockage d'events de plus de 70% de similarité
+    return recupererEvenements(dicoEvents);
+    
 }
 
-afficherContenuDicoEvent(dicoEvents);
-
-//Création d'une liste pour le stockage d'events de plus de 70% de similarité
-let listEventaRecommander = recupererEvenements(dicoEvents);
+let listEventaRecommander = ACM();
 console.log("\nListe des événements à recommander:");
 console.log(listEventaRecommander);
 
