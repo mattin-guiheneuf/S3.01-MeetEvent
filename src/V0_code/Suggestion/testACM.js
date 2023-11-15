@@ -90,8 +90,8 @@ class Utilisateur {
         return listeMot;
     }
     modifierDescription(){}
-    #creerListeSuggest(){
-
+    creerListeSuggest(){
+        return ACM();
     }
     supprimerTag(){
 
@@ -173,27 +173,24 @@ for (let i = 0; i < objetEvenement.length; i++) {
 //                     Partie Utilisateur                      //
 //-------------------------------------------------------------//
 
-
-// Saisie de l'ID utilisateur à rechercher
-const userId = 1;
-let user = [];    //Liste pour L'utilisateur
-let objetUser;
-// Recherche de l'utilisateur avec l'ID saisi
+//créer l'utilisateur connecté
+let dicoUser = {}
 for (let i = 0; i < donnees.utilisateurs.length; i++) {
     const element = donnees.utilisateurs[i];
-    if (element.id == userId) {
-        //console.log("Utilisateur ",element.id," (connecté) : tags", element.tags);
-        objetUser = new Utilisateur(element.id,element.tags);
-    }
+    dicoUser[element.id]=element.tags;
 }
+let idUserConnected = 1; //x = VARIABLE GLOBALE (id de l'utilisateur connecté)
+let userConnected = new Utilisateur(idUserConnected,dicoUser[idUserConnected]);
+
 
 //afficherUtilisateurNB();
 
 //On ajout l'utilisateur en dernier
+let user = [];
 //Pour tous les tags de L'utilisateur
 for (let i = 0; i < CorpusTag.length; i++) {    //On regarde si ils sont present dans le corpus tag et on y attribut un 1 sinon 0
     const TagElement = CorpusTag[i];
-    if (objetUser.getTag().includes(TagElement)) {
+    if (userConnected.getTag().includes(TagElement)) {
         user.push(1);
     }else{
         user.push(0);
@@ -244,14 +241,14 @@ function ACM(){
     const userPreferences = eventsAndUserPreferences[eventsAndUserPreferences.length - 1];
 
     //Création d'un dico pour le stockage
-    let dicoEvents = {"user" : userId, "events" : []};
+    let dicoEvents = {"user" : userConnected, "events" : []};
 
 
     // Comparaison des événements avec les préférences de l'utilisateur (similarité cosinus)
     for (let i = 0; i < eventsAndUserPreferences.length - 1; i++) {
         const event = eventsAndUserPreferences[i];
         const similarity = cosineSimilarity(userPreferences, event);
-        console.log(`Similarité entre l'événement ${objetEvenement[i].getId()} et l'utilisateur ${userId} : ${similarity*100}%`);
+        console.log(`Similarité entre l'événement ${objetEvenement[i].getId()} et l'utilisateur ${userConnected.getId()} : ${similarity*100}%`);
         //Ajouter chaque évènement et sa similarité dans un dico
         dicoEvents["events"].push([objetEvenement[i].getId(),similarity]);
     }
@@ -263,7 +260,11 @@ function ACM(){
     
 }
 
-let listEventaRecommander = ACM();
+//let listEventaRecommander = ACM();
+//console.log("\nListe des événements à recommander:");
+//console.log(listEventaRecommander);
+
+let listEventaRecommander = userConnected.creerListeSuggest();
 console.log("\nListe des événements à recommander:");
 console.log(listEventaRecommander);
 
@@ -293,7 +294,7 @@ function afficherEventB(){
 
 //Afficher les tags de l'utilisateur (objet) NB = non binaire
 function afficherUtilisateurNB(){
-    console.log(objetUser.id," ",objetUser.tag);
+    console.log(userConnected.getId()," ",userConnected.getTag());
 }
 
 //Afficher les tags de l'utilisateur (objet) B = binaire
@@ -311,7 +312,7 @@ function afficherContenuDicoEvent(dico){
                 console.log(`  Événement: ${event[0]}, Similarité: ${event[1]}`);
             });
         } else {
-            console.log(`Clé "${key}": ${dico[key]}`);
+            console.log(`Clé "${key}": ${userConnected.getId()}`);
         }
     }
 }
