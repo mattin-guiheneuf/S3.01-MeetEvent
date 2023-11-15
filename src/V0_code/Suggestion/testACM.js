@@ -47,7 +47,7 @@ class Evenement {
         // Vérifier si l'élément existe dans la liste
         if (indiceDuTag !== -1) {
             // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
-            maListe.splice(indiceDuTag, 1);
+            this.getTag().splice(indiceDuTag, 1);
             console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
             // Afficher la liste mise à jour
@@ -109,7 +109,7 @@ class Utilisateur {
         // Vérifier si l'élément existe dans la liste
         if (indiceDuTag !== -1) {
             // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
-            maListe.splice(indiceDuTag, 1);
+            this.getTag().splice(indiceDuTag, 1);
             console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
             // Afficher la liste mise à jour
@@ -289,6 +289,8 @@ function ACM(){
 let listEventaRecommander = userConnected.creerListeSuggest();
 console.log("\nListe des événements à recommander:");
 console.log(listEventaRecommander);
+
+//userConnected.supprimerTag("musique"); //Test Supprimer TAG
 
 //____________________________________________________________________________________//
 //____________________________________________________________________________________//
