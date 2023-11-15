@@ -58,8 +58,16 @@ class Evenement {
     }
     definirDescription(){
         listeMot = []
-        //TRAITEMENT
-        return listeMot;
+        let motsX ="";
+        while(true){
+            motsX = prompt("Entrez un des mots pour decrire l'evenement (quit pour quitter): ");
+            if (motsX == "quit") {
+                break;
+            }else{
+                listeMot.push(motsX);
+            }
+        }
+        this.setMot(listeMot);
     }
     supprimerTag(tagASupprimer){
         let listeTag = this.getTag();
@@ -113,6 +121,9 @@ class Evenement {
         donnees.evenements[this.getId()-1].tags = this.getTag();
         // Écrire les données mises à jour dans le fichier JSON
         fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
+    
+        //Redefinir les tags en fonctions des nouveaux mots
+        this.#definirTag();
     }
     
     //METHODES USUELLES
@@ -154,14 +165,22 @@ class Utilisateur {
     setMot(mot){this.#mesMots = mot;}
 
     //METHODES SPECIFIQUE
-    #definirTag(){
-        listeTag = []
-        //TRAITEMENT
-        return listeTag;
-    }
     definirDescription(){
         listeMot = []
-        return listeMot;
+        let motsX ="";
+        while(true){
+            motsX = prompt("Entrez un des mots pour decrire l'evenement (quit pour quitter): ");
+            if (motsX == "quit") {
+                break;
+            }else{
+                listeMot.push(motsX);
+            }
+        }
+        this.setMot(listeMot);
+    }
+    #definirTag(){
+        listeTag = []
+        return listeTag;
     }
     modifierDescription(){
         let listeMot = this.getTag();
@@ -194,6 +213,9 @@ class Utilisateur {
         donnees.utilisateurs[this.getId()-1].tags = this.getTag();
         // Écrire les données mises à jour dans le fichier JSON
         fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
+        
+        //Redefinir les tags en fonctions des nouveaux mots
+        this.#definirTag();
     }
 
     creerListeSuggest(){
