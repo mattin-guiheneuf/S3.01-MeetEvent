@@ -1,5 +1,5 @@
 """
- * @file creaDicoSynTag.cpp
+ * @file creaDicoSynTag.py
  * @author Clément MOURGUE
  * @brief Code respectant l'algorithme de création du dictionnaire dicoSynTag
  * @version 1.0
@@ -90,7 +90,7 @@ def main():
     
     print(dicoSynTag)
     
-    return 0
+    return dicoSynTag
 
 
 # DÉFINITION DES SOUS-PROGRAMMES
