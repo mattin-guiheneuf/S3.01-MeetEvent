@@ -24,7 +24,7 @@ const donnees = JSON.parse(contenuJSON);
 //Objet evenement utilisé pour le traitement
 class Evenement {
     
-    //VARIABLES
+    //ATTRIBUTS
     #id = "";
     #titre = "";
     #date = "";
@@ -129,7 +129,7 @@ class Evenement {
 //Objet utilisateur utilisé pour le traitement
 class Utilisateur {
 
-    //VARIABLES
+    //ATTRIBUTS
     #id = "";
     #nom = "";
     #mesMots = [];
@@ -229,6 +229,25 @@ class Utilisateur {
         }
         return resultat;
     }
+}
+
+class Tag{
+    //ATTRIBUTS
+    #id = 0;
+    #libelle = "";
+}
+
+class Mot{
+    //ATTRIBUTS
+    #id = 0;
+    #libelle = "";
+}
+
+class Recommandation{
+    //ATTRIBUTS
+    #pourcentage = 0.00;
+    //METHODES
+    calculerPourcentage(){};
 }
 
 
