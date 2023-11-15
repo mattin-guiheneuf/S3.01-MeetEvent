@@ -42,33 +42,60 @@ typedef map<Synonyme,list<Tag>> DicoSynonymesTags;
  */
 /* const */ list<Tag> CORPUS_TAG;
 
-// DÉCLARATION DES SOUS-PROGRAMMES
 /**
- * @brief 
+ * @brief Le dictionnaire associant des synonymes de tags avec leur tag.
  * 
  */
-void ajoutTagToDico();
+DicoSynonymesTags dicoSynTag;
+
+// DÉCLARATION DES SOUS-PROGRAMMES
+/**
+ * @brief Ajoute le tag fourni en argument au dictionnaire dicoSynTag de manière symétrique { tag : tag ;}
+ * 
+ * @param [in] t le tag à ajouter
+ * 
+ */
+void ajoutSymTagToDicoSynTag(Tag t);
+
+/**
+ * @brief Renvoie la liste des synonymes du mot fourni en argument
+ * 
+ * @param [in] mot 
+ * @return list<string>
+ */
+list<string> synAvecAPI(string mot);
 
 
 // PROGRAMME PRINCIPAL
 /**
  * @brief Le programme principal créant le dictionnaire dicoSynTag
  * 
- * @return int 0
+ * @return int = 0
  */
 int main(){
 
     // VARIABLES
-    DicoSynonymesTags dicoSynTag;
+    /**
+     * @brief L'iterateur permettant de manipuler le corpus de tag
+     * 
+     */
     std::list<Tag>::iterator iterateurTag = CORPUS_TAG.begin();
 
     // TRAITEMENTS
-    // Ajout des tags au dicoSynTag
-    for_each(CORPUS_TAG.begin(),CORPUS_TAG.end(),ajoutTagToDico);
+    // Ajout des tags au dicoSynTag pour qu'ils soient également détectés
+    for_each(CORPUS_TAG.begin(),CORPUS_TAG.end(),ajoutSymTagToDicoSynTag);
     
+    // Enrichissement au premier degré du dictionnaire avec les synonymes des tags
 
 
     return 0;
 }
 
 // DÉFINITION DES SOUS-PROGRAMMES
+void ajoutSymTagToDico(Tag t)
+{
+    DicoSynonymesTags::mapped_type attribut;
+    attribut.push_back(t);
+    DicoSynonymesTags::key_type cle = t;
+    dicoSynTag.insert({cle,attribut});
+}
