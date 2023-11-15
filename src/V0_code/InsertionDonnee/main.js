@@ -115,7 +115,21 @@ const ajoutUtilisateur = function(){
     console.log("Utilisateur ajouté avec succès !");
 };
 
-
+let choixAjout;
 // Appel de la fonction : 1er argument = si true alors ajout d'un utilisateur
-let choixAjout = ajoutEvenement;
-Ajout(choixAjout);
+//Choix d'ajout
+while (true) {
+    let choix = prompt("Voulez-vous ajouter (o/n) : ");
+    if (choix == "n") {
+        break;
+    } else {
+        let typeAjout = prompt("Voulez-vous ajouter un utilisateur(0) ou un evenement(1) : ");
+        if (typeAjout == 0) {
+            choixAjout = ajoutEvenement;
+        } else {
+            choixAjout = ajoutEvenement;
+        }
+        Ajout(choixAjout);
+    }
+    
+}
