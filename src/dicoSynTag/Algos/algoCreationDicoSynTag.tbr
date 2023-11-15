@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>CreaDicoSynTag</nom>
+  <date_creation>15/11/2023 09:51</date_creation>
+  <Elements>
+    <Action>
+      <Position>607;61</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>CORPUS_TAG</PreAssertion>
+      <PostAssertion>dicoSynTag</PostAssertion>
+      <Titre>Création du DicoSynTag</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>241;194</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>CORPUS_TAG</PreAssertion>
+          <PostAssertion>dicoSynTag, iterateurTag</PostAssertion>
+          <Titre>Initialisation des variables et du résultat</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>7;326</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>CORPUS_TAG</PreAssertion>
+              <PostAssertion>iterateurTag</PostAssertion>
+              <Titre>iterator iterateurTag ← CORPUS_TAG.begin()</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>380;446</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>dicoSynTag</PostAssertion>
+              <Titre>map&lt;Synonyme,list&lt;Tag>> dicoSynTag</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Iteration>
+          <Position>1196.5;226.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>759.5;335</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>iterateurTag = CORPUS_TAG.end()</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>844;463</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+            <Action>
+              <Position>1288;325</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>tagActuel</PreAssertion>
+              <PostAssertion>listeSyn</PostAssertion>
+              <Titre>Récupération des synonymes du tag actuel grâce à l'API</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1350;434</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>tagActuel</PreAssertion>
+                  <PostAssertion>listeSyn</PostAssertion>
+                  <Titre>listeSyn ← synAvecAPI(tagActuel)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>925;444</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>iterateurTag</PreAssertion>
+              <PostAssertion>tagActuel</PostAssertion>
+              <Titre>tagActuel ← (*iterateurTag)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>3333;315</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>iterateurTag</PreAssertion>
+              <PostAssertion>iterateurTag</PostAssertion>
+              <Titre>On passe au tag suivant</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>3331;421</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>iterateurTag</PreAssertion>
+                  <PostAssertion>iterateurTag</PostAssertion>
+                  <Titre>iterateur ← iterateur + 1</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Iteration>
+              <Position>2475.5;382.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>?</Titre>
+              <IterationFixe>0</IterationFixe>
+              <Enfants>
+                <Condition>
+                  <Position>2134.5;589</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>iterateurSyn = listeSyn.end()</Titre>
+                      <Enfants>
+                        <Sortie>
+                          <Position>2226;697</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+                <Action>
+                  <Position>2272;480</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>iterateurSyn</PreAssertion>
+                  <PostAssertion>synCourant</PostAssertion>
+                  <Titre>synCourant ← (*iterateurSyn)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>3022;534</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>iterateurSyn</PreAssertion>
+                  <PostAssertion>iterateurSyn</PostAssertion>
+                  <Titre>On passe au synonyme suivant</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>3019;656</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>iterateurSyn</PreAssertion>
+                      <PostAssertion>iterateurSyn</PostAssertion>
+                      <Titre>iterateurSyn ← iterateurSyn + 1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Condition>
+                  <Position>2605.5;602</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>dicoSynTag.find(synCourant) != erreur</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>2142;753</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>dicoSynTag, synCourant, tagActuel</PreAssertion>
+                          <PostAssertion>dicoSynTag</PostAssertion>
+                          <Titre>dicoSynTag.get(dicoSynTag.find(synCourant)).add(tagActuel)</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>2489;863</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>dicoSynTag, synCourant, tagActuel</PreAssertion>
+                          <PostAssertion>dicoSynTag</PostAssertion>
+                          <Titre>dicoSynTag.insert(synCourant,list&lt;Tag>(tagActuel))</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Iteration>
+            <Action>
+              <Position>1802;432</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>listeSyn</PreAssertion>
+              <PostAssertion>iterateurSyn</PostAssertion>
+              <Titre>iterateurSyn ← listeSyn.begin()</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>254;6</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>∅</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>typedef string Synonyme;
+typedef string Tag;</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>740;644</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>∅</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>?</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>
