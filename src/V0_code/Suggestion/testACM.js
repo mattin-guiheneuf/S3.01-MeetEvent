@@ -1,6 +1,20 @@
 //____________________________________________________________________________________//
 //____________________________________________________________________________________//
 //                                                                                    //
+//                                   IMPORTATION                                      //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+
+
+const fs = require('fs'); // Nécessaire pour la lecture du fichier (environnement Node.js)
+const prompt = require('prompt-sync')();
+const contenuJSON = fs.readFileSync('donnees.json');
+const donnees = JSON.parse(contenuJSON);
+
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
 //                                Creation OBJECTS                                    //
 //                                                                                    //
 //____________________________________________________________________________________//
@@ -25,11 +39,16 @@ class Evenement {
         this.setTag(tag); // Attribut public
     }
 
-    //ENCAPSULATION
+    //ENCAPSULATION (get&set)
+    //id
     getId(){return this.#id;}
     setId(id){this.#id = id;}
+    //tag
     getTag(){return this.#desTags;}
     setTag(tag){this.#desTags = tag;}
+    //mot
+    getMot(){return this.#mesMots;}
+    setMot(mot){this.#mesMots = mot;}
 
     //METHODES SPECIFIQUE
     #definirTag(){
@@ -43,20 +62,59 @@ class Evenement {
         return listeMot;
     }
     supprimerTag(tagASupprimer){
-        let indiceDuTag = this.getTag().indexOf(tagASupprimer);
+        let listeTag = this.getTag();
+        let indiceDuTag = listeTag.indexOf(tagASupprimer);
         // Vérifier si l'élément existe dans la liste
         if (indiceDuTag !== -1) {
             // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
-            this.getTag().splice(indiceDuTag, 1);
+            listeTag.splice(indiceDuTag, 1);
             console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
             // Afficher la liste mise à jour
-            console.log(this.getTag());
+            console.log(listeTag);
         } else {
             console.log(`L'élément '${tagASupprimer}' n'a pas été trouvé dans la liste.`);
         }
+        this.setTag(listeTag);
+
+        //Mise à jour des données
+        donnees.evenements[this.getId()-1].tags = this.getTag();
+        // Écrire les données mises à jour dans le fichier JSON
+        fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
     }
-    modifierDescription(){}
+    modifierDescription(){
+        let listeMot = this.getTag();
+        console.log(this.getTag());
+        while(true){
+            let mot = prompt("Entrez un tag (quit pour quitter): ");
+            if (mot == "quit") {
+                break;
+            }else{
+                if (listeMot.indexOf(mot) == -1) {
+                    //AJOUTER le mot
+                    listeMot.push(mot);
+                    console.log(`L'élément '${mot}' a été ajouté à ta liste de tags.`);
+                    console.log(this.getTag());
+                } else {
+                    //RETIRER le mot car il y est déjà
+                    //demander confirmation de suppression
+                    let confirmation = prompt(`Etes-vous sur de vouloir supprimer '${mot}' (o/n) : `);
+                    if (confirmation == "o") {
+                        listeMot.splice(listeMot.indexOf(mot), 1);
+                        console.log(`L'élément '${mot}' a été supprimé de la liste des tags.`);
+                        console.log(this.getTag());
+                    }
+                }
+            }
+        }
+        this.setTag(listeMot);
+
+        //Mise à jour des données
+        donnees.evenements[this.getId()-1].tags = this.getTag();
+        // Écrire les données mises à jour dans le fichier JSON
+        fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
+    }
+    
     //METHODES USUELLES
     toSTring(message){
         resultat = message;
@@ -84,11 +142,16 @@ class Utilisateur {
         this.setTag(tag); // Attribut public
     }
 
-    //ENCAPSULATION
+    //ENCAPSULATION (get&set)
+    //id
     getId(){return this.#id;}
     setId(id){this.#id = id;}
+    //tag
     getTag(){return this.#desTags;}
     setTag(tag){this.#desTags = tag;}
+    //mot
+    getMot(){return this.#mesMots;}
+    setMot(mot){this.#mesMots = mot;}
 
     //METHODES SPECIFIQUE
     #definirTag(){
@@ -100,23 +163,62 @@ class Utilisateur {
         listeMot = []
         return listeMot;
     }
-    modifierDescription(){}
+    modifierDescription(){
+        let listeMot = this.getTag();
+        console.log(this.getTag());
+        while(true){
+            let mot = prompt("Entrez un tag (quit pour quitter): ");
+            if (mot == "quit") {
+                break;
+            }else{
+                if (listeMot.indexOf(mot) == -1) {
+                    //AJOUTER le mot
+                    listeMot.push(mot);
+                    console.log(`L'élément '${mot}' a été ajouté à ta liste de tags.`);
+                    console.log(this.getTag());
+                } else {
+                    //RETIRER le mot car il y est déjà
+                    //demander confirmation de suppression
+                    let confirmation = prompt(`Etes-vous sur de vouloir supprimer '${mot}' (o/n) : `);
+                    if (confirmation == "o") {
+                        listeMot.splice(listeMot.indexOf(mot), 1);
+                        console.log(`L'élément '${mot}' a été supprimé de la liste des tags.`);
+                        console.log(this.getTag());
+                    }
+                }
+            }
+        }
+        this.setTag(listeMot);
+
+        //Mise à jour des données
+        donnees.utilisateurs[this.getId()-1].tags = this.getTag();
+        // Écrire les données mises à jour dans le fichier JSON
+        fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
+    }
+
     creerListeSuggest(){
         return ACM();
     }
     supprimerTag(tagASupprimer){
-        let indiceDuTag = this.getTag().indexOf(tagASupprimer);
+        let listeTag = this.getTag();
+        let indiceDuTag = listeTag.indexOf(tagASupprimer);
         // Vérifier si l'élément existe dans la liste
         if (indiceDuTag !== -1) {
             // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
-            this.getTag().splice(indiceDuTag, 1);
+            listeTag.splice(indiceDuTag, 1);
             console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
             // Afficher la liste mise à jour
-            console.log(this.getTag());
+            console.log(listeTag);
         } else {
             console.log(`L'élément '${tagASupprimer}' n'a pas été trouvé dans la liste.`);
         }
+        this.setTag(listeTag);
+
+        //Mise à jour des données
+        donnees.utilisateurs[this.getId()-1].tags = this.getTag();
+        // Écrire les données mises à jour dans le fichier JSON
+        fs.writeFileSync('donnees.json', JSON.stringify(donnees, null, 2), 'utf8');
     }
     //METHODES USUELLES
     toSTring(message){
@@ -128,21 +230,6 @@ class Utilisateur {
         return resultat;
     }
 }
-
-
-//____________________________________________________________________________________//
-//____________________________________________________________________________________//
-//                                                                                    //
-//                                   IMPORTATION                                      //
-//                                                                                    //
-//____________________________________________________________________________________//
-//____________________________________________________________________________________//
-
-
-const fs = require('fs'); // Nécessaire pour la lecture du fichier (environnement Node.js)
-const prompt = require('prompt-sync')();
-const contenuJSON = fs.readFileSync('donnees.json');
-const donnees = JSON.parse(contenuJSON);
 
 
 //____________________________________________________________________________________//
@@ -291,6 +378,7 @@ console.log("\nListe des événements à recommander:");
 console.log(listEventaRecommander);
 
 //userConnected.supprimerTag("musique"); //Test Supprimer TAG
+//userConnected.modifierDescription();   //Test Modifier MOTs
 
 //____________________________________________________________________________________//
 //____________________________________________________________________________________//
