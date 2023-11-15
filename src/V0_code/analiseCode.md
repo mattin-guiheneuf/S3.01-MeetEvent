@@ -1,4 +1,4 @@
-# Analyse de Code JavaScript
+# Analyse de Code JavaScript (testACM.js)
 
 ## Importation des modules
 Le code utilise les modules `fs` (opérations sur les fichiers) et `prompt-sync` (saisie utilisateur). Les données d'événements sont lues depuis le fichier `donnees.json` et converties en objet JavaScript.
