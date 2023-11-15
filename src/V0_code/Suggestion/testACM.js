@@ -42,8 +42,19 @@ class Evenement {
         //TRAITEMENT
         return listeMot;
     }
-    supprimerTag(){
+    supprimerTag(tagASupprimer){
+        let indiceDuTag = this.getTag().indexOf(tagASupprimer);
+        // Vérifier si l'élément existe dans la liste
+        if (indiceDuTag !== -1) {
+            // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
+            maListe.splice(indiceDuTag, 1);
+            console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
+            // Afficher la liste mise à jour
+            console.log(this.getTag());
+        } else {
+            console.log(`L'élément '${tagASupprimer}' n'a pas été trouvé dans la liste.`);
+        }
     }
     modifierDescription(){}
     //METHODES USUELLES
@@ -93,8 +104,19 @@ class Utilisateur {
     creerListeSuggest(){
         return ACM();
     }
-    supprimerTag(){
+    supprimerTag(tagASupprimer){
+        let indiceDuTag = this.getTag().indexOf(tagASupprimer);
+        // Vérifier si l'élément existe dans la liste
+        if (indiceDuTag !== -1) {
+            // Utiliser la méthode splice pour supprimer l'élément à l'indice trouvé
+            maListe.splice(indiceDuTag, 1);
+            console.log(`L'élément '${tagASupprimer}' a été supprimé de la liste.`);
 
+            // Afficher la liste mise à jour
+            console.log(this.getTag());
+        } else {
+            console.log(`L'élément '${tagASupprimer}' n'a pas été trouvé dans la liste.`);
+        }
     }
     //METHODES USUELLES
     toSTring(message){
