@@ -1,57 +1,384 @@
 <?php
 
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
+//                                   IMPORTATION                                      //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+
 // Lire le contenu JSON depuis le fichier
 $contenuJSON = file_get_contents('donnees.json');
 $donnees = json_decode($contenuJSON, true);
 
-// Classes
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
+//                                Creation OBJECTS                                    //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
 
 class Evenement {
+    //ATTRIBUTS
     private $id;
-    private $tags;
+    private $titre;
+    private $date;
+    private $lieu;
+    private $mesMots;
+    private $desTags;
 
+    //METHODES
+    //CONSTRUCTEUR
     public function __construct($id, $tags) {
-        $this->id = $id;
-        $this->tags = $tags;
+        $this->setId($id);
+        $this->setTags($tags);
     }
-
+    //ENCAPSULATION (get&set)
+    //id
     public function getId() {
         return $this->id;
     }
-
+    public function setId($id) {
+        $this->id = $id;
+    }
+    //tags
     public function getTags() {
-        return $this->tags;
+        return $this->desTags;
+    }
+    public function setTags($tags) {
+        $this->desTags = $tags;
+    }
+    //mots
+    public function getMots() {
+        return $this->mesMots;
+    }
+    public function setMots($mots) {
+        $this->mesMots = $mots;
     }
 
-    // Ajoutez d'autres méthodes au besoin
+    //METHODES SPECIFIQUES
+    private function definirTags() {
+        $listeTags = array();
+        //TRAITEMENT
+        return $listeTags;
+    }
+
+    public function definirDescription() {
+        $listeMot = [];
+        $motsX = "";
+
+        while (true) {
+            $motsX = readline("Entrez un des mots pour décrire l'événement (quit pour quitter): ");
+
+            if ($motsX == "quit") {
+                break;
+            } else {
+                $listeMot[] = $motsX;
+            }
+        }
+
+        $this->setMots($listeMot);
+
+        // Mise à jour des données
+        $donnees['evenements'][$this->getId() - 1]['mots'] = $this->getMots();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+    
+        // Redéfinir les tags en fonction des nouveaux mots
+        $this->definirTags();
+    }
+
+    public function modifierDescription() {
+        $listeMot = $this->getTags();
+        echo implode(", ", $this->getTags()) . PHP_EOL;
+
+        while (true) {
+            $mot = readline("Entrez un tag (quit pour quitter): ");
+
+            if ($mot == "quit") {
+                break;
+            } else {
+                if (!in_array($mot, $listeMot)) {
+                    // AJOUTER le mot
+                    $listeMot[] = $mot;
+                    echo "L'élément '$mot' a été ajouté à ta liste de tags." . PHP_EOL;
+                    echo implode(", ", $this->getTags()) . PHP_EOL;
+                } else {
+                    // RETIRER le mot car il y est déjà
+                    // Demander confirmation de suppression
+                    $confirmation = readline("Êtes-vous sûr de vouloir supprimer '$mot' (o/n) : ");
+                    if ($confirmation == "o") {
+                        $index = array_search($mot, $listeMot);
+                        if ($index !== false) {
+                            unset($listeMot[$index]);
+                            $listeMot = array_values($listeMot); // Réorganiser les indices du tableau
+                            echo "L'élément '$mot' a été supprimé de la liste des tags." . PHP_EOL;
+                            echo implode(", ", $this->getTags()) . PHP_EOL;
+                        }
+                    }
+                }
+            }
+        }
+
+        $this->setTags($listeMot);
+
+        // Mise à jour des données
+        $donnees['evenements'][$this->getId() - 1]['tags'] = $this->getTags();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
+
+        // Redéfinir les tags en fonction des nouveaux mots
+        $this->definirTags();
+    }
+
+    //METHODES USUELLES
+    public function toString($message) {
+        $resultat = $message;
+        $resultat .= "L'évènement " . $this->getId() . " a pour tag : ";
+
+        foreach ($this->getTags() as $element) {
+            $resultat .= $element . " ";
+        }
+
+        return $resultat;
+    }
 }
 
 class Utilisateur {
+    //ATTRIBUTS
     private $id;
-    private $tags;
+    private $nom;
+    private $mesMots;
+    private $desTags;
 
+    //METHODES
+    //CONSTRUCTEUR
     public function __construct($id, $tags) {
+        $this->setId($id);
+        $this->setTags($tags);
+    }
+    //ENCAPSULATION (get&set)
+    //id
+    public function getId() {
+        return $this->id;
+    }
+    public function setId($id) {
         $this->id = $id;
-        $this->tags = $tags;
+    }
+    //tags
+    public function getTags() {
+        return $this->desTags;
+    }
+    public function setTags($tags) {
+        $this->desTags = $tags;
+    }
+    //mots
+    public function getMots() {
+        return $this->mesMots;
+    }
+    public function setMots($mots) {
+        $this->mesMots = $mots;
     }
 
+    //METHODES SPECIFIQUES
+    private function definirTags() {
+        $listeTags = array();
+        //TRAITEMENT
+        return $listeTags;
+    }
+
+    public function definirDescription() {
+        $listeMot = [];
+        $motsX = "";
+
+        while (true) {
+            $motsX = readline("Entrez un des mots pour décrire l'utilisateur (quit pour quitter): ");
+
+            if ($motsX == "quit") {
+                break;
+            } else {
+                $listeMot[] = $motsX;
+            }
+        }
+
+        $this->setMots($listeMot);
+
+        // Mise à jour des données
+        $donnees['utilisateur'][$this->getId() - 1]['mots'] = $this->getMots();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+    }
+
+
+    public function modifierDescription() {
+        $listeMot = $this->getTags();
+        echo implode(", ", $this->getTags()) . PHP_EOL;
+
+        while (true) {
+            $mot = readline("Entrez un tag (quit pour quitter): ");
+
+            if ($mot == "quit") {
+                break;
+            } else {
+                if (!in_array($mot, $listeMot)) {
+                    // AJOUTER le mot
+                    $listeMot[] = $mot;
+                    echo "L'élément '$mot' a été ajouté à ta liste de tags." . PHP_EOL;
+                    echo implode(", ", $this->getTags()) . PHP_EOL;
+                } else {
+                    // RETIRER le mot car il y est déjà
+                    // Demander confirmation de suppression
+                    $confirmation = readline("Êtes-vous sûr de vouloir supprimer '$mot' (o/n) : ");
+                    if ($confirmation == "o") {
+                        $index = array_search($mot, $listeMot);
+                        if ($index !== false) {
+                            unset($listeMot[$index]);
+                            $listeMot = array_values($listeMot); // Réorganiser les indices du tableau
+                            echo "L'élément '$mot' a été supprimé de la liste des tags." . PHP_EOL;
+                            echo implode(", ", $this->getTags()) . PHP_EOL;
+                        }
+                    }
+                }
+            }
+        }
+
+        $this->setTags($listeMot);
+
+        // Mise à jour des données
+        $donnees['utilisateurs'][$this->getId() - 1]['tags'] = $this->getTags();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
+
+        // Redéfinir les tags en fonction des nouveaux mots
+        $this->definirTags();
+    }
+    public function creerListeSuggest($user, $eventsAndUserPreferences, $objetEvenement) {
+        return ACM($user, $eventsAndUserPreferences, $objetEvenement);
+    }
+
+    public function supprimerTag($tagASupprimer) {
+        $listeTag = $this->getTags();
+        $indiceDuTag = array_search($tagASupprimer, $listeTag);
+
+        // Vérifier si l'élément existe dans la liste
+        if ($indiceDuTag !== false) {
+            // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
+            array_splice($listeTag, $indiceDuTag, 1);
+            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+
+            // Afficher la liste mise à jour
+            echo implode(", ", $listeTag) . PHP_EOL;
+        } else {
+            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+        }
+
+        $this->setTags($listeTag);
+
+        // Mise à jour des données
+        $donnees['utilisateurs'][$this->getId() - 1]['tags'] = $this->getTags();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
+    }
+
+    //METHODES USUELLES
+    public function toString($message) {
+        $resultat = $message;
+        $resultat .= "L'utilisateur " . $this->getId() . " a pour tag : ";
+
+        foreach ($this->getTags() as $element) {
+            $resultat .= $element . " ";
+        }
+
+        return $resultat;
+    }
+}
+
+class Tag {
+    // ATTRIBUTS
+    private $id = 0;
+    private $libelle = "";
+
+    // GETTERS ET SETTERS
     public function getId() {
         return $this->id;
     }
 
-    public function getTags() {
-        return $this->tags;
+    public function setId($id) {
+        $this->id = $id;
     }
 
-    // Ajoutez d'autres méthodes au besoin
+    public function getLibelle() {
+        return $this->libelle;
+    }
+
+    public function setLibelle($libelle) {
+        $this->libelle = $libelle;
+    }
 }
 
-// Initialisation
+class Mot {
+    // ATTRIBUTS
+    private $id = 0;
+    private $libelle = "";
+
+    // GETTERS ET SETTERS
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
+    }
+
+    public function getLibelle() {
+        return $this->libelle;
+    }
+
+    public function setLibelle($libelle) {
+        $this->libelle = $libelle;
+    }
+}
+
+class Recommandation {
+    // ATTRIBUTS
+    private $pourcentage = 0.00;
+
+    // METHODES
+    public function calculerPourcentage() {
+        // Implémentez la logique du calcul du pourcentage ici
+    }
+
+    // GETTER ET SETTER
+    public function getPourcentage() {
+        return $this->pourcentage;
+    }
+
+    public function setPourcentage($pourcentage) {
+        $this->pourcentage = $pourcentage;
+    }
+}
+
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
+//                                 INITIALISATION                                     //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
 
 $corpusTag = ["musique", "voyage", "lecture", "sport", "nature", "photographie", "cinema", "jeux video", "art", "film", "festival", "competition", "exposition"];
 $eventsAndUserPreferences = [];
 
-// Partie Evenement
+//-------------------------------------------------------------//
+//                      Partie Evenement                       //
+//-------------------------------------------------------------//
 
 $objetEvenement = [];
 foreach ($donnees['evenements'] as $element) {
@@ -70,7 +397,9 @@ foreach ($objetEvenement as $event) {
     $eventsAndUserPreferences[] = $eventsB;
 }
 
-// Partie Utilisateur
+//-------------------------------------------------------------//
+//                     Partie Utilisateur                      //
+//-------------------------------------------------------------//
 
 $dicoUser = [];
 foreach ($donnees['utilisateurs'] as $element) {
@@ -87,7 +416,13 @@ foreach ($corpusTag as $tagElement) {
 
 $eventsAndUserPreferences[] = $user;
 
-// Traitements ACM
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
+//                             TRAITEMENTS -- ACM                                     //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
 
 function dotProduct($vec1, $vec2) {
     $result = 0;
@@ -130,28 +465,34 @@ function ACM($userConnected, $eventsAndUserPreferences, $objetEvenement) {
         $dicoEvents["events"][] = [$objetEvenement[$i]->getId(), $similarity];
     }
 
-    afficherContenuDicoEvent($userConnected,$dicoEvents);
+    afficherContenuDicoEvent($dicoEvents,$userConnected);
     return recupererEvenements($dicoEvents);
 }
 
 // Afficher les événements recommandés
-$listEventaRecommander = ACM($userConnected, $eventsAndUserPreferences, $objetEvenement);
+$listEventaRecommander = $userConnected->creerListeSuggest($userConnected, $eventsAndUserPreferences, $objetEvenement);
 echo "\nListe des événements à recommander:\n";
 print_r($listEventaRecommander);
 
-// Autres fonctions à adapter au besoin
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
+//                                                                                    //
+//                       FONCTION DE VERIFICATION (EXTERNE)                           //
+//                                                                                    //
+//____________________________________________________________________________________//
+//____________________________________________________________________________________//
 
-function afficherContenuDicoEvent($dico) {
+function afficherContenuDicoEvent($dico,$user) {
     echo "<br>Contenu du dictionnaire:<br>";
 
     foreach ($dico as $key => $value) {
         if ($key === "events") {
             echo "Clé \"$key\":<br>";
             foreach ($value as $event) {
-                echo "  Événement: {$event[0]}, Similarité: {$event[1]}%<br>";
+                echo "Événement: {$event[0]}, Similarité: {$event[1]}%<br>";
             }
         } else {
-            echo "Clé \"$key\": {$userConnected->getId()}<br>";
+            echo "Clé \"$key\": {$user->getId()}<br>";
         }
     }
 }
