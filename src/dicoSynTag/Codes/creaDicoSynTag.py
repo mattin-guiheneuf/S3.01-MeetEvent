@@ -51,7 +51,8 @@ def synAvecAPI(word):
  * @brief Le corpus de tag définit par l'équipe. Il sera une constante une fois définie.
  * 
  """
-CORPUS_TAG = ['mother','father']#['cat','dog','rugby','sport','wing','plane']
+#CORPUS_TAG = ['mother','father']#['cat','dog','rugby','sport','wing','plane']
+CORPUS_TAG = ['mother','father','bulge']
 
 """
  * @brief Le dictionnaire associant des synonymes de tags avec leur tag.

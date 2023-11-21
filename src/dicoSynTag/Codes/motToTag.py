@@ -28,12 +28,13 @@ def synAvecAPI(word):
     return res.json()
 
 # VARIABLES GLOBALES
-CORPUS_TAG = ['mother','father']#['cat','dog','rugby','sport','wing','plane']
+#CORPUS_TAG = ['mother','father','protactinum']#['cat','dog','rugby','sport','wing','plane']
 
 import creaDicoSynTag
+CORPUS_TAG = creaDicoSynTag.CORPUS_TAG
 dicoSynTag = creaDicoSynTag.main()
 
-listeMot = ['female parent','get']
+listeMot = ['female parent','get','pa']
 
 
 # PROGRAMME PRINCIPAL
@@ -56,26 +57,41 @@ def main():
         # Vérif présence dans dicoSynTag du mot
         if motCourant in dicoSynTag.keys() : # Si présence ajout et enregistrement
             dicoMotToTag[motCourant] = [dicoSynTag[motCourant]]
+            # test
+            print("ajout type1")
             listeTag.append(dicoSynTag[motCourant])
         else : # Sinon enrichissement de 1 degré à partir des mots
             listeSynMot = synAvecAPI(motCourant)['synonyms']
             for synMotCourant in listeSynMot :
                 if synMotCourant in dicoSynTag.keys() : # Si présence ajout et enregistrement
-                    dicoMotToTag[motCourant] = [synMotCourant,dicoSynTag[motCourant]]
-                    listeTag.append(dicoSynTag[motCourant])
+                    dicoMotToTag[motCourant] = [synMotCourant,dicoSynTag[synMotCourant]]
+                    listeTag.append(dicoSynTag[synMotCourant])
+                    # test
+                    print("ajout type2")
                 else : # Sinon enrichissement de 1 degré supplémentaire (degré 2) à partir des tags
                     for syn in dicoSynTag.keys() :
                         listeSynSynDicoSynTag = synAvecAPI(syn)['synonyms']
                         if motCourant in listeSynSynDicoSynTag : # Vérif présence du mot de base dans les synonymes de synonymes de tag
-                            dicoMotToTag[motCourant] = [syn,dicoSynTag[motCourant]]
-                            listeTag.append(dicoSynTag[motCourant])
+                            dicoMotToTag[motCourant] = [syn,dicoSynTag[syn]]
+                            if dicoSynTag[syn] not in listeTag :
+                                listeTag.append(dicoSynTag[syn])
+                                # test
+                                print("ajout type3")
+                            break
                         elif synMotCourant in listeSynSynDicoSynTag : # Vérif présence du synonyme du mot dans les synonymes de synonymes de tag
-                            dicoMotToTag[motCourant] = [synMotCourant,syn,dicoSynTag[motCourant]]
-                            listeTag.append(dicoSynTag[motCourant])
-                        else : # Pas de liaison avec le corpus de tags
+                            dicoMotToTag[motCourant] = [synMotCourant,syn,dicoSynTag[syn]]
+                            if dicoSynTag[syn] not in listeTag :
+                                listeTag.append(dicoSynTag[syn])
+                                # test
+                                print("ajout type4")
+                            break
+                        else : # Pas de liaison avec le corpus de tags  !!! Indentation ????
                             dicoMotToTag[motCourant] = ['Impossible à lier']
+                    #break # À enlever car stop dès la première recherche correcte or mot peut être lié à plusierus tags
     
+    print("DicoMotToTag :")
     print(dicoMotToTag)
+    print("\nlisteTag :")
     print(listeTag)
     
     return (dicoMotToTag,listeTag)
