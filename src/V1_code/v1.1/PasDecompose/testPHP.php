@@ -23,11 +23,12 @@ $donnees = json_decode($contenuJSON, true);
 class Evenement {
     //ATTRIBUTS
     private $id;
-    private $titre;
-    private $date;
-    private $lieu;
-    private $mesMots;
-    private $desTags;
+    private $titre = "";
+    private $date = "";
+    private $lieu = "";
+    private $mesMots = array();
+    private $desTags = array();
+    private $recommandation = null;
 
     //METHODES
     //CONSTRUCTEUR
@@ -151,9 +152,10 @@ class Evenement {
 class Utilisateur {
     //ATTRIBUTS
     private $id;
-    private $nom;
-    private $mesMots;
-    private $desTags;
+    private $nom = "";
+    private $mesMots=  [];
+    private $desTags= []; 
+    private $recommandation = null;
 
     //METHODES
     //CONSTRUCTEUR
@@ -302,8 +304,8 @@ class Utilisateur {
 
 class Tag {
     // ATTRIBUTS
-    private $id = 0;
-    private $libelle = "";
+    private $id;
+    private $libelle;
 
     // GETTERS ET SETTERS
     public function getId() {
@@ -349,6 +351,7 @@ class Mot {
 class Recommandation {
     // ATTRIBUTS
     private $pourcentage = 0.00;
+    private $suggestion = array();
 
     // METHODES
     public function calculerPourcentage() {
@@ -461,7 +464,7 @@ function ACM($userConnected, $eventsAndUserPreferences, $objetEvenement) {
     for ($i = 0; $i < count($eventsAndUserPreferences) - 1; $i++) {
         $event = $eventsAndUserPreferences[$i];
         $similarity = cosineSimilarity($userPreferences, $event);
-        echo "Similarité entre l'événement {$objetEvenement[$i]->getId()} et l'utilisateur {$userConnected->getId()}: " . $similarity * 100 . "%<br>";
+        echo "Similarité entre l'événement {$objetEvenement[$i]->getId()} et l'utilisateur {$userConnected->getId()}: " . $similarity * 100 . PHP_EOL;
         $dicoEvents["events"][] = [$objetEvenement[$i]->getId(), $similarity];
     }
 
@@ -483,16 +486,16 @@ print_r($listEventaRecommander);
 //____________________________________________________________________________________//
 
 function afficherContenuDicoEvent($dico,$user) {
-    echo "<br>Contenu du dictionnaire:<br>";
+    echo "\nContenu du dictionnaire:" . PHP_EOL;
 
     foreach ($dico as $key => $value) {
         if ($key === "events") {
             echo "Clé \"$key\":<br>";
             foreach ($value as $event) {
-                echo "Événement: {$event[0]}, Similarité: {$event[1]}%<br>";
+                echo "Événement: {$event[0]}, Similarité: {$event[1]}%". PHP_EOL;
             }
         } else {
-            echo "Clé \"$key\": {$user->getId()}<br>";
+            echo "Clé \"$key\": {$user->getId()}". PHP_EOL;
         }
     }
 }

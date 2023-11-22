@@ -10,6 +10,17 @@
           "lecture",
           "jeux"
         ]
+      },
+      {
+        "id": 2,
+        "nom": "",
+        "mots": [],
+        "tags": [
+          "musique",
+          "festival",
+          "sport",
+          "jeux"
+        ]
       }
     ],
     "evenements": [
@@ -318,6 +329,42 @@
       },
       {
         "id": 10020,
+        "titre": "Conference sur l'economie",
+        "date": "2024-01-19",
+        "heure": "15:30",
+        "lieu": "Salle Camiade",
+        "mots": [
+          "Conference",
+          "Economie",
+          "Finance",
+          "Argent",
+          "Echange",
+          "Investissement",
+          "Formation"
+        ],
+        "tags": []
+      },
+      {
+        "id": 10021,
+        "titre": "Concert en plein air",
+        "date": "2024-08-17",
+        "heure": "15:30",
+        "lieu": "Vieux Port",
+        "mots": [
+          "Musique",
+          "Concert",
+          "Festival",
+          "Plein Air",
+          "Divertissement",
+          "Culture"
+        ],
+        "tags": [
+          "musique",
+          "jeux"
+        ]
+      },
+      {
+        "id": 10022,
         "titre": "Conference sur l'economie",
         "date": "2024-01-19",
         "heure": "15:30",
