@@ -125,7 +125,7 @@ while (true) {
     } else {
         let typeAjout = prompt("Voulez-vous ajouter un utilisateur(0) ou un evenement(1) : ");
         if (typeAjout == 0) {
-            choixAjout = ajoutEvenement;
+            choixAjout = ajoutUtilisateur;
         } else {
             choixAjout = ajoutEvenement;
         }
