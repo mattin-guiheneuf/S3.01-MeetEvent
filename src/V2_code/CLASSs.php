@@ -456,12 +456,16 @@ class Utilisateur {
      * @return array $evenementsARecommander une liste d'événements à recommander.
      */
     public function creerListeSuggest() {
-        //On recupere tous les evenement avec leur pourcentage
+        // Récupérer tous les événements avec leurs pourcentages
         $reco = $this->recommandation->getSuggestion();
-
-        //On determine lesquelles sont à recommander
-        $evenementsARecommander = [];
     
+        // Trier les événements par pourcentage par ordre décroissant
+        usort($reco, function ($a, $b) {
+            return $b['pourcentage'] <=> $a['pourcentage'];
+        });
+    
+        // Déterminer quels événements recommander
+        $evenementsARecommander = [];
         foreach ($reco as $paire) {
             $evenementId = $paire['evenement'];
             $pourcentage = $paire['pourcentage'];
@@ -472,19 +476,13 @@ class Utilisateur {
             }
         }
     
-        // Si le nombre d'événements recommandés est inférieur à 5, trier par pourcentage décroissant et prendre les 5 premiers
+        // Si le nombre d'événements recommandés est inférieur à 5, prendre les 5 premiers basés sur le pourcentage
         if (count($evenementsARecommander) < 5) {
-            usort($reco, function ($a, $b) {
-                return $b['pourcentage'] - $a['pourcentage'];
-            });
-    
             for ($i = 0; $i < 5 && $i < count($reco); $i++) {
-                if(!in_array($reco[$i]['evenement'],$evenementsARecommander)){
-                    $evenementsARecommander[] = $reco[$i]['evenement'];
-                }
+                $evenementsARecommander[] = $reco[$i]['evenement'];
             }
         }
-
+    
         return $evenementsARecommander;
     }
 
@@ -611,6 +609,9 @@ class Tag {
     }
 }
 
+/**
+ * Classe représentant un Mot.
+ */
 class Mot {
     // ATTRIBUTS
     /**
@@ -662,6 +663,9 @@ class Mot {
     }
 }
 
+/**
+ * Classe représentant une Recommandation.
+ */
 class Recommandation {
     // ATTRIBUTS
     private $utilisateurConnected = null;
