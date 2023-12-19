@@ -142,10 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 // Resultat Recommandation
                 // Initialisation d'un objet Recommandation
-                $recommandation = new Recommandation();
-                // la recommandation et l'utilisateur
-                $userConnected->linkToSuggest($recommandation);
-                $recommandation->linkToUser($userConnected);
+                $recommandation = new Recommandation($userConnected);
                 //Affichage similarités
                 echo "</br>" . "/////////////////////////////////////" . "</br>" . "/// Calcul de Similarité ///" . "</br>" . "////////////////////////////////////" . "</br>";
                 //Calcul de la suggestion entre tous les événements et l'utilisateur

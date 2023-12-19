@@ -68,10 +68,6 @@ class Evenement {
      */
     private $desTags = [];
 
-    /**
-     * @var Recommandation La recommandation de l'evenement.
-     */
-    private $recommandation = null;
 
     //METHODES
     //CONSTRUCTEUR
@@ -228,25 +224,37 @@ class Evenement {
         // Redéfinir les tags en fonction des nouveaux mots
         $this->definirTags();
     }
-    
+
     /**
-     * METHODE SPECIFIQUE : Lier une recommandation et l'événement.
+     * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
      *
-     * @param Recommandation $recommandation une recommandation représentant la recommandation de l'événement.
+     * @param string $tagASupprimer un tag à supprimer
      */
-    public function linkToSuggest(Recommandation $recommandation){
-        $this->recommandation = $recommandation;
+    public function supprimerTag(string $tagASupprimer) {
+        $listeTag = $this->getTags();
+        $indiceDuTag = array_search($tagASupprimer, $listeTag);
+
+        // Vérifier si l'élément existe dans la liste
+        if ($indiceDuTag !== false) {
+            // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
+            array_splice($listeTag, $indiceDuTag, 1);
+            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+
+            // Afficher la liste mise à jour
+            echo implode(", ", $listeTag) . PHP_EOL;
+        } else {
+            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+        }
+
+        $this->setTags($listeTag);
+
+        // Mise à jour des données
+        $donnees['utilisateurs'][$this->getId() - 1]['tags'] = $this->getTags();
+
+        // Écrire les données mises à jour dans le fichier JSON
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
     }
 
-     /**
-     * METHODE SPECIFIQUE : Délier une recommandation et l'événement.
-     *
-     */
-    public function unlinkToSuggest(){
-        if ($this->recommandation != null) {
-            $this->recommandation = null;
-        }
-    }
 
     //METHODES USUELLES
     /**
@@ -296,7 +304,7 @@ class Utilisateur {
     /**
      * @var Recommandation La recommandation de l'utilisateur.
      */
-    public $recommandation = null;
+    private $maRecommandation = null;
 
     //METHODES
     //CONSTRUCTEUR
@@ -327,6 +335,23 @@ class Utilisateur {
      */
     public function setId(int $id) {
         $this->id = $id;
+    }
+    //nom
+    /**
+     * Obtient le nom de l'utilisateur.
+     *
+     * @return string nom.
+     */
+    public function getNom() {
+        return $this->nom;
+    }
+    /**
+     * Attribuer un nom à un utilisateur.
+     *
+     * @param string $nom un nom représentant le nom de l'utilisateur.
+     */
+    public function setNom(string $nom) {
+        $this->nom = $nom;
     }
     //tags
     /**
@@ -361,6 +386,23 @@ class Utilisateur {
      */
     public function setMots(array $mots) {
         $this->mesMots = $mots;
+    }
+    //maRecommandation
+    /**
+     * Obtient la recommandation de l'utilisateur.
+     *
+     * @return Recommandation maRecommandation.
+     */
+    public function getRecommandation() {
+        return $this->maRecommandation;
+    }
+    /**
+     * Attribuer la recommandation d'un utilisateur.
+     *
+     * @param Recommandation $reco une recommandation représentant la recommandation de l'utilisateur.
+     */
+    public function setRecommandation(Recommandation $reco) {
+        $this->maRecommandation = $reco;
     }
 
     //METHODES SPECIFIQUES
@@ -457,7 +499,7 @@ class Utilisateur {
      */
     public function creerListeSuggest() {
         // Récupérer tous les événements avec leurs pourcentages
-        $reco = $this->recommandation->getSuggestion();
+        $reco = $this->getRecommandation()->getSuggestion();
     
         // Trier les événements par pourcentage par ordre décroissant
         usort($reco, function ($a, $b) {
@@ -522,7 +564,8 @@ class Utilisateur {
      * @param Recommandation $recommandation une recommandation représentant la recommandation de l'événement.
      */
     public function linkToSuggest(Recommandation $recommandation){
-        $this->recommandation = $recommandation;
+        $this->unlinkToSuggest();
+        $this->setRecommandation($recommandation);
     }
 
      /**
@@ -530,8 +573,8 @@ class Utilisateur {
      *
      */
     public function unlinkToSuggest(){
-        if ($this->recommandation != null) {
-            $this->recommandation = null;
+        if ($this->getRecommandation() != null) {
+            $this->maRecommandation = null;
         }
     }
 
@@ -668,25 +711,39 @@ class Mot {
  */
 class Recommandation {
     // ATTRIBUTS
-    private $utilisateurConnected = null;
+    private $monUtilisateur = null;
     private $suggestion = array();
 
     // METHODES
+    //CONSTRUCTEUR
+    public function __construct(Utilisateur $monUtilisateur = null){
+        $this->linkToUser($monUtilisateur);
+        $this->monUtilisateur->linkToSuggest($this);
+    }
     // GETTER ET SETTER
+    //suggestion
     public function getSuggestion() {
         return $this->suggestion;
     }
+    private function setSuggestion(Evenement $evenement,float $pourcentage){
+        $this->suggestion[] = array('evenement' => $evenement->getId(), 'pourcentage' => $pourcentage);
+    }
+    //monUtilisateur
+    public function getUtilisateur(){
+        return $this->monUtilisateur;
+    }
+    public function setUtilisateur(Utilisateur $user){
+        $this->monUtilisateur = $user;
+    }
 
     // METHODE SPECIFIQUE
-    public function addSuggestion($evenement, $pourcentage) {
-        $this->suggestion[] = array('evenement' => $evenement, 'pourcentage' => $pourcentage);
+    private function linkToUser(Utilisateur $user){
+        $this->unlinkToUser();
+        $this->setUtilisateur($user);
     }
-    public function linkToUser($user){
-        $this->utilisateurConnected = $user;
-    }
-    public function unlinkToUser(){
-        if ($this->utilisateurConnected != null) {
-            $this->utilisateurConnected = null;
+    private function unlinkToUser(){
+        if ($this->monUtilisateur != null) {
+            $this->monUtilisateur = null;
         }
     }
 
@@ -722,7 +779,7 @@ class Recommandation {
         }
     }
 
-    public function calculerSuggestion($tabACM, $objetEvenement) {
+    public function calculerSuggestion(array $tabACM,array $objetEvenement) {
         // Supposons que la dernière ligne représente les préférences de l'utilisateur
         $userPreferences = $tabACM[count($tabACM) - 1];
 
@@ -730,20 +787,20 @@ class Recommandation {
         for ($i = 0; $i < count($tabACM) - 1; $i++) {
             $event = $tabACM[$i];
             $similarity = $this->cosineSimilarity($userPreferences, $event);
-            echo "Similarité entre l'événement {$objetEvenement[$i]->getId()} et l'utilisateur {$this->utilisateurConnected->getId()}: " . $similarity ."</br>". PHP_EOL;
+            echo "Similarité entre l'événement {$objetEvenement[$i]->getId()} et l'utilisateur {$this->monUtilisateur->getId()}: " . $similarity ."</br>". PHP_EOL;
             //Ajouter chaque évènement et sa similarité dans un dico
-            $this->addSuggestion($objetEvenement[$i]->getId(), $similarity);
+            $this->setSuggestion($objetEvenement[$i],(float) $similarity);
         }
     }
 
     // METHODE USUELLE
     public function toString() {
         // Affichage des données de la liste de paires
-        if ($this->utilisateurConnected == null) {
+        if ($this->monUtilisateur == null) {
             echo    PHP_EOL . "La recommandation n'as pas de user attribué </br>".PHP_EOL;
         }
         else {   
-            echo    PHP_EOL . "Le user attribué est ". $this->utilisateurConnected->getId() .PHP_EOL;
+            echo    PHP_EOL . "Le user attribué est ". $this->monUtilisateur->getId() .PHP_EOL;
         }
         foreach ($this->suggestion as $paire) {
             echo PHP_EOL . "Evenement : " . $paire['evenement'] . " -- Pourcentage : " . $paire['pourcentage'] ;
