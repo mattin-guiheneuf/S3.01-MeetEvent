@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 #Wed Nov 15 15:39:22 CET 2023
 org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme de classe diagrammes' {e3cb4021-8553-4634-9f83-c2166a3f2e99} Standard.ClassDiagram
 org.modelio.app.diagram.editor.OpenedDiagrams1='Diagramme de classe v2' {4baf1713-109e-4be4-9192-082934ff98fb} Standard.ClassDiagram
+=======
+#Mon Nov 06 16:33:18 CET 2023
+org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme de classe diagrammes' {e3cb4021-8553-4634-9f83-c2166a3f2e99} Standard.ClassDiagram
+>>>>>>> 09d3ae825c3560893bd805c87596a5fcb969c7d1
