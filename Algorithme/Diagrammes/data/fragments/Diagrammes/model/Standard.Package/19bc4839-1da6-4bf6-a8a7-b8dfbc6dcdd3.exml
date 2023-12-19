@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="diagrammes" version="4">
+  <OBJECT>
+    <ID name="diagrammes" mc="Standard.Package" uid="19bc4839-1da6-4bf6-a8a7-b8dfbc6dcdd3"/>
+    <PID name="Diagrammes" mc="Standard.Project" uid="77a95f83-d5b6-4d01-8f16-26bb25e5e9d4"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[diagrammes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="2e213430-ac1e-4825-9a6f-79bc0d0c425e"/>
+        <COMPID name="Evenement" mc="Standard.Class" uid="2422a65c-bd86-4fb1-a5df-84fa1c5506c9"/>
+        <COMPID name="Tag" mc="Standard.Class" uid="0e0b3a6d-d219-4f5e-b9ea-810701ae2df6"/>
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="10027f07-5690-4ab1-abff-91c48d05b0e6"/>
+        <COMPID name="Evenement" mc="Standard.Class" uid="095435d5-f09d-424e-8843-4b262cd304d2"/>
+        <COMPID name="Tag" mc="Standard.Class" uid="f58352cd-921b-4c41-b393-d0a0932b6634"/>
+        <COMPID name="Recommandation" mc="Standard.Class" uid="3dd38bc3-c318-4708-87ba-e6dc8a831020"/>
+        <COMPID name="Mot" mc="Standard.Class" uid="bdf0f465-18e1-4fae-95b5-e707ffbef37e"/>
+        <COMPID name="Synonyme" mc="Standard.Class" uid="deabccca-2313-4621-9f7e-89ad05bd316d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe diagrammes" mc="Standard.ClassDiagram" uid="e3cb4021-8553-4634-9f83-c2166a3f2e99"/>
+        <COMPID name="Diagramme de classe v2" mc="Standard.ClassDiagram" uid="4baf1713-109e-4be4-9192-082934ff98fb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

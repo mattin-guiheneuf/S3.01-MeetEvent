@@ -1,0 +1,1 @@
+Ce dossier "Specification" contient les Spécifications Externes du Problème Algorithmique que l'on traite.
