@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>11/1/2024 11:44</date_creation>
+  <Elements>
+    <Action>
+      <Position>378;25</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>∅</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>DicoSynTags(Corpus, ArrayList&lt;Mot>)</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>51;192</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>dico</PostAssertion>
+          <Titre>Initialisation du dictionnaire</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>490.5;208.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour tagCourant dans Corpus</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>412;328</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>dico</PostAssertion>
+              <Titre>dico[tagCourant] ← [tagCourant]</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+        <Iteration>
+          <Position>905.5;201.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour tagCourant dans Corpus</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>737;328</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>listeSynTagCourant</PostAssertion>
+              <Titre>listeSynTagCourant ← determinerSynonymes(tagCourant)['synonyms']</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Iteration>
+              <Position>1414.5;346.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour synTagCourant dans listeSynTagCourant</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants/>
+            </Iteration>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>1818;323</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>∅</PreAssertion>
+          <PostAssertion>∅</PostAssertion>
+          <Titre>Retourner dicoSynTag</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>-25;330</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>dico</PostAssertion>
+      <Titre>dico reçoit un map &lt;Synonyme, ArrayList&lt;Tag>> vide</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Condition>
+      <Position>1260.5;442</Position>
+      <StyleLien>0</StyleLien>
+      <estUnique>0</estUnique>
+      <operationsLogiques>
+        <operation>
+          <Titre>Si synTagCourant est dans dicoSynTags.keys()</Titre>
+          <Enfants>
+            <Action>
+              <Position>1101;569</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>Vérifier que le tag n'est pas déjà lié au synonyme</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>1059.5;687</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>Si tagCourant n'est pas dans dicoSynTags[synTagCourant]</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1100;808</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>dicoSynTag</PostAssertion>
+                          <Titre>dicoSynTag[synTagCourant].append(tagCourant)</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </operation>
+        <operation>
+          <Titre>Sinon</Titre>
+          <Enfants>
+            <Action>
+              <Position>1609;565</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>Ajouter synTagCourant aux clés du dictionnaire</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1623;700</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>dicoSynTag</PostAssertion>
+                  <Titre>dicoSynTag[synTagCourant] = [tagCourant]</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </operation>
+      </operationsLogiques>
+    </Condition>
+  </Elements>
+  <Dictionary/>
+</Algorithme>
