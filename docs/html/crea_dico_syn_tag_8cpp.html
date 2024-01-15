@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MeetEvent: Référence du fichier src/dicoSynTag/Codes/CPP/creaDicoSynTag.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MeetEvent<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">L&#39;algorithme complèxe de notre application web Meet Event</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4ea25e6d7df8de0c2b2bb1b094d15388.html">dicoSynTag</a></li><li class="navelem"><a class="el" href="dir_3bdc566ab80c7aa7fb925b5b9f1e35fe.html">Codes</a></li><li class="navelem"><a class="el" href="dir_48fd30bce5bb6faf646ab93196a53ce8.html">CPP</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier creaDicoSynTag.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Code respectant l'algorithme de création du dictionnaire dicoSynTag.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a118809a68f7b5a2c845afd5195af8ae6"><td class="memItemLeft" align="right" valign="top">typedef string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a118809a68f7b5a2c845afd5195af8ae6">Synonyme</a></td></tr>
+<tr class="memdesc:a118809a68f7b5a2c845afd5195af8ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Une chaîne de caractères correspondant à un synonyme.  <br /></td></tr>
+<tr class="separator:a118809a68f7b5a2c845afd5195af8ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430685b8ec0b99ac9ecd94aa184ee6b9"><td class="memItemLeft" align="right" valign="top">typedef string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a430685b8ec0b99ac9ecd94aa184ee6b9">Tag</a></td></tr>
+<tr class="memdesc:a430685b8ec0b99ac9ecd94aa184ee6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Une chaîne de caractères correspondant à un tag.  <br /></td></tr>
+<tr class="separator:a430685b8ec0b99ac9ecd94aa184ee6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8fe61b99ab5ec7af14c04309fb7b2f"><td class="memItemLeft" align="right" valign="top">typedef map&lt; <a class="el" href="crea_dico_syn_tag_8cpp.html#a118809a68f7b5a2c845afd5195af8ae6">Synonyme</a>, list&lt; <a class="el" href="class_tag.html">Tag</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#afb8fe61b99ab5ec7af14c04309fb7b2f">DicoSynonymesTags</a></td></tr>
+<tr class="memdesc:afb8fe61b99ab5ec7af14c04309fb7b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un dictionnaire associant un Synonyme à un liste de tags.  <br /></td></tr>
+<tr class="separator:afb8fe61b99ab5ec7af14c04309fb7b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a36d8f37dddc87aa128ba55d90ab6cf85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a36d8f37dddc87aa128ba55d90ab6cf85">ajoutSymTagToDicoSynTag</a> (<a class="el" href="class_tag.html">Tag</a> t)</td></tr>
+<tr class="memdesc:a36d8f37dddc87aa128ba55d90ab6cf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute le tag fourni en argument au dictionnaire dicoSynTag de manière symétrique { tag : tag ;}.  <br /></td></tr>
+<tr class="separator:a36d8f37dddc87aa128ba55d90ab6cf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f74e25ab00add235e9aa603c4e6e8be"><td class="memItemLeft" align="right" valign="top">list&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a9f74e25ab00add235e9aa603c4e6e8be">synAvecAPI</a> (string mot)</td></tr>
+<tr class="memdesc:a9f74e25ab00add235e9aa603c4e6e8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la liste des synonymes du mot fourni en argument.  <br /></td></tr>
+<tr class="separator:a9f74e25ab00add235e9aa603c4e6e8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le programme principal créant le dictionnaire dicoSynTag.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18d0c30331c1ae828ba78cf530ef324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#ac18d0c30331c1ae828ba78cf530ef324">ajoutSymTagToDico</a> (<a class="el" href="class_tag.html">Tag</a> t)</td></tr>
+<tr class="separator:ac18d0c30331c1ae828ba78cf530ef324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8a183bb6c49f27d5cae1339d57176856"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_tag.html">Tag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a8a183bb6c49f27d5cae1339d57176856">CORPUS_TAG</a></td></tr>
+<tr class="memdesc:a8a183bb6c49f27d5cae1339d57176856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le corpus de tag définit par l'équipe. Il sera une constante une fois définie.  <br /></td></tr>
+<tr class="separator:a8a183bb6c49f27d5cae1339d57176856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4376f8f9dfcfc342afe2cfee153bab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crea_dico_syn_tag_8cpp.html#afb8fe61b99ab5ec7af14c04309fb7b2f">DicoSynonymesTags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crea_dico_syn_tag_8cpp.html#a4b4376f8f9dfcfc342afe2cfee153bab">dicoSynTag</a></td></tr>
+<tr class="memdesc:a4b4376f8f9dfcfc342afe2cfee153bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le dictionnaire associant des synonymes de tags avec leur tag.  <br /></td></tr>
+<tr class="separator:a4b4376f8f9dfcfc342afe2cfee153bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Code respectant l'algorithme de création du dictionnaire dicoSynTag. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Clément MOURGUE </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2023-11-15 </dd></dl>
+</div><h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="afb8fe61b99ab5ec7af14c04309fb7b2f" name="afb8fe61b99ab5ec7af14c04309fb7b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8fe61b99ab5ec7af14c04309fb7b2f">&#9670;&#160;</a></span>DicoSynonymesTags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef map&lt;<a class="el" href="crea_dico_syn_tag_8cpp.html#a118809a68f7b5a2c845afd5195af8ae6">Synonyme</a>,list&lt;<a class="el" href="class_tag.html">Tag</a>&gt; &gt; <a class="el" href="crea_dico_syn_tag_8cpp.html#afb8fe61b99ab5ec7af14c04309fb7b2f">DicoSynonymesTags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Un dictionnaire associant un Synonyme à un liste de tags. </p>
+
+</div>
+</div>
+<a id="a118809a68f7b5a2c845afd5195af8ae6" name="a118809a68f7b5a2c845afd5195af8ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a118809a68f7b5a2c845afd5195af8ae6">&#9670;&#160;</a></span>Synonyme</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef string <a class="el" href="crea_dico_syn_tag_8cpp.html#a118809a68f7b5a2c845afd5195af8ae6">Synonyme</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Une chaîne de caractères correspondant à un synonyme. </p>
+
+</div>
+</div>
+<a id="a430685b8ec0b99ac9ecd94aa184ee6b9" name="a430685b8ec0b99ac9ecd94aa184ee6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430685b8ec0b99ac9ecd94aa184ee6b9">&#9670;&#160;</a></span>Tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">array La liste de <a class="el" href="class_tag.html">Tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Une chaîne de caractères correspondant à un tag. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac18d0c30331c1ae828ba78cf530ef324" name="ac18d0c30331c1ae828ba78cf530ef324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18d0c30331c1ae828ba78cf530ef324">&#9670;&#160;</a></span>ajoutSymTagToDico()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajoutSymTagToDico </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tag.html">Tag</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36d8f37dddc87aa128ba55d90ab6cf85" name="a36d8f37dddc87aa128ba55d90ab6cf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d8f37dddc87aa128ba55d90ab6cf85">&#9670;&#160;</a></span>ajoutSymTagToDicoSynTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajoutSymTagToDicoSynTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tag.html">Tag</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute le tag fourni en argument au dictionnaire dicoSynTag de manière symétrique { tag : tag ;}. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>le tag à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le programme principal créant le dictionnaire dicoSynTag. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int = 0 </dd></dl>
+<p>L'iterateur permettant de manipuler le corpus de tag</p>
+
+</div>
+</div>
+<a id="a9f74e25ab00add235e9aa603c4e6e8be" name="a9f74e25ab00add235e9aa603c4e6e8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f74e25ab00add235e9aa603c4e6e8be">&#9670;&#160;</a></span>synAvecAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; string &gt; synAvecAPI </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>mot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie la liste des synonymes du mot fourni en argument. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>list&lt;string&gt; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a8a183bb6c49f27d5cae1339d57176856" name="a8a183bb6c49f27d5cae1339d57176856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a183bb6c49f27d5cae1339d57176856">&#9670;&#160;</a></span>CORPUS_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="class_tag.html">Tag</a>&gt; CORPUS_TAG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le corpus de tag définit par l'équipe. Il sera une constante une fois définie. </p>
+
+</div>
+</div>
+<a id="a4b4376f8f9dfcfc342afe2cfee153bab" name="a4b4376f8f9dfcfc342afe2cfee153bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4376f8f9dfcfc342afe2cfee153bab">&#9670;&#160;</a></span>dicoSynTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crea_dico_syn_tag_8cpp.html#afb8fe61b99ab5ec7af14c04309fb7b2f">DicoSynonymesTags</a> dicoSynTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le dictionnaire associant des synonymes de tags avec leur tag. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

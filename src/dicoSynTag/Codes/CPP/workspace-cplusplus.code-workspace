@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp",
+			"tuple": "cpp",
+			"list": "cpp",
+			"utility": "cpp",
+			"xiosbase": "cpp",
+			"xmemory": "cpp"
+		}
+	}
+}
