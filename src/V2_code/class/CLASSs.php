@@ -426,14 +426,28 @@ class Utilisateur {
         $listeMot = [];
         $motsX = new Mot();
 
-        while (true) {
-            $motsX->setLibelle(readline("Entrez un des mots pour décrire l'utilisateur (quit pour quitter): "));
+        // Récupération des mots du dictionnaire français
+        $listeMotFr = json_decode(file_get_contents('../motsFr.json'), true);
 
-            if ($motsX->getLibelle() == "quit") {
-                break;
-            } else {
-                $listeMot[] = $motsX;
-            }
+        // Affichage du formulaire
+        echo '<form action="" method="post">
+        <p>Veuillez saisir un mot ou une liste de mot qui vous caractérise : </p>
+        <input type="text" name="motSaisie"><br>
+        <input type="button" value="add">
+        <input type="submit">
+        </form>';
+
+        // Javascript pour la récupération des mots saisies
+        echo '<script>
+        function getMotSaisi(){
+            document.cookie="motSaisie=document.querySelector("[name="motSaisie"]").value";
+        }
+
+        document.querySelector("form button").addEventListener("click",getMotSaisi);
+        </script>';
+        
+        while (true) {
+            
         }
 
         $this->setMots($listeMot);
