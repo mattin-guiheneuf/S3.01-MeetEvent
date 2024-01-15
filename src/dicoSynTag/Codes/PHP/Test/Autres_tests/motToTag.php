@@ -331,11 +331,12 @@
             }
             
             if (array_key_exists($motCourant, $dicoSynTag)) {
-                if(is_array($dicoMotToTag[$motCourant])){
+                /* if(is_array($dicoMotToTag[$motCourant])){
                     array_push($dicoMotToTag[$motCourant],$dicoSynTag[$motCourant]);
                 }
                 else{$dicoMotToTag[$motCourant] = array($dicoSynTag[$motCourant]);}
-                
+                 */
+                $dicoMotToTag[$motCourant] = $dicoSynTag[$motCourant];
                 //echo "ajout type1";
                 $listeTag[] = $dicoSynTag[$motCourant];
             } else {
