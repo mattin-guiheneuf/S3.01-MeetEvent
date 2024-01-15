@@ -59,8 +59,9 @@ class Recommandation {
 
     // Fonction pour calculer la norme
     private function norm($vec) {
-        $varNorm = $acc + $val ** 2;
-        return sqrt(array_reduce($vec, $varNorm, 0));
+        return sqrt(array_reduce($vec, function ($acc, $val) {
+            return $acc + $val * $val;
+        }, 0));
     }
 
     // Fonction pour calculer la similarité cosinus

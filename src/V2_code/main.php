@@ -20,7 +20,7 @@
 //____________________________________________________________________________________//
 
 //On récupére les classes Evenement, Utilisateur, Recommandation, Tag et Mot 
-require_once 'CLASSs.php';
+require_once './class/CLASSs.php';
 
 // Lire le contenu JSON depuis le fichier
 $contenuJSON = file_get_contents('donnees.json');
@@ -34,13 +34,13 @@ $donnees = json_decode($contenuJSON, true);
 //____________________________________________________________________________________//
 //____________________________________________________________________________________//
 
-//Corpus de TAGs prédéfinis
+//Transformer les tags en objet Tag
 $liste = ["Tournoi", "Gastronomie", "Ambiance", "Bingo", "Atelier", "Film", "Formation", "Cinema", "musique", "Solidarite", "Detente", "Festival", "Loisir", 'Tennis', 'Finance', 'Charite', 'Jeu de Plateau', 'Chant', 'Paysages', 'jeux', 'Degustation', 'Concert', 'Banquet', 'Blues', 'Musique', 'Rencontre', 'Futsal', 'Pays Basque', 'Football', 'Marche', 'Amusement', 'Course', 'Investissement', 'Seniors', 'Balade', 'Pratique', 'Oenologie', 'Competition', 'culture', 'Jeu de Societe', 'voyage', 'Decouverte', 'Exposition', 'Loto', 'Amical', 'Cuisine', 'Musee', 'Terroir', 'Plein Air', 'Charcuterie', 'Vin', 'Cafe', 'Match', 'Buvette', 'Divertissement', 'Diner', 'Creation', 'Italie', 'Association', 'Randonnee', 'Echange', 'Partage', 'Discussion', 'Jazz', 'Aperitif', 'Omelette', 'Lecture', 'Jeu de societe', 'Activite physique', 'Fete', 'lecture', 'Entrainement', 'Hunger Games', 'Economie', 'Montagne', 'Convivialite', 'Caritatif', 'Viande', 'Festin', 'sport', 'Raquette', 'Culture', 'Plaisir', 'festival', 'Argent', 'Livre', 'Sport', 'jeu de cartes', 'Conference', 'Repas', 'Renforcement musculaire', 'Aventure', 'Nature', 'Soiree'];
-foreach($liste as $tag){
+foreach ($liste as $tag) {
     $list_tag_corpus[] = new Tag($tag);
 }
-
-$corpusTag = new Corpus(1,$list_tag_corpus);
+//Création du corpus de Tag
+$corpusTag = new Corpus(1, $list_tag_corpus);
 
 //Liste utilisé pour l'ACM
 $eventsAndUserPreferences = [];
@@ -61,7 +61,7 @@ $objetEvenement = [];
 echo "</br>" . "///////////////////////////////////////////" . "</br>" . "/// Evenement et leurs Tags ///" . "</br>" . "///////////////////////////////////////////" . "</br>";
 $n = 0;
 foreach ($donnees['evenements'] as $element) {
-    foreach ($element['tags'] as $tag){
+    foreach ($element['tags'] as $tag) {
         $list_tags[] = new Tag($tag);
     }
     $objetEvenement[] = new Evenement($element['id'], $list_tags);
@@ -96,81 +96,99 @@ foreach ($objetEvenement as $event) {
 
 //Récupérer la liste de tous les utilisateurs pour vérifier si celui saisi existe
 $listeIdUtilisateur = [];
-foreach($donnees['utilisateurs'] as $user){
+foreach ($donnees['utilisateurs'] as $user) {
     $listeIdUtilisateur[] = $user['id'];
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if (isset($_POST["idUser"]) && in_array($_POST["idUser"],$listeIdUtilisateur)) {
+    if (isset($_POST["idUser"]) && in_array($_POST["idUser"], $listeIdUtilisateur)) {
         $idUserConnected = $_POST["idUser"];
         //Affichage de l'utilisateur saisi et ses Tags
         echo "</br>" . "////////////////////////////////////////" . "</br>" . "/// Utilisateur et ses Tags ///" . "</br>" . "///////////////////////////////////////" . "</br>";
         echo "ID de l'utilisateur saisi : " . $idUserConnected . "</br>";
 
-        $action = isset($_POST['action']) ? $_POST['action'] : '';
+        // Logique pour afficher les événements recommandés
+        // Afficher les événements recommandés
 
+        //Dico avec tous les utilisateurs et leurs tags associés
+        $dicoUser = [];
+        foreach ($donnees['utilisateurs'] as $element) {
+            foreach ($element['tags'] as $tag) {
+                $list_tag_user[] = new Tag($tag);
+            }
+            $dicoUser[$element['id']] = $list_tag_user;
+            $list_tag_user = [];
+        }
+
+        //créer l'utilisateur connecté
+        $userConnected = new Utilisateur($idUserConnected, $dicoUser[$idUserConnected]);
+        echo $userConnected->toString("") . "</br>" . "</br>";
+
+        //On créé l'utilisateur à ajouter en dernier
+        $user = [];
+        foreach ($corpusTag->getMesTags() as $tagElement) {
+            $user[] = (int) in_array($tagElement, $userConnected->getTags());
+        }
+        //On ajoute l'utilisateur (avec valeurs binaires) à l'ensemble des évènements
+        $eventsAndUserPreferences[] = $user;
+
+
+
+        // Affichage du tableau eventsAndUserPreferences
+        afficherTabACM($corpusTag, $eventsAndUserPreferences, $objetEvenement, $userConnected);
+
+
+
+        // Resultat Recommandation
+        // Initialisation d'un objet Recommandation
+        $recommandation = new Recommandation($userConnected);
+        //Affichage similarités
+        echo "</br>" . "/////////////////////////////////////" . "</br>" . "/// Calcul de Similarité ///" . "</br>" . "////////////////////////////////////" . "</br>";
+        //Calcul de la suggestion entre tous les événements et l'utilisateur
+        $recommandation->calculerSuggestion($eventsAndUserPreferences, $objetEvenement);
+
+        //Affichage suggestion
+        echo "</br>" . "/////////////////////////" . "</br>" . "/// Suggestion ///" . "</br>" . "////////////////////////" . "</br>";
+        //Création de la liste des événements à suggérer en fonction de l'utilisateur
+        $listEventaRecommander = $userConnected->creerListeSuggest();
+        echo "Liste des événements à recommander:</br>" . PHP_EOL;
+        print_r($listEventaRecommander);
+
+    } elseif (isset($_POST["action"])) {
+        $action = $_POST['action'];
         // Inclure la logique pour chaque action
         switch ($action) {
             case 'creerUtilisateur':
                 // Logique pour créer un utilisateur
-                // Exécutez la méthode ajoutUtilisateur de votre fichier ajoutDonnee.js
-                echo '<script>ajoutUtilisateur();</script>';
+                echo '</br>';
+                echo '<hr>';
+                echo '<h1>Formulaire de création Utilisateur</h1>';
+                echo '<form action="traitement.php" method="post" style="margin:20px auto;">
+                <label for="nom" style="display:block;margin-bottom:8px;">Nom :</label>
+                <input type="text" id="nom" name="nom" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
+                <button type="submit" style="background-color: #4caf50;color: white;padding: 10px 15px;border: none;border-radius: 5px;cursor: pointer;">Sinscrire</button>
+                </form>';
                 break;
 
             case 'creerEvenement':
                 // Logique pour créer un événement
-                break;
+                echo '</br>';
+                echo '<hr>';
+                echo '<h1>Formulaire de création Evenement</h1>';
+                echo '<form action="traitement.php" method="post" style="margin:20px auto;">
+                <label for="titre" style="display:block;margin-bottom:8px;">Titre :</label>
+                <input type="text" id="titre" name="titre" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
 
-            case 'afficherRecommandations':
-                // Logique pour afficher les événements recommandés
-                // Afficher les événements recommandés
-
-                //Dico avec tous les utilisateurs et leurs tags associés
-                $dicoUser = [];
-                foreach ($donnees['utilisateurs'] as $element) {
-                    foreach($element['tags'] as $tag){
-                        $list_tag_user[] = new Tag($tag);
-                    }
-                    $dicoUser[$element['id']] = $list_tag_user;
-                    $list_tag_user=[];
-                }
+                <label for="date" style="display:block;margin-bottom:8px;">Date :</label>
+                <input type="text" id="date" name="date" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
                 
-                //créer l'utilisateur connecté
-                $userConnected = new Utilisateur($idUserConnected, $dicoUser[$idUserConnected]);
-                echo $userConnected->toString("") . "</br>" . "</br>";
-
-                //On créé l'utilisateur à ajouter en dernier
-                $user = [];
-                foreach ($corpusTag->getMesTags() as $tagElement) {
-                    $user[] = (int) in_array($tagElement, $userConnected->getTags());
-                }
-                //On ajoute l'utilisateur (avec valeurs binaires) à l'ensemble des évènements
-                $eventsAndUserPreferences[] = $user;
-
-
-
-                // Affichage du tableau eventsAndUserPreferences
-                afficherTabACM($corpusTag,$eventsAndUserPreferences,$objetEvenement,$userConnected);
-
-
-
-                // Resultat Recommandation
-                // Initialisation d'un objet Recommandation
-                $recommandation = new Recommandation($userConnected);
-                //Affichage similarités
-                echo "</br>" . "/////////////////////////////////////" . "</br>" . "/// Calcul de Similarité ///" . "</br>" . "////////////////////////////////////" . "</br>";
-                //Calcul de la suggestion entre tous les événements et l'utilisateur
-                $recommandation->calculerSuggestion($eventsAndUserPreferences, $objetEvenement);
-
-                //Affichage suggestion
-                echo "</br>" . "/////////////////////////" . "</br>" . "/// Suggestion ///" . "</br>" . "////////////////////////" . "</br>";
-                //Création de la liste des événements à suggérer en fonction de l'utilisateur
-                $listEventaRecommander = $userConnected->creerListeSuggest();
-                echo "Liste des événements à recommander:</br>" . PHP_EOL;
-                print_r($listEventaRecommander);
+                <label for="heure" style="display:block;margin-bottom:8px;">Heure :</label>
+                <input type="text" id="heure" name="heure" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
+                
+                <button type="submit" style="background-color: #4caf50;color: white;padding: 10px 15px;border: none;border-radius: 5px;cursor: pointer;">Sinscrire</button>
+                </form>';
                 break;
-
             default:
                 // Action non reconnue
                 break;
@@ -179,6 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "</br>ID de l'utilisateur inconnu.";
     }
 }
+
 
 
 
@@ -191,7 +210,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  * @param Utilisateur $userConnected Utilisateur connecté
  * @return void tableau ACM
  */
-function afficherTabACM(Corpus $corpusTag,array $eventsAndUserPreferences,array $objetEvenement,Utilisateur $userConnected) {
+function afficherTabACM(Corpus $corpusTag, array $eventsAndUserPreferences, array $objetEvenement, Utilisateur $userConnected)
+{
     // Affichage des étiquettes pour les colonnes (tags)
     echo "</br>///////////////////////////////////////////////////////////</br>/// Tableau eventsAndUserPreferences ///</br>///////////////////////////////////////////////////////////</br>";
     echo "<table border='1' style='text-align:center;font-weight:bold;'>";
@@ -199,15 +219,15 @@ function afficherTabACM(Corpus $corpusTag,array $eventsAndUserPreferences,array 
 
     // Afficher les étiquettes des colonnes (tags)
     foreach ($corpusTag->getMesTags() as $tag) {
-        echo "<td style='padding:10px;'>".$tag->getLibelle()."</td>";
+        echo "<td style='padding:10px;'>" . $tag->getLibelle() . "</td>";
     }
     //Afficher les étiquettes lignes et les valeurs binaire pour les événements
-    for ($i=0; $i < count($eventsAndUserPreferences)-1; $i++) { 
+    for ($i = 0; $i < count($eventsAndUserPreferences) - 1; $i++) {
         echo "<tr><td style='padding:10px;'>Evenement " . $objetEvenement[$i]->getId() . "</td>";
-        foreach($eventsAndUserPreferences[$i] as $valeur){
-            if($valeur == 0){
+        foreach ($eventsAndUserPreferences[$i] as $valeur) {
+            if ($valeur == 0) {
                 echo "<td style='background-color:red;'>$valeur</td>";
-            }else{
+            } else {
                 echo "<td style='background-color:green'>$valeur</td>";
             }
         }
@@ -216,13 +236,12 @@ function afficherTabACM(Corpus $corpusTag,array $eventsAndUserPreferences,array 
 
     //Afficher l'utilisateur
     echo "<tr><td style='padding:10px;'>Utilisateur " . $userConnected->getId() . "</td>";
-    foreach(end($eventsAndUserPreferences) as $valeur){
-        if($valeur == 0){
+    foreach (end($eventsAndUserPreferences) as $valeur) {
+        if ($valeur == 0) {
             echo "<td style='background-color:red;'>$valeur</td>";
-        }else{
+        } else {
             echo "<td style='background-color:green'>$valeur</td>";
         }
     }
     echo "</table>";
 }
-
