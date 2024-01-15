@@ -89,12 +89,19 @@ def main():
                             dicoMotToTag[motCourant] = ['Impossible à lier']
                     #break # À enlever car stop dès la première recherche correcte or mot peut être lié à plusierus tags
     
+    # Remise en forme de la liste de tags (retirer les doublons et sortir les infos des sous-listes)
+    realListeTag = []
+    for liste in listeTag :
+        for tag in liste :
+            if tag not in realListeTag :
+                realListeTag.append(tag)
+    
     print("DicoMotToTag :")
     print(dicoMotToTag)
     print("\nlisteTag :")
-    print(listeTag)
+    print(realListeTag)
     
-    return (dicoMotToTag,listeTag)
+    return (dicoMotToTag,realListeTag)
 
 
 # DÉFINITION DES SOUS-PROGRAMMES
