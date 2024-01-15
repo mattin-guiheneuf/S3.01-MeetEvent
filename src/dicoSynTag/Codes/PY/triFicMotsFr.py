@@ -38,3 +38,53 @@ test = checkAppartenance(listeMotTest, listeMotFr)
 listeMotsFrFromCsv = pd.read_csv(r"motsFrTries.csv",
                   sep=";",
                   encoding="latin_1")
+
+def saisieVerif():
+    global listeMotFr
+    saisie = input("Veuillez saisir un mot ou une liste de mot qui vous caractérise : ")
+    if ',' in saisie :
+        listeMot = saisie.split(',')
+        for i in range(0,len(listeMot)) :
+            listeMot[i] = listeMot[i].strip()
+        # Enlever les espaces vides si jamais
+        while('' in listeMot):
+            listeMot.remove('')
+        res = checkAppartenance(listeMot, listeMotFr)
+    elif ';' in saisie :
+        listeMot = saisie.split(';')
+        for i in range(0,len(listeMot)) :
+            listeMot[i] = listeMot[i].strip()
+        # Enlever les espaces vides si jamais
+        while('' in listeMot):
+            listeMot.remove('')
+        res = checkAppartenance(listeMot, listeMotFr)
+    else :
+        listeMot = saisie.split(' ')
+        for i in range(0,len(listeMot)) :
+            listeMot[i] = listeMot[i].strip()
+        # Enlever les espaces vides si jamais
+        while('' in listeMot):
+            listeMot.remove('')
+        # Check appartenance
+        res={}
+        passer = False
+        for i in range (0,len(listeMot)-1) : # Au cas où il y ai des mots composé
+            if passer :
+                passer = False
+                pass
+            else :
+                if listeMot[i]+" "+listeMot[i+1] in listeMotFr :
+                    res[listeMot[i]+" "+listeMot[i+1]] = True
+                    passer = True
+                elif listeMot[i] in listeMotFr :
+                    res[listeMot[i]] = True
+                else :
+                    res[listeMot[i]] = False
+        if listeMot[len(listeMot)-1] in listeMotFr : # vérif du dernier mot
+            res[listeMot[len(listeMot)-1]] = True
+        else :
+            res[listeMot[len(listeMot)-1]] = False
+        
+    print(listeMot)
+    
+    return res
