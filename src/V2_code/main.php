@@ -161,6 +161,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         switch ($action) {
             case 'creerUtilisateur':
                 // Logique pour créer un utilisateur
+                $nom = $_POST['nom'];
+                $user_courrant = new Utilisateur(10,[]);
+                //$user_courrant->definirDescription();
                 
                 break;
 
