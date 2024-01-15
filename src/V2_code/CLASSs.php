@@ -228,9 +228,10 @@ class Evenement {
     /**
      * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
      *
-     * @param string $tagASupprimer un tag à supprimer
+     * @param Tag $tagASupprimer un tag à supprimer
      */
-    public function supprimerTag(string $tagASupprimer) {
+    public function supprimerTag(Tag $tagASupprimer) {
+        
         $listeTag = $this->getTags();
         $indiceDuTag = array_search($tagASupprimer, $listeTag);
 
@@ -238,12 +239,12 @@ class Evenement {
         if ($indiceDuTag !== false) {
             // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
             array_splice($listeTag, $indiceDuTag, 1);
-            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' a été supprimé de la liste." . PHP_EOL;
 
             // Afficher la liste mise à jour
             echo implode(", ", $listeTag) . PHP_EOL;
         } else {
-            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' n'a pas été trouvé dans la liste." . PHP_EOL;
         }
 
         $this->setTags($listeTag);
@@ -268,7 +269,7 @@ class Evenement {
         $resultat .= "L'évènement " . $this->getId() . " a pour tag : ";
 
         foreach ($this->getTags() as $element) {
-            $resultat .= $element . " ";
+            $resultat .= $element->getLibelle() . " ";
         }
 
         return $resultat;
@@ -423,12 +424,12 @@ class Utilisateur {
      */
     public function definirDescription() {
         $listeMot = [];
-        $motsX = "";
+        $motsX = new Mot();
 
         while (true) {
-            $motsX = readline("Entrez un des mots pour décrire l'utilisateur (quit pour quitter): ");
+            $motsX->setLibelle(readline("Entrez un des mots pour décrire l'utilisateur (quit pour quitter): "));
 
-            if ($motsX == "quit") {
+            if ($motsX->getLibelle() == "quit") {
                 break;
             } else {
                 $listeMot[] = $motsX;
@@ -531,9 +532,9 @@ class Utilisateur {
     /**
      * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
      *
-     * @param string $tagASupprimer un tag à supprimer
+     * @param Tag $tagASupprimer un tag à supprimer
      */
-    public function supprimerTag(string $tagASupprimer) {
+    public function supprimerTag(Tag $tagASupprimer) {
         $listeTag = $this->getTags();
         $indiceDuTag = array_search($tagASupprimer, $listeTag);
 
@@ -541,12 +542,12 @@ class Utilisateur {
         if ($indiceDuTag !== false) {
             // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
             array_splice($listeTag, $indiceDuTag, 1);
-            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' a été supprimé de la liste." . PHP_EOL;
 
             // Afficher la liste mise à jour
             echo implode(", ", $listeTag) . PHP_EOL;
         } else {
-            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' n'a pas été trouvé dans la liste." . PHP_EOL;
         }
 
         $this->setTags($listeTag);
@@ -590,7 +591,7 @@ class Utilisateur {
         $resultat .= PHP_EOL . "L'utilisateur " . $this->getId() . " a pour tag : ";
 
         foreach ($this->getTags() as $element) {
-            $resultat .= $element . " ";
+            $resultat .= $element->getLibelle() . " ";
         }
 
         return $resultat;
@@ -613,6 +614,15 @@ class Tag {
      */
     private $libelle = "";
 
+    //CONSTRUCTEUR
+    /**
+     * Constructeur de la classe Tag.
+     *
+     * @param string $libelle Le libelle à attribuer au Tag créé.
+     */
+    public function __construct(string $libelle) {
+        $this->setLibelle($libelle);
+    }
     // GETTERS ET SETTERS
     //id
     /**
@@ -807,6 +817,60 @@ class Recommandation {
         }
             
     }
+}
+
+class Corpus {
+    // ATTRIBUTS
+    /**
+     * @var int 
+     */
+    private $id;
+
+    /**
+     * @var array 
+     */
+    private $mesTags = [];
+
+
+    // METHODES
+    // CONSTRUCTEUR
+    /**
+     * Constructeur de la classe Corpus
+     * @param int $id
+     * @param array $mesTags
+     */
+    public function __construct(int $id, array $mesTags){
+        $this->setId($id);
+        $this->setMesTags($mesTags);
+    }
+
+    // ENCAPSULATION
+    // id
+    /**
+     * Obtient l'id du Corpus
+     * @return int 
+     */
+    public function getId() {return $this->id;}
+
+    /**
+     * Attribut l'id au Corpus
+     * @param int
+     */
+    public function setId(int $id) {$this->id = $id;}
+
+
+    // id
+    /**
+     * Obtient les Tags du Corpus
+     * @return array 
+     */
+    public function getMesTags() {return $this->mesTags;}
+
+    /**
+     * Attribut les Tags au Corpus
+     * @param array
+     */
+    public function setMesTags(array $mesTags) {$this->mesTags = $mesTags;}
 }
 
 ?>

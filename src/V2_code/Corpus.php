@@ -53,7 +53,7 @@ class Corpus {
      * Attribut les Tags au Corpus
      * @param array
      */
-    public function setMesTags(int $mesTags) {$this->mesTags = $mesTags;}
+    public function setMesTags(array $mesTags) {$this->mesTags = $mesTags;}
 }   
 
 ?>

@@ -35,14 +35,20 @@ $donnees = json_decode($contenuJSON, true);
 //____________________________________________________________________________________//
 
 //Corpus de TAGs prédéfinis
-$corpusTag = ['Tournoi', 'Gastronomie', 'Ambiance', 'Bingo', 'Atelier', 'Film', 'Formation', 'Cinema', 'musique', 'Solidarite', 'Detente', 'Festival', 'Loisir', 'Tennis', 'Finance', 'Charite', 'Jeu de Plateau', 'Chant', 'Paysages', 'jeux', 'Degustation', 'Concert', 'Banquet', 'Blues', 'Musique', 'Rencontre', 'Futsal', 'Pays Basque', 'Football', 'Marche', 'Amusement', 'Course', 'Investissement', 'Seniors', 'Balade', 'Pratique', 'Oenologie', 'Competition', 'culture', 'Jeu de Societe', 'voyage', 'Decouverte', 'Exposition', 'Loto', 'Amical', 'Cuisine', 'Musee', 'Terroir', 'Plein Air', 'Charcuterie', 'Vin', 'Cafe', 'Match', 'Buvette', 'Divertissement', 'Diner', 'Creation', 'Italie', 'Association', 'Randonnee', 'Echange', 'Partage', 'Discussion', 'Jazz', 'Aperitif', 'Omelette', 'Lecture', 'Jeu de societe', 'Activite physique', 'Fete', 'lecture', 'Entrainement', 'Hunger Games', 'Economie', 'Montagne', 'Convivialite', 'Caritatif', 'Viande', 'Festin', 'sport', 'Raquette', 'Culture', 'Plaisir', 'festival', 'Argent', 'Livre', 'Sport', 'jeu de cartes', 'Conference', 'Repas', 'Renforcement musculaire', 'Aventure', 'Nature', 'Soiree'];
+$liste = ["Tournoi", "Gastronomie", "Ambiance", "Bingo", "Atelier", "Film", "Formation", "Cinema", "musique", "Solidarite", "Detente", "Festival", "Loisir", 'Tennis', 'Finance', 'Charite', 'Jeu de Plateau', 'Chant', 'Paysages', 'jeux', 'Degustation', 'Concert', 'Banquet', 'Blues', 'Musique', 'Rencontre', 'Futsal', 'Pays Basque', 'Football', 'Marche', 'Amusement', 'Course', 'Investissement', 'Seniors', 'Balade', 'Pratique', 'Oenologie', 'Competition', 'culture', 'Jeu de Societe', 'voyage', 'Decouverte', 'Exposition', 'Loto', 'Amical', 'Cuisine', 'Musee', 'Terroir', 'Plein Air', 'Charcuterie', 'Vin', 'Cafe', 'Match', 'Buvette', 'Divertissement', 'Diner', 'Creation', 'Italie', 'Association', 'Randonnee', 'Echange', 'Partage', 'Discussion', 'Jazz', 'Aperitif', 'Omelette', 'Lecture', 'Jeu de societe', 'Activite physique', 'Fete', 'lecture', 'Entrainement', 'Hunger Games', 'Economie', 'Montagne', 'Convivialite', 'Caritatif', 'Viande', 'Festin', 'sport', 'Raquette', 'Culture', 'Plaisir', 'festival', 'Argent', 'Livre', 'Sport', 'jeu de cartes', 'Conference', 'Repas', 'Renforcement musculaire', 'Aventure', 'Nature', 'Soiree'];
+foreach($liste as $tag){
+    $list_tag_corpus[] = new Tag($tag);
+}
+
+$corpusTag = new Corpus(1,$list_tag_corpus);
+
 //Liste utilisé pour l'ACM
 $eventsAndUserPreferences = [];
 
 //affichage du corpus de tag
 echo "/////////////////////////////" . "</br>" . "/// Corpus de Tag ///" . "</br>" . "/////////////////////////////" . "</br>";
-foreach ($corpusTag as $key => $tag) {
-    echo $tag . " ";
+foreach ($corpusTag->getMesTags() as $key => $tag) {
+    echo $tag->getLibelle() . " ";
 }
 echo "</br>";
 //-------------------------------------------------------------//
@@ -55,10 +61,14 @@ $objetEvenement = [];
 echo "</br>" . "///////////////////////////////////////////" . "</br>" . "/// Evenement et leurs Tags ///" . "</br>" . "///////////////////////////////////////////" . "</br>";
 $n = 0;
 foreach ($donnees['evenements'] as $element) {
-    $objetEvenement[] = new Evenement($element['id'], $element['tags']);
+    foreach ($element['tags'] as $tag){
+        $list_tags[] = new Tag($tag);
+    }
+    $objetEvenement[] = new Evenement($element['id'], $list_tags);
     //Afficher tous les événements avec leur tags pour la vérification
     echo $objetEvenement[$n]->toString("") . "</br>";
     $n++;
+    $list_tags = [];
 }
 
 // Transformation de tous les evenements
@@ -69,7 +79,7 @@ foreach ($objetEvenement as $event) {
     $objetEvenementElement = $event->getTags();
 
     //On regarde si ils sont present dans le corpus tag et on y attribut un 1 sinon 0
-    foreach ($corpusTag as $corpusTagElement) {
+    foreach ($corpusTag->getMesTags() as $corpusTagElement) {
         $eventsB[] = (int) in_array($corpusTagElement, $objetEvenementElement);
     }
     //On ajoute l'evenement (avec valeurs binaires) à l'ensemble des évènements
@@ -116,18 +126,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Logique pour afficher les événements recommandés
                 // Afficher les événements recommandés
 
-                //créer l'utilisateur connecté
+                //Dico avec tous les utilisateurs et leurs tags associés
                 $dicoUser = [];
                 foreach ($donnees['utilisateurs'] as $element) {
-                    $dicoUser[$element['id']] = $element['tags'];
+                    foreach($element['tags'] as $tag){
+                        $list_tag_user[] = new Tag($tag);
+                    }
+                    $dicoUser[$element['id']] = $list_tag_user;
+                    $list_tag_user=[];
                 }
-
+                
+                //créer l'utilisateur connecté
                 $userConnected = new Utilisateur($idUserConnected, $dicoUser[$idUserConnected]);
                 echo $userConnected->toString("") . "</br>" . "</br>";
 
                 //On créé l'utilisateur à ajouter en dernier
                 $user = [];
-                foreach ($corpusTag as $tagElement) {
+                foreach ($corpusTag->getMesTags() as $tagElement) {
                     $user[] = (int) in_array($tagElement, $userConnected->getTags());
                 }
                 //On ajoute l'utilisateur (avec valeurs binaires) à l'ensemble des évènements
@@ -170,21 +185,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 /**
  * Affichage du tableau de l'ACM pour vérification avec tous les événements et l'utilisateur désignés
  * 
- * @param array $corpusTag liste des Tags
+ * @param Corpus $corpusTag liste des Tags
  * @param array $eventsAndUserPreferences Liste avec tous les evenements et l'utilisateur en dernier
  * @param array $objetEvenement Liste avec tous les evenements (objets Evenement)
  * @param Utilisateur $userConnected Utilisateur connecté
  * @return void tableau ACM
  */
-function afficherTabACM(array $corpusTag,array $eventsAndUserPreferences,array $objetEvenement,Utilisateur $userConnected) {
+function afficherTabACM(Corpus $corpusTag,array $eventsAndUserPreferences,array $objetEvenement,Utilisateur $userConnected) {
     // Affichage des étiquettes pour les colonnes (tags)
     echo "</br>///////////////////////////////////////////////////////////</br>/// Tableau eventsAndUserPreferences ///</br>///////////////////////////////////////////////////////////</br>";
     echo "<table border='1' style='text-align:center;font-weight:bold;'>";
     echo "<tr><td></td>"; // Cellule vide pour l'angle supérieur gauche
 
     // Afficher les étiquettes des colonnes (tags)
-    foreach ($corpusTag as $tag) {
-        echo "<td style='padding:10px;'>$tag</td>";
+    foreach ($corpusTag->getMesTags() as $tag) {
+        echo "<td style='padding:10px;'>".$tag->getLibelle()."</td>";
     }
     //Afficher les étiquettes lignes et les valeurs binaire pour les événements
     for ($i=0; $i < count($eventsAndUserPreferences)-1; $i++) { 
