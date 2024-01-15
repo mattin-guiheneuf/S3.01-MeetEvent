@@ -1,0 +1,15 @@
+{
+    "female parent": [
+        "mother"
+    ],
+    "get": [
+        "mother",
+        "father"
+    ],
+    "pa": [
+        "pop",
+        [
+            "bulge"
+        ]
+    ]
+}
