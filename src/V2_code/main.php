@@ -161,33 +161,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         switch ($action) {
             case 'creerUtilisateur':
                 // Logique pour créer un utilisateur
-                echo '</br>';
-                echo '<hr>';
-                echo '<h1>Formulaire de création Utilisateur</h1>';
-                echo '<form action="traitement.php" method="post" style="margin:20px auto;">
-                <label for="nom" style="display:block;margin-bottom:8px;">Nom :</label>
-                <input type="text" id="nom" name="nom" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
-                <button type="submit" style="background-color: #4caf50;color: white;padding: 10px 15px;border: none;border-radius: 5px;cursor: pointer;">Sinscrire</button>
-                </form>';
+                
                 break;
 
             case 'creerEvenement':
                 // Logique pour créer un événement
-                echo '</br>';
-                echo '<hr>';
-                echo '<h1>Formulaire de création Evenement</h1>';
-                echo '<form action="traitement.php" method="post" style="margin:20px auto;">
-                <label for="titre" style="display:block;margin-bottom:8px;">Titre :</label>
-                <input type="text" id="titre" name="titre" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
-
-                <label for="date" style="display:block;margin-bottom:8px;">Date :</label>
-                <input type="text" id="date" name="date" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
                 
-                <label for="heure" style="display:block;margin-bottom:8px;">Heure :</label>
-                <input type="text" id="heure" name="heure" required style="width:100%;padding:8px;margin-bottom:15px;box-sizing:border-box;">
-                
-                <button type="submit" style="background-color: #4caf50;color: white;padding: 10px 15px;border: none;border-radius: 5px;cursor: pointer;">Sinscrire</button>
-                </form>';
                 break;
             default:
                 // Action non reconnue

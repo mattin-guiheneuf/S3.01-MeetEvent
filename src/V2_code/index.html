@@ -51,6 +51,16 @@
         h2{
             color: #45a049;
         }
+        label{
+            display:block;
+            margin-bottom:8px;
+        }
+        input{
+            width:100%;
+            padding:8px;
+            margin-bottom:15px;
+            box-sizing:border-box;
+        }
     </style>
 </head>
 
@@ -68,12 +78,23 @@
     <h2>Créer un Utilisateur</h2>
     <!-- Formulaire avec champ pour saisir l'inscription d'un utilisateur -->
     <form action="main.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
         <button type="submit" name="action" value="creerUtilisateur">Création d'un utilisateur</button>
     </form>
     <hr>
     <h2>Créer un Evenement</h2>
     <!-- Formulaire avec champ pour saisir l'inscription d'un utilisateur -->
     <form action="main.php" method="post">
+        <label for="titre">Titre :</label>
+        <input type="text" id="titre" name="titre" required >
+
+        <label for="date">Date :</label>
+        <input type="text" id="date" name="date" required >
+        
+        <label for="heure">Heure :</label>
+        <input type="text" id="heure" name="heure" required >
+        
         <button type="submit" name="action" value="creerEvenement">Création d'un événement</button>
     </form>
 
