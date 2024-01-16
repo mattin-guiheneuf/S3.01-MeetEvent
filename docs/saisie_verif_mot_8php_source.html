@@ -77,14 +77,14 @@ $(function() {
   <div class="headertitle"><div class="title">saisieVerifMot.php</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<a href="saisie_verif_mot_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Fonction de saisieVerif</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>$listeMotFr = json_decode(file_get_contents(<span class="stringliteral">&#39;./motsFrTries.json&#39;</span>), <span class="keyword">true</span>); <span class="comment">// récupération liste mots français</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="saisie_verif_mot_8php.html#ae1c2a3a0bb4a6cf8376029da5341ca61">    5</a></span><a class="code hl_variable" href="saisie_verif_mot_8php.html#ae1c2a3a0bb4a6cf8376029da5341ca61">$listeMotFr</a> = json_decode(file_get_contents(<span class="stringliteral">&#39;./motsFrTries.json&#39;</span>), <span class="keyword">true</span>); <span class="comment">// récupération liste mots français</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">function</span> saisieVerif() {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    global $listeMotFr; <span class="comment">// Récupération de la variable</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="saisie_verif_mot_8php.html#a73cb097f17bc9e9c947157d28ac7b8c0">    7</a></span><span class="keyword">function</span> <a class="code hl_function" href="saisie_verif_mot_8php.html#a73cb097f17bc9e9c947157d28ac7b8c0">saisieVerif</a>() {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    global <a class="code hl_variable" href="saisie_verif_mot_8php.html#ae1c2a3a0bb4a6cf8376029da5341ca61">$listeMotFr</a>; <span class="comment">// Récupération de la variable</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    $saisie = $_GET[<span class="stringliteral">&#39;listeMotsSaisies&#39;</span>]; <span class="comment">// Récupération des mots saisies</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// Pas nécessaires si un seul mot saisie à chaque fois (un par un quoi)</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">/* if (strpos($saisie, &#39;,&#39;) !== false) {</span></div>
@@ -149,16 +149,16 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    print_r($res); */</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// On regarde si le mot est présent dans les mots du dico français</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    $res = in_array(trim($saisie),$listeMotFr); <span class="comment">// La fonction trim permet d&#39;enlever les espaces en début et fin de chaîne</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    $res = in_array(trim($saisie),<a class="code hl_variable" href="saisie_verif_mot_8php.html#ae1c2a3a0bb4a6cf8376029da5341ca61">$listeMotFr</a>); <span class="comment">// La fonction trim permet d&#39;enlever les espaces en début et fin de chaîne</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// On renvoie le résultat</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> $res;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordflow">if</span> (isset($_GET[<span class="stringliteral">&#39;listeMotsSaisies&#39;</span>])) {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    saisieVerif();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_function" href="saisie_verif_mot_8php.html#a73cb097f17bc9e9c947157d28ac7b8c0">saisieVerif</a>();</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="saisie_verif_mot_8php.html#a30363a54c5b37d1754e54f31e78d795c">   82</a></span><span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    echo <span class="stringliteral">&#39;&lt;form action=&quot;./saisieVerifMot.php&quot; method=&quot;get&quot;&gt;</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="stringliteral">    Veuillez saisir un mot ou une liste de mot qui vous caractérise :  &lt;input type=&quot;text&quot; name=&quot;listeMotsSaisies&quot;&gt;&lt;br&gt;</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="stringliteral">&lt;input type=&quot;submit&quot;&gt;</span></div>
@@ -168,6 +168,8 @@ $(function() {
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="asaisie_verif_mot_8php_html_a73cb097f17bc9e9c947157d28ac7b8c0"><div class="ttname"><a href="saisie_verif_mot_8php.html#a73cb097f17bc9e9c947157d28ac7b8c0">saisieVerif</a></div><div class="ttdeci">saisieVerif()</div><div class="ttdef"><b>Definition</b> <a href="saisie_verif_mot_8php_source.html#l00007">saisieVerifMot.php:7</a></div></div>
+<div class="ttc" id="asaisie_verif_mot_8php_html_ae1c2a3a0bb4a6cf8376029da5341ca61"><div class="ttname"><a href="saisie_verif_mot_8php.html#ae1c2a3a0bb4a6cf8376029da5341ca61">$listeMotFr</a></div><div class="ttdeci">$listeMotFr</div><div class="ttdef"><b>Definition</b> <a href="saisie_verif_mot_8php_source.html#l00005">saisieVerifMot.php:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

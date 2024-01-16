@@ -1,22 +1,30 @@
 <?php
 
-
+/**
+ * @file DicoSyntags.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe DicoSyntags
+ * @details Contient la structure de la classe DicoSyntags
+ * @version 1.0
+ */
 
 /**
  * Cette classe sera un singleton instancié dans le fichier main.php
  */
 
 class DicoSynTags {
-    // ATTRIBUTS
+    /** Attributs */
     /**
-     * @var array Le dictionnaire associant des synonymes de tags à leurs tags
+     * @brief Le dictionnaire associant des synonymes de tags à leurs tags
+     * @var array
      */
     private $dico = array();
 
-    // CONSTRUCTEUR
+
+    /** Constructeur */
     /**
-     * Constructeur de la classe DicoSynTags
-     * @param Corpus le corpus de tags défini au préalable (singleton)
+     * @brief Constructeur de la classe DicoSyntags
+     * @param Corpus 
      */
     public function __construct(Corpus $corpus_tag){
         // Lire le contenu JSON depuis le fichier dicoSynTag
@@ -29,10 +37,11 @@ class DicoSynTags {
         }
     }
 
-    // MÉTHODES
 
+    /** Méthodes */
     /**
-     * Fonction permettant de peupler le DicoSynTags
+     * @brief Fonction permettant de peupler le DicoSynTags
+     * @param Corpus
      */
     private function determinerSynonymes($CORPUS_TAG) {
         // VARIABLES
@@ -70,16 +79,21 @@ class DicoSynTags {
         $this->$dico = $dicoSynTag;
     }
 
-    // MÉTHODES D'ENCAPSULATION
+
+    /** Encapsulation */
+    /** $DicoSynTag */
     /**
-     * @param array[out] Le dictionnaire associant des Synonyme à leurs Tag
+     * @brief Obtient le dictionnaire des synonymes
+     * @return array
      */
     public function getDicoSynTag() {
         return $this->$dico;
     }
 
+    
     /**
-     * @param array[in] Le nouveau dictionnaire associant des Synonyme à des Tag
+     * @brief Attribut le nouveau dictionnaire associant des Synonyme à des Tag
+     * @param array
      */
     public function setDicoSynTag(array $newDico) {
         $this->$dico = $newDico;

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linktosuggest_0',['linkToSuggest',['../class_utilisateur.html#a4cfc7b2760ec362c487e99a4e71d6df0',1,'Utilisateur']]]
+  ['extraire_5ftags_5funiques_0',['extraire_tags_uniques',['../namespace_faire___corpus.html#aa2aeeaf4b949478a42e9dea753e2b685',1,'Faire_Corpus']]]
 ];

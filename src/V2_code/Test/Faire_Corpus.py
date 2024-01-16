@@ -415,25 +415,32 @@ import random
 
 # Corpus de tags actuel global (à remplacer par votre propre corpus)
 corpus_tags = [
-    "musique", "voyage", "lecture", "jeux",
-    "festival", "sport", "Chant", "Culture",
-    "Concert", "Repas", "Charcuterie", "Viande",
-    "Aperitif", "Vin", "Banquet", "Festin",
-    "Association", "Ambiance", "Echange", "Lecture",
-    "Discussion", "Cafe", "Partage", "Rencontre",
-    "Livre", "Renforcement musculaire", "Activite physique",
-    "Seniors", "Course", "Entrainement", "Randonnee",
-    "Marche", "Balade", "Football", "Match", "Amical",
-    "Plaisir", "Jeu de societe", "Amusement", "Convivialite",
-    "culture", "jeu de cartes", "Jeu de Plateau", "Film",
-    "Hunger Games", "Jazz", "Blues", "Soiree", "Detente",
-    "Nature", "Paysages", "Cuisine", "Italie", "Atelier",
-    "Decouverte", "Pratique", "Creation", "Gastronomie",
-    "Oenologie", "Degustation", "Exposition", "Musee",
-    "Diner", "Caritatif", "Solidarite", "Fete", "Omelette",
-    "Terroir", "Buvette", "Tennis", "Raquette", "Loisir",
-    "Competition", "Tournoi", "Plein Air", "Divertissement",
-    "Finance", "Argent", "Investissement", "Formation"
+    "Cuisine", "Saveur", "Recette", "Ingrédients", "Art", "Création",
+    "Musique", "Dessin", "Sport", "Entraînement", "Socialisation", "Échange",
+    "Discussion", "Méditation", "Détente", "Lecture", "Écoute","Rire",
+    "Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
+    "Apprentissage", "Enseignement", "Travail", "Créativité", "Construction",
+    "Réparation", "Jardinage", "Photographie", "Film", "Danse", "Chant", 
+    "Instrument", "Collection", "Analyse", "Réflexion",
+    "Résolution", "Engagement", "Volontariat", "Organisation",
+    "Événement", "Défense", "Exercice", "Expérience", "Test"
+    "Développement", "Amélioration", "Innovation", "Économie",
+    "Investissement", "Gestion", "Partage", "Influence", "Motivation",
+    "Inspiration", "Amusement", "Détente", "Profiter",
+    "Célébration", "Changement", "Réflexion", "Créativité",
+    "Imagination", "Réflexion", "Exploration", "Jeux", "Festival",
+    "Culture", "Concert", "Repas", "Aperitif", "Vin", "Banquet",
+    "Association", "Cafe", "Rencontre", "Renforcement musculaire",
+    "Activite physique", "Course", "Entrainement", "Randonnee",
+    "Marche", "Balade", "Football", "Amical",
+    "Plaisir", "Jeu de societe", "Convivialite",
+    "Jeu de cartes", "Jeu de Plateau", "Equitation"
+    "Soiree", "Nature", "Paysages", "Atelier", 
+    "Gastronomie", "Oenologie", "Degustation", "Exposition", "Musee",
+    "Diner", "Caritatif", "Solidarite", "Fete", "Handball",
+    "Buvette", "Tennis", "Raquette", "Loisir", "Golf", "Judo",
+    "Competition", "Tournoi", "Peinture", "Cinema", "Montagne"
+    "Finance", "Formation", "Nourriture", "Basket", "Rugby", "Natation"
 ]
 
 # Fonction pour créer un utilisateur au hasard avec des mots du corpus de tags
