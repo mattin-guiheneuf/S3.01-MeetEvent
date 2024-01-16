@@ -137,15 +137,18 @@ class Utilisateur {
      *
      * @return array $listeTags une liste de Tag représentant les Tags de l'utilisateur.
      */
-    private function definirTags() {
+    private function definirTags(DicoSynTags $dicoSynTags) {
         // VARIABLES
         $dicoMotToTag = array(); // Le résultat de la fonction avec les étapes par lesquelles on passe pour arriver aux tags
         $listeTag = array(); // Le résultat de la fonction avec la liste des tags
         $listeMot = $this->getMots();
-        $dicoSynTag = new DicoSynTags();
+        //$dicoSynTag = new DicoSynTags();
+        $utilise = new ApiSynonyme();
+        $dicoSynTag = $dicoSynTags->getDicoSynTag();
 
         // TRAITEMENTS
-        foreach ($listeMot as $motCourant) { // Pour chaque mot de la liste
+        foreach ($listeMot as $motCrt) { // Pour chaque mot de la liste
+            $motCourant = $motCrt->getLibelle();
             // Vérif mot en double
             if (array_key_exists($motCourant, $dicoMotToTag)) { // Si le mot est déjà présent dans le dico
                 echo $motCourant . " déjà présent dans le dicoMotToTag<br>"; // C'est que le mot est en double
@@ -159,7 +162,7 @@ class Utilisateur {
             }
             else // Sinon enrichissement de 1 degré à partir des mots
             {
-                $listeSynMot = synAvecAPI($motCourant)['synonyms']; // Appel de l'API pour récupérer les synonymes du mot courant
+                $listeSynMot = $utilise->utiliserApiSyn(new Mot($motCourant))/* ['synonyms'] */; // Appel de l'API pour récupérer les synonymes du mot courant
                 foreach ($listeSynMot as $synMotCourant) { // Pour chaque synonyme du motCourant
                     if (array_key_exists($synMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
@@ -169,7 +172,7 @@ class Utilisateur {
                     else // Sinon enrichissement de 1 degré supplémentaire (degré 2) à partir des tags
                     {
                         foreach ($dicoSynTag as $syn => $tag) { // Pour chaque synonyme (clé) du dicoSynTag
-                            $listeSynSynDicoSynTag = synAvecAPI($syn)['synonyms']; // Appel de l'API pour récupérer les synonymes des clés du dicoSynTag
+                            $listeSynSynDicoSynTag = $utilise->utiliserApiSyn(new Mot($syn))/* ['synonyms'] */; // Appel de l'API pour récupérer les synonymes des clés du dicoSynTag
                             if (in_array($motCourant, $listeSynSynDicoSynTag)) { // Vérif présence du mot de base dans les synonymes de synonymes de tag
                                 $dicoMotToTag[$motCourant] = array($syn, $dicoSynTag[$syn]); // Si présent, ajout dans le dicoMotToTag en précisant par quel syn on fait le lien
                                 if (!in_array($dicoSynTag[$syn], $listeTag)) { // Vérif que le tag n'est pas déjà présent dans la liste de tags
@@ -214,7 +217,7 @@ class Utilisateur {
      * METHODE SPECIFIQUE : Attribuer la liste de Mots à un utilisateur en fonction des mots saisis.
      *
      */
-    public function definirDescription() {
+    public function definirDescription(DicoSynTags $dicoSynTag) {
 
         $motsLib = array();
         foreach ($this->getMots() as $mot) {
@@ -250,7 +253,7 @@ class Utilisateur {
         }
         echo "<br>-----------------------------------";
 
-        $this->definirTags();
+        $this->definirTags($dicoSynTag);
     }
 
     /**
