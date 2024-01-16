@@ -1,186 +1,195 @@
 <?php
 
 /**
- * Classe représentant un événement.
+ * @file Evenement.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Evenement
+ * @details Contient la structure de la classe Evenement ayant un id, un titre, une date, une heure, un lieu, une liste de mots et une liste de tags
+ * @version 1.0
  */
 class Evenement {
-    //ATTRIBUTS
 
+    /** Attributs */
     /**
-     * @var int L'id de l'evenement.
+     * @brief L'identifiant de l'évènement
+     * @var int 
      */
     private $id;
 
     /**
+     * @brief Le titre de l'évènement
      * @var string Le titre de l'evenement.
      */
     private $titre = "";
 
     /**
+     * @brief La date de l'évènement
      * @var string La date prévu de l'evenement.
      */
     private $date = "";
 
     /**
+     * @brief L'heure de l'évènement
      * @var string Le heure de début de l'evenement.
      */
     private $heure = "";
 
     /**
+     * @brief Le lieu de l'évènement
      * @var string Le lieu de l'evenement.
      */
     private $lieu = "";
 
     /**
+     * @brief La liste de mots saisie par l'organisateur pour l'évènement
      * @var array Liste de mots (saisis) de l'evenement.
      */
     private $mesMots = [];
 
     /**
+     * @brief La liste de tags attribuée à l'évènement
      * @var array Liste de Tags (attribués) de l'evenement.
      */
     private $desTags = [];
 
 
-    //METHODES
-    //CONSTRUCTEUR
-
+    /** Constructeur */
     /**
-     * Constructeur de la classe Evenement.
-     *
-     * @param int $id L'id à attribuer à l'événement créé.
-     * @param array $tags Tableau de Tags à attribuer à l'événement créé.
+     * @brief Constructeur de la classe Evenement
+     * @param int 
+     * @param array
      */
     public function __construct(int $id, array $tags) {
         $this->setId($id);
         $this->setTags($tags);
     }
-    //ENCAPSULATION (get&set)
-    //id
+
+
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id de l'événement.
-     *
-     * @return int ID.
+     * @brief Obtient l'identifiant de l'évènement
+     * @return int $id Identifiant de l'évènement
      */
     public function getId() {
         return $this->id;
     }
+
     /**
-     * Attribuer l'id à un évenement.
-     *
-     * @param int $id un id représentant l'id de l'événement.
+     * @brief Attribut l'identifiant à l'évènement
+     * @param int [in] Identifiant de l'évènement
      */
     public function setId(int $id) {
         $this->id = $id;
     }
-    //titre
+
+    /** $titre */
     /**
-     * Obtient l'id de l'événement.
-     *
-     * @return string ID.
+     * @brief Obtient le titre de l'évènement
+     * @return string $titre Titre de l'évènement
      */
     public function getTitre() {
         return $this->titre;
     }
+
     /**
-     * Attribuer l'id à un évenement.
-     *
-     * @param string $id un id représentant l'id de l'événement.
+     * @brief Attribut le titre à l'évènement
+     * @param string [in] Titre de l'évènement
      */
     public function setTitre(string $titre) {
         $this->titre = $titre;
     }
-    //titre
+
+    /** $date */
     /**
-     * Obtient l'id de l'événement.
-     *
-     * @return string ID.
+     * @brief Obtient la date de l'évènement
+     * @return string $date Date de l'évènement
      */
     public function getDate() {
         return $this->date;
     }
+
     /**
-     * Attribuer l'id à un évenement.
-     *
-     * @param string $id un id représentant l'id de l'événement.
+     * @brief Attribut la date à l'évènement
+     * @param string [in] Date de l'évènement
      */
     public function setDate(string $date) {
         $this->date = $date;
     }
-    //titre
+
+    /** $heure */
     /**
-     * Obtient l'id de l'événement.
-     *
-     * @return string ID.
+     * @brief Obtient l'heure de l'évènement
+     * @return string $heure Heure de l'évènement
      */
     public function getHeure() {
         return $this->heure;
     }
+
     /**
-     * Attribuer l'id à un évenement.
-     *
-     * @param string $id un id représentant l'id de l'événement.
+     * @brief Attribut l'heure à l'évènement
+     * @param string [in] Heure de l'évènement
      */
     public function setHeure(string $heure) {
         $this->heure = $heure;
     }
-    //titre
+
+    /** $lieu */
     /**
-     * Obtient l'id de l'événement.
-     *
-     * @return string ID.
+     * @brief Obtient le lieu de l'évènement
+     * @return string $lieu Lieu de l'évènement
      */
     public function getLieu() {
         return $this->lieu;
     }
+
     /**
-     * Attribuer l'id à un évenement.
-     *
-     * @param string $id un id représentant l'id de l'événement.
+     * @brief Attribut le lieu à l'évènement
+     * @param string [in] Lieu de l'évènement
      */
     public function setLieu(string $lieu) {
         $this->lieu = $lieu;
     }
-    //tags
+    
+    /** $desTags */
     /**
-     * Obtient la liste de Tag de l'événement.
-     *
-     * @return array Tags.
+     * @brief Obtient les tags de l'évènement
+     * @return array $desTags Tags de l'évènement
      */
     public function getTags() {
         return $this->desTags;
     }
+
     /**
-     * Attribuer la liste de Tags à un évenement.
-     *
-     * @param array $tags une liste de Tag représentant les Tags de l'événement.
+     * @brief Attribut les tags à l'évènement
+     * @param array [in] Tags de l'évènement
      */
     public function setTags(array $tags) {
         $this->desTags = $tags;
     }
-    //mots
+
+    /** $mesMots */
     /**
-     * Obtient la liste de Mot de l'événement.
-     *
-     * @return array Mots.
+     * @brief Obtient les mots de l'évènement
+     * @return array $mesMots Mots de l'évènement
      */
     public function getMots() {
         return $this->mesMots;
     }
+
     /**
-     * Attribuer la liste de Tags à un évenement.
-     *
-     * @param array $tags une liste de Mot représentant les Mots de l'événement.
+     * @brief Attribut les mots à l'évènement
+     * @param array [in] Mots de l'évènement
      */
     public function setMots(array $mots) {
         $this->mesMots = $mots;
     }
 
-    //METHODES SPECIFIQUES
+    
+    /** Methode */
     /**
-     * METHODE SPECIFIQUE : Attribuer la liste de Tags à un évenement en fonction des mots saisis.
-     *
-     * @return array $listeTags une liste de Tag représentant les Tags de l'événement.
+     * @brief Attribuer la liste de Tags à un évenement en fonction des mots saisis.
+     * @return array
      */
     private function definirTags() {
         $listeTags = array();
@@ -188,9 +197,9 @@ class Evenement {
         return $listeTags;
     }
 
+    
     /**
-     * METHODE SPECIFIQUE : Attribuer la liste de Mots à un évenement en fonction des mots saisis.
-     *
+     * @brief Attribuer la liste de Mots à un évenement en fonction des mots saisis.
      */
     public function definirDescription() {
 
@@ -235,8 +244,7 @@ class Evenement {
     }
 
     /**
-     * METHODE SPECIFIQUE : Modifier les Mots saisis.
-     *
+     * @brief Modifier les Mots saisis.
      */
     public function modifierDescription() {
         $listeMot = $this->getTags();
@@ -282,10 +290,10 @@ class Evenement {
         $this->definirTags();
     }
 
+    
     /**
-     * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
-     *
-     * @param Tag $tagASupprimer un tag à supprimer
+     * @brief Supprimer des Tags qui sont attribués à l'utilisateur.
+     * @param Tag
      */
     public function supprimerTag(Tag $tagASupprimer) {
         
@@ -314,12 +322,11 @@ class Evenement {
     }
 
 
-    //METHODES USUELLES
+    
     /**
-     * METHODE SPECIFIQUE : Afficher la description de l'Evenement.
-     *
-     * @param string message de base à ajouter a la description de la class Evenement
-     * @return string $resultat une chaine de caractere représentant la description de l'événement.
+     * @brief Afficher la description de l'Evenement.
+     * @param string
+     * @return string
      */
     public function toString(string $message) {
         $resultat = $message;

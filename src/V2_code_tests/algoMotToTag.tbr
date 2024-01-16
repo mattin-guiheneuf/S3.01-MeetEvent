@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>motToTag</nom>
+  <date_creation>16/1/2024 16:36</date_creation>
+  <Elements>
+    <Action>
+      <Position>828;30</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>listeMot, dicoSynTag</PreAssertion>
+      <PostAssertion>dicoMotToTag, realListeTag</PostAssertion>
+      <Titre>MotToTag</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>290;149</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>∅</PreAssertion>
+          <PostAssertion>∅</PostAssertion>
+          <Titre>Traitement sur chaque mot de listeMot, ajout des mots au dicoMotToTag en les reliant au dicoSynTag</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>475.5;254.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour motCourant dans listeMot</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>670;333</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>motCourant, dicoSynTag, dicoMotToTag, listeTag</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Vérification de la présence du motCourant dans les clés du dicoSynTag</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>824.5;461</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>motCourant est présent dans les clés du dicoSynTag</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>278;670</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>motCourant, dicoSynTag, dicoMotToTag, listeTag</PreAssertion>
+                              <PostAssertion>dicoMotToTag, ListeTag</PostAssertion>
+                              <Titre>On ajoute et enregistre le(s) tag(s) lié(s) au mot</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>11;804</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>motCourant, dicoMotToTag, dicoSynTag</PreAssertion>
+                                  <PostAssertion>dicoMotToTag</PostAssertion>
+                                  <Titre>dicoMotToTag à la clé motCourant ← valeur associée à la clé motCourant de dicoSynTag</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>417;920</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>motCourant, dicoSynTag, listeTag</PreAssertion>
+                                  <PostAssertion>listeTag</PostAssertion>
+                                  <Titre>On ajoute la valeur associée à la clé motCourant de dicoSynTag à listeTag</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1020;567</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>∅</PreAssertion>
+                              <PostAssertion>∅</PostAssertion>
+                              <Titre>Enrichissement de 1 degré à partir du motCourant (on regarde si les synonymes du motCourant peuvent être relié au dicoSynTag)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1152;673</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>∅</PreAssertion>
+                                  <PostAssertion>∅</PostAssertion>
+                                  <Titre>On récupére les synonymes du motCourant</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>5;344</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>motCourant, dicoMotToTag</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Vérification de la présence du motCourant dans les clés du dicoMotToTag (mot en double)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>241.5;448</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>motCourant présent dans les clés du dicoMotToTag</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>315;551</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>∅</PreAssertion>
+                              <PostAssertion>∅</PostAssertion>
+                              <Titre>On passe à l'itération suivante</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1310;164</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>∅</PreAssertion>
+          <PostAssertion>∅</PostAssertion>
+          <Titre>Épuration de la liste de tags</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>1588;171</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>∅</PreAssertion>
+          <PostAssertion>∅</PostAssertion>
+          <Titre>Encodage des données</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>255;16</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>∅</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>?</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>

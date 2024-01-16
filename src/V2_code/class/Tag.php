@@ -1,63 +1,65 @@
 <?php
 
 /**
- * Classe représentant un Tag.
+ * @file Tag.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Tag
+ * @details Contient la structure de la classe Tag ayant un id et un libellé
+ * @version 1.0
  */
 class Tag {
-    // ATTRIBUTS
-
+    /** Attributs */
     /**
-     * @var int l'id du Tag
+     * @brief L'identifiant du tag
+     * @var int 
      */
     private $id;
 
     /**
-     * @var string le libelle du Tag
+     * @brief Le libellé du tag
+     * @var string 
      */
     private $libelle = "";
 
-    //CONSTRUCTEUR
+    /** Constructeur */
     /**
-     * Constructeur de la classe Tag.
-     *
-     * @param string $libelle Le libelle à attribuer au Tag créé.
+     * @brief Constructeur de la classe Tag
+     * @param string
      */
     public function __construct(string $libelle) {
         $this->setLibelle($libelle);
     }
-    // GETTERS ET SETTERS
-    //id
+    
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id du Tag.
-     *
-     * @return int ID.
+     * @brief Obtient l'identifiant du tag
+     * @return int $id Identifiant du tag
      */
     public function getId() {
         return $this->id;
     }
+    
     /**
-     * Attribuer l'id à un Tag.
-     *
-     * @param int $id un id représentant l'id du Tag.
+     * @brief Attribut l'identifiant au tag
+     * @param int [in] Identifiant du tag
      */
     public function setId(int $id) {
         $this->id = $id;
     }
 
-    //libelle
+    /** $libelle */
     /**
-     * Obtient le libelle du Tag.
-     *
-     * @return string Libelle.
+     * @brief Obtient le libellé du tag
+     * @return string $libelle Libellé du tag
      */
     public function getLibelle() {
         return $this->libelle;
     }
 
     /**
-     * Attribuer le libelle à un Tag.
-     *
-     * @param string $libelle un libelle représentant le libelle du Tag.
+     * @brief Attribut le libellé au tag
+     * @param string [in] Libellé du tag
      */
     public function setLibelle(string $libelle) {
         $this->libelle = $libelle;

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MeetEvent:  Fichier source de src/V2_code/class/Recommandation.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MeetEvent<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">L&#39;algorithme complexe de notre application web Meet Event</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b96de872ff274eae7616eaa26057a54b.html">V2_code</a></li><li class="navelem"><a class="el" href="dir_1f63ccd069d9912af89ce9a10354de3b.html">class</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Recommandation.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_recommandation_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_recommandation.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_recommandation.html">Recommandation</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">private</span> $monUtilisateur = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> $suggestion = array();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">   29</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">__construct</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $monUtilisateur = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        $this-&gt;linkToUser($monUtilisateur);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $this-&gt;monUtilisateur-&gt;linkToSuggest($this);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">getSuggestion</a>() {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;suggestion;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keyword">function</span> setSuggestion(<a class="code hl_class" href="class_evenement.html">Evenement</a> $evenement,<span class="keywordtype">float</span> $pourcentage){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;suggestion[] = array(<span class="stringliteral">&#39;evenement&#39;</span> =&gt; $evenement-&gt;<a class="code hl_function" href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">getId</a>(), <span class="stringliteral">&#39;pourcentage&#39;</span> =&gt; $pourcentage);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">   58</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">getUtilisateur</a>(){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;monUtilisateur;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;monUtilisateur = $user;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// METHODE SPECIFIQUE</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span>    <span class="keyword">private</span> <span class="keyword">function</span> linkToUser(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;unlinkToUser();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;<a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>($user);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">private</span> <span class="keyword">function</span> unlinkToUser(){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            $this-&gt;monUtilisateur = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">private</span> <span class="keyword">function</span> dotProduct($vec1, $vec2) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        $result = 0;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $length = count($vec1);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; $length; $i++) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            $result += $vec1[$i] * $vec2[$i];</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">private</span> <span class="keyword">function</span> norm($vec) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> sqrt(array_reduce($vec, <span class="keyword">function</span> ($acc, $val) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">return</span> $acc + $val * $val;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }, 0));</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">private</span> <span class="keyword">function</span> cosineSimilarity($vec1, $vec2) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        $dot = $this-&gt;dotProduct($vec1, $vec2);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        $normVec1 = $this-&gt;norm($vec1);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        $normVec2 = $this-&gt;norm($vec2);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="comment">// Vérifier si les vecteurs ont une norme non nulle</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">if</span> ($normVec1 != 0 &amp;&amp; $normVec2 != 0) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">return</span> number_format($dot / ($normVec1 * $normVec2), 2);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">return</span> 0; <span class="comment">// Retourner 0 si l&#39;une des normes est nulle</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">  140</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">calculerSuggestion</a>(array $tabACM,array <a class="code hl_variable" href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a>) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">// Supposons que la dernière ligne représente les préférences de l&#39;utilisateur</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        $userPreferences = $tabACM[count($tabACM) - 1];</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">// Comparaison des événements avec les préférences de l&#39;utilisateur (similarité cosinus)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; count($tabACM) - 1; $i++) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            $event = $tabACM[$i];</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            $similarity = $this-&gt;cosineSimilarity($userPreferences, $event);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            echo <span class="stringliteral">&quot;Similarité entre l&#39;événement {$objetEvenement[$i]-&gt;getId()} et l&#39;utilisateur {$this-&gt;monUtilisateur-&gt;getId()}: &quot;</span> . $similarity .<span class="stringliteral">&quot;&lt;/br&gt;&quot;</span>. PHP_EOL;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="comment">//Ajouter chaque évènement et sa similarité dans un dico</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            $this-&gt;setSuggestion(<a class="code hl_variable" href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a>[$i],(<span class="keywordtype">float</span>) $similarity);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">  157</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">toString</a>() {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="comment">// Affichage des données de la liste de paires</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            echo    PHP_EOL . <span class="stringliteral">&quot;La recommandation n&#39;as pas de user attribué &lt;/br&gt;&quot;</span>.PHP_EOL;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">else</span> {   </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            echo    PHP_EOL . <span class="stringliteral">&quot;Le user attribué est &quot;</span>. $this-&gt;monUtilisateur-&gt;getId() .PHP_EOL;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">foreach</span> ($this-&gt;suggestion as $paire) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            echo PHP_EOL . <span class="stringliteral">&quot;Evenement : &quot;</span> . $paire[<span class="stringliteral">&#39;evenement&#39;</span>] . <span class="stringliteral">&quot; -- Pourcentage : &quot;</span> . $paire[<span class="stringliteral">&#39;pourcentage&#39;</span>] ;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="ttc" id="aclass_evenement_html"><div class="ttname"><a href="class_evenement.html">Evenement</a></div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00010">Evenement.php:10</a></div></div>
+<div class="ttc" id="aclass_evenement_html_a694d9adc30844952dc0799d14842dd4f"><div class="ttname"><a href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">Evenement\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant de l'évènement.</div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00074">Evenement.php:74</a></div></div>
+<div class="ttc" id="aclass_recommandation_html"><div class="ttname"><a href="class_recommandation.html">Recommandation</a></div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00009">Recommandation.php:9</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a1841783885bfc0e2046c53a2cde9aa2f"><div class="ttname"><a href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">Recommandation\toString</a></div><div class="ttdeci">toString()</div><div class="ttdoc">Afficher la description de la recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00157">Recommandation.php:157</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a280945319cd100888fb671e5d870d31d"><div class="ttname"><a href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">Recommandation\getUtilisateur</a></div><div class="ttdeci">getUtilisateur()</div><div class="ttdoc">Obtient l'utilisateur'.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00058">Recommandation.php:58</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a4f0e5060a4a000e084eae66b1df6688d"><div class="ttname"><a href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">Recommandation\__construct</a></div><div class="ttdeci">__construct(Utilisateur $monUtilisateur=null)</div><div class="ttdoc">Constructeur de la classe Recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00029">Recommandation.php:29</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a60a4cc88eeee9116d8398121a8ab6aa2"><div class="ttname"><a href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">Recommandation\calculerSuggestion</a></div><div class="ttdeci">calculerSuggestion(array $tabACM, array $objetEvenement)</div><div class="ttdoc">Calculer le pourcentage de suggestion.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00140">Recommandation.php:140</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_adfa724cd8ff6a1ebd9804cb58a94ad03"><div class="ttname"><a href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">Recommandation\getSuggestion</a></div><div class="ttdeci">getSuggestion()</div><div class="ttdoc">Obtient la suggestion de l'utilisateur.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00040">Recommandation.php:40</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_afd53fee840151f2c053d2fe40dcad8ca"><div class="ttname"><a href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">Recommandation\setUtilisateur</a></div><div class="ttdeci">setUtilisateur(Utilisateur $user)</div><div class="ttdoc">Attribut l'utilisateur pour la recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00066">Recommandation.php:66</a></div></div>
+<div class="ttc" id="aclass_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition</b> <a href="_utilisateur_8php_source.html#l00012">Utilisateur.php:12</a></div></div>
+<div class="ttc" id="amain_8php_html_a6a00921681c393550578f86bfbaebab0"><div class="ttname"><a href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a></div><div class="ttdeci">$objetEvenement</div><div class="ttdef"><b>Definition</b> <a href="main_8php_source.html#l00069">main.php:69</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
