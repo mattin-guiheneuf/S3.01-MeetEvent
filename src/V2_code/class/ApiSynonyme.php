@@ -1,4 +1,6 @@
 <?php
+require_once "Mot.php";
+
 /**
  * 
  */
@@ -7,8 +9,7 @@ class ApiSynonyme{
 
     // METHODES
     public function utiliserApiTrad(Mot $mot){
-        return $syn; //renvoie une liste de Synonyme
+        return $mot; //renvoie une liste de Synonyme
     } 
 }
 
-?>

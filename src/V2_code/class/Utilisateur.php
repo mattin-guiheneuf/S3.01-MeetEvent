@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Classe représentant un utilisateur.
  */
@@ -106,7 +108,7 @@ class Utilisateur {
     /**
      * Attribuer la liste de Tags à un utilisateur.
      *
-     * @param array $tags une liste de Mot représentant les Mots de l'utilisateur.
+     * @param Mot[] $tags une liste de Mot représentant les Mots de l'utilisateur.
      */
     public function setMots(array $mots) {
         $this->mesMots = $mots;
@@ -145,27 +147,50 @@ class Utilisateur {
      * METHODE SPECIFIQUE : Attribuer la liste de Mots à un utilisateur en fonction des mots saisis.
      *
      */
-    public function definirDescription() {
-        $listeMot = [];
-        $motsX = "";
-
-        while (true) {
-            $motsX = readline("Entrez un des mots pour décrire l'utilisateur (quit pour quitter): ");
-
-            if ($motsX == "quit") {
-                break;
-            } else {
-                $listeMot[] = $motsX;
-            }
+    public function definirDescription(array $listeMot_utilisateur,int $id,string $nom) {
+        
+        $listeMot_objet = array();
+        foreach($listeMot_utilisateur as $motX){
+            $listeMot_objet[]= new Mot($motX);
         }
 
-        $this->setMots($listeMot);
+        $this->setMots($listeMot_objet);
 
+        $motsLib = array();
+        foreach ($this->getMots() as $mot) {
+            $motsLib[] = $mot->getLibelle();
+        }
+
+        //Ajout des données dans le json-------------------------
         // Mise à jour des données
-        $donnees['utilisateur'][$this->getId() - 1]['mots'] = $this->getMots();
+        // Lire le contenu JSON depuis le fichier
+        $contenuJSON = file_get_contents('./data/donnees.json');
+        $donnees = json_decode($contenuJSON, true);
 
+        // Nouvel utilisateur à ajouter
+        $nouvelUtilisateur = array(
+            "id" => $id,
+            "nom" => $nom,
+            "mots" => $motsLib,
+            "tags" => []
+        );
+        //$donnees['utilisateurs'][$this->getId() - 1]['mots'] = $motsLib;
+        
+        // Ajouter le nouvel utilisateur à la liste des utilisateurs existants
+        $donnees['utilisateurs'][] = $nouvelUtilisateur;
+        
         // Écrire les données mises à jour dans le fichier JSON
-        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+        file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+
+        //Afficher résultats----------------------------------------
+        echo "-----------------------------------";
+        echo "<br>Utilisateur ".$this->getId()." créé ! Il possède les mots : ";
+        foreach ($this->getMots() as $mot) {
+            echo $mot->getLibelle()." ";
+        }
+        echo "<br>-----------------------------------";
+
+        $this->definirTags();
     }
 
     /**
@@ -255,9 +280,9 @@ class Utilisateur {
     /**
      * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
      *
-     * @param string $tagASupprimer un tag à supprimer
+     * @param Tag $tagASupprimer un tag à supprimer
      */
-    public function supprimerTag(string $tagASupprimer) {
+    public function supprimerTag(Tag $tagASupprimer) {
         $listeTag = $this->getTags();
         $indiceDuTag = array_search($tagASupprimer, $listeTag);
 
@@ -265,12 +290,12 @@ class Utilisateur {
         if ($indiceDuTag !== false) {
             // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
             array_splice($listeTag, $indiceDuTag, 1);
-            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' a été supprimé de la liste." . PHP_EOL;
 
             // Afficher la liste mise à jour
             echo implode(", ", $listeTag) . PHP_EOL;
         } else {
-            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' n'a pas été trouvé dans la liste." . PHP_EOL;
         }
 
         $this->setTags($listeTag);
@@ -314,10 +339,9 @@ class Utilisateur {
         $resultat .= PHP_EOL . "L'utilisateur " . $this->getId() . " a pour tag : ";
 
         foreach ($this->getTags() as $element) {
-            $resultat .= $element . " ";
+            $resultat .= $element->getLibelle() . " ";
         }
 
         return $resultat;
     }
 }
-?>

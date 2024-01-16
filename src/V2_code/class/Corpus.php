@@ -1,7 +1,5 @@
 <?php
-/**
- * 
- */
+
 class Corpus {
     // ATTRIBUTS
     /**
@@ -54,6 +52,4 @@ class Corpus {
      * @param array
      */
     public function setMesTags(array $mesTags) {$this->mesTags = $mesTags;}
-}   
-
-?>
+}

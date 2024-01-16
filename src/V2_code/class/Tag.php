@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Classe représentant un Tag.
  */
@@ -15,6 +16,15 @@ class Tag {
      */
     private $libelle = "";
 
+    //CONSTRUCTEUR
+    /**
+     * Constructeur de la classe Tag.
+     *
+     * @param string $libelle Le libelle à attribuer au Tag créé.
+     */
+    public function __construct(string $libelle) {
+        $this->setLibelle($libelle);
+    }
     // GETTERS ET SETTERS
     //id
     /**
@@ -53,4 +63,3 @@ class Tag {
         $this->libelle = $libelle;
     }
 }
-?>

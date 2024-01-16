@@ -48,18 +48,21 @@
         button:hover {
             background-color: #45a049;
         }
-        h2{
+
+        h2 {
             color: #45a049;
         }
-        label{
-            display:block;
-            margin-bottom:8px;
+
+        label {
+            display: block;
+            margin-bottom: 8px;
         }
-        input{
-            width:100%;
-            padding:8px;
-            margin-bottom:15px;
-            box-sizing:border-box;
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -80,6 +83,14 @@
     <form action="main.php" method="post">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required>
+    
+        <label for="mot">Mot :</label>
+        <input type="text" id="mot" name="mot">
+        <button type="button" onclick="ajouterMot()">Ajouter</button>
+        <div id="listeMots"></div>
+    
+        <input type="hidden" id="motsListeInput" name="motsListe" value="">
+    
         <button type="submit" name="action" value="creerUtilisateur">Création d'un utilisateur</button>
     </form>
     <hr>
@@ -87,17 +98,50 @@
     <!-- Formulaire avec champ pour saisir l'inscription d'un utilisateur -->
     <form action="main.php" method="post">
         <label for="titre">Titre :</label>
-        <input type="text" id="titre" name="titre" required >
+        <input type="text" id="titre" name="titre">
 
         <label for="date">Date :</label>
-        <input type="text" id="date" name="date" required >
-        
+        <input type="text" id="date" name="date">
+
         <label for="heure">Heure :</label>
-        <input type="text" id="heure" name="heure" required >
-        
+        <input type="text" id="heure" name="heure">
+
+        <label for="mot">Mot :</label>
+        <input type="text" id="mot" name="mot">
+        <button type="button" onclick="ajouterMot()">Ajouter</button>
+        <div id="listeMots"></div>
+
         <button type="submit" name="action" value="creerEvenement">Création d'un événement</button>
     </form>
 
+
+
+    <script>
+        var motsListe = [];
+
+        function ajouterMot() {
+            var motSaisi = document.getElementById('mot').value.trim();
+            if (motSaisi !== '') {
+                motsListe.push(motSaisi);
+                afficherListeMots();
+                document.getElementById('mot').value = ''; // Efface le champ après ajout
+            } else {
+                alert('Veuillez saisir un mot.');
+            }
+        }
+
+        function afficherListeMots() {
+            var listeMotsDiv = document.getElementById('listeMots');
+            listeMotsDiv.innerHTML = '<p><strong>Liste de mots ajoutés :</strong></p>';
+            for (var i = 0; i < motsListe.length; i++) {
+                listeMotsDiv.innerHTML += '<p>' + motsListe[i] + '</p>';
+            }
+
+            // Mettre à jour la valeur de l'input caché avec la liste de mots
+            document.getElementById("motsListeInput").value = JSON.stringify(motsListe);
+    
+        }
+    </script>
 
 </body>
 

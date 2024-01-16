@@ -1,37 +1,8 @@
 <?php
 
-// Encodage du csv en json
-/* echo 'Lancemebnt encodage motsFrTries<br>';
-$fic="motsFrTries.csv";
-$ficCsv= file_get_contents($fic);
-$array = array_map("str_getcsv", explode("\n", $ficCsv));
-$motsFr = array();
-// Extraction des données
-foreach ($array as $index => $mot) {
-    foreach($mot as $motCourant) {
-        array_push($motsFr,$motCourant);
-    }
-}
-echo "encodage<br>";
-file_put_contents('motsFr.json',json_encode($motsFr ,JSON_PRETTY_PRINT));
-echo "encodage terminé<br><br>"; */
-
-// Fonction de vérification d'appartenance d'elts d'une lise à une autre liste
-// Pas nécessaire si un seul mot saisie à chaque fois (un par un quoi)
-/* function checkAppartenance($listeMots, $listeACheck) {
-    $res = array();
-    foreach ($listeMots as $mot) {
-        if (in_array($mot, $listeACheck)) {
-            $res[$mot] = 1; // True
-        } else {
-            $res[$mot] = 0; // False
-        }
-    }
-    return $res;
-} */
 
 // Fonction de saisieVerif
-$listeMotFr = json_decode(file_get_contents('./motsFr.json'), true); // récupération liste mots français
+$listeMotFr = json_decode(file_get_contents('./motsFrTries.json'), true); // récupération liste mots français
 
 function saisieVerif() {
     global $listeMotFr; // Récupération de la variable
@@ -118,4 +89,3 @@ else {
 
 
 
-?>

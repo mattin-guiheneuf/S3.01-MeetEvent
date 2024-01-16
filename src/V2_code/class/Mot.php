@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Classe représentant un Mot.
  */
@@ -14,6 +16,10 @@ class Mot {
      */
     private $libelle = "";
 
+    //CONSTRUCTEUR
+    public function __construct(string $lib){
+        $this->setLibelle($lib);
+    }
     // GETTERS ET SETTERS
     //id
     /**
@@ -52,4 +58,3 @@ class Mot {
         $this->libelle = $libelle;
     }
 }
-?>

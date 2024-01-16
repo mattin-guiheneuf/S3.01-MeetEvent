@@ -15,11 +15,6 @@ class Recommandation {
     }
     // GETTER ET SETTER
     //suggestion
-    /**
-     * Obtient la suggestion.
-     *
-     * @return array suggestion.
-     */
     public function getSuggestion() {
         return $this->suggestion;
     }
@@ -35,7 +30,6 @@ class Recommandation {
     }
 
     // METHODE SPECIFIQUE
-    
     private function linkToUser(Utilisateur $user){
         $this->unlinkToUser();
         $this->setUtilisateur($user);
@@ -107,4 +101,3 @@ class Recommandation {
             
     }
 }
-?>

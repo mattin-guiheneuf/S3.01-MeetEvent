@@ -20,10 +20,20 @@
 //____________________________________________________________________________________//
 
 //On récupére les classes Evenement, Utilisateur, Recommandation, Tag et Mot 
-require_once './class/CLASSs.php';
+require_once "./class/Synonyme.php";
+require_once "./class/ApiDeTraduction.php";
+require_once "./class/ApiDictionnaireFr.php";
+require_once "./class/ApiSynonyme.php";
+require_once "./class/Corpus.php";
+require_once "./class/DicoSynTags.php";
+require_once "./class/Evenement.php";
+require_once "./class/Mot.php";
+require_once "./class/Recommandation.php";
+require_once "./class/Tag.php";
+require_once "./class/Utilisateur.php";
 
 // Lire le contenu JSON depuis le fichier
-$contenuJSON = file_get_contents('donnees.json');
+$contenuJSON = file_get_contents('./data/donnees.json');
 $donnees = json_decode($contenuJSON, true);
 
 //____________________________________________________________________________________//
@@ -162,9 +172,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             case 'creerUtilisateur':
                 // Logique pour créer un utilisateur
                 $nom = $_POST['nom'];
-                $user_courrant = new Utilisateur(10,[]);
-                //$user_courrant->definirDescription();
+                $id = $donnees['utilisateurs'][count($donnees['utilisateurs']) - 1]['id'] + 1;
+                $user_courrant = new Utilisateur($id,[]);
                 
+                // Récupère la liste de mots envoyée par le formulaire
+                $motsListe = isset($_POST['motsListe']) ? json_decode($_POST['motsListe']) : [];
+                if ($motsListe===[]) {
+                    echo "putain de merde ";
+                }
+                $user_courrant->definirDescription($motsListe,$id,$nom);
                 break;
 
             case 'creerEvenement':

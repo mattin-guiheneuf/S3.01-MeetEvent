@@ -187,7 +187,7 @@ class Evenement {
         $donnees['evenements'][$this->getId() - 1]['tags'] = $this->getTags();
 
         // Écrire les données mises à jour dans le fichier JSON
-        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
+        file_put_contents('../data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
 
         // Redéfinir les tags en fonction des nouveaux mots
         $this->definirTags();
@@ -196,9 +196,10 @@ class Evenement {
     /**
      * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
      *
-     * @param string $tagASupprimer un tag à supprimer
+     * @param Tag $tagASupprimer un tag à supprimer
      */
-    public function supprimerTag(string $tagASupprimer) {
+    public function supprimerTag(Tag $tagASupprimer) {
+        
         $listeTag = $this->getTags();
         $indiceDuTag = array_search($tagASupprimer, $listeTag);
 
@@ -206,12 +207,12 @@ class Evenement {
         if ($indiceDuTag !== false) {
             // Utiliser la fonction array_splice pour supprimer l'élément à l'indice trouvé
             array_splice($listeTag, $indiceDuTag, 1);
-            echo "L'élément '$tagASupprimer' a été supprimé de la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' a été supprimé de la liste." . PHP_EOL;
 
             // Afficher la liste mise à jour
             echo implode(", ", $listeTag) . PHP_EOL;
         } else {
-            echo "L'élément '$tagASupprimer' n'a pas été trouvé dans la liste." . PHP_EOL;
+            echo "L'élément '".$tagASupprimer->getLibelle()."' n'a pas été trouvé dans la liste." . PHP_EOL;
         }
 
         $this->setTags($listeTag);
@@ -236,11 +237,9 @@ class Evenement {
         $resultat .= "L'évènement " . $this->getId() . " a pour tag : ";
 
         foreach ($this->getTags() as $element) {
-            $resultat .= $element . " ";
+            $resultat .= $element->getLibelle() . " ";
         }
 
         return $resultat;
     }
 }
-
-?>
