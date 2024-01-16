@@ -80,7 +80,7 @@
 
         // encodage en json
         echo "encodage<br>";
-        file_put_contents('motToTag.json',json_encode($dicoMotToTag,JSON_PRETTY_PRINT));
+        file_put_contents('../data/motToTag.json',json_encode($dicoMotToTag,JSON_PRETTY_PRINT));
         echo "encodage terminé<br><br>";
 
         // Affichage pour vérif res
