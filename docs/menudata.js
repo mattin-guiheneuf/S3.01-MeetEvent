@@ -25,15 +25,11 @@
 var menudata={children:[
 {text:"Page principale",url:"index.html"},
 {text:"Espaces de nommage",url:"namespaces.html",children:[
-{text:"Liste des espaces de nommage",url:"namespaces.html"},
-{text:"Membres de l'espace de nommage",url:"namespacemembers.html",children:[
-{text:"Tout",url:"namespacemembers.html"},
-{text:"Fonctions",url:"namespacemembers_func.html"},
-{text:"Variables",url:"namespacemembers_vars.html"}]}]},
-{text:"Structures de données",url:"annotated.html",children:[
-{text:"Structures de données",url:"annotated.html"},
-{text:"Index des structures de données",url:"classes.html"},
-{text:"Champs de donnée",url:"functions.html",children:[
+{text:"Liste des espaces de nommage",url:"namespaces.html"}]},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Liste des classes",url:"annotated.html"},
+{text:"Index des classes",url:"classes.html"},
+{text:"Membres de classe",url:"functions.html",children:[
 {text:"Tout",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__5F"},
 {text:"c",url:"functions.html#index_c"},
@@ -55,8 +51,4 @@ var menudata={children:[
 {text:"t",url:"functions_func.html#index_t"},
 {text:"u",url:"functions_func.html#index_u"}]}]}]},
 {text:"Fichiers",url:"files.html",children:[
-{text:"Liste des fichiers",url:"files.html"},
-{text:"Variables globale",url:"globals.html",children:[
-{text:"Tout",url:"globals.html"},
-{text:"Fonctions",url:"globals_func.html"},
-{text:"Variables",url:"globals_vars.html"}]}]}]}
+{text:"Liste des fichiers",url:"files.html"}]}]}

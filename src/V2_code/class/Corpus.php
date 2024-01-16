@@ -2,7 +2,7 @@
 /**
  * @file Corpus.php
  * @author Yannis Duvignau
- * @brief Fichier contenant la classe Courpus
+ * @brief Fichier contenant la classe Corpus
  * @details Contient la structure de la classe Corpus ayant un nom et une liste de Tag
  * @version 1.0
  */
