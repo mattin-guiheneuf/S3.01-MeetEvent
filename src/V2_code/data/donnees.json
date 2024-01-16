@@ -5,7 +5,7 @@
             "nom": "",
             "mots": [],
             "tags": [
-                "musique",
+                "Musique",
                 "voyage",
                 "lecture",
                 "jeux"
@@ -70,17 +70,6 @@
                 "Tennis",
                 "Diner"
             ]
-        },
-        {
-            "id": 6,
-            "nom": "yannis",
-            "mots": [
-                "amis",
-                "famille",
-                "informatique",
-                "jeux vid\u00e9o"
-            ],
-            "tags": []
         }
     ],
     "evenements": [
@@ -438,45 +427,6 @@
                 "Investissement",
                 "Formation"
             ]
-        },
-        {
-            "id": 10023,
-            "titre": "zer",
-            "date": "aze",
-            "heure": "aez",
-            "lieu": "yt",
-            "mots": [
-                "amis",
-                "joueur",
-                "pourquoi pas"
-            ],
-            "tags": []
-        },
-        {
-            "id": 10024,
-            "titre": "zer",
-            "date": "aze",
-            "heure": "aez",
-            "lieu": "yt",
-            "mots": [
-                "amis",
-                "joueur",
-                "pourquoi pas"
-            ],
-            "tags": []
-        },
-        {
-            "id": 10025,
-            "titre": "zer",
-            "date": "aze",
-            "heure": "aez",
-            "lieu": "yt",
-            "mots": [
-                "amis",
-                "joueur",
-                "pourquoi pas"
-            ],
-            "tags": []
         }
     ]
 }

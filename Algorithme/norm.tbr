@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>norm</nom>
+  <date_creation>16/1/2024 23:21</date_creation>
+  <Elements>
+    <Action>
+      <Position>538;34</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>vec</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>norm</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>25;176</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>acc</PostAssertion>
+          <Titre>Initialisation de l'accumulateur</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>105;296</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>acc ← 0</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>378;170</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>vec, acc</PreAssertion>
+          <PostAssertion>acc</PostAssertion>
+          <Titre>Pour chaque élément dans le vecteur</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>612.5;292.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour i allant de 0 à len(vec)</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>383;373</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>acc</PreAssertion>
+                  <PostAssertion>acc</PostAssertion>
+                  <Titre>Ajouter le carré de la valeur à l'accumulateur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>544;482</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>∅</PreAssertion>
+                      <PostAssertion>∅</PostAssertion>
+                      <Titre>acc ← acc + val ** 2</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>908;168</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>acc</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Retourner la norme euclidienne du vecteur</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1193;307</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>Retourner varNorm</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>982;316</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>varNorm ← sqrt(acc)</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>
