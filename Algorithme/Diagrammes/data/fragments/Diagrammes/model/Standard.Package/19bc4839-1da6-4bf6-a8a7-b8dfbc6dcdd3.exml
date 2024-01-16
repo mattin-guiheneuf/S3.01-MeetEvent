@@ -14,12 +14,28 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
+<<<<<<< HEAD
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="2e213430-ac1e-4825-9a6f-79bc0d0c425e"/>
+        <COMPID name="Evenement" mc="Standard.Class" uid="2422a65c-bd86-4fb1-a5df-84fa1c5506c9"/>
+        <COMPID name="Tag" mc="Standard.Class" uid="0e0b3a6d-d219-4f5e-b9ea-810701ae2df6"/>
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="10027f07-5690-4ab1-abff-91c48d05b0e6"/>
+        <COMPID name="Evenement" mc="Standard.Class" uid="095435d5-f09d-424e-8843-4b262cd304d2"/>
+        <COMPID name="Tag" mc="Standard.Class" uid="f58352cd-921b-4c41-b393-d0a0932b6634"/>
+        <COMPID name="Recommandation" mc="Standard.Class" uid="3dd38bc3-c318-4708-87ba-e6dc8a831020"/>
+        <COMPID name="Mot" mc="Standard.Class" uid="bdf0f465-18e1-4fae-95b5-e707ffbef37e"/>
+        <COMPID name="Synonyme" mc="Standard.Class" uid="deabccca-2313-4621-9f7e-89ad05bd316d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe diagrammes" mc="Standard.ClassDiagram" uid="e3cb4021-8553-4634-9f83-c2166a3f2e99"/>
+        <COMPID name="Diagramme de classe v2" mc="Standard.ClassDiagram" uid="4baf1713-109e-4be4-9192-082934ff98fb"/>
+=======
         <COMPID name="Utilisateur" mc="Standard.Class" uid="f4930c75-0680-4d9b-9f84-bc9bd90ab69d"/>
         <COMPID name="Participant" mc="Standard.Class" uid="1adf8437-0667-4c9d-9519-db1076b4a8cf"/>
         <COMPID name="Organisateur" mc="Standard.Class" uid="c5c5eb23-357f-4bdb-af3c-d3650b10771c"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Diagramme de classe diagrammes" mc="Standard.ClassDiagram" uid="e3cb4021-8553-4634-9f83-c2166a3f2e99"/>
+>>>>>>> 09d3ae825c3560893bd805c87596a5fcb969c7d1
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
