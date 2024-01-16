@@ -177,7 +177,7 @@ class Utilisateur {
 
         //Afficher résultats----------------------------------------
         echo "-----------------------------------";
-        echo "<br>Utilisateur ".$this->getId()." créé ! Il possède les mots : ";
+        echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") créé ! Il possède les mots : ";
         foreach ($this->getMots() as $mot) {
             echo $mot->getLibelle()." ";
         }
