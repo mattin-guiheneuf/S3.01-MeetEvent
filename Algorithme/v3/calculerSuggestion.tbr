@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
-  <date_creation>9/1/2024 15:01</date_creation>
+  <date_creation>16/1/2024 17:05</date_creation>
   <Elements>
     <Action>
       <Position>892;30</Position>
@@ -50,7 +50,7 @@
               <Enfants/>
             </Action>
             <Action>
-              <Position>1155;410</Position>
+              <Position>1150;408</Position>
               <StyleLien>2</StyleLien>
               <PreAssertion>similarity</PreAssertion>
               <PostAssertion>∅</PostAssertion>
