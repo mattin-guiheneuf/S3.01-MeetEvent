@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['unlinktosuggest_0',['unlinkToSuggest',['../class_utilisateur.html#a55c4de2d45d9650f9988554584503f71',1,'Utilisateur']]],
-  ['utiliserapidicofr_1',['utiliserApiDicoFr',['../class_api_dictionnaire_fr.html#a991eebe86aadb6c271d9a23100f3bf3e',1,'ApiDictionnaireFr']]],
-  ['utiliserapitrad_2',['utiliserApiTrad',['../class_api_de_traduction.html#ae89d635e0f14a106b13705a4a1d20073',1,'ApiDeTraduction\utiliserApiTrad()'],['../class_api_synonyme.html#a344d4a311d1b16fd50152369413e9145',1,'ApiSynonyme\utiliserApiTrad()']]]
+  ['unlinktosuggest_0',['unlinkToSuggest',['../class_utilisateur.html#a6a3243d3a7a321426c94f4b4e60198dd',1,'Utilisateur']]],
+  ['utiliserapidicofr_1',['utiliserApiDicoFr',['../class_api_dictionnaire_fr.html#aa48acd7ee99286ec33766327031a9379',1,'ApiDictionnaireFr']]],
+  ['utiliserapisyn_2',['utiliserApiSyn',['../class_api_synonyme.html#a9e5935cb3ffe6ec082eb9e2748c0aeb3',1,'ApiSynonyme']]],
+  ['utiliserapitrad_3',['utiliserApiTrad',['../class_api_de_traduction.html#afbb4784e86f7d13dac6341280b8d862b',1,'ApiDeTraduction']]]
 ];

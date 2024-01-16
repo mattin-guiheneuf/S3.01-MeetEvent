@@ -77,110 +77,117 @@ $(function() {
   <div class="headertitle"><div class="title">Recommandation.php</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_recommandation.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_recommandation.html">Recommandation</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// ATTRIBUTS</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">private</span> $monUtilisateur = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">private</span> $suggestion = array();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// METHODES</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">//CONSTRUCTEUR</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span> <span class="keyword">function</span> __construct(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $monUtilisateur = <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        $this-&gt;linkToUser($monUtilisateur);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        $this-&gt;monUtilisateur-&gt;linkToSuggest($this);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// GETTER ET SETTER</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//suggestion</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span> <span class="keyword">function</span> getSuggestion() {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> $this-&gt;suggestion;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> <span class="keyword">function</span> setSuggestion(<a class="code hl_class" href="class_evenement.html">Evenement</a> $evenement,<span class="keywordtype">float</span> $pourcentage){</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        $this-&gt;suggestion[] = array(<span class="stringliteral">&#39;evenement&#39;</span> =&gt; $evenement-&gt;<a class="code hl_function" href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">getId</a>(), <span class="stringliteral">&#39;pourcentage&#39;</span> =&gt; $pourcentage);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//monUtilisateur</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">function</span> getUtilisateur(){</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> $this-&gt;monUtilisateur;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keyword">function</span> setUtilisateur(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        $this-&gt;monUtilisateur = $user;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// METHODE SPECIFIQUE</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span> <span class="keyword">function</span> linkToUser(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $this-&gt;unlinkToUser();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;setUtilisateur($user);</div>
+<a href="_recommandation_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_recommandation.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_recommandation.html">Recommandation</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">private</span> $monUtilisateur = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> $suggestion = array();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// METHODES</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//CONSTRUCTEUR</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">   25</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">__construct</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $monUtilisateur = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        $this-&gt;linkToUser($monUtilisateur);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        $this-&gt;monUtilisateur-&gt;linkToSuggest($this);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// GETTER ET SETTER</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//suggestion</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">   31</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">getSuggestion</a>() {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> $this-&gt;suggestion;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span> <span class="keyword">function</span> setSuggestion(<a class="code hl_class" href="class_evenement.html">Evenement</a> $evenement,<span class="keywordtype">float</span> $pourcentage){</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;suggestion[] = array(<span class="stringliteral">&#39;evenement&#39;</span> =&gt; $evenement-&gt;<a class="code hl_function" href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">getId</a>(), <span class="stringliteral">&#39;pourcentage&#39;</span> =&gt; $pourcentage);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">private</span> <span class="keyword">function</span> unlinkToUser(){</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur != <span class="keyword">null</span>) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $this-&gt;monUtilisateur = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Fonction pour calculer le produit scalaire</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">private</span> <span class="keyword">function</span> dotProduct($vec1, $vec2) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        $result = 0;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        $length = count($vec1);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; $length; $i++) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            $result += $vec1[$i] * $vec2[$i];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $result;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Fonction pour calculer la norme</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">private</span> <span class="keyword">function</span> norm($vec) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> sqrt(array_reduce($vec, <span class="keyword">function</span> ($acc, $val) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">return</span> $acc + $val * $val;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }, 0));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//monUtilisateur</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">   38</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">getUtilisateur</a>(){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> $this-&gt;monUtilisateur;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        $this-&gt;monUtilisateur = $user;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// METHODE SPECIFIQUE</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <span class="keyword">function</span> linkToUser(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $this-&gt;unlinkToUser();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;<a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>($user);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keyword">function</span> unlinkToUser(){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            $this-&gt;monUtilisateur = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Fonction pour calculer le produit scalaire</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">private</span> <span class="keyword">function</span> dotProduct($vec1, $vec2) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $result = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $length = count($vec1);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Fonction pour calculer la similarité cosinus</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">private</span> <span class="keyword">function</span> cosineSimilarity($vec1, $vec2) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        $dot = $this-&gt;dotProduct($vec1, $vec2);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $normVec1 = $this-&gt;norm($vec1);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        $normVec2 = $this-&gt;norm($vec2);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; $length; $i++) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            $result += $vec1[$i] * $vec2[$i];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// Vérifier si les vecteurs ont une norme non nulle</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span> ($normVec1 != 0 &amp;&amp; $normVec2 != 0) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">return</span> number_format($dot / ($normVec1 * $normVec2), 2);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">return</span> 0; <span class="comment">// Retourner 0 si l&#39;une des normes est nulle</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">public</span> <span class="keyword">function</span> calculerSuggestion(array $tabACM,array $objetEvenement) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">// Supposons que la dernière ligne représente les préférences de l&#39;utilisateur</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $userPreferences = $tabACM[count($tabACM) - 1];</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="comment">// Comparaison des événements avec les préférences de l&#39;utilisateur (similarité cosinus)</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; count($tabACM) - 1; $i++) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            $event = $tabACM[$i];</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            $similarity = $this-&gt;cosineSimilarity($userPreferences, $event);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            echo <span class="stringliteral">&quot;Similarité entre l&#39;événement {$objetEvenement[$i]-&gt;getId()} et l&#39;utilisateur {$this-&gt;monUtilisateur-&gt;getId()}: &quot;</span> . $similarity .<span class="stringliteral">&quot;&lt;/br&gt;&quot;</span>. PHP_EOL;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">//Ajouter chaque évènement et sa similarité dans un dico</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            $this-&gt;setSuggestion($objetEvenement[$i],(<span class="keywordtype">float</span>) $similarity);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// METHODE USUELLE</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">public</span> <span class="keyword">function</span> toString() {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">// Affichage des données de la liste de paires</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur == <span class="keyword">null</span>) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            echo    PHP_EOL . <span class="stringliteral">&quot;La recommandation n&#39;as pas de user attribué &lt;/br&gt;&quot;</span>.PHP_EOL;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">else</span> {   </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            echo    PHP_EOL . <span class="stringliteral">&quot;Le user attribué est &quot;</span>. $this-&gt;monUtilisateur-&gt;getId() .PHP_EOL;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">foreach</span> ($this-&gt;suggestion as $paire) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            echo PHP_EOL . <span class="stringliteral">&quot;Evenement : &quot;</span> . $paire[<span class="stringliteral">&#39;evenement&#39;</span>] . <span class="stringliteral">&quot; -- Pourcentage : &quot;</span> . $paire[<span class="stringliteral">&#39;pourcentage&#39;</span>] ;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
-<div class="ttc" id="aclass_evenement_html"><div class="ttname"><a href="class_evenement.html">Evenement</a></div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00006">Evenement.php:6</a></div></div>
-<div class="ttc" id="aclass_evenement_html_a694d9adc30844952dc0799d14842dd4f"><div class="ttname"><a href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">Evenement\getId</a></div><div class="ttdeci">getId()</div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00065">Evenement.php:65</a></div></div>
-<div class="ttc" id="aclass_recommandation_html"><div class="ttname"><a href="class_recommandation.html">Recommandation</a></div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00005">Recommandation.php:5</a></div></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Fonction pour calculer la norme</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span> <span class="keyword">function</span> norm($vec) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> sqrt(array_reduce($vec, <span class="keyword">function</span> ($acc, $val) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">return</span> $acc + $val * $val;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }, 0));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// Fonction pour calculer la similarité cosinus</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">private</span> <span class="keyword">function</span> cosineSimilarity($vec1, $vec2) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $dot = $this-&gt;dotProduct($vec1, $vec2);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $normVec1 = $this-&gt;norm($vec1);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $normVec2 = $this-&gt;norm($vec2);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">// Vérifier si les vecteurs ont une norme non nulle</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> ($normVec1 != 0 &amp;&amp; $normVec2 != 0) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">return</span> number_format($dot / ($normVec1 * $normVec2), 2);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">return</span> 0; <span class="comment">// Retourner 0 si l&#39;une des normes est nulle</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">   88</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">calculerSuggestion</a>(array $tabACM,array <a class="code hl_variable" href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a>) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="comment">// Supposons que la dernière ligne représente les préférences de l&#39;utilisateur</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $userPreferences = $tabACM[count($tabACM) - 1];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="comment">// Comparaison des événements avec les préférences de l&#39;utilisateur (similarité cosinus)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">for</span> ($i = 0; $i &lt; count($tabACM) - 1; $i++) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $event = $tabACM[$i];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            $similarity = $this-&gt;cosineSimilarity($userPreferences, $event);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            echo <span class="stringliteral">&quot;Similarité entre l&#39;événement {$objetEvenement[$i]-&gt;getId()} et l&#39;utilisateur {$this-&gt;monUtilisateur-&gt;getId()}: &quot;</span> . $similarity .<span class="stringliteral">&quot;&lt;/br&gt;&quot;</span>. PHP_EOL;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="comment">//Ajouter chaque évènement et sa similarité dans un dico</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            $this-&gt;setSuggestion(<a class="code hl_variable" href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a>[$i],(<span class="keywordtype">float</span>) $similarity);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// METHODE USUELLE</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">toString</a>() {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">// Affichage des données de la liste de paires</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span> ($this-&gt;monUtilisateur == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            echo    PHP_EOL . <span class="stringliteral">&quot;La recommandation n&#39;as pas de user attribué &lt;/br&gt;&quot;</span>.PHP_EOL;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">else</span> {   </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            echo    PHP_EOL . <span class="stringliteral">&quot;Le user attribué est &quot;</span>. $this-&gt;monUtilisateur-&gt;getId() .PHP_EOL;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">foreach</span> ($this-&gt;suggestion as $paire) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            echo PHP_EOL . <span class="stringliteral">&quot;Evenement : &quot;</span> . $paire[<span class="stringliteral">&#39;evenement&#39;</span>] . <span class="stringliteral">&quot; -- Pourcentage : &quot;</span> . $paire[<span class="stringliteral">&#39;pourcentage&#39;</span>] ;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="ttc" id="aclass_evenement_html"><div class="ttname"><a href="class_evenement.html">Evenement</a></div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00010">Evenement.php:10</a></div></div>
+<div class="ttc" id="aclass_evenement_html_a694d9adc30844952dc0799d14842dd4f"><div class="ttname"><a href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">Evenement\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant de l'évènement.</div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00074">Evenement.php:74</a></div></div>
+<div class="ttc" id="aclass_recommandation_html"><div class="ttname"><a href="class_recommandation.html">Recommandation</a></div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00009">Recommandation.php:9</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a1841783885bfc0e2046c53a2cde9aa2f"><div class="ttname"><a href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">Recommandation\toString</a></div><div class="ttdeci">toString()</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00103">Recommandation.php:103</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a280945319cd100888fb671e5d870d31d"><div class="ttname"><a href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">Recommandation\getUtilisateur</a></div><div class="ttdeci">getUtilisateur()</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00038">Recommandation.php:38</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a4f0e5060a4a000e084eae66b1df6688d"><div class="ttname"><a href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">Recommandation\__construct</a></div><div class="ttdeci">__construct(Utilisateur $monUtilisateur=null)</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00025">Recommandation.php:25</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a60a4cc88eeee9116d8398121a8ab6aa2"><div class="ttname"><a href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">Recommandation\calculerSuggestion</a></div><div class="ttdeci">calculerSuggestion(array $tabACM, array $objetEvenement)</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00088">Recommandation.php:88</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_adfa724cd8ff6a1ebd9804cb58a94ad03"><div class="ttname"><a href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">Recommandation\getSuggestion</a></div><div class="ttdeci">getSuggestion()</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00031">Recommandation.php:31</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_afd53fee840151f2c053d2fe40dcad8ca"><div class="ttname"><a href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">Recommandation\setUtilisateur</a></div><div class="ttdeci">setUtilisateur(Utilisateur $user)</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00041">Recommandation.php:41</a></div></div>
 <div class="ttc" id="aclass_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition</b> <a href="_utilisateur_8php_source.html#l00007">Utilisateur.php:7</a></div></div>
+<div class="ttc" id="amain_8php_html_a6a00921681c393550578f86bfbaebab0"><div class="ttname"><a href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a></div><div class="ttdeci">$objetEvenement</div><div class="ttdef"><b>Definition</b> <a href="main_8php_source.html#l00069">main.php:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

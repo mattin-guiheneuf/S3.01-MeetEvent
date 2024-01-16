@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['corpus_0',['Corpus',['../class_corpus.html',1,'']]],
-  ['corpus_2ephp_1',['Corpus.php',['../_corpus_8php.html',1,'']]],
-  ['creerlistesuggest_2',['creerListeSuggest',['../class_utilisateur.html#ac87efeeeb621d54a3f476ac55ba07096',1,'Utilisateur']]]
+  ['affichertabacm_0',['afficherTabACM',['../main_8php.html#a16bc667b009319b96b48a0608db8a54c',1,'main.php']]],
+  ['apidetraduction_1',['ApiDeTraduction',['../class_api_de_traduction.html',1,'']]],
+  ['apidetraduction_2ephp_2',['ApiDeTraduction.php',['../_api_de_traduction_8php.html',1,'']]],
+  ['apidictionnairefr_3',['ApiDictionnaireFr',['../class_api_dictionnaire_fr.html',1,'']]],
+  ['apidictionnairefr_2ephp_4',['ApiDictionnaireFr.php',['../_api_dictionnaire_fr_8php.html',1,'']]],
+  ['apisynonyme_5',['ApiSynonyme',['../class_api_synonyme.html',1,'']]],
+  ['apisynonyme_2ephp_6',['ApiSynonyme.php',['../_api_synonyme_8php.html',1,'']]]
 ];

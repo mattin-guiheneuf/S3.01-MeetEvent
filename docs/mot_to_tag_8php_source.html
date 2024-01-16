@@ -77,21 +77,21 @@ $(function() {
   <div class="headertitle"><div class="title">motToTag.php</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;!-- SAE --&gt;</div>
+<a href="mot_to_tag_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;!-- SAE --&gt;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;?php</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="comment">// Importation du dicoSynTag.php pour création pour tests</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    include_once <span class="stringliteral">&quot;./creaDicoSynTag.php&quot;</span>;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    $CORPUS_TAG_test = [<span class="stringliteral">&#39;mother&#39;</span>,<span class="stringliteral">&#39;father&#39;</span>,<span class="stringliteral">&#39;bulge&#39;</span>];</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="mot_to_tag_8php.html#a68c71d51c7779c514de49d45b3e9207b">    7</a></span>    <a class="code hl_variable" href="mot_to_tag_8php.html#a68c71d51c7779c514de49d45b3e9207b">$CORPUS_TAG_test</a> = [<span class="stringliteral">&#39;mother&#39;</span>,<span class="stringliteral">&#39;father&#39;</span>,<span class="stringliteral">&#39;bulge&#39;</span>];</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    $dicoSynonymeTags = creaDicoSynTag($CORPUS_TAG_test);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="mot_to_tag_8php.html#a939545f9e2316f7304efa814e0142319">   11</a></span>    <a class="code hl_variable" href="mot_to_tag_8php.html#a939545f9e2316f7304efa814e0142319">$dicoSynonymeTags</a> = <a class="code hl_function" href="crea_dico_syn_tag_8php.html#a9469e5a5fd651092cfdc1845677f4d7f">creaDicoSynTag</a>(<a class="code hl_variable" href="mot_to_tag_8php.html#a68c71d51c7779c514de49d45b3e9207b">$CORPUS_TAG_test</a>);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    $listeMot = [<span class="stringliteral">&#39;female parent&#39;</span>,<span class="stringliteral">&#39;get&#39;</span>,<span class="stringliteral">&#39;pa&#39;</span>]; <span class="comment">// Pour le test</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">   13</a></span>    <a class="code hl_variable" href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">$listeMot</a> = [<span class="stringliteral">&#39;female parent&#39;</span>,<span class="stringliteral">&#39;get&#39;</span>,<span class="stringliteral">&#39;pa&#39;</span>]; <span class="comment">// Pour le test</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">function</span> motToTag($listeMot,$dicoSynTag){</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="mot_to_tag_8php.html#a02420427aedd28c2510db513475dc097">   15</a></span>    <span class="keyword">function</span> <a class="code hl_function" href="mot_to_tag_8php.html#a02420427aedd28c2510db513475dc097">motToTag</a>(<a class="code hl_variable" href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">$listeMot</a>,$dicoSynTag){</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        echo <span class="stringliteral">&#39;Lancement motToTag&lt;br&gt;&lt;br&gt;&#39;</span>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">// VARIABLES</span></div>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        $listeTag = array(); <span class="comment">// Le résultat de la fonction avec la liste des tags</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="comment">// TRAITEMENTS</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">foreach</span> ($listeMot as $motCourant) { <span class="comment">// Pour chaque mot de la liste</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">foreach</span> (<a class="code hl_variable" href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">$listeMot</a> as $motCourant) { <span class="comment">// Pour chaque mot de la liste</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="comment">// Vérif mot en double</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> (array_key_exists($motCourant, $dicoMotToTag)) { <span class="comment">// Si le mot est déjà présent dans le dico</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                echo $motCourant . <span class="stringliteral">&quot; déjà présent dans le dicoMotToTag&lt;br&gt;&quot;</span>; <span class="comment">// C&#39;est que le mot est en double</span></div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">else</span> <span class="comment">// Sinon enrichissement de 1 degré à partir des mots</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                $listeSynMot = synAvecAPI($motCourant)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// Appel de l&#39;API pour récupérer les synonymes du mot courant</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                $listeSynMot = <a class="code hl_function" href="syn_avec_a_p_i_8php.html#aa5a8c7a60ce1718be2c212edf9b62929">synAvecAPI</a>($motCourant)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// Appel de l&#39;API pour récupérer les synonymes du mot courant</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">foreach</span> ($listeSynMot as $synMotCourant) { <span class="comment">// Pour chaque synonyme du motCourant</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keywordflow">if</span> (array_key_exists($synMotCourant, $dicoSynTag)) { <span class="comment">// Si le synMotCourant est présent dans le dicoSynTag</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        <span class="comment">// Ajout et enregistrement</span></div>
@@ -123,7 +123,7 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <span class="keywordflow">else</span> <span class="comment">// Sinon enrichissement de 1 degré supplémentaire (degré 2) à partir des tags</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        <span class="keywordflow">foreach</span> ($dicoSynTag as $syn =&gt; $tag) { <span class="comment">// Pour chaque synonyme (clé) du dicoSynTag</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            $listeSynSynDicoSynTag = synAvecAPI($syn)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// Appel de l&#39;API pour récupérer les synonymes des clés du dicoSynTag</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            $listeSynSynDicoSynTag = <a class="code hl_function" href="syn_avec_a_p_i_8php.html#aa5a8c7a60ce1718be2c212edf9b62929">synAvecAPI</a>($syn)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// Appel de l&#39;API pour récupérer les synonymes des clés du dicoSynTag</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                            <span class="keywordflow">if</span> (in_array($motCourant, $listeSynSynDicoSynTag)) { <span class="comment">// Vérif présence du mot de base dans les synonymes de synonymes de tag</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                $dicoMotToTag[$motCourant] = array($syn, $dicoSynTag[$syn]); <span class="comment">// Si présent, ajout dans le dicoMotToTag en précisant par quel syn on fait le lien</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                <span class="keywordflow">if</span> (!in_array($dicoSynTag[$syn], $listeTag)) { <span class="comment">// Vérif que le tag n&#39;est pas déjà présent dans la liste de tags</span></div>
@@ -149,8 +149,8 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $realListeTag = array(); <span class="comment">// Enlever les doublons ou autre (pas nécessaires si vérif presence à chaque ajout dans liste ???)</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">foreach</span> ($listeTag as $liste) {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">foreach</span> ($liste as $tag) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">foreach</span> ($listeTag as <a class="code hl_variable" href="main_8php.html#a48b4f2d78dcb5b0f982a7fedce745e5b">$liste</a>) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">foreach</span> (<a class="code hl_variable" href="main_8php.html#a48b4f2d78dcb5b0f982a7fedce745e5b">$liste</a> as $tag) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">if</span> (!in_array($tag, $realListeTag)) {</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    $realListeTag[] = $tag;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                }</div>
@@ -159,7 +159,7 @@ $(function() {
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// encodage en json</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        echo <span class="stringliteral">&quot;encodage&lt;br&gt;&quot;</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        file_put_contents(<span class="stringliteral">&#39;motToTag.json&#39;</span>,json_encode($dicoMotToTag,JSON_PRETTY_PRINT));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        file_put_contents(<span class="stringliteral">&#39;../data/motToTag.json&#39;</span>,json_encode($dicoMotToTag,JSON_PRETTY_PRINT));</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        echo <span class="stringliteral">&quot;encodage terminé&lt;br&gt;&lt;br&gt;&quot;</span>;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// Affichage pour vérif res</span></div>
@@ -172,9 +172,16 @@ $(function() {
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> array($dicoMotToTag, $realListeTag);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    motToTag($listeMot,$dicoSynonymeTags);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="mot_to_tag_8php.html#a02420427aedd28c2510db513475dc097">motToTag</a>(<a class="code hl_variable" href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">$listeMot</a>,<a class="code hl_variable" href="mot_to_tag_8php.html#a939545f9e2316f7304efa814e0142319">$dicoSynonymeTags</a>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>?&gt;</div>
+<div class="ttc" id="acrea_dico_syn_tag_8php_html_a9469e5a5fd651092cfdc1845677f4d7f"><div class="ttname"><a href="crea_dico_syn_tag_8php.html#a9469e5a5fd651092cfdc1845677f4d7f">creaDicoSynTag</a></div><div class="ttdeci">creaDicoSynTag($CORPUS_TAG)</div><div class="ttdef"><b>Definition</b> <a href="crea_dico_syn_tag_8php_source.html#l00007">creaDicoSynTag.php:7</a></div></div>
+<div class="ttc" id="amain_8php_html_a48b4f2d78dcb5b0f982a7fedce745e5b"><div class="ttname"><a href="main_8php.html#a48b4f2d78dcb5b0f982a7fedce745e5b">$liste</a></div><div class="ttdeci">$liste</div><div class="ttdef"><b>Definition</b> <a href="main_8php_source.html#l00048">main.php:48</a></div></div>
+<div class="ttc" id="amot_to_tag_8php_html_a02420427aedd28c2510db513475dc097"><div class="ttname"><a href="mot_to_tag_8php.html#a02420427aedd28c2510db513475dc097">motToTag</a></div><div class="ttdeci">motToTag($listeMot, $dicoSynTag)</div><div class="ttdef"><b>Definition</b> <a href="mot_to_tag_8php_source.html#l00015">motToTag.php:15</a></div></div>
+<div class="ttc" id="amot_to_tag_8php_html_a68c71d51c7779c514de49d45b3e9207b"><div class="ttname"><a href="mot_to_tag_8php.html#a68c71d51c7779c514de49d45b3e9207b">$CORPUS_TAG_test</a></div><div class="ttdeci">$CORPUS_TAG_test</div><div class="ttdef"><b>Definition</b> <a href="mot_to_tag_8php_source.html#l00007">motToTag.php:7</a></div></div>
+<div class="ttc" id="amot_to_tag_8php_html_a939545f9e2316f7304efa814e0142319"><div class="ttname"><a href="mot_to_tag_8php.html#a939545f9e2316f7304efa814e0142319">$dicoSynonymeTags</a></div><div class="ttdeci">$dicoSynonymeTags</div><div class="ttdef"><b>Definition</b> <a href="mot_to_tag_8php_source.html#l00011">motToTag.php:11</a></div></div>
+<div class="ttc" id="amot_to_tag_8php_html_abbcc8413894b4f44f487c539df0e9b36"><div class="ttname"><a href="mot_to_tag_8php.html#abbcc8413894b4f44f487c539df0e9b36">$listeMot</a></div><div class="ttdeci">$listeMot</div><div class="ttdef"><b>Definition</b> <a href="mot_to_tag_8php_source.html#l00013">motToTag.php:13</a></div></div>
+<div class="ttc" id="asyn_avec_a_p_i_8php_html_aa5a8c7a60ce1718be2c212edf9b62929"><div class="ttname"><a href="syn_avec_a_p_i_8php.html#aa5a8c7a60ce1718be2c212edf9b62929">synAvecAPI</a></div><div class="ttdeci">if(isset( $_POST[ 'submit'])) synAvecAPI($wordToSearch, $destinationFile=NULL)</div><div class="ttdef"><b>Definition</b> <a href="syn_avec_a_p_i_8php_source.html#l00051">synAvecAPI.php:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

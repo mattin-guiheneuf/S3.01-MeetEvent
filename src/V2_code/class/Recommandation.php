@@ -1,10 +1,23 @@
 <?php
 /**
- * Classe représentant une Recommandation.
+ * @file Recommandation.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Recommandation
+ * @details Contient la structure de la classe Mot ayant un utilisateur et un array d'évènements
+ * @version 1.0
  */
 class Recommandation {
-    // ATTRIBUTS
+    /** Attributs */
+    /**
+     * @brief L'utilisateur de la recommandation
+     * @var Utilisateur 
+     */
     private $monUtilisateur = null;
+
+    /**
+     * @brief Les évènements suggérer à l'utilisateur
+     * @var array 
+     */
     private $suggestion = array();
 
     // METHODES
