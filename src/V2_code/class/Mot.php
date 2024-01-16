@@ -19,7 +19,7 @@ class Mot {
 
     /**
      * @brief Le libellé du mot
-     * @var int 
+     * @var string 
      */
     private $libelle = "";
 
@@ -52,7 +52,7 @@ class Mot {
         $this->id = $id;
     }
 
-    /** $id */
+    /** $libelle */
     /**
      * @brief Obtient le libellé du mot
      * @return string $libelle Libellé du mot
