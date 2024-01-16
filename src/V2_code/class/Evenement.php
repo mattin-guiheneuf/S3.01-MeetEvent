@@ -225,7 +225,7 @@ class Evenement {
 
         //Afficher résultats----------------------------------------
         echo "-----------------------------------";
-        echo "<br>Evenement ".$this->getId()." créé ! Il possède les mots : ";
+        echo "<br>Evenement ".$this->getTitre()." (".$this->getId().") créé ! Il possède les mots : ";
         foreach ($this->getMots() as $mot) {
             echo $mot->getLibelle()." ";
         }

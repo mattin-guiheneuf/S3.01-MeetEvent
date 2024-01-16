@@ -188,7 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 foreach($motsListe as $motX){
                     $listeMot_objet[]= new Mot($motX);
                 }
-                $event_courrant->setMots($listeMot_objet);
+                $user_courrant->setMots($listeMot_objet);
                 $user_courrant->definirDescription();
                 break;
 
@@ -209,9 +209,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 //on crée ajout l'utilisateur dans la BD
                 $event_courrant->setId($id);
                 $event_courrant->setTitre($titre);
-                $event_courrant->setTitre($date);
-                $event_courrant->setTitre($heure);
-                $event_courrant->setTitre($lieu);
+                $event_courrant->setDate($date);
+                $event_courrant->setHeure($heure);
+                $event_courrant->setLieu($lieu);
                 //Création liste de mot objet
                 $listeMot_objet = array();
                 foreach($motsListe as $motX){
