@@ -180,12 +180,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($motsListe===[]) {
                     echo "putain de merde ";
                 }
-                $user_courrant->definirDescription($motsListe,$id,$nom);
+                //on crée ajout l'utilisateur dans la BD
+                $user_courrant->setId($id);
+                $user_courrant->setNom($nom);
+                //Création liste de mot objet
+                $listeMot_objet = array();
+                foreach($motsListe as $motX){
+                    $listeMot_objet[]= new Mot($motX);
+                }
+                $event_courrant->setMots($listeMot_objet);
+                $user_courrant->definirDescription();
                 break;
 
             case 'creerEvenement':
                 // Logique pour créer un événement
-                
+                $titre = $_POST['titre'];
+                $date = $_POST['date'];
+                $heure = $_POST['heure'];
+                $lieu = $_POST['lieu'];
+                $id = $donnees['evenements'][count($donnees['evenements']) - 1]['id'] + 1;
+                $event_courrant = new Evenement($id,[]);
+
+                // Récupère la liste de mots envoyée par le formulaire
+                $motsListe = isset($_POST['motsListeEvenement']) ? json_decode($_POST['motsListeEvenement']) : [];
+                if ($motsListe===[]) {
+                    echo "putain de merde ";
+                }
+                //on crée ajout l'utilisateur dans la BD
+                $event_courrant->setId($id);
+                $event_courrant->setTitre($titre);
+                $event_courrant->setTitre($date);
+                $event_courrant->setTitre($heure);
+                $event_courrant->setTitre($lieu);
+                //Création liste de mot objet
+                $listeMot_objet = array();
+                foreach($motsListe as $motX){
+                    $listeMot_objet[]= new Mot($motX);
+                }
+                $event_courrant->setMots($listeMot_objet);
+                $event_courrant->definirDescription();
                 break;
             default:
                 // Action non reconnue

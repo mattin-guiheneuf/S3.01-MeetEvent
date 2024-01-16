@@ -22,6 +22,11 @@ class Evenement {
     private $date = "";
 
     /**
+     * @var string Le heure de début de l'evenement.
+     */
+    private $heure = "";
+
+    /**
      * @var string Le lieu de l'evenement.
      */
     private $lieu = "";
@@ -67,6 +72,74 @@ class Evenement {
      */
     public function setId(int $id) {
         $this->id = $id;
+    }
+    //titre
+    /**
+     * Obtient l'id de l'événement.
+     *
+     * @return string ID.
+     */
+    public function getTitre() {
+        return $this->titre;
+    }
+    /**
+     * Attribuer l'id à un évenement.
+     *
+     * @param string $id un id représentant l'id de l'événement.
+     */
+    public function setTitre(string $titre) {
+        $this->titre = $titre;
+    }
+    //titre
+    /**
+     * Obtient l'id de l'événement.
+     *
+     * @return string ID.
+     */
+    public function getDate() {
+        return $this->date;
+    }
+    /**
+     * Attribuer l'id à un évenement.
+     *
+     * @param string $id un id représentant l'id de l'événement.
+     */
+    public function setDate(string $date) {
+        $this->date = $date;
+    }
+    //titre
+    /**
+     * Obtient l'id de l'événement.
+     *
+     * @return string ID.
+     */
+    public function getHeure() {
+        return $this->heure;
+    }
+    /**
+     * Attribuer l'id à un évenement.
+     *
+     * @param string $id un id représentant l'id de l'événement.
+     */
+    public function setHeure(string $heure) {
+        $this->heure = $heure;
+    }
+    //titre
+    /**
+     * Obtient l'id de l'événement.
+     *
+     * @return string ID.
+     */
+    public function getLieu() {
+        return $this->lieu;
+    }
+    /**
+     * Attribuer l'id à un évenement.
+     *
+     * @param string $id un id représentant l'id de l'événement.
+     */
+    public function setLieu(string $lieu) {
+        $this->lieu = $lieu;
     }
     //tags
     /**
@@ -120,28 +193,44 @@ class Evenement {
      *
      */
     public function definirDescription() {
-        $listeMot = [];
-        $motsX = "";
 
-        while (true) {
-            $motsX = readline("Entrez un des mots pour décrire l'événement (quit pour quitter): ");
-
-            if ($motsX == "quit") {
-                break;
-            } else {
-                $listeMot[] = $motsX;
-            }
+        $motsLib = array();
+        foreach ($this->getMots() as $mot) {
+            $motsLib[] = $mot->getLibelle();
         }
 
-        $this->setMots($listeMot);
-
+        //Ajout des données dans le json-------------------------
         // Mise à jour des données
-        $donnees['evenements'][$this->getId() - 1]['mots'] = $this->getMots();
+        // Lire le contenu JSON depuis le fichier
+        $contenuJSON = file_get_contents('./data/donnees.json');
+        $donnees = json_decode($contenuJSON, true);
 
+        // Nouvel utilisateur à ajouter
+        $nouvelEvent = array(
+            "id" => $this->getId(),
+            "titre" => $this->getTitre(),
+            "date" => $this->getDate(),
+            "heure" => $this->getHeure(),
+            "lieu" => $this->getLieu(),
+            "mots" => $motsLib,
+            "tags" => []
+        );
+        //$donnees['utilisateurs'][$this->getId() - 1]['mots'] = $motsLib;
+        
+        // Ajouter le nouvel utilisateur à la liste des utilisateurs existants
+        $donnees['evenements'][] = $nouvelEvent;
+        
         // Écrire les données mises à jour dans le fichier JSON
-        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
-    
-        // Redéfinir les tags en fonction des nouveaux mots
+        file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+
+        //Afficher résultats----------------------------------------
+        echo "-----------------------------------";
+        echo "<br>Evenement ".$this->getId()." créé ! Il possède les mots : ";
+        foreach ($this->getMots() as $mot) {
+            echo $mot->getLibelle()." ";
+        }
+        echo "<br>-----------------------------------";
+
         $this->definirTags();
     }
 

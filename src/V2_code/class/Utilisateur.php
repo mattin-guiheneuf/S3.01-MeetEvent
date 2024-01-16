@@ -147,14 +147,7 @@ class Utilisateur {
      * METHODE SPECIFIQUE : Attribuer la liste de Mots à un utilisateur en fonction des mots saisis.
      *
      */
-    public function definirDescription(array $listeMot_utilisateur,int $id,string $nom) {
-        
-        $listeMot_objet = array();
-        foreach($listeMot_utilisateur as $motX){
-            $listeMot_objet[]= new Mot($motX);
-        }
-
-        $this->setMots($listeMot_objet);
+    public function definirDescription() {
 
         $motsLib = array();
         foreach ($this->getMots() as $mot) {
@@ -169,8 +162,8 @@ class Utilisateur {
 
         // Nouvel utilisateur à ajouter
         $nouvelUtilisateur = array(
-            "id" => $id,
-            "nom" => $nom,
+            "id" => $this->getId(),
+            "nom" => $this->getNom(),
             "mots" => $motsLib,
             "tags" => []
         );

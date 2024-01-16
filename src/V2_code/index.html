@@ -106,10 +106,15 @@
         <label for="heure">Heure :</label>
         <input type="text" id="heure" name="heure">
 
-        <label for="mot">Mot :</label>
-        <input type="text" id="mot" name="mot">
-        <button type="button" onclick="ajouterMot()">Ajouter</button>
-        <div id="listeMots"></div>
+        <label for="lieu">Lieu :</label>
+        <input type="text" id="lieu" name="lieu">
+
+        <label for="motEvenement">Mot :</label>
+        <input type="text" id="motEvenement" name="motEvenement">
+        <button type="button" onclick="ajouterMotEvenement()">Ajouter</button>
+        <div id="listeMotsEvenement"></div>
+
+        <input type="hidden" id="motsListeEvenementInput" name="motsListeEvenement" value="">
 
         <button type="submit" name="action" value="creerEvenement">Création d'un événement</button>
     </form>
@@ -118,6 +123,7 @@
 
     <script>
         var motsListe = [];
+        var motsListeEvenement = [];
 
         function ajouterMot() {
             var motSaisi = document.getElementById('mot').value.trim();
@@ -140,6 +146,27 @@
             // Mettre à jour la valeur de l'input caché avec la liste de mots
             document.getElementById("motsListeInput").value = JSON.stringify(motsListe);
     
+        }
+
+        function ajouterMotEvenement() {
+            var motSaisi = document.getElementById('motEvenement').value.trim();
+            if (motSaisi !== '') {
+                motsListeEvenement.push(motSaisi);
+                afficherListeMotsEvenement();
+                document.getElementById('motEvenement').value = ''; 
+            } else {
+                alert('Veuillez saisir un mot.');
+            }
+        }
+
+        function afficherListeMotsEvenement() {
+            var listeMotsDiv = document.getElementById('listeMotsEvenement');
+            listeMotsDiv.innerHTML = '<p><strong>Liste de mots ajoutés :</strong></p>';
+            for (var i = 0; i < motsListeEvenement.length; i++) {
+                listeMotsDiv.innerHTML += '<p>' + motsListeEvenement[i] + '</p>';
+            }
+
+            document.getElementById('motsListeEvenementInput').value = JSON.stringify(motsListeEvenement);
         }
     </script>
 
