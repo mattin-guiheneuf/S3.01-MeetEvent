@@ -1,55 +1,69 @@
 <?php
+/**
+ * @file Corpus.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Courpus
+ * @details Contient la structure de la classe Corpus ayant un nom et une liste de Tag
+ * @version 1.0
+ */
+
+ /**
+  * Classe Corpus qui permet de mettre en place le Corpus de Tag
+  */
 
 class Corpus {
-    // ATTRIBUTS
+    /** Attributs */
     /**
+     * @brief L'identifiant du Corpus
      * @var int 
      */
     private $id;
 
     /**
-     * @var array 
+     * @brief Liste de Tag contenu dans le Corpus
+     * @var Tag[]
      */
     private $mesTags = [];
 
 
-    // METHODES
-    // CONSTRUCTEUR
+    /** Methodes */
+    /** Constructeur */
     /**
-     * Constructeur de la classe Corpus
-     * @param int $id
-     * @param array $mesTags
+     * @brief Constructeur de la classe Corpus
+     * @param int $id Identifiant du Corpus
+     * @param Tag[] $mesTags Liste des Tag présent dans le Corpus 
      */
     public function __construct(int $id, array $mesTags){
         $this->setId($id);
         $this->setMesTags($mesTags);
     }
 
-    // ENCAPSULATION
-    // id
+
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id du Corpus
-     * @return int 
+     * @brief Obtient l'identifiant du Corpus
+     * @return int $id Identifiant du Corpus
      */
     public function getId() {return $this->id;}
 
     /**
-     * Attribut l'id au Corpus
-     * @param int
+     * @brief Attribut l'identifiant au Corpus
+     * @param int [in] Identifiant du Corpus
      */
     public function setId(int $id) {$this->id = $id;}
 
 
-    // id
+    // $mesTags
     /**
-     * Obtient les Tags du Corpus
-     * @return array 
+     * @brief Obtient les Tags du Corpus
+     * @return Tag[] $mesTags Liste des Tag présent dans le Corpus 
      */
     public function getMesTags() {return $this->mesTags;}
 
     /**
-     * Attribut les Tags au Corpus
-     * @param array
+     * @brief Attribut les Tags au Corpus
+     * @param Tag[] $mesTags Liste des Tag présent dans le Corpus 
      */
     public function setMesTags(array $mesTags) {$this->mesTags = $mesTags;}
 }
