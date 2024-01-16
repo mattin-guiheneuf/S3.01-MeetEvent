@@ -37,7 +37,7 @@
         }
 
         echo "encodage<br>";
-        file_put_contents('dicoSynTag.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
+        file_put_contents('../data/dicoSynTag.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
         echo "encodage terminé<br><br>";
 
         return $dicoSynTag;
