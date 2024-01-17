@@ -268,7 +268,7 @@ class Utilisateur {
         // Lire le contenu JSON depuis le fichier
         $contenuJSON = file_get_contents('./data/donnees.json');
         $donnees = json_decode($contenuJSON, true);
-        $donnees['utilisateurs'][$this->getId()+1]['tags'] = $realListeTag;
+        $donnees['utilisateurs'][$this->getId()-1]['tags'] = $realListeTag;
         file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
 
         // Renvoyer

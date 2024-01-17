@@ -119,20 +119,33 @@
         <button type="submit" name="action" value="creerEvenement">Création d'un événement</button>
     </form>
 
-
-
+	<?php 
+        // Récupération du dicoMotsFr pour la saisieVerif des mots
+        $jsonDicoMotsFr = file_get_contents('./data/motsFr.json');
+        $dicoMotsFr = json_decode($jsonDicoMotsFr, true);
+    ?>
     <script>
         var motsListe = [];
         var motsListeEvenement = [];
+        var listeMotsFr = <?php echo $jsonDicoMotsFr; ?>;
+
+        function saisieVerif(mot){
+            return listeMotsFr.indexOf(mot) != -1; // mot in listeMotsFr
+        }
 
         function ajouterMot() {
-            var motSaisi = document.getElementById('mot').value.trim();
-            if (motSaisi !== '') {
-                motsListe.push(motSaisi);
-                afficherListeMots();
-                document.getElementById('mot').value = ''; // Efface le champ après ajout
-            } else {
-                alert('Veuillez saisir un mot.');
+            var motSaisi = document.getElementById('mot').value.trim().toLowerCase();
+            if(saisieVerif(motSaisi)){
+                if (motSaisi !== '') {
+                    motsListe.push(motSaisi);
+                    afficherListeMots();
+                    document.getElementById('mot').value = ''; // Efface le champ après ajout
+                } else {
+                    alert('Veuillez saisir un mot.');
+                }
+            }
+            else {
+                alert("Mot invalide, veuillez saisir un autre mot...");
             }
         }
 
@@ -150,12 +163,17 @@
 
         function ajouterMotEvenement() {
             var motSaisi = document.getElementById('motEvenement').value.trim();
-            if (motSaisi !== '') {
-                motsListeEvenement.push(motSaisi);
-                afficherListeMotsEvenement();
-                document.getElementById('motEvenement').value = ''; 
-            } else {
-                alert('Veuillez saisir un mot.');
+			if(saisieVerif(motSaisi)){
+				if (motSaisi !== '') {
+					motsListeEvenement.push(motSaisi);
+					afficherListeMotsEvenement();
+					document.getElementById('motEvenement').value = ''; 
+				} else {
+					alert('Veuillez saisir un mot.');
+				}
+			}
+			else {
+				alert("Mot invalide, veuillez saisir un autre mot...");
             }
         }
 
