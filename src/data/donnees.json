@@ -357,6 +357,31 @@
                 "d\u00e9tente",
                 "changement"
             ]
+        },
+        {
+            "id": 12,
+            "nom": "yannis",
+            "mots": [
+                "jeux"
+            ],
+            "tags": [
+                "jeux"
+            ]
+        },
+        {
+            "id": 13,
+            "nom": "johan",
+            "mots": [
+                "jeux",
+                "guerre",
+                "plaisir"
+            ],
+            "tags": [
+                "jeux",
+                "entra\u00eenement",
+                "formation",
+                "plaisir"
+            ]
         }
     ],
     "evenements": [
