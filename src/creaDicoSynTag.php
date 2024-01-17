@@ -1,9 +1,23 @@
 <!-- SAE -->
 <?php
+
+/**
+ * @file creaDicoSynTag.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la fonction creaDicoSynTag
+ * @details Contient la focntion qui permet de créer le dictionnaire des synonyme de tags
+ * @version 1.0
+ */
+
+
     // Récupératiob de l'API
     include_once "module.php";
 
-    // Fonction creaDicoSynTag
+    /**
+     * @brief Créer le dictionnaire des synonyme de Tags
+     * @param Tag[]
+     * @return array
+     */
     function creaDicoSynTag($CORPUS_TAG)
     {
         echo "Lancement création dicoSynTag <br><br>";
@@ -73,7 +87,7 @@
         }
 
         echo "encodage<br>";
-        file_put_contents('./data/dicoSynTagTrg3.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
+        file_put_contents('./data/dicoSynTagTrg.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
         echo "encodage terminé<br><br>";
 
         return $dicoSynTag;
@@ -84,32 +98,29 @@
 
     // Vrai cropus de tags
     $CORPUS_TAG = [
-        "Cuisine", "Saveur", "Recette", "Ingrédients", "Art", "Création",
-        "Musique", "Dessin", "Sport", "Entraînement", "Socialisation", "Échange",
+        "Cuisine", "Ingrédients", "Art",
+        "Musique", "Dessin", "Sport", "Entraînement", "Social", "Échange",
         "Discussion", "Méditation", "Détente", "Lecture", "Écoute","Rire",
         "Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
-        "Apprentissage", "Enseignement", "Travail", "Créativité", "Construction",
+        "Enseignement", "Travail", "Créativité", "Construction",
         "Réparation", "Jardinage", "Photographie", "Film", "Danse", "Chant", 
-        "Instrument", "Collection", "Analyse", "Réflexion",
-        "Résolution", "Engagement", "Volontariat", "Organisation",
+        "Instrument", "Collection", "Informatique", "Réflexion",
+        "Engagement", "Volontariat", "Organisation",
         "Événement", "Défense", "Exercice", "Expérience", "Test",
         "Développement", "Amélioration", "Innovation", "Économie",
         "Investissement", "Gestion", "Partage", "Influence", "Motivation",
-        "Inspiration", "Amusement", "Détente", "Profiter",
-        "Célébration", "Changement", "Réflexion", "Créativité",
-        "Imagination", "Réflexion", "Exploration", "Jeux", "Festival",
-        "Culture", "Concert", "Repas", "Aperitif", "Vin", "Banquet",
-        "Association", "Cafe", "Rencontre", "Renforcement musculaire",
-        "Activite physique", "Course", "Entrainement", "Randonnee",
-        "Marche", "Balade", "Football", "Amical",
-        "Plaisir", "Jeu de societe", "Convivialite",
-        "Jeu de cartes", "Jeu de Plateau", "Equitation",
+        "Inspiration", "Amusement",
+        "Célébration", "Changement",
+        "Imagination", "Jeux", "Festival",
+        "Culture", "Concert", "Repas", "Aperitif", "Alcool",
+        "Association", "Cafe", "Rencontre",
+        "Marche", "Amical",
+        "Plaisir", "Jeu de société", "Animaux",
         "Soiree", "Nature", "Paysages", "Atelier", 
-        "Gastronomie", "Oenologie", "Degustation", "Exposition", "Musee",
-        "Diner", "Caritatif", "Solidarite", "Fete", "Handball",
-        "Buvette", "Tennis", "Raquette", "Loisir", "Golf", "Judo",
-        "Competition", "Tournoi", "Peinture", "Cinema", "Montagne",
-        "Finance", "Formation", "Nourriture", "Basket", "Rugby", "Natation"
+        "Gastronomie", "Oenologie", "Dégustation", "Exposition", "Musee",
+        "Dîner", "Caritatif", "Solidarité", "Raquette", "Loisir",
+        "Competition", "Tournoi", "Peinture", "Montagne",
+        "Finance", "Formation", "Nourriture"
     ];
 
     //creaDicoSynTag($CORPUS_TAG);
