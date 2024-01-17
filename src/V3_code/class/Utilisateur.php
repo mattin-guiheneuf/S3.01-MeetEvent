@@ -244,11 +244,21 @@ class Utilisateur {
         $this->setTags($realListeTag);
 
         //Afficher résultats----------------------------------------
+        echo "<br><br>-----------------------------------";
+        echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") possède les tags : ";
+        foreach ($this->getTags() as $tag) {
+            echo $tag." ";
+        }
         echo "<br>-----------------------------------";
-        echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") est relié aux tags : ";
+
+        //Afficher résultats----------------------------------------
+        echo "<br><br>-----------------------------------";
+        echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") est relié aux tags grâce à : ";
         echo '<br>';
         print_r($dicoMotToTag);
         echo "<br>-----------------------------------";
+
+        
         
 
         // encodage en json

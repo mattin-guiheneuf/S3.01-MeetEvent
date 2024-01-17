@@ -263,8 +263,16 @@ class Evenement {
         $this->setTags($realListeTag);
 
         //Afficher résultats----------------------------------------
+        echo "<br><br>-----------------------------------";
+        echo "<br>Évènement ".$this->getTitre()." (".$this->getId().") possède les tags : ";
+        foreach ($this->getTags() as $tag) {
+            echo $tag." ";
+        }
         echo "<br>-----------------------------------";
-        echo "<br>L'évènement ".$this->getTitre()." (".$this->getId().") est relié aux tags : ";
+
+        //Afficher résultats----------------------------------------
+        echo "<br><br>-----------------------------------";
+        echo "<br>L'évènement ".$this->getTitre()." (".$this->getId().") est relié aux tags grâce à : ";
         echo '<br>';
         print_r($dicoMotToTag);
         echo "<br>-----------------------------------";
@@ -273,7 +281,7 @@ class Evenement {
         // Lire le contenu JSON depuis le fichier
         $contenuJSON = file_get_contents('./data/donnees.json');
         $donnees = json_decode($contenuJSON, true);
-        $donnees['evenements'][$this->getId()]['tags'] = $realListeTag;
+        $donnees['evenements'][$this->getId()-1-10000]['tags'] = $realListeTag;
         file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
 
         // Renvoyer
