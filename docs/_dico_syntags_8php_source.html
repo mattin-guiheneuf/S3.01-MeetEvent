@@ -77,8 +77,9 @@ $(function() {
   <div class="headertitle"><div class="title">DicoSyntags.php</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<a href="_dico_syntags_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<<<<<<< HEAD
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_dico_syn_tags.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_dico_syn_tags.html">DicoSynTags</a> {</div>
@@ -152,6 +153,77 @@ $(function() {
 <div class="ttc" id="aclass_dico_syn_tags_html_a40e867f4f47567387a95d50a63428112"><div class="ttname"><a href="class_dico_syn_tags.html#a40e867f4f47567387a95d50a63428112">DicoSynTags\determinerSynonymes</a></div><div class="ttdeci">determinerSynonymes($CORPUS_TAG)</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00037">DicoSyntags.php:37</a></div></div>
 <div class="ttc" id="aclass_dico_syn_tags_html_ae442819d9598cc34b75c42044da413f7"><div class="ttname"><a href="class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7">DicoSynTags\setDicoSynTag</a></div><div class="ttdeci">setDicoSynTag(array $newDico)</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00084">DicoSyntags.php:84</a></div></div>
 <div class="ttc" id="aclass_dico_syn_tags_html_af2afb599013d19a1523fdf5f748062ba"><div class="ttname"><a href="class_dico_syn_tags.html#af2afb599013d19a1523fdf5f748062ba">DicoSynTags\__construct</a></div><div class="ttdeci">__construct(Corpus $corpus_tag)</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00021">DicoSyntags.php:21</a></div></div>
+=======
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_dico_syn_tags.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_dico_syn_tags.html">DicoSynTags</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> $dico = array();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_dico_syn_tags.html#af2afb599013d19a1523fdf5f748062ba">   29</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_dico_syn_tags.html#af2afb599013d19a1523fdf5f748062ba">__construct</a>(<a class="code hl_class" href="class_corpus.html">Corpus</a> $corpus_tag){</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">// Lire le contenu JSON depuis le fichier dicoSynTag</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $jsonDicoSynTag = file_get_contents(<span class="stringliteral">&#39;./data/dicoSynTag.json&#39;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span>(empty($jsonDicoSynTag)){</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            $this-&gt;determinerSynonymes($corpus_tag);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $this-&gt;$dico = json_decode($jsonDicoSynTag, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">private</span> <span class="keyword">function</span> determinerSynonymes($CORPUS_TAG) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// VARIABLES</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $dicoSynTag = array();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $utilise = <span class="keyword">new</span> <a class="code hl_class" href="class_api_synonyme.html">ApiSynonyme</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">// TRAITEMENTS</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">// Ajout des tags au dicoSynTag pour qu&#39;ils soient également détectés</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">foreach</span> ($CORPUS_TAG as $tagCourant) { <span class="comment">// Pour chaque tag</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            $dicoSynTag += array($tagCourant=&gt;array($tagCourant)); <span class="comment">// Ajout dans le dico tagCourant : tagCourant pour que les tags puissent être directement relié à eux-mêmes</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="comment">// Enrichissement au premier degré du dictionnaire avec les synonymes des tags</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">foreach</span> ($CORPUS_TAG as $tagCourant) <span class="comment">// Pour chaque tag</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            $listeSynTagCourant = $utilise-&gt;utiliserApiSyn($tagCourant-&gt;getLibelle)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// On exploite l&#39;API pour récupérer les synonymes du tagCourant</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">foreach</span>($listeSynTagCourant as $synTagCourant) <span class="comment">// Pour chaque synonyme du tagCourant</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">if</span>(array_key_exists($synTagCourant,$dicoSynTag)){ <span class="comment">// Si le synonyme est déjà présent comme clé</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    <span class="keywordflow">if</span>(!(in_array($tagCourant,$dicoSynTag[$synTagCourant]))){ <span class="comment">// Si le tag est pas déjà dans la liste</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        array_push($dicoSynTag[$synTagCourant],$tagCourant); <span class="comment">// On l&#39;ajoute</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">else</span> <span class="comment">// Sinon le synonyme est pas encore présent comme clé</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    $dicoSynTag[$synTagCourant] = array($tagCourant); <span class="comment">// Donc on l&#39;ajoute associé à son tag</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">// Encodage en json</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        file_put_contents(<span class="stringliteral">&#39;./data/dicoSynTag.json&#39;</span>,json_encode($dicoSynTag,JSON_PRETTY_PRINT));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $this-&gt;$dico = $dicoSynTag;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_dico_syn_tags.html#a2fd27c67b3e83a24816a652d427096b1">   89</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_dico_syn_tags.html#a2fd27c67b3e83a24816a652d427096b1">getDicoSynTag</a>() {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> $this-&gt;$dico;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7">   98</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7">setDicoSynTag</a>(array $newDico) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        $this-&gt;$dico = $newDico;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="ttc" id="aclass_api_synonyme_html"><div class="ttname"><a href="class_api_synonyme.html">ApiSynonyme</a></div><div class="ttdef"><b>Definition</b> <a href="_api_synonyme_8php_source.html#l00006">ApiSynonyme.php:6</a></div></div>
+<div class="ttc" id="aclass_corpus_html"><div class="ttname"><a href="class_corpus.html">Corpus</a></div><div class="ttdef"><b>Definition</b> <a href="_corpus_8php_source.html#l00014">Corpus.php:14</a></div></div>
+<div class="ttc" id="aclass_dico_syn_tags_html"><div class="ttname"><a href="class_dico_syn_tags.html">DicoSynTags</a></div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00015">DicoSyntags.php:15</a></div></div>
+<div class="ttc" id="aclass_dico_syn_tags_html_a2fd27c67b3e83a24816a652d427096b1"><div class="ttname"><a href="class_dico_syn_tags.html#a2fd27c67b3e83a24816a652d427096b1">DicoSynTags\getDicoSynTag</a></div><div class="ttdeci">getDicoSynTag()</div><div class="ttdoc">Obtient le dictionnaire des synonymes.</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00089">DicoSyntags.php:89</a></div></div>
+<div class="ttc" id="aclass_dico_syn_tags_html_ae442819d9598cc34b75c42044da413f7"><div class="ttname"><a href="class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7">DicoSynTags\setDicoSynTag</a></div><div class="ttdeci">setDicoSynTag(array $newDico)</div><div class="ttdoc">Attribut le nouveau dictionnaire associant des Synonyme à des Tag.</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00098">DicoSyntags.php:98</a></div></div>
+<div class="ttc" id="aclass_dico_syn_tags_html_af2afb599013d19a1523fdf5f748062ba"><div class="ttname"><a href="class_dico_syn_tags.html#af2afb599013d19a1523fdf5f748062ba">DicoSynTags\__construct</a></div><div class="ttdeci">__construct(Corpus $corpus_tag)</div><div class="ttdoc">Constructeur de la classe DicoSyntags.</div><div class="ttdef"><b>Definition</b> <a href="_dico_syntags_8php_source.html#l00029">DicoSyntags.php:29</a></div></div>
+>>>>>>> 7f7152c18f968fc04842632d66b0d9105b5c3a9e
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

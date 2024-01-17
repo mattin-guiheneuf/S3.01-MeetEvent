@@ -77,13 +77,13 @@ $(function() {
   <div class="headertitle"><div class="title">creaDicoSynTag.php</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;!-- SAE --&gt;</div>
+<a href="crea_dico_syn_tag_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;!-- SAE --&gt;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;?php</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="comment">// Récupératiob de l&#39;API</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    include_once <span class="stringliteral">&quot;./synAvecAPI.php&quot;</span>;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// Fonction creaDicoSynTag</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">function</span> creaDicoSynTag($CORPUS_TAG)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="crea_dico_syn_tag_8php.html#a9469e5a5fd651092cfdc1845677f4d7f">    7</a></span>    <span class="keyword">function</span> <a class="code hl_function" href="crea_dico_syn_tag_8php.html#a9469e5a5fd651092cfdc1845677f4d7f">creaDicoSynTag</a>($CORPUS_TAG)</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        echo <span class="stringliteral">&quot;Lancement création dicoSynTag &lt;br&gt;&lt;br&gt;&quot;</span>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="comment">// Enrichissement au premier degré du dictionnaire avec les synonymes des tags</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">foreach</span> ($CORPUS_TAG as $tagCourant) <span class="comment">// Pour chaque tag</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            $listeSynTagCourant = synAvecAPI($tagCourant)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// On exploite l&#39;API pour récupérer les synonymes du tagCourant</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            $listeSynTagCourant = <a class="code hl_function" href="syn_avec_a_p_i_8php.html#aa5a8c7a60ce1718be2c212edf9b62929">synAvecAPI</a>($tagCourant)[<span class="stringliteral">&#39;synonyms&#39;</span>]; <span class="comment">// On exploite l&#39;API pour récupérer les synonymes du tagCourant</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">foreach</span>($listeSynTagCourant as $synTagCourant) <span class="comment">// Pour chaque synonyme du tagCourant</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
@@ -127,6 +127,8 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">//creaDicoSynTag($CORPUS_TAG_test);</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>?&gt;</div>
+<div class="ttc" id="acrea_dico_syn_tag_8php_html_a9469e5a5fd651092cfdc1845677f4d7f"><div class="ttname"><a href="crea_dico_syn_tag_8php.html#a9469e5a5fd651092cfdc1845677f4d7f">creaDicoSynTag</a></div><div class="ttdeci">creaDicoSynTag($CORPUS_TAG)</div><div class="ttdef"><b>Definition</b> <a href="crea_dico_syn_tag_8php_source.html#l00007">creaDicoSynTag.php:7</a></div></div>
+<div class="ttc" id="asyn_avec_a_p_i_8php_html_aa5a8c7a60ce1718be2c212edf9b62929"><div class="ttname"><a href="syn_avec_a_p_i_8php.html#aa5a8c7a60ce1718be2c212edf9b62929">synAvecAPI</a></div><div class="ttdeci">if(isset( $_POST[ 'submit'])) synAvecAPI($wordToSearch, $destinationFile=NULL)</div><div class="ttdef"><b>Definition</b> <a href="syn_avec_a_p_i_8php_source.html#l00051">synAvecAPI.php:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

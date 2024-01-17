@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['getdate_0',['getDate',['../class_evenement.html#a7a41172be8444a48fc862a73fa84dbab',1,'Evenement']]],
   ['getdicosyntag_1',['getDicoSynTag',['../class_dico_syn_tags.html#a2fd27c67b3e83a24816a652d427096b1',1,'DicoSynTags']]],
   ['getheure_2',['getHeure',['../class_evenement.html#aa9a0dfea21d5d873f7827a3ddbcfc2e8',1,'Evenement']]],
@@ -12,4 +13,9 @@ var searchData=
   ['getrecommandation_9',['getRecommandation',['../class_utilisateur.html#ab926941d3806415d52709f123497d915',1,'Utilisateur']]],
   ['gettags_10',['getTags',['../class_evenement.html#a88679359e2d16a1987624a9786f33897',1,'Evenement\getTags()'],['../class_utilisateur.html#a21e2573bf7e36deea4ea80eb7768e2ab',1,'Utilisateur\getTags()']]],
   ['gettitre_11',['getTitre',['../class_evenement.html#a238b6d80432f871f27a97579cc0ccc33',1,'Evenement']]]
+=======
+  ['faire_5fcorpus_0',['Faire_Corpus',['../namespace_faire___corpus.html',1,'']]],
+  ['faire_5fcorpus_2epy_1',['Faire_Corpus.py',['../_faire___corpus_8py.html',1,'']]],
+  ['foreach_2',['foreach',['../main_8php.html#a5d3dadf116ac6cb363ac6bf0fbbc42b3',1,'main.php']]]
+>>>>>>> 7f7152c18f968fc04842632d66b0d9105b5c3a9e
 ];

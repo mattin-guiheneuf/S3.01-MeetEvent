@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['setdate_0',['setDate',['../class_evenement.html#a6fafc25de8eee230cbe8b976a823e4e1',1,'Evenement']]],
   ['setdicosyntag_1',['setDicoSynTag',['../class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7',1,'DicoSynTags']]],
   ['setheure_2',['setHeure',['../class_evenement.html#a74c6e680931398dce17b383279e57350',1,'Evenement']]],
@@ -13,4 +14,7 @@ var searchData=
   ['settags_10',['setTags',['../class_evenement.html#a86b866217a9441a13a38ccbd9d22de58',1,'Evenement\setTags()'],['../class_utilisateur.html#a7998810f870136799046e0b7b669ab9e',1,'Utilisateur\setTags()']]],
   ['settitre_11',['setTitre',['../class_evenement.html#ad0fdeaca8dce71ed8027d0c70c23394e',1,'Evenement']]],
   ['supprimertag_12',['supprimerTag',['../class_evenement.html#a3648f0f17e1f81e8c23fd27a242aa9f3',1,'Evenement\supprimerTag()'],['../class_utilisateur.html#a55ba16b199be95af1959b97c3c518d42',1,'Utilisateur\supprimerTag()']]]
+=======
+  ['linktosuggest_0',['linkToSuggest',['../class_utilisateur.html#a4cfc7b2760ec362c487e99a4e71d6df0',1,'Utilisateur']]]
+>>>>>>> 7f7152c18f968fc04842632d66b0d9105b5c3a9e
 ];
