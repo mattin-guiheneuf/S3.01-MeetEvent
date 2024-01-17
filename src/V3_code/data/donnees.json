@@ -542,6 +542,188 @@
                 "pied"
             ],
             "tags": []
+        },
+        {
+            "id": 52,
+            "nom": "test",
+            "mots": [
+                "sport",
+                "ski",
+                "manger",
+                "jeux",
+                "plage"
+            ],
+            "tags": []
+        },
+        {
+            "id": 53,
+            "nom": "test",
+            "mots": [
+                "amusement",
+                "ami",
+                "amis",
+                "famille",
+                "ziziziziiz",
+                "informatique"
+            ],
+            "tags": []
+        },
+        {
+            "id": 54,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe"
+            ],
+            "tags": []
+        },
+        {
+            "id": 55,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir"
+            ]
+        },
+        {
+            "id": 56,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz"
+            ],
+            "tags": []
+        },
+        {
+            "id": 57,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir"
+            ]
+        },
+        {
+            "id": 58,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir",
+                "saveur",
+                "recette",
+                "ingr\u00e9dients",
+                "repas",
+                "vin",
+                "gastronomie",
+                "degustation"
+            ]
+        },
+        {
+            "id": 59,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz",
+                "bonjour",
+                "fromage"
+            ],
+            "tags": []
+        },
+        {
+            "id": 60,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz",
+                "bonjour",
+                "fromage"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir",
+                "saveur",
+                "recette",
+                "ingr\u00e9dients",
+                "repas",
+                "vin",
+                "gastronomie",
+                "degustation"
+            ]
+        },
+        {
+            "id": 61,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz",
+                "bonjour",
+                "fromage"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir",
+                "saveur",
+                "recette",
+                "ingr\u00e9dients",
+                "repas",
+                "vin",
+                "gastronomie",
+                "degustation"
+            ]
+        },
+        {
+            "id": 62,
+            "nom": "test",
+            "mots": [
+                "python",
+                "rugby",
+                "sexe",
+                "ziziziziziz",
+                "bonjour",
+                "fromage"
+            ],
+            "tags": [
+                "raquette",
+                "rugby",
+                "plaisir",
+                "saveur",
+                "recette",
+                "ingr\u00e9dients",
+                "repas",
+                "vin",
+                "gastronomie",
+                "degustation"
+            ]
         }
     ],
     "evenements": [
@@ -936,6 +1118,42 @@
                 "amis",
                 "joueur",
                 "pourquoi pas"
+            ],
+            "tags": []
+        },
+        {
+            "id": 10026,
+            "titre": "F\u00eate chez moi ce soir c'est le zbar",
+            "date": "tout de suite",
+            "heure": "20h",
+            "lieu": "Chez moi c'est dit dans le titre",
+            "mots": [
+                "f\u00eate",
+                "fete",
+                "amusement",
+                "alcool",
+                "fille",
+                "sexe",
+                "soir\u00e9e",
+                "sodomie"
+            ],
+            "tags": []
+        },
+        {
+            "id": 10027,
+            "titre": "F\u00eate chez moi ce soir c'est le zbar",
+            "date": "tout de suite",
+            "heure": "20h",
+            "lieu": "Chez moi c'est dit dans le titre",
+            "mots": [
+                "f\u00eate",
+                "fete",
+                "amusement",
+                "alcool",
+                "fille",
+                "sexe",
+                "soir\u00e9e",
+                "sodomie"
             ],
             "tags": []
         }

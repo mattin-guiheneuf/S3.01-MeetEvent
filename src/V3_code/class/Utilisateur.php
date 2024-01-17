@@ -222,9 +222,15 @@ class Utilisateur {
                         $listeTag[] = $dicoSynTag[$trgMotCourant]; // Verif si déjà présent ???
                     }
                 }
+
+                // Si pas trouvé c'est que pas liable avec le dicoSynTag donc avec le corpus
+                if (!(array_key_exists($motCourant,$dicoMotToTag))) {
+                    $dicoMotToTag[$motCourant] = array('Impossible à lier'); // On enregistre qu'il n'est pas liable
+                }
             }
         }
 
+        // Bonne mise en forme de la liste de tags
         $realListeTag = array(); // Enlever les doublons ou autre (pas nécessaires si vérif presence à chaque ajout dans liste ???)
         foreach ($listeTag as $liste) {
             foreach ($liste as $tag) {
@@ -234,12 +240,26 @@ class Utilisateur {
             }
         }
 
+        // Maj objet
+        $this->setTags($realListeTag);
+
+        //Afficher résultats----------------------------------------
+        echo "<br>-----------------------------------";
+        echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") est relié aux tags : ";
+        echo '<br>';
         print_r($dicoMotToTag);
+        echo "<br>-----------------------------------";
+        
 
         // encodage en json
-        file_put_contents('./data/motToTag.json',json_encode($dicoMotToTag,JSON_PRETTY_PRINT));
+        //file_put_contents('./data/motToTag.json',json_encode($dicoMotToTag,JSON_PRETTY_PRINT));
 
-        $this->setTags($realListeTag);
+        // Maj donnes.json
+        // Lire le contenu JSON depuis le fichier
+        $contenuJSON = file_get_contents('./data/donnees.json');
+        $donnees = json_decode($contenuJSON, true);
+        $donnees['utilisateurs'][$this->getId()+1]['tags'] = $realListeTag;
+        file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
 
         // Renvoyer
         return array($dicoMotToTag, $realListeTag);
@@ -292,7 +312,7 @@ class Utilisateur {
      * METHODE SPECIFIQUE : Modifier les Mots saisis.
      *
      */
-    public function modifierDescription() {
+    public function modifierDescription($dicoSynTag) {
         $listeMot = $this->getTags();
         echo implode(", ", $this->getTags()) . PHP_EOL;
 
@@ -333,7 +353,7 @@ class Utilisateur {
         file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
 
         // Redéfinir les tags en fonction des nouveaux mots
-        $this->definirTags();
+        $this->definirTags($dicoSynTag);
     }
 
     /**

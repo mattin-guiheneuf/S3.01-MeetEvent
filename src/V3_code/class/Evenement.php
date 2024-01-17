@@ -182,17 +182,109 @@ class Evenement {
      *
      * @return array $listeTags une liste de Tag représentant les Tags de l'événement.
      */
-    private function definirTags() {
-        $listeTags = array();
-        //TRAITEMENT
-        return $listeTags;
+    private function definirTags($dicoSynTag) {
+        include_once "module.php";
+
+        // VARIABLES
+        $listeMots = $this->getMots();
+        $listeMot = array();
+        foreach($listeMots as $mot){
+            array_push($listeMot,$mot->getLibelle());
+        }
+        $dicoMotToTag = array(); // Le résultat de la fonction avec les étapes par lesquelles on passe pour arriver aux tags
+        $listeTag = array(); // Le résultat de la fonction avec la liste des tags
+
+        // TRAITEMENTS
+        foreach ($listeMot as $motCourant) { // Pour chaque mot de la liste
+            // Vérif mot en double
+            if (array_key_exists($motCourant, $dicoMotToTag)) { // Si le mot est déjà présent dans le dico
+                echo $motCourant . " déjà présent dans le dicoMotToTag<br>"; // C'est que le mot est en double
+                continue; // équivalent de pass
+            }
+            // Vérif présence dans dicoSynTag du mot
+            if (array_key_exists($motCourant, $dicoSynTag)) { // Si le motCourant est présent dans le dicoSynTag
+                // Ajout et enregistrement
+                $dicoMotToTag[$motCourant] = $dicoSynTag[$motCourant];
+                $listeTag[] = $dicoSynTag[$motCourant];
+            }
+            else // Sinon enrichissement de 1 degré à partir des mots
+            {
+                // Synonymes
+                $listeSynMot = synAvecAPI(tradMotFrToAng($motCourant)); // Appel de l'API pour récupérer les synonymes du mot courant
+                foreach ($listeSynMot as $synMotCrt) { // Pour chaque synonyme du motCourant
+                    $synMotCourant = tradMotAngToFr($synMotCrt);
+                    if (array_key_exists($synMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
+                        // Ajout et enregistrement
+                        $dicoMotToTag[$motCourant] = array($synMotCourant, $dicoSynTag[$synMotCourant]);
+                        $listeTag[] = $dicoSynTag[$synMotCourant]; // Verif si déjà présent ???
+                    }
+                }
+
+                // Générique
+                $listeGenMot = genAvecAPI(tradMotFrToAng($motCourant)); // Appel de l'API pour récupérer les synonymes du mot courant
+                foreach ($listeGenMot as $genMotCrt) { // Pour chaque synonyme du motCourant
+                    $genMotCourant = tradMotAngToFr($genMotCrt);
+                    if (array_key_exists($genMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
+                        // Ajout et enregistrement
+                        $dicoMotToTag[$motCourant] = array($genMotCourant, $dicoSynTag[$genMotCourant]);
+                        $listeTag[] = $dicoSynTag[$genMotCourant]; // Verif si déjà présent ???
+                    }
+                }
+
+                // Triggered
+                $listeTrgMot = trgAvecAPI(tradMotFrToAng($motCourant)); // Appel de l'API pour récupérer les synonymes du mot courant
+                foreach ($listeTrgMot as $trgMotCrt) { // Pour chaque synonyme du motCourant
+                    $trgMotCourant = tradMotAngToFr($trgMotCrt);
+                    if (array_key_exists($trgMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
+                        // Ajout et enregistrement
+                        $dicoMotToTag[$motCourant] = array($trgMotCourant, $dicoSynTag[$trgMotCourant]);
+                        $listeTag[] = $dicoSynTag[$trgMotCourant]; // Verif si déjà présent ???
+                    }
+                }
+
+                // Si pas trouvé c'est que pas liable avec le dicoSynTag donc avec le corpus
+                if (!(array_key_exists($motCourant,$dicoMotToTag))) {
+                    $dicoMotToTag[$motCourant] = array('Impossible à lier'); // On enregistre qu'il n'est pas liable
+                }
+            }
+        }
+
+        // Bonne mise en forme de la liste de tags
+        $realListeTag = array(); // Enlever les doublons ou autre (pas nécessaires si vérif presence à chaque ajout dans liste ???)
+        foreach ($listeTag as $liste) {
+            foreach ($liste as $tag) {
+                if (!in_array($tag, $realListeTag)) {
+                    $realListeTag[] = $tag;
+                }
+            }
+        }
+
+        // Maj objet
+        $this->setTags($realListeTag);
+
+        //Afficher résultats----------------------------------------
+        echo "<br>-----------------------------------";
+        echo "<br>L'évènement ".$this->getTitre()." (".$this->getId().") est relié aux tags : ";
+        echo '<br>';
+        print_r($dicoMotToTag);
+        echo "<br>-----------------------------------";
+
+        // Maj donnes.json
+        // Lire le contenu JSON depuis le fichier
+        $contenuJSON = file_get_contents('./data/donnees.json');
+        $donnees = json_decode($contenuJSON, true);
+        $donnees['evenements'][$this->getId()]['tags'] = $realListeTag;
+        file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
+
+        // Renvoyer
+        return array($dicoMotToTag, $realListeTag);
     }
 
     /**
      * METHODE SPECIFIQUE : Attribuer la liste de Mots à un évenement en fonction des mots saisis.
      *
      */
-    public function definirDescription() {
+    public function definirDescription($dicoSynTag) {
 
         $motsLib = array();
         foreach ($this->getMots() as $mot) {
@@ -231,14 +323,14 @@ class Evenement {
         }
         echo "<br>-----------------------------------";
 
-        $this->definirTags();
+        $this->definirTags($dicoSynTag);
     }
 
     /**
      * METHODE SPECIFIQUE : Modifier les Mots saisis.
      *
      */
-    public function modifierDescription() {
+    public function modifierDescription($dicoSynTag) {
         $listeMot = $this->getTags();
         echo implode(", ", $this->getTags()) . PHP_EOL;
 
@@ -276,10 +368,10 @@ class Evenement {
         $donnees['evenements'][$this->getId() - 1]['tags'] = $this->getTags();
 
         // Écrire les données mises à jour dans le fichier JSON
-        file_put_contents('../data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
+        file_put_contents('donnees.json', json_encode($donnees, JSON_PRETTY_PRINT, 2));
 
         // Redéfinir les tags en fonction des nouveaux mots
-        $this->definirTags();
+        $this->definirTags($dicoSynTag);
     }
 
     /**
