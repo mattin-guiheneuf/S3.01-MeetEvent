@@ -82,12 +82,15 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:af2afb599013d19a1523fdf5f748062ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dico_syn_tags.html#af2afb599013d19a1523fdf5f748062ba">__construct</a> (<a class="el" href="class_corpus.html">Corpus</a> $corpus_tag)</td></tr>
 <tr class="memdesc:af2afb599013d19a1523fdf5f748062ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe DicoSyntags.  <br /></td></tr>
 <tr class="separator:af2afb599013d19a1523fdf5f748062ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc2c144fa646e6ef2f5d463360097a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dico_syn_tags.html#a9fc2c144fa646e6ef2f5d463360097a9">determinerSynonymes</a> (<a class="el" href="class_corpus.html">Corpus</a> $corpus)</td></tr>
+<tr class="memdesc:a9fc2c144fa646e6ef2f5d463360097a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de peupler le <a class="el" href="class_dico_syn_tags.html">DicoSynTags</a>.  <br /></td></tr>
+<tr class="separator:a9fc2c144fa646e6ef2f5d463360097a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fd27c67b3e83a24816a652d427096b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dico_syn_tags.html#a2fd27c67b3e83a24816a652d427096b1">getDicoSynTag</a> ()</td></tr>
 <tr class="memdesc:a2fd27c67b3e83a24816a652d427096b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient le dictionnaire des synonymes.  <br /></td></tr>
 <tr class="separator:a2fd27c67b3e83a24816a652d427096b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae442819d9598cc34b75c42044da413f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dico_syn_tags.html#ae442819d9598cc34b75c42044da413f7">setDicoSynTag</a> (array $newDico)</td></tr>
-<tr class="memdesc:ae442819d9598cc34b75c42044da413f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribut le nouveau dictionnaire associant des <a class="el" href="class_synonyme.html">Synonyme</a> à des <a class="el" href="class_tag.html">Tag</a>.  <br /></td></tr>
-<tr class="separator:ae442819d9598cc34b75c42044da413f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c7be8b32719bb82faef1f4aec11fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dico_syn_tags.html#ac3c7be8b32719bb82faef1f4aec11fe4">setDicoSynTag</a> ($newDico)</td></tr>
+<tr class="memdesc:ac3c7be8b32719bb82faef1f4aec11fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribut le nouveau dictionnaire associant des <a class="el" href="class_synonyme.html">Synonyme</a> à des <a class="el" href="class_tag.html">Tag</a>.  <br /></td></tr>
+<tr class="separator:ac3c7be8b32719bb82faef1f4aec11fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Cette classe sera un singleton instancié dans le fichier <a class="el" href="main_8php.html">main.php</a> </p>
@@ -118,11 +121,39 @@ Fonctions membres publiques</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00029">29</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00028">28</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a9fc2c144fa646e6ef2f5d463360097a9" name="a9fc2c144fa646e6ef2f5d463360097a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc2c144fa646e6ef2f5d463360097a9">&#9670;&#160;</a></span>determinerSynonymes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DicoSynTags::determinerSynonymes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_corpus.html">Corpus</a>&#160;</td>
+          <td class="paramname"><em>$corpus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de peupler le <a class="el" href="class_dico_syn_tags.html">DicoSynTags</a>. </p>
+<p>Méthodes </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_corpus.html">Corpus</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00039">39</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
+
+</div>
+</div>
 <a id="a2fd27c67b3e83a24816a652d427096b1" name="a2fd27c67b3e83a24816a652d427096b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fd27c67b3e83a24816a652d427096b1">&#9670;&#160;</a></span>getDicoSynTag()</h2>
 
@@ -141,12 +172,12 @@ Fonctions membres publiques</h2></td></tr>
 <p>Obtient le dictionnaire des synonymes. </p>
 <p>Encapsulation $DicoSynTag </p><dl class="section return"><dt>Renvoie</dt><dd>array </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00089">89</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00129">129</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
 
 </div>
 </div>
-<a id="ae442819d9598cc34b75c42044da413f7" name="ae442819d9598cc34b75c42044da413f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae442819d9598cc34b75c42044da413f7">&#9670;&#160;</a></span>setDicoSynTag()</h2>
+<a id="ac3c7be8b32719bb82faef1f4aec11fe4" name="ac3c7be8b32719bb82faef1f4aec11fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c7be8b32719bb82faef1f4aec11fe4">&#9670;&#160;</a></span>setDicoSynTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +185,7 @@ Fonctions membres publiques</h2></td></tr>
         <tr>
           <td class="memname">DicoSynTags::setDicoSynTag </td>
           <td>(</td>
-          <td class="paramtype">array&#160;</td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$newDico</em></td><td>)</td>
           <td></td>
         </tr>
@@ -169,12 +200,12 @@ Fonctions membres publiques</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00098">98</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="_dico_syntags_8php_source.html#l00137">137</a> du fichier <a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a>.</p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>src/V2_code/class/<a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a></li>
+<li>src/class/<a class="el" href="_dico_syntags_8php_source.html">DicoSyntags.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

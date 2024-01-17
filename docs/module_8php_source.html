@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MeetEvent:  Fichier source de src/module.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MeetEvent<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">L&#39;algorithme complexe de notre application web Meet Event</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">module.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="module_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="module_8php.html#a7e7fa708e65da6b31925bc3aa357bd77">   16</a></span><span class="keyword">function</span> <a class="code hl_function" href="module_8php.html#a7e7fa708e65da6b31925bc3aa357bd77">tradMotAngToFr</a>($motATrad){</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//$res = https://translate.google.fr/?sl=en&amp;tl=fr&amp;text=mother%0A&amp;op=translate;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    $api_url = <span class="stringliteral">&quot;https://translate.googleapis.com/translate_a/single?client=gtx&amp;sl=en&amp;tl=fr&amp;dt=t&amp;q=&quot;</span> . urlencode($motATrad);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    $resApi = file_get_contents($api_url);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Le résultat est un JSON, alors nous le décodons</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    $res = json_decode($resApi, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// La traduction se trouve dans la première position du tableau</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> $res[0][0][0];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="module_8php.html#a419b80d2e09b75bebadc78f34ac2054d">   35</a></span><span class="keyword">function</span> <a class="code hl_function" href="module_8php.html#a419b80d2e09b75bebadc78f34ac2054d">tradMotFrToAng</a>($motATrad){</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//$res = https://translate.google.fr/?sl=en&amp;tl=fr&amp;text=mother%0A&amp;op=translate;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    $api_url = <span class="stringliteral">&quot;https://translate.googleapis.com/translate_a/single?client=gtx&amp;sl=fr&amp;tl=en&amp;dt=t&amp;q=&quot;</span> . urlencode($motATrad);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    $resApi = file_get_contents($api_url);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// Le résultat est un JSON, alors nous le décodons</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    $res = json_decode($resApi, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// La traduction se trouve dans la première position du tableau</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> $res[0][0][0];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="module_8php.html#a6c72ba80e1d807839ce8913fb11688b2">   54</a></span><span class="keyword">function</span> <a class="code hl_function" href="module_8php.html#a6c72ba80e1d807839ce8913fb11688b2">synAvecAPI</a>($mot){</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Version avec DataMuse</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    $api_url = <span class="stringliteral">&quot;https://api.datamuse.com/words?rel_syn=&quot;</span> . urlencode($mot);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    $resApi = file_get_contents($api_url);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Le résultat est un JSON, alors nous le décodons</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    $res = json_decode($resApi, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// Extrayez les synonymes du tableau associatif</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    $synonymes = array_column($res, <span class="stringliteral">&#39;word&#39;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> $synonymes;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="module_8php.html#a9b7ff7ae0f1eaa90a998498ce40818be">   74</a></span><span class="keyword">function</span> <a class="code hl_function" href="module_8php.html#a9b7ff7ae0f1eaa90a998498ce40818be">trgAvecAPI</a>($mot){</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// Version avec DataMuse</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    $api_url = <span class="stringliteral">&quot;https://api.datamuse.com/words?rel_trg=&quot;</span> . urlencode($mot);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    $resApi = file_get_contents($api_url);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Le résultat est un JSON, alors nous le décodons</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    $res = json_decode($resApi, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// Extrayez les synonymes du tableau associatif</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    $trg = array_column($res, <span class="stringliteral">&#39;word&#39;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> $trg;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="module_8php.html#a037f74bfad5193e0ee000a9d55a61f61">   94</a></span><span class="keyword">function</span> <a class="code hl_function" href="module_8php.html#a037f74bfad5193e0ee000a9d55a61f61">genAvecAPI</a>($mot){</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// Version avec DataMuse</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    $api_url = <span class="stringliteral">&quot;https://api.datamuse.com/words?rel_gen=&quot;</span> . urlencode($mot);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    $resApi = file_get_contents($api_url);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// Le résultat est un JSON, alors nous le décodons</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    $res = json_decode($resApi, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// Extrayez les synonymes du tableau associatif</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    $gen = array_column($res, <span class="stringliteral">&#39;word&#39;</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> $gen;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>?&gt;</div>
+<div class="ttc" id="amodule_8php_html_a037f74bfad5193e0ee000a9d55a61f61"><div class="ttname"><a href="module_8php.html#a037f74bfad5193e0ee000a9d55a61f61">genAvecAPI</a></div><div class="ttdeci">genAvecAPI($mot)</div><div class="ttdoc">Extraire les synonymes avec l'API.</div><div class="ttdef"><b>Definition</b> <a href="module_8php_source.html#l00094">module.php:94</a></div></div>
+<div class="ttc" id="amodule_8php_html_a419b80d2e09b75bebadc78f34ac2054d"><div class="ttname"><a href="module_8php.html#a419b80d2e09b75bebadc78f34ac2054d">tradMotFrToAng</a></div><div class="ttdeci">tradMotFrToAng($motATrad)</div><div class="ttdoc">traduit les mots de français à anglais</div><div class="ttdef"><b>Definition</b> <a href="module_8php_source.html#l00035">module.php:35</a></div></div>
+<div class="ttc" id="amodule_8php_html_a6c72ba80e1d807839ce8913fb11688b2"><div class="ttname"><a href="module_8php.html#a6c72ba80e1d807839ce8913fb11688b2">synAvecAPI</a></div><div class="ttdeci">synAvecAPI($mot)</div><div class="ttdoc">Récupérer les synonymes avec l'API.</div><div class="ttdef"><b>Definition</b> <a href="module_8php_source.html#l00054">module.php:54</a></div></div>
+<div class="ttc" id="amodule_8php_html_a7e7fa708e65da6b31925bc3aa357bd77"><div class="ttname"><a href="module_8php.html#a7e7fa708e65da6b31925bc3aa357bd77">tradMotAngToFr</a></div><div class="ttdeci">tradMotAngToFr($motATrad)</div><div class="ttdoc">traduit les mots d'anglais à français</div><div class="ttdef"><b>Definition</b> <a href="module_8php_source.html#l00016">module.php:16</a></div></div>
+<div class="ttc" id="amodule_8php_html_a9b7ff7ae0f1eaa90a998498ce40818be"><div class="ttname"><a href="module_8php.html#a9b7ff7ae0f1eaa90a998498ce40818be">trgAvecAPI</a></div><div class="ttdeci">trgAvecAPI($mot)</div><div class="ttdoc">Récupérer les trg avec l'API.</div><div class="ttdef"><b>Definition</b> <a href="module_8php_source.html#l00074">module.php:74</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

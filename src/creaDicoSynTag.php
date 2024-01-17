@@ -1,9 +1,23 @@
 <!-- SAE -->
 <?php
+
+/**
+ * @file creaDicoSynTag.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la fonction creaDicoSynTag
+ * @details Contient la focntion qui permet de créer le dictionnaire des synonyme de tags
+ * @version 1.0
+ */
+
+
     // Récupératiob de l'API
     include_once "module.php";
 
-    // Fonction creaDicoSynTag
+    /**
+     * @brief Créer le dictionnaire des synonyme de Tags
+     * @param Tag[]
+     * @return array
+     */
     function creaDicoSynTag($CORPUS_TAG)
     {
         echo "Lancement création dicoSynTag <br><br>";

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MeetEvent: Référence du fichier src/V2_code/main.php</title>
+<title>MeetEvent: Référence du fichier src/main.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b96de872ff274eae7616eaa26057a54b.html">V2_code</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,6 +98,10 @@ Variables</h2></td></tr>
 <tr class="separator:a48b4f2d78dcb5b0f982a7fedce745e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4a57a370089e394a17772ce1230f73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8php.html#a5d3dadf116ac6cb363ac6bf0fbbc42b3">foreach</a>($liste as $tag)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8php.html#a2c4a57a370089e394a17772ce1230f73">$corpusTag</a> = new <a class="el" href="class_corpus.html">Corpus</a>(1, $list_tag_corpus)</td></tr>
 <tr class="separator:a2c4a57a370089e394a17772ce1230f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833c09e9f7b1db124347d6647f7729cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8php.html#a833c09e9f7b1db124347d6647f7729cb">$jsonDicoSynTag</a> = file_get_contents('./data/dicoSynTag.json')</td></tr>
+<tr class="separator:a833c09e9f7b1db124347d6647f7729cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01122be99bdd6c5fa9de1a4e2a88d2f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8php.html#a01122be99bdd6c5fa9de1a4e2a88d2f3">$dicoSynTag</a> = json_decode($jsonDicoSynTag, true)</td></tr>
+<tr class="separator:a01122be99bdd6c5fa9de1a4e2a88d2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959ec96c9a57077ca25357d9fc5bb18e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8php.html#a959ec96c9a57077ca25357d9fc5bb18e">$eventsAndUserPreferences</a> = []</td></tr>
 <tr class="separator:a959ec96c9a57077ca25357d9fc5bb18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3dadf116ac6cb363ac6bf0fbbc42b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8php.html#a5d3dadf116ac6cb363ac6bf0fbbc42b3">foreach</a> ( $corpusTag-&gt;getMesTags() as $key=&gt; $tag)</td></tr>
@@ -159,7 +163,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>void tableau ACM </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00244">244</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00251">251</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
 
 </div>
 </div>
@@ -199,6 +203,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a01122be99bdd6c5fa9de1a4e2a88d2f3" name="a01122be99bdd6c5fa9de1a4e2a88d2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01122be99bdd6c5fa9de1a4e2a88d2f3">&#9670;&#160;</a></span>$dicoSynTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$dicoSynTag = json_decode($jsonDicoSynTag, true)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00057">57</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+
+</div>
+</div>
 <a id="a09265cb0e0a963168f34a74bfdd08161" name="a09265cb0e0a963168f34a74bfdd08161"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09265cb0e0a963168f34a74bfdd08161">&#9670;&#160;</a></span>$donnees</h2>
 
@@ -223,6 +243,22 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">$eventsAndUserPreferences = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00063">63</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+
+</div>
+</div>
+<a id="a833c09e9f7b1db124347d6647f7729cb" name="a833c09e9f7b1db124347d6647f7729cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833c09e9f7b1db124347d6647f7729cb">&#9670;&#160;</a></span>$jsonDicoSynTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$jsonDicoSynTag = file_get_contents('./data/dicoSynTag.json')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -259,7 +295,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00108">108</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00115">115</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
 
 </div>
 </div>
@@ -275,7 +311,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00072">72</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00079">79</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
 
 </div>
 </div>
@@ -291,7 +327,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00069">69</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00076">76</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
 
 </div>
 </div>
@@ -321,7 +357,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00060">60</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="main_8php_source.html#l00067">67</a> du fichier <a class="el" href="main_8php_source.html">main.php</a>.</p>
 
 </div>
 </div>

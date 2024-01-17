@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MeetEvent:  Fichier source de src/V2_code/class/Recommandation.php</title>
+<title>MeetEvent:  Fichier source de src/class/Recommandation.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b96de872ff274eae7616eaa26057a54b.html">V2_code</a></li><li class="navelem"><a class="el" href="dir_1f63ccd069d9912af89ce9a10354de3b.html">class</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ddc554cda5704a54b4cf197aaaaa198.html">class</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,35 +78,34 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="_recommandation_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_recommandation.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_recommandation.html">Recommandation</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">private</span> $monUtilisateur = <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> $suggestion = array();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">   29</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">__construct</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $monUtilisateur = <span class="keyword">null</span>){</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        $this-&gt;linkToUser($monUtilisateur);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $this-&gt;monUtilisateur-&gt;linkToSuggest($this);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">getSuggestion</a>() {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;suggestion;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span> <span class="keyword">function</span> setSuggestion(<a class="code hl_class" href="class_evenement.html">Evenement</a> $evenement,<span class="keywordtype">float</span> $pourcentage){</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $this-&gt;suggestion[] = array(<span class="stringliteral">&#39;evenement&#39;</span> =&gt; $evenement-&gt;<a class="code hl_function" href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">getId</a>(), <span class="stringliteral">&#39;pourcentage&#39;</span> =&gt; $pourcentage);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">   58</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">getUtilisateur</a>(){</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $this-&gt;monUtilisateur;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">   66</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;monUtilisateur = $user;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// METHODE SPECIFIQUE</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span>    <span class="keyword">private</span> <span class="keyword">function</span> linkToUser(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_recommandation.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_recommandation.html">Recommandation</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span> $monUtilisateur = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span> $suggestion = array();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">   30</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">__construct</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $monUtilisateur = <span class="keyword">null</span>){</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $this-&gt;linkToUser($monUtilisateur);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $this-&gt;monUtilisateur-&gt;linkToSuggest($this);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">getSuggestion</a>() {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> $this-&gt;suggestion;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span> <span class="keyword">function</span> setSuggestion(<a class="code hl_class" href="class_evenement.html">Evenement</a> $evenement,<span class="keywordtype">float</span> $pourcentage){</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $this-&gt;suggestion[] = array(<span class="stringliteral">&#39;evenement&#39;</span> =&gt; $evenement-&gt;<a class="code hl_function" href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">getId</a>(), <span class="stringliteral">&#39;pourcentage&#39;</span> =&gt; $pourcentage);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">getUtilisateur</a>(){</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> $this-&gt;monUtilisateur;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">   67</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        $this-&gt;monUtilisateur = $user;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">private</span> <span class="keyword">function</span> linkToUser(<a class="code hl_class" href="class_utilisateur.html">Utilisateur</a> $user){</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;unlinkToUser();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;<a class="code hl_function" href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">setUtilisateur</a>($user);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
@@ -175,16 +174,16 @@ $(function() {
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
 <div class="ttc" id="aclass_evenement_html"><div class="ttname"><a href="class_evenement.html">Evenement</a></div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00010">Evenement.php:10</a></div></div>
-<div class="ttc" id="aclass_evenement_html_a694d9adc30844952dc0799d14842dd4f"><div class="ttname"><a href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">Evenement\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant de l'évènement.</div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00074">Evenement.php:74</a></div></div>
-<div class="ttc" id="aclass_recommandation_html"><div class="ttname"><a href="class_recommandation.html">Recommandation</a></div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00009">Recommandation.php:9</a></div></div>
+<div class="ttc" id="aclass_evenement_html_a694d9adc30844952dc0799d14842dd4f"><div class="ttname"><a href="class_evenement.html#a694d9adc30844952dc0799d14842dd4f">Evenement\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant de l'évènement.</div><div class="ttdef"><b>Definition</b> <a href="_evenement_8php_source.html#l00072">Evenement.php:72</a></div></div>
+<div class="ttc" id="aclass_recommandation_html"><div class="ttname"><a href="class_recommandation.html">Recommandation</a></div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00011">Recommandation.php:11</a></div></div>
 <div class="ttc" id="aclass_recommandation_html_a1841783885bfc0e2046c53a2cde9aa2f"><div class="ttname"><a href="class_recommandation.html#a1841783885bfc0e2046c53a2cde9aa2f">Recommandation\toString</a></div><div class="ttdeci">toString()</div><div class="ttdoc">Afficher la description de la recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00157">Recommandation.php:157</a></div></div>
-<div class="ttc" id="aclass_recommandation_html_a280945319cd100888fb671e5d870d31d"><div class="ttname"><a href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">Recommandation\getUtilisateur</a></div><div class="ttdeci">getUtilisateur()</div><div class="ttdoc">Obtient l'utilisateur'.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00058">Recommandation.php:58</a></div></div>
-<div class="ttc" id="aclass_recommandation_html_a4f0e5060a4a000e084eae66b1df6688d"><div class="ttname"><a href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">Recommandation\__construct</a></div><div class="ttdeci">__construct(Utilisateur $monUtilisateur=null)</div><div class="ttdoc">Constructeur de la classe Recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00029">Recommandation.php:29</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a280945319cd100888fb671e5d870d31d"><div class="ttname"><a href="class_recommandation.html#a280945319cd100888fb671e5d870d31d">Recommandation\getUtilisateur</a></div><div class="ttdeci">getUtilisateur()</div><div class="ttdoc">Obtient l'utilisateur'.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00059">Recommandation.php:59</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_a4f0e5060a4a000e084eae66b1df6688d"><div class="ttname"><a href="class_recommandation.html#a4f0e5060a4a000e084eae66b1df6688d">Recommandation\__construct</a></div><div class="ttdeci">__construct(Utilisateur $monUtilisateur=null)</div><div class="ttdoc">Constructeur de la classe Recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00030">Recommandation.php:30</a></div></div>
 <div class="ttc" id="aclass_recommandation_html_a60a4cc88eeee9116d8398121a8ab6aa2"><div class="ttname"><a href="class_recommandation.html#a60a4cc88eeee9116d8398121a8ab6aa2">Recommandation\calculerSuggestion</a></div><div class="ttdeci">calculerSuggestion(array $tabACM, array $objetEvenement)</div><div class="ttdoc">Calculer le pourcentage de suggestion.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00140">Recommandation.php:140</a></div></div>
-<div class="ttc" id="aclass_recommandation_html_adfa724cd8ff6a1ebd9804cb58a94ad03"><div class="ttname"><a href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">Recommandation\getSuggestion</a></div><div class="ttdeci">getSuggestion()</div><div class="ttdoc">Obtient la suggestion de l'utilisateur.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00040">Recommandation.php:40</a></div></div>
-<div class="ttc" id="aclass_recommandation_html_afd53fee840151f2c053d2fe40dcad8ca"><div class="ttname"><a href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">Recommandation\setUtilisateur</a></div><div class="ttdeci">setUtilisateur(Utilisateur $user)</div><div class="ttdoc">Attribut l'utilisateur pour la recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00066">Recommandation.php:66</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_adfa724cd8ff6a1ebd9804cb58a94ad03"><div class="ttname"><a href="class_recommandation.html#adfa724cd8ff6a1ebd9804cb58a94ad03">Recommandation\getSuggestion</a></div><div class="ttdeci">getSuggestion()</div><div class="ttdoc">Obtient la suggestion de l'utilisateur.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00041">Recommandation.php:41</a></div></div>
+<div class="ttc" id="aclass_recommandation_html_afd53fee840151f2c053d2fe40dcad8ca"><div class="ttname"><a href="class_recommandation.html#afd53fee840151f2c053d2fe40dcad8ca">Recommandation\setUtilisateur</a></div><div class="ttdeci">setUtilisateur(Utilisateur $user)</div><div class="ttdoc">Attribut l'utilisateur pour la recommandation.</div><div class="ttdef"><b>Definition</b> <a href="_recommandation_8php_source.html#l00067">Recommandation.php:67</a></div></div>
 <div class="ttc" id="aclass_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition</b> <a href="_utilisateur_8php_source.html#l00012">Utilisateur.php:12</a></div></div>
-<div class="ttc" id="amain_8php_html_a6a00921681c393550578f86bfbaebab0"><div class="ttname"><a href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a></div><div class="ttdeci">$objetEvenement</div><div class="ttdef"><b>Definition</b> <a href="main_8php_source.html#l00069">main.php:69</a></div></div>
+<div class="ttc" id="amain_8php_html_a6a00921681c393550578f86bfbaebab0"><div class="ttname"><a href="main_8php.html#a6a00921681c393550578f86bfbaebab0">$objetEvenement</a></div><div class="ttdeci">$objetEvenement</div><div class="ttdef"><b>Definition</b> <a href="main_8php_source.html#l00076">main.php:76</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
