@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>cosineSimilarity</nom>
-  <date_creation>16/1/2024 23:44</date_creation>
+  <date_creation>17/1/2024 12:01</date_creation>
   <Elements>
     <Action>
       <Position>441;5</Position>

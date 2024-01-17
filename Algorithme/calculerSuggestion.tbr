@@ -2,19 +2,19 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
-  <date_creation>16/1/2024 23:56</date_creation>
+  <date_creation>17/1/2024 12:01</date_creation>
   <Elements>
     <Action>
-      <Position>531;29</Position>
+      <Position>650;44</Position>
       <StyleLien>2</StyleLien>
       <PreAssertion>tabACM</PreAssertion>
       <PostAssertion>objetEvenement</PostAssertion>
-      <Titre>calculerSuggestion</Titre>
-      <DetailsVisible>1</DetailsVisible>
+      <Titre>calculerSuggestion(tabACM, objetEvenement)</Titre>
+      <DetailsVisible>0</DetailsVisible>
       <DetailsVideVisible>1</DetailsVideVisible>
       <Enfants>
         <Action>
-          <Position>172;163</Position>
+          <Position>299;178</Position>
           <StyleLien>2</StyleLien>
           <PreAssertion>∅</PreAssertion>
           <PostAssertion>∅</PostAssertion>
@@ -23,7 +23,7 @@
           <DetailsVideVisible>1</DetailsVideVisible>
           <Enfants>
             <Action>
-              <Position>139;266</Position>
+              <Position>322;289</Position>
               <StyleLien>1</StyleLien>
               <PreAssertion>?</PreAssertion>
               <PostAssertion>userPreferences</PostAssertion>
@@ -35,7 +35,7 @@
           </Enfants>
         </Action>
         <Action>
-          <Position>751;165</Position>
+          <Position>870;180</Position>
           <StyleLien>2</StyleLien>
           <PreAssertion>∅</PreAssertion>
           <PostAssertion>∅</PostAssertion>
@@ -44,13 +44,13 @@
           <DetailsVideVisible>1</DetailsVideVisible>
           <Enfants>
             <Iteration>
-              <Position>938.5;297.5</Position>
+              <Position>1112.5;318.5</Position>
               <StyleLien>1</StyleLien>
               <Titre>Pour i allant de 0 à count(tabACM) - 2</Titre>
               <IterationFixe>1</IterationFixe>
               <Enfants>
                 <Action>
-                  <Position>-54;402</Position>
+                  <Position>65;417</Position>
                   <StyleLien>1</StyleLien>
                   <PreAssertion>?</PreAssertion>
                   <PostAssertion>event</PostAssertion>
@@ -60,7 +60,7 @@
                   <Enfants/>
                 </Action>
                 <Action>
-                  <Position>224;405</Position>
+                  <Position>343;420</Position>
                   <StyleLien>1</StyleLien>
                   <PreAssertion>userPreferences, event</PreAssertion>
                   <PostAssertion>similarity</PostAssertion>
@@ -70,7 +70,7 @@
                   <Enfants/>
                 </Action>
                 <Action>
-                  <Position>991;405</Position>
+                  <Position>1110;420</Position>
                   <StyleLien>2</StyleLien>
                   <PreAssertion>similarity</PreAssertion>
                   <PostAssertion>∅</PostAssertion>
@@ -79,7 +79,7 @@
                   <DetailsVideVisible>1</DetailsVideVisible>
                   <Enfants>
                     <Action>
-                      <Position>220;556</Position>
+                      <Position>339;571</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>
@@ -89,7 +89,7 @@
                       <Enfants/>
                     </Action>
                     <Action>
-                      <Position>535;555</Position>
+                      <Position>654;570</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>
@@ -99,7 +99,7 @@
                       <Enfants/>
                     </Action>
                     <Action>
-                      <Position>766;554</Position>
+                      <Position>885;569</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>
@@ -109,7 +109,7 @@
                       <Enfants/>
                     </Action>
                     <Action>
-                      <Position>978;556</Position>
+                      <Position>1097;571</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>
@@ -119,7 +119,7 @@
                       <Enfants/>
                     </Action>
                     <Action>
-                      <Position>1234;555</Position>
+                      <Position>1353;570</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>
@@ -129,7 +129,7 @@
                       <Enfants/>
                     </Action>
                     <Action>
-                      <Position>1364;553</Position>
+                      <Position>1483;568</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>similarity</PreAssertion>
                       <PostAssertion>?</PostAssertion>
@@ -141,7 +141,7 @@
                   </Enfants>
                 </Action>
                 <Action>
-                  <Position>1664;437</Position>
+                  <Position>1783;452</Position>
                   <StyleLien>2</StyleLien>
                   <PreAssertion>∅</PreAssertion>
                   <PostAssertion>∅</PostAssertion>
@@ -150,7 +150,7 @@
                   <DetailsVideVisible>1</DetailsVideVisible>
                   <Enfants>
                     <Procedure>
-                      <Position>1661;557</Position>
+                      <Position>1780;572</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>∅</PreAssertion>
                       <PostAssertion>∅</PostAssertion>

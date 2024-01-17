@@ -1,1 +1,2 @@
 # Dans ce fichier figureront les fichiers ignorés par Git lors des commits réalisés.
+.vscode

@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>dotProduct</nom>
-  <date_creation>16/1/2024 23:30</date_creation>
+  <date_creation>17/1/2024 12:01</date_creation>
   <Elements>
     <Action>
       <Position>359;12</Position>
