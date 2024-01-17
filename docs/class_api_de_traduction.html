@@ -79,17 +79,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:afbb4784e86f7d13dac6341280b8d862b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_de_traduction.html#afbb4784e86f7d13dac6341280b8d862b">utiliserApiTrad</a> (<a class="el" href="class_synonyme.html">Synonyme</a> $motATrad)</td></tr>
-<tr class="memdesc:afbb4784e86f7d13dac6341280b8d862b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traduit un mot de l'anglais à français en utilisant l'API de Google Translate.  <br /></td></tr>
-<tr class="separator:afbb4784e86f7d13dac6341280b8d862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781c8062900136ea498974158f2d082f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_de_traduction.html#a781c8062900136ea498974158f2d082f">utiliserApiTrad</a> (<a class="el" href="class_mot.html">Mot</a> $motATrad, String $langue1, String $langue2)</td></tr>
+<tr class="memdesc:a781c8062900136ea498974158f2d082f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traduit un mot de l'anglais à français en utilisant l'API de Google Translate.  <br /></td></tr>
+<tr class="separator:a781c8062900136ea498974158f2d082f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Classe apiDeTraduction qui permet d'utiliser notre API de traduction </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_api_de_traduction_8php_source.html#l00014">14</a> du fichier <a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="_api_de_traduction_8php_source.html#l00015">15</a> du fichier <a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a>.</p>
 </div><h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="afbb4784e86f7d13dac6341280b8d862b" name="afbb4784e86f7d13dac6341280b8d862b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbb4784e86f7d13dac6341280b8d862b">&#9670;&#160;</a></span>utiliserApiTrad()</h2>
+<a id="a781c8062900136ea498974158f2d082f" name="a781c8062900136ea498974158f2d082f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781c8062900136ea498974158f2d082f">&#9670;&#160;</a></span>utiliserApiTrad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -97,9 +97,25 @@ Fonctions membres publiques</h2></td></tr>
         <tr>
           <td class="memname">ApiDeTraduction::utiliserApiTrad </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_synonyme.html">Synonyme</a>&#160;</td>
-          <td class="paramname"><em>$motATrad</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_mot.html">Mot</a>&#160;</td>
+          <td class="paramname"><em>$motATrad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>$langue1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>$langue2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -113,17 +129,13 @@ Fonctions membres publiques</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>string </dd></dl>
-<p>Définition de l'URL de l'API en prenant le mot à traduire</p>
-<p>Résultat de l'utilisation de l'API</p>
-<p>Le résultat est un JSON, alors on le décode</p>
-<p>La traduction se trouve dans la première position du tableau</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="_api_de_traduction_8php_source.html#l00021">21</a> du fichier <a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="_api_de_traduction_8php_source.html#l00022">22</a> du fichier <a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a>.</p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>src/V2_code/class/<a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a></li>
+<li>src/class/<a class="el" href="_api_de_traduction_8php_source.html">ApiDeTraduction.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MeetEvent:  Fichier source de src/V2_code/class/Mot.php</title>
+<title>MeetEvent:  Fichier source de src/class/Mot.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b96de872ff274eae7616eaa26057a54b.html">V2_code</a></li><li class="navelem"><a class="el" href="dir_1f63ccd069d9912af89ce9a10354de3b.html">class</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ddc554cda5704a54b4cf197aaaaa198.html">class</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,39 +80,37 @@ $(function() {
 <a href="_mot_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_mot.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_mot.html">Mot</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">private</span> $id;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">private</span> $libelle = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">__construct</a>(<span class="keywordtype">string</span> $lib){</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $this-&gt;<a class="code hl_function" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">setLibelle</a>($lib);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">getId</a>() {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> $this-&gt;id;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">   51</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">setId</a>(<span class="keywordtype">int</span> $id) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $this-&gt;<span class="keywordtype">id</span> = $id;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_mot.html#a5715436b23a10adcb9137982d77f951b">   60</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a5715436b23a10adcb9137982d77f951b">getLibelle</a>() {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> $this-&gt;libelle;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">   68</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">setLibelle</a>(<span class="keywordtype">string</span> $libelle) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $this-&gt;libelle = $libelle;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-<div class="ttc" id="aclass_mot_html"><div class="ttname"><a href="class_mot.html">Mot</a></div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00012">Mot.php:12</a></div></div>
-<div class="ttc" id="aclass_mot_html_a5715436b23a10adcb9137982d77f951b"><div class="ttname"><a href="class_mot.html#a5715436b23a10adcb9137982d77f951b">Mot\getLibelle</a></div><div class="ttdeci">getLibelle()</div><div class="ttdoc">Obtient le libellé du mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00060">Mot.php:60</a></div></div>
-<div class="ttc" id="aclass_mot_html_a6222c523bbcb77b1b424e6518e90dd1a"><div class="ttname"><a href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">Mot\setLibelle</a></div><div class="ttdeci">setLibelle(string $libelle)</div><div class="ttdoc">Attribut le libellé au mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00068">Mot.php:68</a></div></div>
-<div class="ttc" id="aclass_mot_html_a6de0a7a423db514db6d4e62029614eac"><div class="ttname"><a href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">Mot\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant du mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00043">Mot.php:43</a></div></div>
-<div class="ttc" id="aclass_mot_html_a7a826af86ea432fd30cd671b3b3665d2"><div class="ttname"><a href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">Mot\__construct</a></div><div class="ttdeci">__construct(string $lib)</div><div class="ttdoc">Constructeur de la classe Mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00032">Mot.php:32</a></div></div>
-<div class="ttc" id="aclass_mot_html_aef6d3611e78f7a1a731a6797fabdd82d"><div class="ttname"><a href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">Mot\setId</a></div><div class="ttdeci">setId(int $id)</div><div class="ttdoc">Attribut l'identifiant au mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00051">Mot.php:51</a></div></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_mot.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_mot.html">Mot</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span> $id;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span> $libelle = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">   30</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">__construct</a>(<span class="keywordtype">string</span> $lib){</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $this-&gt;<a class="code hl_function" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">setLibelle</a>($lib);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">   40</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">getId</a>() {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $this-&gt;id;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">setId</a>(<span class="keywordtype">int</span> $id) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        $this-&gt;<span class="keywordtype">id</span> = $id;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_mot.html#a5715436b23a10adcb9137982d77f951b">   57</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a5715436b23a10adcb9137982d77f951b">getLibelle</a>() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> $this-&gt;libelle;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">   65</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">setLibelle</a>(<span class="keywordtype">string</span> $libelle) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;libelle = $libelle;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="ttc" id="aclass_mot_html"><div class="ttname"><a href="class_mot.html">Mot</a></div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00011">Mot.php:11</a></div></div>
+<div class="ttc" id="aclass_mot_html_a5715436b23a10adcb9137982d77f951b"><div class="ttname"><a href="class_mot.html#a5715436b23a10adcb9137982d77f951b">Mot\getLibelle</a></div><div class="ttdeci">getLibelle()</div><div class="ttdoc">Obtient le libellé du mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00057">Mot.php:57</a></div></div>
+<div class="ttc" id="aclass_mot_html_a6222c523bbcb77b1b424e6518e90dd1a"><div class="ttname"><a href="class_mot.html#a6222c523bbcb77b1b424e6518e90dd1a">Mot\setLibelle</a></div><div class="ttdeci">setLibelle(string $libelle)</div><div class="ttdoc">Attribut le libellé au mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00065">Mot.php:65</a></div></div>
+<div class="ttc" id="aclass_mot_html_a6de0a7a423db514db6d4e62029614eac"><div class="ttname"><a href="class_mot.html#a6de0a7a423db514db6d4e62029614eac">Mot\getId</a></div><div class="ttdeci">getId()</div><div class="ttdoc">Obtient l'identifiant du mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00040">Mot.php:40</a></div></div>
+<div class="ttc" id="aclass_mot_html_a7a826af86ea432fd30cd671b3b3665d2"><div class="ttname"><a href="class_mot.html#a7a826af86ea432fd30cd671b3b3665d2">Mot\__construct</a></div><div class="ttdeci">__construct(string $lib)</div><div class="ttdoc">Constructeur de la classe Mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00030">Mot.php:30</a></div></div>
+<div class="ttc" id="aclass_mot_html_aef6d3611e78f7a1a731a6797fabdd82d"><div class="ttname"><a href="class_mot.html#aef6d3611e78f7a1a731a6797fabdd82d">Mot\setId</a></div><div class="ttdeci">setId(int $id)</div><div class="ttdoc">Attribut l'identifiant au mot.</div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00048">Mot.php:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

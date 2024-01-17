@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>17/1/2024 13:35</date_creation>
+  <Elements>
+    <Action>
+      <Position>892;30</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>tabACM</PreAssertion>
+      <PostAssertion>objetEvenement</PostAssertion>
+      <Titre>calculerSuggestion(tabACM, objetEvenement)</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>125;205</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>userPreferences</PostAssertion>
+          <Titre>userPreferences ← tabACM[count(tabACM) - 1</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>1605.5;254.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour i allant de 0 à count(tabACM) - 1</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>461;401</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>event</PostAssertion>
+              <Titre>event ← tabACM[i]</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>768;399</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>userPreferences, event</PreAssertion>
+              <PostAssertion>similarite</PostAssertion>
+              <Titre>similarite ← cosineSimilarity(userPreferences, event)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1428;391</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>similarite</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher le résultat</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>549;543</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>Afficher "Similarité entre l'évènement "</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>822;541</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>objetEvenement[i]→getID()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1037;538</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>Afficher " et l'utilisateur "</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1216;538</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>Afficher monUtilisateur→getID()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1451;537</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>Afficher " : "</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1587;534</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>similarity</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Afficher similarite</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Procedure>
+              <Position>1782;410</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>setSuggestion(objetEvenement[i], (float) similarity)</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Procedure>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>

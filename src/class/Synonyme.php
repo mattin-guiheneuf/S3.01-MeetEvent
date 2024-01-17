@@ -1,53 +1,63 @@
 <?php
 
 /**
- * 
+ * @file Synonyme.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Synonyme
+ * @details Contient la structure de la classe Synonyme ayant un id et un libellé
+ * @version 1.0
  */
 
 class Synonyme{
-    // ATTRIBUTS
+    /** Attributs */
     /**
-     * @var int L'identifiant du synonyme
+     * @brief L'identifiant du synonyme
+     * @var int 
      */
     private $id;
 
     /**
-     * @var string Le libellé du synonyme
+     * @brief Le libellé du synonyme
+     * @var string 
      */
     private $libelle;
 
-    // CONSTRUCTEUR
+    /** Constructeur */
+    /**
+     * @brief Constructeur de la classe Synonyme
+     * @param string
+     * @param int
+     */
     public function __construct(String $lib, int $i = NULL){
         $this->$id = $i;
         $this->$libelle = $lib;
     }
 
-    // METHODES
-    // ENCAPSULATION
-    // id
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id du Synonyme
-     * @return int $id
+     * @brief Obtient l'identifiant du synonyme
+     * @return int $id Identifiant du synonyme
      */
     public function getId() {return $this->id;}
     
     /**
-     * Attribuer un id à un Synonyme
-     * @param int $idUn identifiant représentant l'id du Synonyme
+     * @brief Attribut l'identifiant au synonyme
+     * @param int [in] Identifiant du synonyme
      */
     public function setId(int $id) {$this->id = $id;}
 
 
-    // libelle
-        /**
-     * Obtient le libelle du Synonyme
-     * @return string $libelle
+    /** $libelle */
+    /**
+     * @brief Obtient le libellé du synonyme
+     * @return string $libelle Libellé du synonyme
      */
     public function getLibelle() {return $this->libelle;}
     
     /**
-     * Attribuer un libelle à un Synonyme
-     * @param string $libelle - Le libelle du Synonyme
+     * @brief Attribut le libellé au synonyme
+     * @param string [in] Libellé du synonyme
      */
     public function setLibelle(string $libelle) {$this->libelle = $libelle;}
 }

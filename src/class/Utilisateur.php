@@ -2,140 +2,147 @@
 
 
 /**
- * Classe représentant un utilisateur.
+ * @file Utilisateur.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Utilisateur
+ * @details Contient la structure de la classe Utilisateur ayant un id, un nom, une liste de mots, une liste de tags et une recommandation d'évènements
+ * @version 1.0
  */
-class Utilisateur {
-    //ATTRIBUTS
 
+class Utilisateur {
+    /** Attributs */
     /**
-     * @var int L'id de l'utilisateur.
+     * @brief L'identifiant de l'utilisateur
+     * @var int 
      */
     private $id;
 
     /**
-     * @var string Le nom/pseudo de l'utilisateur.
+     * @brief Le nom de l'utilisateur
+     * @var string
      */
     private $nom = "";
 
     /**
-     * @var array La liste de Mot (saisi) de l'utilisateur.
+     * @brief Les mots entrés par l'utilisateur
+     * @var array
      */
     private $mesMots=  array();
 
     /**
-     * @var array La liste de Tag (attribué) de l'utilisateur.
+     * @brief La liste de Tag (attribué) de l'utilisateur.
+     * @var array 
      */
     private $desTags= []; 
 
     /**
-     * @var Recommandation La recommandation de l'utilisateur.
+     * @brief La recommandation de l'utilisateur.
+     * @var Recommandation 
      */
     private $maRecommandation = null;
 
-    //METHODES
-    //CONSTRUCTEUR
+    /** Constructeur */
     /**
-     * Constructeur de la classe Utilisateur.
-     *
-     * @param int $id L'id à attribuer à l'utilisateur créé.
-     * @param array $tags Tableau de Tags à attribuer à l'utilisateur créé.
+     * @brief Constructeur de la classe Utilisateur
+     * @param int 
+     * @param array
      */
     public function __construct(int $id, array $tags) {
         $this->setId($id);
         $this->setTags($tags);
     }
-    //ENCAPSULATION (get&set)
-    //id
+    
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id de l'utilisateur.
-     *
-     * @return int ID.
+     * @brief Obtient l'identifiant de l'utilisateur
+     * @return int $id Identifiant de l'utilisateur
      */
     public function getId() {
         return $this->id;
     }
+    
     /**
-     * Attribuer l'id à un utilisateur.
-     *
-     * @param int $id un id représentant l'id de l'utilisateur.
+     * @brief Attribut l'identifiant à l'utilisateur
+     * @param int [in] Identifiant de l'utilisateur
      */
     public function setId(int $id) {
         $this->id = $id;
     }
-    //nom
+    
+    /** $nom */
     /**
-     * Obtient le nom de l'utilisateur.
-     *
-     * @return string nom.
+     * @brief Obtient le nom de l'utilisateur
+     * @return string $nom Nom de l'utilisateur
      */
     public function getNom() {
         return $this->nom;
     }
+    
     /**
-     * Attribuer un nom à un utilisateur.
-     *
-     * @param string $nom un nom représentant le nom de l'utilisateur.
+     * @brief Attribut le nom à l'utilisateur
+     * @param string [in] Nom de l'utilisateur
      */
     public function setNom(string $nom) {
         $this->nom = $nom;
     }
-    //tags
+    
+    /** $desTags */
     /**
-     * Obtient la liste de Tag de l'utilisateur.
-     *
-     * @return array Tags.
+     * @brief Obtient les tags de l'utilisateur
+     * @return array $desTags Nom de l'utilisateur
      */
     public function getTags() {
         return $this->desTags;
     }
+    
     /**
-     * Attribuer la liste de Tags à un utilisateur.
-     *
-     * @param array $tags une liste de Tag représentant les Tags de l'utilisateur.
+     * @brief Attribut les tags à l'utilisateur
+     * @param array [in] Tags de l'utilisateur
      */
     public function setTags(array $tags) {
         $this->desTags = $tags;
     }
-    //mots
+    
+    /** $mesMots */
     /**
-     * Obtient la liste de Mot de l'utilisateur.
-     *
-     * @return array Mots.
+     * @brief Obtient les mots de l'utilisateur
+     * @return array $mesMots Mots de l'utilisateur
      */
     public function getMots() {
         return $this->mesMots;
     }
+    
     /**
-     * Attribuer la liste de Tags à un utilisateur.
-     *
-     * @param Mot[] $tags une liste de Mot représentant les Mots de l'utilisateur.
+     * @brief Attribut les mots à l'utilisateur
+     * @param array [in] Mots de l'utilisateur
      */
     public function setMots(array $mots) {
         $this->mesMots = $mots;
     }
-    //maRecommandation
+    
+    /** $maRecommandation */
     /**
-     * Obtient la recommandation de l'utilisateur.
-     *
-     * @return Recommandation maRecommandation.
+     * @brief Obtient la recommandation de l'utilisateur
+     * @return Recommandation $maRecommandation Recommandation de l'utilisateur
      */
     public function getRecommandation() {
         return $this->maRecommandation;
     }
+    
     /**
-     * Attribuer la recommandation d'un utilisateur.
-     *
-     * @param Recommandation $reco une recommandation représentant la recommandation de l'utilisateur.
+     * @brief Attribut la recommandation à l'utilisateur
+     * @param Recommandation [in] Recommandation de l'utilisateur
      */
     public function setRecommandation(Recommandation $reco) {
         $this->maRecommandation = $reco;
     }
 
-    //METHODES SPECIFIQUES
+    /** Methode */
     /**
-     * METHODE SPECIFIQUE : Attribuer la liste de Tags à un utilisateur en fonction des mots saisis.
-     *
-     * @return array $listeTags une liste de Tag représentant les Tags de l'utilisateur.
+     * @brief Attribuer la liste de Tags à un utilisateur en fonction des mots saisis.
+     * @param array
+     * @return array
      */
     private function definirTags($dicoSynTag) {
         include_once "module.php";
@@ -156,6 +163,10 @@ class Utilisateur {
                 echo $motCourant . " déjà présent dans le dicoMotToTag<br>"; // C'est que le mot est en double
                 continue; // équivalent de pass
             }
+			
+			// Création de la clé motCourant dans le dicoMotTTag
+            $dicoMotToTag[$motCourant] = array();
+			
             // Vérif présence dans dicoSynTag du mot
             if (array_key_exists($motCourant, $dicoSynTag)) { // Si le motCourant est présent dans le dicoSynTag
                 // Ajout et enregistrement
@@ -170,7 +181,7 @@ class Utilisateur {
                     $synMotCourant = tradMotAngToFr($synMotCrt);
                     if (array_key_exists($synMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($synMotCourant, $dicoSynTag[$synMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($synMotCourant, $dicoSynTag[$synMotCourant]));
                         $listeTag[] = $dicoSynTag[$synMotCourant]; // Verif si déjà présent ???
                     }
                     // Augmente trop la complexité temporelle
@@ -207,7 +218,7 @@ class Utilisateur {
                     $genMotCourant = tradMotAngToFr($genMotCrt);
                     if (array_key_exists($genMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($genMotCourant, $dicoSynTag[$genMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($genMotCourant, $dicoSynTag[$genMotCourant]));
                         $listeTag[] = $dicoSynTag[$genMotCourant]; // Verif si déjà présent ???
                     }
                 }
@@ -218,7 +229,7 @@ class Utilisateur {
                     $trgMotCourant = tradMotAngToFr($trgMotCrt);
                     if (array_key_exists($trgMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($trgMotCourant, $dicoSynTag[$trgMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($trgMotCourant, $dicoSynTag[$trgMotCourant]));
                         $listeTag[] = $dicoSynTag[$trgMotCourant]; // Verif si déjà présent ???
                     }
                 }
@@ -255,7 +266,19 @@ class Utilisateur {
         echo "<br><br>-----------------------------------";
         echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") est relié aux tags grâce à : ";
         echo '<br>';
-        print_r($dicoMotToTag);
+        foreach ($dicoMotToTag as $mot => $listeLien) {
+            echo $mot . ' est relié à : ';
+            foreach ($listeLien as $lien) {
+                if(is_array($lien)){
+                    print_r($lien[1]);
+                    echo ' par le mot ' . $lien[0];
+                }
+                else {
+                    print_r($lien);
+                }
+            }
+            echo '<br>';
+        }
         echo "<br>-----------------------------------";
 
         
@@ -276,8 +299,8 @@ class Utilisateur {
     }
 
     /**
-     * METHODE SPECIFIQUE : Attribuer la liste de Mots à un utilisateur en fonction des mots saisis.
-     *
+     * @brief Attribuer la liste de Mots à un utilisateur en fonction des mots saisis.
+     * @param array
      */
     public function definirDescription($dicoSynTag) {
 
@@ -319,8 +342,8 @@ class Utilisateur {
     }
 
     /**
-     * METHODE SPECIFIQUE : Modifier les Mots saisis.
-     *
+     * @brief Modifier les Mots saisis.
+     * @param array
      */
     public function modifierDescription($dicoSynTag) {
         $listeMot = $this->getTags();
@@ -367,9 +390,8 @@ class Utilisateur {
     }
 
     /**
-     * METHODE SPECIFIQUE : Désigner des événements qui correspondent aux envies de l'utilisateur.
-     *
-     * @return array $evenementsARecommander une liste d'événements à recommander.
+     * @brief Désigner des événements qui correspondent aux envies de l'utilisateur.
+     * @return array
      */
     public function creerListeSuggest() {
         // Récupérer tous les événements avec leurs pourcentages
@@ -403,9 +425,8 @@ class Utilisateur {
     }
 
     /**
-     * METHODE SPECIFIQUE : Supprimer des Tags qui sont attribués à l'utilisateur.
-     *
-     * @param Tag $tagASupprimer un tag à supprimer
+     * @brief Supprimer des Tags qui sont attribués à l'utilisateur.
+     * @param Tag
      */
     public function supprimerTag(Tag $tagASupprimer) {
         $listeTag = $this->getTags();
@@ -433,9 +454,8 @@ class Utilisateur {
     }
 
     /**
-     * METHODE SPECIFIQUE : Lier une recommandation et l'événement.
-     *
-     * @param Recommandation $recommandation une recommandation représentant la recommandation de l'événement.
+     * @brief Lier une recommandation et l'événement.
+     * @param Recommandation
      */
     public function linkToSuggest(Recommandation $recommandation){
         $this->unlinkToSuggest();
@@ -443,8 +463,7 @@ class Utilisateur {
     }
 
      /**
-     * METHODE SPECIFIQUE : Délier une recommandation et l'événement.
-     *
+     * @brief Délier une recommandation et l'événement.
      */
     public function unlinkToSuggest(){
         if ($this->getRecommandation() != null) {
@@ -452,12 +471,10 @@ class Utilisateur {
         }
     }
 
-    //METHODES USUELLES
     /**
-     * METHODE SPECIFIQUE : Afficher la description de l'Utilisateur.
-     *
-     * @param string message de base à ajouter a la description de la class Utilisateur
-     * @return string $resultat une chaine de caractere représentant la description de l'utilisateur.
+     * @brief Afficher la description de l'Utilisateur.
+     * @param string
+     * @return string
      */
     public function toString(string $message) {
         $resultat = $message;

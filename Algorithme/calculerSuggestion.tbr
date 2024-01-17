@@ -2,7 +2,11 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
+<<<<<<< HEAD
   <date_creation>17/1/2024 12:01</date_creation>
+=======
+  <date_creation>17/1/2024 13:34</date_creation>
+>>>>>>> eecb88d7d30a9c74886de443626fb109a44e5a4b
   <Elements>
     <Action>
       <Position>650;44</Position>
@@ -23,7 +27,11 @@
           <DetailsVideVisible>1</DetailsVideVisible>
           <Enfants>
             <Action>
+<<<<<<< HEAD
               <Position>322;289</Position>
+=======
+              <Position>230;270</Position>
+>>>>>>> eecb88d7d30a9c74886de443626fb109a44e5a4b
               <StyleLien>1</StyleLien>
               <PreAssertion>?</PreAssertion>
               <PostAssertion>userPreferences</PostAssertion>
@@ -141,7 +149,11 @@
                   </Enfants>
                 </Action>
                 <Action>
+<<<<<<< HEAD
                   <Position>1783;452</Position>
+=======
+                  <Position>1631;436</Position>
+>>>>>>> eecb88d7d30a9c74886de443626fb109a44e5a4b
                   <StyleLien>2</StyleLien>
                   <PreAssertion>∅</PreAssertion>
                   <PostAssertion>∅</PostAssertion>
