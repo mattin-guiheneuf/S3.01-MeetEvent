@@ -11,7 +11,7 @@
 /**
  * @brief traduit les mots d'anglais à français
  * @param string
- * @return JSON
+ * @return string
 */
 function tradMotAngToFr($motATrad){
     //$res = https://translate.google.fr/?sl=en&tl=fr&text=mother%0A&op=translate;
@@ -30,7 +30,7 @@ function tradMotAngToFr($motATrad){
 /**
  * @brief traduit les mots de français à anglais
  * @param string
- * @return JSON
+ * @return string
 */
 function tradMotFrToAng($motATrad){
     //$res = https://translate.google.fr/?sl=en&tl=fr&text=mother%0A&op=translate;
