@@ -2,22 +2,11 @@
     "cuisine": [
         "cuisine"
     ],
-    "saveur": [
-        "saveur",
-        "profiter"
-    ],
-    "recette": [
-        "recette"
-    ],
     "ingr\u00e9dients": [
         "ingr\u00e9dients"
     ],
     "art": [
         "art"
-    ],
-    "cr\u00e9ation": [
-        "cr\u00e9ation",
-        "nature"
     ],
     "musique": [
         "musique"
@@ -34,8 +23,8 @@
         "enseignement",
         "exercice"
     ],
-    "socialisation": [
-        "socialisation"
+    "social": [
+        "social"
     ],
     "\u00c9change": [
         "\u00c9change"
@@ -70,14 +59,10 @@
         "exploration"
     ],
     "voyage": [
-        "voyage",
-        "banquet"
+        "voyage"
     ],
     "d\u00e9couverte": [
         "d\u00e9couverte"
-    ],
-    "apprentissage": [
-        "apprentissage"
     ],
     "enseignement": [
         "enseignement"
@@ -116,15 +101,12 @@
     "collection": [
         "collection"
     ],
-    "analyse": [
-        "analyse"
+    "informatique": [
+        "informatique"
     ],
     "r\u00e9flexion": [
         "r\u00e9flexion",
         "m\u00e9ditation"
-    ],
-    "r\u00e9solution": [
-        "r\u00e9solution"
     ],
     "engagement": [
         "engagement"
@@ -185,9 +167,6 @@
         "amusement",
         "divertissement"
     ],
-    "profiter": [
-        "profiter"
-    ],
     "c\u00e9l\u00e9bration": [
         "c\u00e9l\u00e9bration"
     ],
@@ -216,11 +195,8 @@
     "aperitif": [
         "aperitif"
     ],
-    "vin": [
-        "vin"
-    ],
-    "banquet": [
-        "banquet"
+    "alcool": [
+        "alcool"
     ],
     "association": [
         "association"
@@ -231,58 +207,27 @@
     "rencontre": [
         "rencontre"
     ],
-    "renforcement musculaire": [
-        "renforcement musculaire"
-    ],
-    "activite physique": [
-        "activite physique"
-    ],
-    "course": [
-        "course"
-    ],
-    "entrainement": [
-        "entrainement"
-    ],
-    "randonnee": [
-        "randonnee"
-    ],
     "marche": [
         "marche"
     ],
-    "balade": [
-        "balade"
-    ],
-    "football": [
-        "football"
-    ],
     "amical": [
-        "amical"
+        "amical",
+        "social"
     ],
     "plaisir": [
-        "plaisir",
-        "profiter"
+        "plaisir"
     ],
-    "jeu de societe": [
-        "jeu de societe"
+    "jeu de soci\u00e9t\u00e9": [
+        "jeu de soci\u00e9t\u00e9"
     ],
-    "convivialite": [
-        "convivialite"
-    ],
-    "jeu de cartes": [
-        "jeu de cartes"
-    ],
-    "jeu de plateau": [
-        "jeu de plateau"
-    ],
-    "equitation": [
-        "equitation"
+    "animaux": [
+        "animaux"
     ],
     "soiree": [
         "soiree"
     ],
     "nature": [
-        "nature",
-        "cr\u00e9ation"
+        "nature"
     ],
     "paysages": [
         "paysages"
@@ -296,8 +241,8 @@
     "oenologie": [
         "oenologie"
     ],
-    "degustation": [
-        "degustation"
+    "d\u00e9gustation": [
+        "d\u00e9gustation"
     ],
     "exposition": [
         "exposition"
@@ -305,38 +250,20 @@
     "musee": [
         "musee"
     ],
-    "diner": [
-        "diner"
+    "d\u00eener": [
+        "d\u00eener"
     ],
     "caritatif": [
         "caritatif"
     ],
-    "solidarite": [
-        "solidarite"
-    ],
-    "fete": [
-        "fete"
-    ],
-    "handball": [
-        "handball"
-    ],
-    "buvette": [
-        "buvette"
-    ],
-    "tennis": [
-        "tennis"
+    "solidarit\u00e9": [
+        "solidarit\u00e9"
     ],
     "raquette": [
         "raquette"
     ],
     "loisir": [
         "loisir"
-    ],
-    "golf": [
-        "golf"
-    ],
-    "judo": [
-        "judo"
     ],
     "competition": [
         "competition"
@@ -346,9 +273,6 @@
     ],
     "peinture": [
         "peinture"
-    ],
-    "cinema": [
-        "cinema"
     ],
     "montagne": [
         "montagne"
@@ -362,55 +286,6 @@
     ],
     "nourriture": [
         "nourriture"
-    ],
-    "basket": [
-        "basket"
-    ],
-    "rugby": [
-        "rugby"
-    ],
-    "natation": [
-        "natation"
-    ],
-    "regarder": [
-        "saveur"
-    ],
-    "esprit": [
-        "saveur",
-        "\u00c9coute"
-    ],
-    "sentir": [
-        "saveur",
-        "exp\u00e9rience"
-    ],
-    "ton": [
-        "saveur"
-    ],
-    "go\u00fbt": [
-        "saveur",
-        "profiter",
-        "degustation"
-    ],
-    "saison": [
-        "saveur"
-    ],
-    "odeur": [
-        "saveur"
-    ],
-    "claque": [
-        "saveur"
-    ],
-    "sentiment": [
-        "saveur"
-    ],
-    "soie": [
-        "saveur"
-    ],
-    "sapidit\u00e9": [
-        "saveur"
-    ],
-    "formule": [
-        "recette"
     ],
     "prouesse": [
         "art"
@@ -438,42 +313,6 @@
     ],
     "comp\u00e9tence sup\u00e9rieure": [
         "art"
-    ],
-    "monde": [
-        "cr\u00e9ation",
-        "nature"
-    ],
-    "fondation": [
-        "cr\u00e9ation"
-    ],
-    "institution": [
-        "cr\u00e9ation"
-    ],
-    "univers": [
-        "cr\u00e9ation",
-        "nature"
-    ],
-    "cosmos": [
-        "cr\u00e9ation",
-        "nature"
-    ],
-    "conception": [
-        "cr\u00e9ation",
-        "innovation"
-    ],
-    "existence": [
-        "cr\u00e9ation",
-        "nature"
-    ],
-    "initiation": [
-        "cr\u00e9ation"
-    ],
-    "macrocosme": [
-        "cr\u00e9ation",
-        "nature"
-    ],
-    "instauration": [
-        "cr\u00e9ation"
     ],
     "m\u00e9decine": [
         "musique"
@@ -563,31 +402,48 @@
     ],
     "\u00e9ducation": [
         "entra\u00eenement",
-        "entrainement",
         "formation"
     ],
     "pr\u00e9paration": [
         "entra\u00eenement",
-        "entrainement",
         "formation"
     ],
     "toilettage": [
         "entra\u00eenement",
-        "entrainement",
         "formation"
     ],
     "reproduction": [
         "entra\u00eenement",
         "enseignement",
-        "entrainement",
         "formation"
     ],
-    "acculturation": [
-        "socialisation",
-        "culture"
+    "gr\u00e9gaire": [
+        "social"
     ],
-    "socialiser": [
-        "socialisation"
+    "ethnique": [
+        "social"
+    ],
+    "interpersonnel": [
+        "social"
+    ],
+    "culturel": [
+        "social"
+    ],
+    "sociable": [
+        "social",
+        "amical"
+    ],
+    "mixer": [
+        "social"
+    ],
+    "soci\u00e9tal": [
+        "social"
+    ],
+    "\u00e9levage": [
+        "social"
+    ],
+    "fourmillement": [
+        "social"
     ],
     "changer": [
         "\u00c9change",
@@ -675,6 +531,9 @@
     "relev\u00e9 de compteur": [
         "lecture"
     ],
+    "esprit": [
+        "\u00c9coute"
+    ],
     "entendre": [
         "\u00c9coute"
     ],
@@ -709,12 +568,10 @@
         "rire"
     ],
     "entreprise": [
-        "f\u00eate",
-        "fete"
+        "f\u00eate"
     ],
     "parti politique": [
-        "f\u00eate",
-        "fete"
+        "f\u00eate"
     ],
     "exp\u00e9dition g\u00e9ographique": [
         "exploration"
@@ -731,15 +588,6 @@
     ],
     "d\u00e9couvrir": [
         "d\u00e9couverte"
-    ],
-    "acquisition": [
-        "apprentissage"
-    ],
-    "bourse": [
-        "apprentissage"
-    ],
-    "\u00e9rudition": [
-        "apprentissage"
     ],
     "la p\u00e9dagogie": [
         "enseignement"
@@ -761,8 +609,7 @@
     ],
     "courir": [
         "travail",
-        "test",
-        "course"
+        "test"
     ],
     "aller": [
         "travail"
@@ -826,8 +673,7 @@
         "travail"
     ],
     "r\u00e9soudre": [
-        "travail",
-        "r\u00e9solution"
+        "travail"
     ],
     "p\u00e9trir": [
         "travail"
@@ -1004,15 +850,6 @@
     "rassemblement": [
         "collection"
     ],
-    "psychanalyse": [
-        "analyse"
-    ],
-    "psychologie des profondeurs": [
-        "analyse"
-    ],
-    "pens\u00e9e analytique": [
-        "analyse"
-    ],
     "manifestation": [
         "r\u00e9flexion"
     ],
@@ -1024,27 +861,6 @@
     ],
     "image miroir": [
         "r\u00e9flexion"
-    ],
-    "solution": [
-        "r\u00e9solution"
-    ],
-    "r\u00e9sultat": [
-        "r\u00e9solution"
-    ],
-    "r\u00e9pondre": [
-        "r\u00e9solution"
-    ],
-    "r\u00e8glement": [
-        "r\u00e9solution"
-    ],
-    "d\u00e9claration": [
-        "r\u00e9solution"
-    ],
-    "fermet\u00e9": [
-        "r\u00e9solution"
-    ],
-    "pouvoir de r\u00e9solution": [
-        "r\u00e9solution"
     ],
     "all\u00e9geance": [
         "engagement"
@@ -1175,6 +991,9 @@
     "savoir": [
         "exp\u00e9rience"
     ],
+    "sentir": [
+        "exp\u00e9rience"
+    ],
     "en direct": [
         "exp\u00e9rience"
     ],
@@ -1253,6 +1072,9 @@
     ],
     "avance": [
         "am\u00e9lioration"
+    ],
+    "conception": [
+        "innovation"
     ],
     "invention": [
         "innovation"
@@ -1335,16 +1157,6 @@
     "espi\u00e8glerie": [
         "amusement"
     ],
-    "amour": [
-        "profiter"
-    ],
-    "se d\u00e9lecter": [
-        "profiter",
-        "raquette"
-    ],
-    "se pr\u00e9lasser": [
-        "profiter"
-    ],
     "festivit\u00e9": [
         "c\u00e9l\u00e9bration"
     ],
@@ -1385,11 +1197,22 @@
         "imagination"
     ],
     "festin": [
-        "festival",
-        "banquet"
+        "festival"
     ],
-    "couleur vin": [
-        "vin"
+    "acculturation": [
+        "culture"
+    ],
+    "boire": [
+        "alcool"
+    ],
+    "enivrant": [
+        "alcool"
+    ],
+    "toxique": [
+        "alcool"
+    ],
+    "boisson alcoolis\u00e9e": [
+        "alcool"
     ],
     "cravate": [
         "association"
@@ -1484,51 +1307,6 @@
     "venir sur": [
         "rencontre"
     ],
-    "vitesse": [
-        "course"
-    ],
-    "se pr\u00e9cipiter": [
-        "course"
-    ],
-    "laver": [
-        "course"
-    ],
-    "acc\u00e9l\u00e9rer": [
-        "course"
-    ],
-    "salut": [
-        "course"
-    ],
-    "sillage": [
-        "course"
-    ],
-    "remous": [
-        "course"
-    ],
-    "\u00e0 toute vitesse": [
-        "course"
-    ],
-    "courant d'air": [
-        "course"
-    ],
-    "sous-esp\u00e8ce": [
-        "course"
-    ],
-    "chemin de roulement": [
-        "course"
-    ],
-    "boulet de canon le long": [
-        "course"
-    ],
-    "ceinture le long": [
-        "course"
-    ],
-    "seau le long": [
-        "course"
-    ],
-    "peler le long": [
-        "course"
-    ],
     "passer": [
         "marche"
     ],
@@ -1546,43 +1324,6 @@
     ],
     "base sur balles": [
         "marche"
-    ],
-    "conduire": [
-        "balade"
-    ],
-    "monter": [
-        "balade",
-        "montagne"
-    ],
-    "s'asseoir": [
-        "balade"
-    ],
-    "se rallier": [
-        "balade"
-    ],
-    "taquiner": [
-        "balade"
-    ],
-    "chiffon": [
-        "balade"
-    ],
-    "raillerie": [
-        "balade"
-    ],
-    "la morue": [
-        "balade"
-    ],
-    "app\u00e2t": [
-        "balade"
-    ],
-    "cr\u00e9tin": [
-        "balade"
-    ],
-    "s\u00e9duire": [
-        "balade"
-    ],
-    "association de football": [
-        "football"
     ],
     "intime": [
         "amical"
@@ -1609,9 +1350,6 @@
         "amical"
     ],
     "informel": [
-        "amical"
-    ],
-    "sociable": [
         "amical"
     ],
     "camarade": [
@@ -1656,7 +1394,25 @@
     "le soir": [
         "soiree"
     ],
+    "monde": [
+        "nature"
+    ],
     "sauvage": [
+        "nature"
+    ],
+    "univers": [
+        "nature"
+    ],
+    "cosmos": [
+        "nature"
+    ],
+    "existence": [
+        "nature"
+    ],
+    "cr\u00e9ation": [
+        "nature"
+    ],
+    "macrocosme": [
         "nature"
     ],
     "\u00e9tat de la nature": [
@@ -1674,11 +1430,14 @@
     "\u0153nologie": [
         "oenologie"
     ],
+    "go\u00fbt": [
+        "d\u00e9gustation"
+    ],
     "en sirotant": [
-        "degustation"
+        "d\u00e9gustation"
     ],
     "savourer": [
-        "degustation"
+        "d\u00e9gustation"
     ],
     "photo": [
         "exposition"
@@ -1688,9 +1447,6 @@
     ],
     "photographier": [
         "exposition"
-    ],
-    "d\u00eener": [
-        "diner"
     ],
     "gentil": [
         "caritatif"
@@ -1713,8 +1469,8 @@
     "philanthropique": [
         "caritatif"
     ],
-    "tennis sur gazon": [
-        "tennis"
+    "se d\u00e9lecter": [
+        "raquette"
     ],
     "bruit": [
         "raquette"
@@ -1746,9 +1502,6 @@
     "temps libre": [
         "loisir"
     ],
-    "jeu de golf": [
-        "golf"
-    ],
     "contention": [
         "competition"
     ],
@@ -1773,34 +1526,10 @@
     "fard \u00e0 joues": [
         "peinture"
     ],
+    "monter": [
+        "montagne"
+    ],
     "nutritif": [
         "nourriture"
-    ],
-    "match de basket": [
-        "basket"
-    ],
-    "plus rugueux": [
-        "rugby"
-    ],
-    "rugby-football": [
-        "rugby"
-    ],
-    "nager": [
-        "natation"
-    ],
-    "liquide": [
-        "natation"
-    ],
-    "horizontal": [
-        "natation"
-    ],
-    "aqueux": [
-        "natation"
-    ],
-    "en larmes": [
-        "natation"
-    ],
-    "na\u00eff": [
-        "natation"
     ]
 }
