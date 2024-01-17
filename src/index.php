@@ -127,13 +127,14 @@
     <script>
         var motsListe = [];
         var motsListeEvenement = [];
+        var listeMotsFr = <?php echo $jsonDicoMotsFr; ?>;
 
         function saisieVerif(mot){
             return listeMotsFr.indexOf(mot) != -1; // mot in listeMotsFr
         }
 
         function ajouterMot() {
-            var motSaisi = document.getElementById('mot').value.trim();
+            var motSaisi = document.getElementById('mot').value.trim().toLowerCase();
             if(saisieVerif(motSaisi)){
                 if (motSaisi !== '') {
                     motsListe.push(motSaisi);
@@ -162,7 +163,7 @@
 
         function ajouterMotEvenement() {
             var motSaisi = document.getElementById('motEvenement').value.trim();
-			if(saisieVerif(motSaisi){
+			if(saisieVerif(motSaisi)){
 				if (motSaisi !== '') {
 					motsListeEvenement.push(motSaisi);
 					afficherListeMotsEvenement();
