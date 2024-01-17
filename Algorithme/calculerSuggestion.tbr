@@ -2,15 +2,15 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
-  <date_creation>16/1/2024 23:56</date_creation>
+  <date_creation>17/1/2024 13:34</date_creation>
   <Elements>
     <Action>
       <Position>531;29</Position>
       <StyleLien>2</StyleLien>
       <PreAssertion>tabACM</PreAssertion>
       <PostAssertion>objetEvenement</PostAssertion>
-      <Titre>calculerSuggestion</Titre>
-      <DetailsVisible>1</DetailsVisible>
+      <Titre>calculerSuggestion(tabACM, objetEvenement)</Titre>
+      <DetailsVisible>0</DetailsVisible>
       <DetailsVideVisible>1</DetailsVideVisible>
       <Enfants>
         <Action>
@@ -23,7 +23,7 @@
           <DetailsVideVisible>1</DetailsVideVisible>
           <Enfants>
             <Action>
-              <Position>139;266</Position>
+              <Position>230;270</Position>
               <StyleLien>1</StyleLien>
               <PreAssertion>?</PreAssertion>
               <PostAssertion>userPreferences</PostAssertion>
@@ -141,7 +141,7 @@
                   </Enfants>
                 </Action>
                 <Action>
-                  <Position>1664;437</Position>
+                  <Position>1631;436</Position>
                   <StyleLien>2</StyleLien>
                   <PreAssertion>∅</PreAssertion>
                   <PostAssertion>∅</PostAssertion>

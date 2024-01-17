@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
-  <date_creation>17/1/2024 12:31</date_creation>
+  <date_creation>17/1/2024 13:32</date_creation>
   <Elements>
     <Action>
       <Position>1073;22</Position>
@@ -54,7 +54,7 @@
               </Enfants>
             </Action>
             <Action>
-              <Position>425;310</Position>
+              <Position>423;310</Position>
               <StyleLien>1</StyleLien>
               <PreAssertion>∅</PreAssertion>
               <PostAssertion>∅</PostAssertion>
@@ -75,22 +75,22 @@
           <DetailsVideVisible>0</DetailsVideVisible>
           <Enfants>
             <Iteration>
-              <Position>1650.5;297.5</Position>
+              <Position>1558.5;310.5</Position>
               <StyleLien>1</StyleLien>
               <Titre>Pour tout motCourant de listeMot</Titre>
               <IterationFixe>1</IterationFixe>
               <Enfants>
                 <Action>
-                  <Position>1193;413</Position>
+                  <Position>1176;412</Position>
                   <StyleLien>2</StyleLien>
                   <PreAssertion>listeMot, listeTag, DicoSynTag</PreAssertion>
                   <PostAssertion>listeTag</PostAssertion>
-                  <Titre>Vérification de la présence de motCourrant dans dicoSynTag</Titre>
+                  <Titre>Vérification de la présence de motCourant dans dicoSynTag</Titre>
                   <DetailsVisible>1</DetailsVisible>
                   <DetailsVideVisible>1</DetailsVideVisible>
                   <Enfants>
                     <Condition>
-                      <Position>1457.5;550</Position>
+                      <Position>1399.5;552</Position>
                       <StyleLien>0</StyleLien>
                       <estUnique>0</estUnique>
                       <operationsLogiques>
@@ -135,19 +135,19 @@
                                       <DetailsVideVisible>1</DetailsVideVisible>
                                       <Enfants>
                                         <Condition>
-                                          <Position>2123.5;1080</Position>
+                                          <Position>2198.5;1106</Position>
                                           <StyleLien>1</StyleLien>
                                           <estUnique>1</estUnique>
                                           <operationsLogiques>
                                             <operation>
-                                              <Titre>Si un des triggered du motCourrant appartient à dicoSynTag</Titre>
+                                              <Titre>Si un des triggered du motCourant appartient à dicoSynTag</Titre>
                                               <Enfants>
                                                 <Action>
-                                                  <Position>2278;1198</Position>
+                                                  <Position>2290;1244</Position>
                                                   <StyleLien>1</StyleLien>
                                                   <PreAssertion>∅</PreAssertion>
                                                   <PostAssertion>∅</PostAssertion>
-                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <Titre>On l'ajoute à la listeTag</Titre>
                                                   <DetailsVisible>0</DetailsVisible>
                                                   <DetailsVideVisible>1</DetailsVideVisible>
                                                   <Enfants/>
@@ -193,19 +193,19 @@
                                       <DetailsVideVisible>1</DetailsVideVisible>
                                       <Enfants>
                                         <Condition>
-                                          <Position>1315.5;1092</Position>
+                                          <Position>1387.5;1091</Position>
                                           <StyleLien>1</StyleLien>
                                           <estUnique>1</estUnique>
                                           <operationsLogiques>
                                             <operation>
-                                              <Titre>Si un des génériques du motCourrant appartient à dicoSynTag</Titre>
+                                              <Titre>Si un des génériques du motCourant appartient à dicoSynTag</Titre>
                                               <Enfants>
                                                 <Action>
-                                                  <Position>1443;1216</Position>
+                                                  <Position>1486;1215</Position>
                                                   <StyleLien>1</StyleLien>
                                                   <PreAssertion>∅</PreAssertion>
                                                   <PostAssertion>∅</PostAssertion>
-                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <Titre>On l'ajoute à la listeTag</Titre>
                                                   <DetailsVisible>0</DetailsVisible>
                                                   <DetailsVideVisible>1</DetailsVideVisible>
                                                   <Enfants/>
@@ -251,7 +251,7 @@
                                       <DetailsVideVisible>1</DetailsVideVisible>
                                       <Enfants>
                                         <Condition>
-                                          <Position>480.5;1098</Position>
+                                          <Position>559.5;1114</Position>
                                           <StyleLien>1</StyleLien>
                                           <estUnique>1</estUnique>
                                           <operationsLogiques>
@@ -259,11 +259,11 @@
                                               <Titre>Si un des synonymes du motCourrant appartient à dicoSynTag</Titre>
                                               <Enfants>
                                                 <Action>
-                                                  <Position>611;1222</Position>
+                                                  <Position>655;1234</Position>
                                                   <StyleLien>1</StyleLien>
                                                   <PreAssertion>∅</PreAssertion>
                                                   <PostAssertion>∅</PostAssertion>
-                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <Titre>On l'ajoute à la listeTag</Titre>
                                                   <DetailsVisible>0</DetailsVisible>
                                                   <DetailsVideVisible>1</DetailsVideVisible>
                                                   <Enfants/>
