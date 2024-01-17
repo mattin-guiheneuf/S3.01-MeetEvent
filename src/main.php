@@ -46,15 +46,15 @@ $donnees = json_decode($contenuJSON, true);
 
 //Transformer les tags en objet Tag
 $liste = ["Cuisine", "Ingrédients", "Art",
-"Musique", "Dessin", "Sport", "Entraînement", "Social", "Échange",
-"Discussion", "Méditation", "Détente", "Lecture", "Écoute","Rire",
+"Musique", "Dessin", "Sport", "Entraînement", "Social", "Echange",
+"Discussion", "Méditation", "Détente", "Lecture", "Ecoute","Rire",
 "Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
 "Enseignement", "Travail", "Créativité", "Construction",
 "Réparation", "Jardinage", "Photographie", "Film", "Danse", "Chant", 
 "Instrument", "Collection", "Informatique", "Réflexion",
 "Engagement", "Volontariat", "Organisation",
-"Événement", "Défense", "Exercice", "Expérience", "Test",
-"Développement", "Amélioration", "Innovation", "Économie",
+"Evénement", "Défense", "Exercice", "Expérience", "Test",
+"Développement", "Amélioration", "Innovation", "Economie",
 "Investissement", "Gestion", "Partage", "Influence", "Motivation",
 "Inspiration", "Amusement",
 "Célébration", "Changement",
@@ -69,7 +69,7 @@ $liste = ["Cuisine", "Ingrédients", "Art",
 "Competition", "Tournoi", "Peinture", "Montagne",
 "Finance", "Formation", "Nourriture"];
 foreach ($liste as $tag) {
-    $list_tag_corpus[] = new Tag($tag);
+    $list_tag_corpus[] = new Tag(strtolower($tag));
 }
 //Création du corpus de Tag
 $corpusTag = new Corpus(1, $list_tag_corpus);

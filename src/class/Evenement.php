@@ -446,7 +446,7 @@ class Evenement {
      */
     public function toString(string $message) {
         $resultat = $message;
-        $resultat .= "L'évènement " . $this->getId() . " a pour tag : ";
+        $resultat .= "<strong>L'évènement " . $this->getId() . " a pour tag :</strong> ";
 
         foreach ($this->getTags() as $element) {
             $resultat .= $element->getLibelle() . " ";
