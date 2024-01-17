@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>17/1/2024 12:31</date_creation>
+  <Elements>
+    <Action>
+      <Position>1073;22</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>DicoSynTag</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>DéfinirTags</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>610;175</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>listeMot, listeTag</PostAssertion>
+          <Titre>Initialisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>553;307</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>Initialisation de la liste de mot à transformer en Tags</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>732;433</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>listeMot ← tous les libellé des Objets Mot présent dans listeMotObjet</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>459;433</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>∅</PreAssertion>
+                  <PostAssertion>∅</PostAssertion>
+                  <Titre>listeMotObjet ← this.getMots()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>425;310</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>∅</PostAssertion>
+              <Titre>listeTag ← []</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1216;179</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>listeMot, listeTag, DicoSynTag</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Traitement (Transformation des mots en tags)</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>1650.5;297.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour tout motCourant de listeMot</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>1193;413</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>listeMot, listeTag, DicoSynTag</PreAssertion>
+                  <PostAssertion>listeTag</PostAssertion>
+                  <Titre>Vérification de la présence de motCourrant dans dicoSynTag</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>1457.5;550</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>motCourant n'appartient pas à dicoSynTag</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1082;678</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>∅</PreAssertion>
+                              <PostAssertion>∅</PostAssertion>
+                              <Titre>On cherche un moyen de relier le mot avec des Tags</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1998;837</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>∅</PreAssertion>
+                                  <PostAssertion>∅</PostAssertion>
+                                  <Titre>On regarde les triggered</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>1794;968</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>On récupére tous les triggered du motCourant</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>2161;968</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>Pour chacun : vérification de l'appartenance au dicoSynTag</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>2123.5;1080</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <estUnique>1</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>Si un des triggered du motCourrant appartient à dicoSynTag</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>2278;1198</Position>
+                                                  <StyleLien>1</StyleLien>
+                                                  <PreAssertion>∅</PreAssertion>
+                                                  <PostAssertion>∅</PostAssertion>
+                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <DetailsVisible>0</DetailsVisible>
+                                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                                  <Enfants/>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants/>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                                <Action>
+                                  <Position>1260;820</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>∅</PreAssertion>
+                                  <PostAssertion>∅</PostAssertion>
+                                  <Titre>On regarde les génériques</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>972;974</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>∅</PreAssertion>
+                                      <PostAssertion>∅</PostAssertion>
+                                      <Titre>On récupére tous les génériques du motCourant</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>1358;968</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>∅</PreAssertion>
+                                      <PostAssertion>∅</PostAssertion>
+                                      <Titre>Pour chacun : vérification de l'appartenance au dicoSynTag</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>1315.5;1092</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <estUnique>1</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>Si un des génériques du motCourrant appartient à dicoSynTag</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>1443;1216</Position>
+                                                  <StyleLien>1</StyleLien>
+                                                  <PreAssertion>∅</PreAssertion>
+                                                  <PostAssertion>∅</PostAssertion>
+                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <DetailsVisible>0</DetailsVisible>
+                                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                                  <Enfants/>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants/>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                                <Action>
+                                  <Position>433;827</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>∅</PreAssertion>
+                                  <PostAssertion>∅</PostAssertion>
+                                  <Titre>On regarde les synonymes</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>138;976</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>∅</PreAssertion>
+                                      <PostAssertion>∅</PostAssertion>
+                                      <Titre>On récupére tous les synonymes du motCourant</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>528;975</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>∅</PreAssertion>
+                                      <PostAssertion>∅</PostAssertion>
+                                      <Titre>Pour chacun : vérification de l'appartenance au dicoSynTag</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>480.5;1098</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <estUnique>1</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>Si un des synonymes du motCourrant appartient à dicoSynTag</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>611;1222</Position>
+                                                  <StyleLien>1</StyleLien>
+                                                  <PreAssertion>∅</PreAssertion>
+                                                  <PostAssertion>∅</PostAssertion>
+                                                  <Titre>On l'ajout à la listeTag</Titre>
+                                                  <DetailsVisible>0</DetailsVisible>
+                                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                                  <Enfants/>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants/>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2009;681</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>∅</PreAssertion>
+                              <PostAssertion>∅</PostAssertion>
+                              <Titre>On ajoute motCourant à la listeTag</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>
