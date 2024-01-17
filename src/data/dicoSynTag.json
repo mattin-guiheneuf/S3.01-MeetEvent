@@ -25,7 +25,7 @@
     ],
     "musique": [
         "musique",
-        "Ecoute",
+        "ecoute",
         "danse"
     ],
     "dessin": [
@@ -48,8 +48,8 @@
     "social": [
         "social"
     ],
-    "Echange": [
-        "Echange"
+    "echange": [
+        "echange"
     ],
     "discussion": [
         "discussion"
@@ -65,8 +65,8 @@
     "lecture": [
         "lecture"
     ],
-    "Ecoute": [
-        "Ecoute"
+    "ecoute": [
+        "ecoute"
     ],
     "rire": [
         "rire"
@@ -157,8 +157,8 @@
         "caritatif",
         "solidarit\u00e9"
     ],
-    "Ev\u00e9nement": [
-        "Ev\u00e9nement"
+    "ev\u00e9nement": [
+        "ev\u00e9nement"
     ],
     "d\u00e9fense": [
         "d\u00e9fense"
@@ -192,12 +192,12 @@
         "cr\u00e9ativit\u00e9",
         "gastronomie"
     ],
-    "Economie": [
-        "Economie"
+    "economie": [
+        "economie"
     ],
     "investissement": [
         "investissement",
-        "Economie",
+        "economie",
         "gestion",
         "finance"
     ],
@@ -237,7 +237,7 @@
     ],
     "changement": [
         "changement",
-        "Echange"
+        "echange"
     ],
     "imagination": [
         "imagination",
@@ -380,7 +380,7 @@
     ],
     "finance": [
         "finance",
-        "Economie",
+        "economie",
         "investissement",
         "gestion"
     ],
@@ -1042,7 +1042,7 @@
     ],
     "organis\u00e9": [
         "art",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "festival",
         "competition",
         "tournoi"
@@ -1210,7 +1210,7 @@
     ],
     "paroles": [
         "musique",
-        "Ecoute",
+        "ecoute",
         "chant"
     ],
     "mtv": [
@@ -1268,7 +1268,7 @@
     ],
     "prix": [
         "musique",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "innovation",
         "festival",
         "competition"
@@ -1347,7 +1347,7 @@
     ],
     "chansons": [
         "musique",
-        "Ecoute",
+        "ecoute",
         "chant"
     ],
     "punk": [
@@ -1365,7 +1365,7 @@
     ],
     "des sons": [
         "musique",
-        "Ecoute",
+        "ecoute",
         "instrument"
     ],
     "chanson": [
@@ -1437,7 +1437,7 @@
     ],
     "les athl\u00e8tes": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1451,7 +1451,7 @@
     ],
     "ski": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "montagne"
     ],
     "lacrosse": [
@@ -1477,7 +1477,7 @@
     ],
     "athl\u00e9tisme": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "association",
         "marche"
@@ -1491,7 +1491,7 @@
     ],
     "olympique": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1508,7 +1508,7 @@
     ],
     "jeux olympiques": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1550,13 +1550,13 @@
     ],
     "concurrents": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "competition"
     ],
     "p\u00eache": [
         "sport",
         "jardinage",
-        "Economie",
+        "economie",
         "gastronomie",
         "loisir"
     ],
@@ -1598,7 +1598,7 @@
     "int\u00e9rieur": [
         "sport",
         "m\u00e9ditation",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "loisir",
         "tournoi",
         "peinture"
@@ -1609,7 +1609,7 @@
     ],
     "tourisme": [
         "sport",
-        "Economie",
+        "economie",
         "culture",
         "gastronomie",
         "loisir"
@@ -1619,7 +1619,7 @@
     ],
     "lutte": [
         "sport",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "solidarit\u00e9"
     ],
     "le golf": [
@@ -1673,7 +1673,7 @@
     ],
     "qualifi\u00e9": [
         "entra\u00eenement",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "competition",
         "tournoi",
         "formation"
@@ -1740,7 +1740,7 @@
     ],
     "combat": [
         "entra\u00eenement",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "formation"
     ],
     "corps": [
@@ -1882,7 +1882,7 @@
     ],
     "\u00e9conomique": [
         "social",
-        "Economie",
+        "economie",
         "investissement",
         "finance"
     ],
@@ -1955,84 +1955,84 @@
         "f\u00eate"
     ],
     "t\u00e9l\u00e9scripteur": [
-        "Echange"
+        "echange"
     ],
     "nyse": [
-        "Echange"
+        "echange"
     ],
     "\u00e0 terme": [
-        "Echange"
+        "echange"
     ],
     "titres": [
-        "Echange",
+        "echange",
         "investissement",
         "finance"
     ],
     "marchandise": [
-        "Echange"
+        "echange"
     ],
     "action": [
-        "Echange",
+        "echange",
         "investissement"
     ],
     "devise": [
-        "Echange",
-        "Economie"
+        "echange",
+        "economie"
     ],
     "seconde": [
-        "Echange"
+        "echange"
     ],
     "commerce": [
-        "Echange",
-        "Economie",
+        "echange",
+        "economie",
         "investissement",
         "solidarit\u00e9",
         "finance"
     ],
     "prendre": [
-        "Echange"
+        "echange"
     ],
     "constituant": [
-        "Echange"
+        "echange"
     ],
     "dollar": [
-        "Echange"
+        "echange"
     ],
     "actions": [
-        "Echange",
+        "echange",
         "investissement"
     ],
     "les taux": [
-        "Echange",
+        "echange",
         "d\u00e9tente"
     ],
     "taux": [
-        "Echange",
+        "echange",
         "d\u00e9tente"
     ],
     "mon\u00e9taire": [
-        "Echange",
-        "Economie",
+        "echange",
+        "economie",
         "finance"
     ],
     "indice": [
-        "Echange"
+        "echange"
     ],
     "transactions": [
-        "Echange"
+        "echange"
     ],
     "serveur": [
-        "Echange"
+        "echange"
     ],
     "brouillon": [
-        "Echange",
+        "echange",
         "dessin"
     ],
     "symbole": [
-        "Echange"
+        "echange"
     ],
     "id\u00e9es": [
-        "Echange",
+        "echange",
         "discussion",
         "cr\u00e9ativit\u00e9",
         "innovation",
@@ -2040,40 +2040,40 @@
         "imagination"
     ],
     "t\u00e9l\u00e9phone": [
-        "Echange",
-        "Ecoute"
+        "echange",
+        "ecoute"
     ],
     "paiement": [
-        "Echange"
+        "echange"
     ],
     "esp\u00e8ces": [
-        "Echange",
+        "echange",
         "investissement",
         "cafe",
         "animaux"
     ],
     "\u00e9quit\u00e9": [
-        "Echange",
+        "echange",
         "investissement",
         "finance"
     ],
     "marchandises": [
-        "Echange",
-        "Economie"
+        "echange",
+        "economie"
     ],
     "commission": [
-        "Echange"
+        "echange"
     ],
     "march\u00e9": [
-        "Echange",
+        "echange",
         "investissement",
         "marche"
     ],
     "contrats": [
-        "Echange"
+        "echange"
     ],
     "r\u00e9serves": [
-        "Echange",
+        "echange",
         "exploration",
         "nature"
     ],
@@ -2124,7 +2124,7 @@
     ],
     "participants": [
         "discussion",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "atelier"
     ],
     "question": [
@@ -2284,7 +2284,7 @@
         "m\u00e9ditation",
         "changement",
         "imagination",
-        "Ecoute"
+        "ecoute"
     ],
     "gu\u00e9rison": [
         "m\u00e9ditation"
@@ -2606,7 +2606,7 @@
     ],
     "d\u00e9pend": [
         "d\u00e9tente",
-        "Economie"
+        "economie"
     ],
     "processus": [
         "d\u00e9tente",
@@ -2772,7 +2772,7 @@
     ],
     "\u00e9coute": [
         "lecture",
-        "Ecoute"
+        "ecoute"
     ],
     "l'alphab\u00e9tisation": [
         "lecture",
@@ -2840,113 +2840,113 @@
         "test"
     ],
     "\u00e9couteurs": [
-        "Ecoute"
+        "ecoute"
     ],
     "entendre": [
-        "Ecoute",
+        "ecoute",
         "rire"
     ],
     "soigneusement": [
-        "Ecoute"
+        "ecoute"
     ],
     "ton": [
-        "Ecoute",
+        "ecoute",
         "rire",
         "instrument"
     ],
     "conseil": [
-        "Ecoute",
+        "ecoute",
         "jardinage",
         "d\u00e9fense"
     ],
     "conversation": [
-        "Ecoute",
+        "ecoute",
         "d\u00eener"
     ],
     "chanter": [
-        "Ecoute",
+        "ecoute",
         "rire",
         "danse",
         "chant"
     ],
     "messages": [
-        "Ecoute"
+        "ecoute"
     ],
     "toi": [
-        "Ecoute",
+        "ecoute",
         "rire",
         "amusement"
     ],
     "voix": [
-        "Ecoute",
+        "ecoute",
         "chant"
     ],
     "l'audio": [
-        "Ecoute"
+        "ecoute"
     ],
     "apprendre": [
-        "Ecoute",
+        "ecoute",
         "motivation"
     ],
     "ruban adh\u00e9sif": [
-        "Ecoute"
+        "ecoute"
     ],
     "comprendre": [
-        "Ecoute",
+        "ecoute",
         "travail"
     ],
     "radio": [
-        "Ecoute"
+        "ecoute"
     ],
     "pense": [
-        "Ecoute",
+        "ecoute",
         "rire"
     ],
     "vraiment": [
-        "Ecoute",
+        "ecoute",
         "rire",
         "amusement"
     ],
     "dire": [
-        "Ecoute",
+        "ecoute",
         "rire"
     ],
     "parler": [
-        "Ecoute",
+        "ecoute",
         "marche"
     ],
     "montre": [
-        "Ecoute",
+        "ecoute",
         "amusement"
     ],
     "sentir": [
-        "Ecoute",
+        "ecoute",
         "rire",
         "amusement",
         "exp\u00e9rience"
     ],
     "entendu": [
-        "Ecoute",
+        "ecoute",
         "rire"
     ],
     "message": [
-        "Ecoute"
+        "ecoute"
     ],
     "r\u00e9cit": [
-        "Ecoute",
+        "ecoute",
         "chant"
     ],
     "c\u0153ur": [
-        "Ecoute"
+        "ecoute"
     ],
     "vouloir": [
-        "Ecoute"
+        "ecoute"
     ],
     "quelque chose": [
-        "Ecoute"
+        "ecoute"
     ],
     "audience": [
-        "Ecoute"
+        "ecoute"
     ],
     "pleurer": [
         "rire"
@@ -3056,7 +3056,7 @@
     ],
     "wwe": [
         "divertissement",
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "dvd": [
         "divertissement",
@@ -3088,7 +3088,7 @@
     ],
     "industrie": [
         "divertissement",
-        "Economie"
+        "economie"
     ],
     "des photos": [
         "divertissement",
@@ -3098,7 +3098,7 @@
     ],
     "lieu": [
         "divertissement",
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "concert",
         "loisir"
     ],
@@ -3394,7 +3394,7 @@
     ],
     "exploitation mini\u00e8re": [
         "exploration",
-        "Economie"
+        "economie"
     ],
     "exp\u00e9dition": [
         "exploration",
@@ -4017,7 +4017,7 @@
     ],
     "agriculture": [
         "jardinage",
-        "Economie",
+        "economie",
         "cafe",
         "nourriture"
     ],
@@ -4090,7 +4090,7 @@
     ],
     "cultures": [
         "jardinage",
-        "Economie",
+        "economie",
         "cafe",
         "nourriture"
     ],
@@ -4129,7 +4129,7 @@
     "croissance": [
         "jardinage",
         "innovation",
-        "Economie",
+        "economie",
         "investissement",
         "d\u00e9veloppement"
     ],
@@ -4168,7 +4168,7 @@
     "\u00e9levage": [
         "jardinage",
         "volontariat",
-        "Economie",
+        "economie",
         "caritatif",
         "social"
     ],
@@ -5112,88 +5112,88 @@
         "oenologie"
     ],
     "cano\u00eb": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "slalom": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "jeux paralympiques": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "poker": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "tournoi"
     ],
     "sprint": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "poids lourd": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "tournoi"
     ],
     "d\u00e9tenu": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "c\u00e9l\u00e9bration",
         "festival",
         "competition",
         "tournoi"
     ],
     "style libre": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "competition"
     ],
     "relais": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux"
     ],
     "qualification": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "amical",
         "competition",
         "tournoi"
     ],
     "\u00e9t\u00e9": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "marathon": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "marche"
     ],
     "se rallier": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "solidarit\u00e9"
     ],
     "bronze": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux"
     ],
     "p\u00e9kin": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "ar\u00e8ne": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "jeux",
         "concert",
         "tournoi"
     ],
     "\u00e9tiqueter": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "tournoi"
     ],
     "m\u00e9daille": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "d\u00e9fense",
         "jeux"
     ],
     "fin de semaine": [
-        "Ev\u00e9nement",
+        "ev\u00e9nement",
         "c\u00e9l\u00e9bration",
         "festival",
         "soiree"
     ],
     "\u00e9v\u00e9nements": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "dod": [
         "d\u00e9fense"
@@ -5503,7 +5503,7 @@
     "infrastructure": [
         "d\u00e9veloppement",
         "am\u00e9lioration",
-        "Economie",
+        "economie",
         "investissement",
         "finance"
     ],
@@ -5584,7 +5584,7 @@
     ],
     "entreprises": [
         "innovation",
-        "Economie",
+        "economie",
         "investissement"
     ],
     "recherche": [
@@ -5592,7 +5592,7 @@
     ],
     "strat\u00e9gies": [
         "innovation",
-        "Economie",
+        "economie",
         "investissement",
         "gestion"
     ],
@@ -5629,109 +5629,109 @@
         "montagne"
     ],
     "pib": [
-        "Economie",
+        "economie",
         "investissement"
     ],
     "r\u00e9cession": [
-        "Economie"
+        "economie"
     ],
     "inflation": [
-        "Economie"
+        "economie"
     ],
     "mobilit\u00e9": [
-        "Economie"
+        "economie"
     ],
     "ch\u00f4mage": [
-        "Economie"
+        "economie"
     ],
     "capitalisme": [
-        "Economie"
+        "economie"
     ],
     "d\u00e9pendant": [
-        "Economie"
+        "economie"
     ],
     "les industries": [
-        "Economie",
+        "economie",
         "investissement"
     ],
     "b\u00e9tail": [
-        "Economie",
+        "economie",
         "cafe",
         "animaux"
     ],
     "secteur": [
-        "Economie",
+        "economie",
         "investissement",
         "finance"
     ],
     "exporter": [
-        "Economie",
+        "economie",
         "cafe"
     ],
     "agricole": [
-        "Economie",
+        "economie",
         "cafe",
         "oenologie",
         "nourriture"
     ],
     "emplois": [
-        "Economie"
+        "economie"
     ],
     "fabrication": [
-        "Economie"
+        "economie"
     ],
     "\u00e9conomie": [
-        "Economie",
+        "economie",
         "investissement",
         "gestion",
         "finance"
     ],
     "brut": [
-        "Economie"
+        "economie"
     ],
     "domin\u00e9": [
-        "Economie"
+        "economie"
     ],
     "emploi": [
-        "Economie",
+        "economie",
         "cafe",
         "travail",
         "exercice"
     ],
     "coton": [
-        "Economie",
+        "economie",
         "cafe"
     ],
     "crise": [
-        "Economie"
+        "economie"
     ],
     "bancaire": [
-        "Economie",
+        "economie",
         "investissement",
         "gestion",
         "finance"
     ],
     "industriel": [
-        "Economie"
+        "economie"
     ],
     "d\u00e9clin": [
-        "Economie"
+        "economie"
     ],
     "milliard": [
-        "Economie",
+        "economie",
         "investissement"
     ],
     "dette": [
-        "Economie",
+        "economie",
         "investissement",
         "finance"
     ],
     "richesse": [
-        "Economie",
+        "economie",
         "investissement"
     ],
     "consommation": [
-        "Economie",
+        "economie",
         "repas",
         "alcool",
         "cafe",
@@ -5739,7 +5739,7 @@
         "nourriture"
     ],
     "touristique": [
-        "Economie",
+        "economie",
         "gastronomie",
         "loisir"
     ],
@@ -9063,32 +9063,32 @@
         "social"
     ],
     "changer": [
-        "Echange",
+        "echange",
         "changement"
     ],
     "navette": [
-        "Echange",
+        "echange",
         "changement"
     ],
     "convertir": [
-        "Echange",
+        "echange",
         "changement"
     ],
     "substitution": [
-        "Echange"
+        "echange"
     ],
     "central": [
-        "Echange"
+        "echange"
     ],
     "\u00e9change": [
-        "Echange",
+        "echange",
         "changement"
     ],
     "basculer": [
-        "Echange"
+        "echange"
     ],
     "\u00e9change de t\u00e9l\u00e9phone": [
-        "Echange"
+        "echange"
     ],
     "discours": [
         "discussion"
@@ -9133,10 +9133,10 @@
         "lecture"
     ],
     "conscient": [
-        "Ecoute"
+        "ecoute"
     ],
     "prenez garde": [
-        "Ecoute"
+        "ecoute"
     ],
     "gag": [
         "rire"
@@ -9399,7 +9399,7 @@
         "organisation"
     ],
     "cas": [
-        "Ev\u00e9nement"
+        "ev\u00e9nement"
     ],
     "la d\u00e9fense": [
         "d\u00e9fense"
@@ -9547,10 +9547,10 @@
         "innovation"
     ],
     "\u00e9pargne": [
-        "Economie"
+        "economie"
     ],
     "syst\u00e8me \u00e9conomique": [
-        "Economie"
+        "economie"
     ],
     "fonds d'investissement": [
         "investissement"
