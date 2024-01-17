@@ -78,17 +78,46 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>require_once <span class="stringliteral">&quot;Mot.php&quot;</span>;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_api_synonyme.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_api_synonyme.html">ApiSynonyme</a>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// METHODES</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span> <span class="keyword">function</span> utiliserApiTrad(<a class="code hl_class" href="class_mot.html">Mot</a> $mot){</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">return</span> $mot; <span class="comment">//renvoie une liste de Synonyme</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    } </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="ttc" id="aclass_api_synonyme_html"><div class="ttname"><a href="class_api_synonyme.html">ApiSynonyme</a></div><div class="ttdef"><b>Definition</b> <a href="_api_synonyme_8php_source.html#l00008">ApiSynonyme.php:8</a></div></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_api_synonyme.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_api_synonyme.html">ApiSynonyme</a>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// METHODES</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span> <span class="keyword">function</span> utiliserApiSyn(<a class="code hl_class" href="class_mot.html">Mot</a> $mot, String $destinationFile = NULL){</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        $url = curl_init();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        $urlARechercher = <span class="stringliteral">&quot;https://wordsapiv1.p.rapidapi.com/words/&quot;</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        $urlARechercher = $urlARechercher . $mot . <span class="stringliteral">&quot;/synonyms&quot;</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        curl_setopt_array($url, [</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            CURLOPT_URL =&gt; $urlARechercher,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            CURLOPT_RETURNTRANSFER =&gt; <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            CURLOPT_ENCODING =&gt; <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            CURLOPT_MAXREDIRS =&gt; 10,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            CURLOPT_TIMEOUT =&gt; 30,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            CURLOPT_CUSTOMREQUEST =&gt; <span class="stringliteral">&quot;GET&quot;</span>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            CURLOPT_HTTPHEADER =&gt; [</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="stringliteral">&quot;X-RapidAPI-Host: wordsapiv1.p.rapidapi.com&quot;</span>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="stringliteral">&quot;X-RapidAPI-Key: f59a2efa60msha84f78f61a68ddap12ca6djsnadb8f76a8e62&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            ],</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        ]);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        $response = curl_exec($url);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        $err = curl_error($url);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        curl_close($url);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> ($err) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            echo <span class="stringliteral">&quot;URL Error #:&quot;</span> . $err;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $data = json_decode($response,<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span> ($destinationFile != NULL)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                file_put_contents($destinationFile,json_encode($data,JSON_PRETTY_PRINT));</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> $data;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    } </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="ttc" id="aclass_api_synonyme_html"><div class="ttname"><a href="class_api_synonyme.html">ApiSynonyme</a></div><div class="ttdef"><b>Definition</b> <a href="_api_synonyme_8php_source.html#l00006">ApiSynonyme.php:6</a></div></div>
 <div class="ttc" id="aclass_mot_html"><div class="ttname"><a href="class_mot.html">Mot</a></div><div class="ttdef"><b>Definition</b> <a href="_mot_8php_source.html#l00007">Mot.php:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
