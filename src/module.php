@@ -1,6 +1,18 @@
 <?php
 
-// Fonction tradMotAngToFr
+/**
+ * @file module.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant les modules
+ * @details Contient les fonction pour les modules pour les synonymes, les traduction et les APi
+ * @version 1.0
+ */
+
+/**
+ * @brief traduit les mots d'anglais à français
+ * @param string
+ * @return JSON
+*/
 function tradMotAngToFr($motATrad){
     //$res = https://translate.google.fr/?sl=en&tl=fr&text=mother%0A&op=translate;
 
@@ -15,7 +27,11 @@ function tradMotAngToFr($motATrad){
     return $res[0][0][0];
 }
 
-// Fonction tradMotFrToAng
+/**
+ * @brief traduit les mots de français à anglais
+ * @param string
+ * @return JSON
+*/
 function tradMotFrToAng($motATrad){
     //$res = https://translate.google.fr/?sl=en&tl=fr&text=mother%0A&op=translate;
 
@@ -30,7 +46,11 @@ function tradMotFrToAng($motATrad){
     return $res[0][0][0];
 }
 
-// Fonction synAvecAPI
+/**
+ * @brief Récupérer les synonymes avec l'API
+ * @param string
+ * @return array
+*/
 function synAvecAPI($mot){
     // Version avec DataMuse
     $api_url = "https://api.datamuse.com/words?rel_syn=" . urlencode($mot);
@@ -46,7 +66,11 @@ function synAvecAPI($mot){
     return $synonymes;
 }
 
-// Fonction trgAvecAPI
+/**
+ * @brief Récupérer les trg avec l'API
+ * @param string
+ * @return array
+*/
 function trgAvecAPI($mot){
     // Version avec DataMuse
     $api_url = "https://api.datamuse.com/words?rel_trg=" . urlencode($mot);
@@ -62,7 +86,11 @@ function trgAvecAPI($mot){
     return $trg;
 }
 
-// Fonction genAvecAPI
+/**
+ * @brief Extraire les synonymes avec l'API
+ * @param string
+ * @return array
+*/
 function genAvecAPI($mot){
     // Version avec DataMuse
     $api_url = "https://api.datamuse.com/words?rel_gen=" . urlencode($mot);
