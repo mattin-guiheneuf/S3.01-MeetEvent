@@ -208,6 +208,10 @@ class Evenement {
                 echo $motCourant . " déjà présent dans le dicoMotToTag<br>"; // C'est que le mot est en double
                 continue; // équivalent de pass
             }
+			
+			// Création de la clé motCourant dans le dicoMotTTag
+            $dicoMotToTag[$motCourant] = array();
+			
             // Vérif présence dans dicoSynTag du mot
             if (array_key_exists($motCourant, $dicoSynTag)) { // Si le motCourant est présent dans le dicoSynTag
                 // Ajout et enregistrement
@@ -222,7 +226,7 @@ class Evenement {
                     $synMotCourant = tradMotAngToFr($synMotCrt);
                     if (array_key_exists($synMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($synMotCourant, $dicoSynTag[$synMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($synMotCourant, $dicoSynTag[$synMotCourant]));
                         $listeTag[] = $dicoSynTag[$synMotCourant]; // Verif si déjà présent ???
                     }
                 }
@@ -233,7 +237,7 @@ class Evenement {
                     $genMotCourant = tradMotAngToFr($genMotCrt);
                     if (array_key_exists($genMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($genMotCourant, $dicoSynTag[$genMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($genMotCourant, $dicoSynTag[$genMotCourant]));
                         $listeTag[] = $dicoSynTag[$genMotCourant]; // Verif si déjà présent ???
                     }
                 }
@@ -244,7 +248,7 @@ class Evenement {
                     $trgMotCourant = tradMotAngToFr($trgMotCrt);
                     if (array_key_exists($trgMotCourant, $dicoSynTag)) { // Si le synMotCourant est présent dans le dicoSynTag
                         // Ajout et enregistrement
-                        $dicoMotToTag[$motCourant] = array($trgMotCourant, $dicoSynTag[$trgMotCourant]);
+                        array_push($dicoMotToTag[$motCourant],array($trgMotCourant, $dicoSynTag[$trgMotCourant]));
                         $listeTag[] = $dicoSynTag[$trgMotCourant]; // Verif si déjà présent ???
                     }
                 }

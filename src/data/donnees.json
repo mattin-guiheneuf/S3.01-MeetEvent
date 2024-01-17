@@ -2,56 +2,114 @@
     "utilisateurs": [
         {
             "id": 1,
-            "nom": "",
-            "mots": [],
-            "tags": [
+            "nom": "Joe",
+            "mots": [
                 "musique",
                 "voyage",
+                "lecture",
+                "jeux"
+            ],
+            "tags": [
+                "musique",
+                "\u00c9coute",
+                "danse",
+                "voyage",
+                "loisir",
                 "lecture",
                 "jeux"
             ]
         },
         {
             "id": 2,
-            "nom": "",
-            "mots": [],
-            "tags": [
+            "nom": "Thibault",
+            "mots": [
                 "musique",
                 "festival",
                 "sport",
+                "jeux"
+            ],
+            "tags": [
+                "musique",
+                "\u00c9coute",
+                "danse",
+                "festival",
+                "c\u00e9l\u00e9bration",
+                "concert",
+                "sport",
+                "raquette",
+                "loisir",
+                "amusement",
                 "jeux"
             ]
         },
         {
             "id": 3,
-            "nom": "",
-            "mots": [],
-            "tags": [
-                "Investissement",
-                "Buvette",
+            "nom": "Brice",
+            "mots": [
+                "investissement",
+                "buvette",
                 "jeux",
-                "Repas",
-                "Decouverte",
-                "Oenologie",
-                "Marche",
-                "Musee",
-                "Echange",
-                "Ambiance"
+                "repas",
+                "d\u00e9couverte",
+                "oenologie",
+                "marche"
+            ],
+            "tags": [
+                "investissement",
+                "\u00c9conomie",
+                "gestion",
+                "finance",
+                "jeux",
+                "repas",
+                "cuisine",
+                "ingr\u00e9dients",
+                "aperitif",
+                "soiree",
+                "d\u00eener",
+                "nourriture",
+                "d\u00e9couverte",
+                "exploration",
+                "oenologie",
+                "marche",
+                "loisir"
             ]
         },
         {
             "id": 4,
-            "nom": "",
-            "mots": [],
+            "nom": "Jacques",
+            "mots": [
+                "ap\u00e9ritif",
+                "vin",
+                "tournoi",
+                "culture",
+                "repas",
+                "jouer",
+                "soir\u00e9e"
+            ],
             "tags": [
-                "Aperitif",
-                "Vin",
-                "Tournoi",
-                "Culture",
-                "Soiree",
-                "Formation",
-                "Jeu de societe",
-                "Repas"
+                "aperitif",
+                "alcool",
+                "gastronomie",
+                "oenologie",
+                "d\u00e9gustation",
+                "repas",
+                "cuisine",
+                "ingr\u00e9dients",
+                "soiree",
+                "d\u00eener",
+                "nourriture",
+                "d\u00e9tente",
+                "cafe",
+                "discussion",
+                "innovation",
+                "caritatif",
+                "tournoi",
+                "competition",
+                "culture",
+                "sport",
+                "travail",
+                "amusement",
+                "rencontre"
             ]
         }
     ],
