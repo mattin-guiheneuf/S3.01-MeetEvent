@@ -1,1 +1,0 @@
-Les codes propres et commentés sont dans Code/PHP/PropresEtCommente
