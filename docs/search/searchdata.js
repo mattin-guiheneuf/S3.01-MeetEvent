@@ -1,27 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "_acdefglmrstu",
+  0: "$_acdefglmrstu",
   1: "acdemrstu",
-  2: "f",
-  3: "ac",
-  4: "_cdglmstu"
+  2: "acdemrstu",
+  3: "_acdfglmstu",
+  4: "$f"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "namespaces",
-  3: "files",
-  4: "functions"
+  2: "files",
+  3: "functions",
+  4: "variables"
 };
 
 var indexSectionLabels =
 {
   0: "Tout",
   1: "Classes",
-  2: "Espaces de nommage",
-  3: "Fichiers",
-  4: "Fonctions"
+  2: "Fichiers",
+  3: "Fonctions",
+  4: "Variables"
 };
 

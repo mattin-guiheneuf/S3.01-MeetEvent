@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['corpus_5ftags_0',['corpus_tags',['../namespace_faire___corpus.html#a8b6becbfcede95d5b20aab03ba77ebee',1,'Faire_Corpus']]]
+  ['foreach_0',['foreach',['../main_8php.html#a5d3dadf116ac6cb363ac6bf0fbbc42b3',1,'main.php']]]
 ];

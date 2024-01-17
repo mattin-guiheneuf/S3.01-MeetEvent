@@ -1,0 +1,9900 @@
+{
+    "cuisine": [
+        "cuisine",
+        "ingr\u00e9dients",
+        "volontariat",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "ingr\u00e9dients": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "art": [
+        "art",
+        "dessin",
+        "photographie",
+        "collection",
+        "musee"
+    ],
+    "musique": [
+        "musique",
+        "\u00c9coute",
+        "danse"
+    ],
+    "dessin": [
+        "dessin",
+        "art",
+        "photographie",
+        "peinture"
+    ],
+    "sport": [
+        "sport",
+        "raquette",
+        "loisir",
+        "amusement"
+    ],
+    "entra\u00eenement": [
+        "entra\u00eenement",
+        "exercice",
+        "enseignement"
+    ],
+    "social": [
+        "social"
+    ],
+    "\u00c9change": [
+        "\u00c9change"
+    ],
+    "discussion": [
+        "discussion"
+    ],
+    "m\u00e9ditation": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "r\u00e9flexion"
+    ],
+    "d\u00e9tente": [
+        "d\u00e9tente"
+    ],
+    "lecture": [
+        "lecture"
+    ],
+    "\u00c9coute": [
+        "\u00c9coute"
+    ],
+    "rire": [
+        "rire"
+    ],
+    "divertissement": [
+        "divertissement",
+        "loisir"
+    ],
+    "f\u00eate": [
+        "f\u00eate",
+        "amusement",
+        "festival"
+    ],
+    "exploration": [
+        "exploration",
+        "d\u00e9couverte"
+    ],
+    "voyage": [
+        "voyage",
+        "loisir"
+    ],
+    "d\u00e9couverte": [
+        "d\u00e9couverte",
+        "exploration"
+    ],
+    "enseignement": [
+        "enseignement",
+        "m\u00e9ditation"
+    ],
+    "travail": [
+        "travail",
+        "f\u00eate",
+        "solidarit\u00e9",
+        "exercice"
+    ],
+    "cr\u00e9ativit\u00e9": [
+        "cr\u00e9ativit\u00e9"
+    ],
+    "construction": [
+        "construction"
+    ],
+    "r\u00e9paration": [
+        "r\u00e9paration",
+        "atelier"
+    ],
+    "jardinage": [
+        "jardinage"
+    ],
+    "photographie": [
+        "photographie"
+    ],
+    "film": [
+        "film",
+        "festival"
+    ],
+    "danse": [
+        "danse",
+        "musique"
+    ],
+    "chant": [
+        "chant"
+    ],
+    "instrument": [
+        "instrument"
+    ],
+    "collection": [
+        "collection",
+        "art",
+        "musee"
+    ],
+    "informatique": [
+        "informatique"
+    ],
+    "r\u00e9flexion": [
+        "r\u00e9flexion",
+        "m\u00e9ditation"
+    ],
+    "engagement": [
+        "engagement"
+    ],
+    "volontariat": [
+        "volontariat"
+    ],
+    "organisation": [
+        "organisation",
+        "volontariat",
+        "association",
+        "caritatif",
+        "solidarit\u00e9"
+    ],
+    "\u00c9v\u00e9nement": [
+        "\u00c9v\u00e9nement"
+    ],
+    "d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "exercice": [
+        "exercice",
+        "entra\u00eenement",
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "formation",
+        "travail"
+    ],
+    "exp\u00e9rience": [
+        "exp\u00e9rience",
+        "d\u00e9gustation"
+    ],
+    "test": [
+        "test"
+    ],
+    "d\u00e9veloppement": [
+        "d\u00e9veloppement",
+        "innovation"
+    ],
+    "am\u00e9lioration": [
+        "am\u00e9lioration",
+        "r\u00e9paration",
+        "engagement"
+    ],
+    "innovation": [
+        "innovation",
+        "cr\u00e9ativit\u00e9",
+        "gastronomie"
+    ],
+    "\u00c9conomie": [
+        "\u00c9conomie"
+    ],
+    "investissement": [
+        "investissement",
+        "\u00c9conomie",
+        "gestion",
+        "finance"
+    ],
+    "gestion": [
+        "gestion",
+        "innovation",
+        "investissement",
+        "oenologie",
+        "finance"
+    ],
+    "partage": [
+        "partage"
+    ],
+    "influence": [
+        "influence",
+        "musique",
+        "dessin",
+        "inspiration",
+        "culture"
+    ],
+    "motivation": [
+        "motivation"
+    ],
+    "inspiration": [
+        "inspiration",
+        "dessin",
+        "cr\u00e9ativit\u00e9",
+        "imagination"
+    ],
+    "amusement": [
+        "amusement",
+        "plaisir",
+        "divertissement"
+    ],
+    "c\u00e9l\u00e9bration": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "changement": [
+        "changement",
+        "\u00c9change"
+    ],
+    "imagination": [
+        "imagination",
+        "cr\u00e9ativit\u00e9"
+    ],
+    "jeux": [
+        "jeux"
+    ],
+    "festival": [
+        "festival",
+        "musique",
+        "c\u00e9l\u00e9bration",
+        "concert"
+    ],
+    "culture": [
+        "culture",
+        "gastronomie"
+    ],
+    "concert": [
+        "concert",
+        "musique",
+        "c\u00e9l\u00e9bration",
+        "festival"
+    ],
+    "repas": [
+        "repas",
+        "cuisine",
+        "ingr\u00e9dients",
+        "aperitif",
+        "soiree",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "aperitif": [
+        "aperitif"
+    ],
+    "alcool": [
+        "alcool",
+        "influence"
+    ],
+    "association": [
+        "association"
+    ],
+    "cafe": [
+        "cafe"
+    ],
+    "rencontre": [
+        "rencontre"
+    ],
+    "marche": [
+        "marche",
+        "loisir"
+    ],
+    "amical": [
+        "amical",
+        "social"
+    ],
+    "plaisir": [
+        "plaisir"
+    ],
+    "jeu de soci\u00e9t\u00e9": [
+        "jeu de soci\u00e9t\u00e9"
+    ],
+    "animaux": [
+        "animaux"
+    ],
+    "soiree": [
+        "soiree"
+    ],
+    "nature": [
+        "nature"
+    ],
+    "paysages": [
+        "paysages"
+    ],
+    "atelier": [
+        "atelier",
+        "r\u00e9paration",
+        "photographie"
+    ],
+    "gastronomie": [
+        "gastronomie"
+    ],
+    "oenologie": [
+        "oenologie"
+    ],
+    "d\u00e9gustation": [
+        "d\u00e9gustation",
+        "gastronomie"
+    ],
+    "exposition": [
+        "exposition",
+        "art",
+        "divertissement",
+        "photographie",
+        "alcool",
+        "animaux",
+        "musee",
+        "peinture"
+    ],
+    "musee": [
+        "musee"
+    ],
+    "d\u00eener": [
+        "d\u00eener",
+        "cuisine",
+        "c\u00e9l\u00e9bration",
+        "repas",
+        "soiree",
+        "d\u00e9gustation"
+    ],
+    "caritatif": [
+        "caritatif"
+    ],
+    "solidarit\u00e9": [
+        "solidarit\u00e9"
+    ],
+    "raquette": [
+        "raquette"
+    ],
+    "loisir": [
+        "loisir"
+    ],
+    "competition": [
+        "competition"
+    ],
+    "tournoi": [
+        "tournoi",
+        "competition"
+    ],
+    "peinture": [
+        "peinture",
+        "art",
+        "dessin",
+        "photographie",
+        "atelier"
+    ],
+    "montagne": [
+        "montagne"
+    ],
+    "finance": [
+        "finance",
+        "\u00c9conomie",
+        "investissement",
+        "gestion"
+    ],
+    "formation": [
+        "formation",
+        "organisation"
+    ],
+    "nourriture": [
+        "nourriture",
+        "cuisine",
+        "jardinage",
+        "repas",
+        "cafe",
+        "animaux",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "garde-manger": [
+        "cuisine"
+    ],
+    "ustensiles": [
+        "cuisine"
+    ],
+    "fumoir": [
+        "cuisine"
+    ],
+    "salle de bain": [
+        "cuisine"
+    ],
+    "po\u00eale": [
+        "cuisine",
+        "jeux",
+        "competition"
+    ],
+    "lessive": [
+        "cuisine"
+    ],
+    "couler": [
+        "cuisine"
+    ],
+    "aune": [
+        "cuisine"
+    ],
+    "\u00e0 manger": [
+        "cuisine",
+        "dessin",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener"
+    ],
+    "chemin\u00e9e": [
+        "cuisine"
+    ],
+    "appareils \u00e9lectrom\u00e9nagers": [
+        "cuisine"
+    ],
+    "v\u00e9randa": [
+        "cuisine"
+    ],
+    "r\u00e9frig\u00e9rateur": [
+        "cuisine"
+    ],
+    "four": [
+        "cuisine"
+    ],
+    "cauchemars": [
+        "cuisine"
+    ],
+    "chambre \u00e0 coucher": [
+        "cuisine"
+    ],
+    "cuisson": [
+        "cuisine",
+        "ingr\u00e9dients",
+        "jardinage",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "chef": [
+        "cuisine",
+        "f\u00eate",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "raquette",
+        "nourriture"
+    ],
+    "couteau": [
+        "cuisine"
+    ],
+    "cave": [
+        "cuisine",
+        "d\u00e9gustation"
+    ],
+    "\u00e0 l'\u00e9tage": [
+        "cuisine"
+    ],
+    "toilettes": [
+        "cuisine"
+    ],
+    "des couteaux": [
+        "cuisine"
+    ],
+    "recettes": [
+        "cuisine",
+        "ingr\u00e9dients",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "culinaire": [
+        "cuisine",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "femme de m\u00e9nage": [
+        "cuisine"
+    ],
+    "\u00e9curies": [
+        "cuisine"
+    ],
+    "chambre": [
+        "cuisine",
+        "dessin",
+        "lecture",
+        "concert",
+        "d\u00e9gustation"
+    ],
+    "grange": [
+        "cuisine"
+    ],
+    "porche": [
+        "cuisine"
+    ],
+    "salon": [
+        "cuisine",
+        "cafe"
+    ],
+    "pi\u00e8ces": [
+        "cuisine",
+        "dessin",
+        "lecture",
+        "collection",
+        "d\u00e9gustation"
+    ],
+    "quarts": [
+        "cuisine"
+    ],
+    "plats": [
+        "cuisine",
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "escalier": [
+        "cuisine"
+    ],
+    "restaurant": [
+        "cuisine",
+        "repas",
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "sol": [
+        "cuisine",
+        "jardinage",
+        "danse"
+    ],
+    "sous-sol": [
+        "cuisine"
+    ],
+    "jardin": [
+        "cuisine",
+        "jardinage",
+        "plaisir"
+    ],
+    "hangar": [
+        "cuisine",
+        "atelier"
+    ],
+    "enferm\u00e9": [
+        "cuisine"
+    ],
+    "bain": [
+        "cuisine"
+    ],
+    "garage": [
+        "cuisine",
+        "r\u00e9paration"
+    ],
+    "aile": [
+        "cuisine"
+    ],
+    "cuisiner": [
+        "cuisine",
+        "repas",
+        "gastronomie"
+    ],
+    "arri\u00e8re": [
+        "cuisine"
+    ],
+    "dormir": [
+        "cuisine",
+        "d\u00e9tente",
+        "repas",
+        "alcool"
+    ],
+    "tableau": [
+        "cuisine",
+        "repas",
+        "cafe",
+        "d\u00eener",
+        "raquette"
+    ],
+    "meubles": [
+        "cuisine",
+        "collection"
+    ],
+    "petit-d\u00e9jeuner": [
+        "cuisine",
+        "repas",
+        "cafe",
+        "d\u00eener"
+    ],
+    "charpente": [
+        "cuisine"
+    ],
+    "plafond": [
+        "cuisine",
+        "peinture"
+    ],
+    "porte": [
+        "cuisine"
+    ],
+    "brique": [
+        "cuisine"
+    ],
+    "comptoir": [
+        "cuisine"
+    ],
+    "jardins": [
+        "cuisine",
+        "jardinage",
+        "plaisir"
+    ],
+    "toit": [
+        "cuisine"
+    ],
+    "stockage": [
+        "cuisine"
+    ],
+    "installations": [
+        "cuisine",
+        "r\u00e9paration",
+        "loisir"
+    ],
+    "fen\u00eatre": [
+        "cuisine"
+    ],
+    "des portes": [
+        "cuisine"
+    ],
+    "manhattan": [
+        "cuisine"
+    ],
+    "viande": [
+        "cuisine",
+        "ingr\u00e9dients",
+        "repas",
+        "animaux",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "invit\u00e9s": [
+        "cuisine",
+        "c\u00e9l\u00e9bration",
+        "repas",
+        "d\u00eener"
+    ],
+    "des murs": [
+        "cuisine",
+        "peinture"
+    ],
+    "cadre": [
+        "cuisine"
+    ],
+    "maison": [
+        "cuisine"
+    ],
+    "appartement": [
+        "cuisine",
+        "d\u00eener"
+    ],
+    "coriandre": [
+        "ingr\u00e9dients"
+    ],
+    "citrique": [
+        "ingr\u00e9dients"
+    ],
+    "hach\u00e9": [
+        "ingr\u00e9dients"
+    ],
+    "ail": [
+        "ingr\u00e9dients"
+    ],
+    "oignons": [
+        "ingr\u00e9dients"
+    ],
+    "c\u00e9leri": [
+        "ingr\u00e9dients"
+    ],
+    "curcuma": [
+        "ingr\u00e9dients"
+    ],
+    "persil": [
+        "ingr\u00e9dients"
+    ],
+    "bouillon": [
+        "ingr\u00e9dients"
+    ],
+    "tofu": [
+        "ingr\u00e9dients"
+    ],
+    "oignon": [
+        "ingr\u00e9dients"
+    ],
+    "\u00e9pices": [
+        "ingr\u00e9dients",
+        "cafe"
+    ],
+    "carottes": [
+        "ingr\u00e9dients"
+    ],
+    "p\u00e2te": [
+        "ingr\u00e9dients"
+    ],
+    "recette": [
+        "ingr\u00e9dients",
+        "gastronomie"
+    ],
+    "sirop": [
+        "ingr\u00e9dients"
+    ],
+    "cannelle": [
+        "ingr\u00e9dients"
+    ],
+    "ingr\u00e9dient": [
+        "ingr\u00e9dients"
+    ],
+    "sauce": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "farine": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "vinaigre": [
+        "ingr\u00e9dients"
+    ],
+    "cuit": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "tomate": [
+        "ingr\u00e9dients"
+    ],
+    "laitue": [
+        "ingr\u00e9dients"
+    ],
+    "soja": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "porc": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie"
+    ],
+    "beurre": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "plat": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener"
+    ],
+    "herbes": [
+        "ingr\u00e9dients",
+        "jardinage",
+        "gastronomie"
+    ],
+    "houblon": [
+        "ingr\u00e9dients",
+        "musique",
+        "danse"
+    ],
+    "caf\u00e9ine": [
+        "ingr\u00e9dients",
+        "cafe"
+    ],
+    "amidon": [
+        "ingr\u00e9dients"
+    ],
+    "additifs": [
+        "ingr\u00e9dients"
+    ],
+    "p\u00e2tisserie": [
+        "ingr\u00e9dients",
+        "gastronomie"
+    ],
+    "vanille": [
+        "ingr\u00e9dients"
+    ],
+    "r\u00f4ti": [
+        "ingr\u00e9dients",
+        "cafe"
+    ],
+    "rago\u00fbt": [
+        "ingr\u00e9dients",
+        "gastronomie"
+    ],
+    "nouilles": [
+        "ingr\u00e9dients"
+    ],
+    "poivre": [
+        "ingr\u00e9dients",
+        "cafe"
+    ],
+    "le chili": [
+        "ingr\u00e9dients"
+    ],
+    "malt": [
+        "ingr\u00e9dients"
+    ],
+    "p\u00e2tes": [
+        "ingr\u00e9dients"
+    ],
+    "\u00e9pic\u00e9": [
+        "ingr\u00e9dients"
+    ],
+    "chou": [
+        "ingr\u00e9dients"
+    ],
+    "gingembre": [
+        "ingr\u00e9dients"
+    ],
+    "bouilli": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "saveur": [
+        "ingr\u00e9dients",
+        "cafe",
+        "d\u00e9gustation"
+    ],
+    "champignons": [
+        "ingr\u00e9dients",
+        "animaux"
+    ],
+    "noix de coco": [
+        "ingr\u00e9dients"
+    ],
+    "salade": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "saucisse": [
+        "ingr\u00e9dients"
+    ],
+    "vitamines": [
+        "ingr\u00e9dients"
+    ],
+    "safran": [
+        "ingr\u00e9dients"
+    ],
+    "cacao": [
+        "ingr\u00e9dients",
+        "cafe"
+    ],
+    "jus": [
+        "ingr\u00e9dients",
+        "d\u00e9gustation"
+    ],
+    "patates": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "b\u0153uf": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie"
+    ],
+    "fruit de mer": [
+        "ingr\u00e9dients",
+        "gastronomie"
+    ],
+    "l\u00e9gumes": [
+        "ingr\u00e9dients",
+        "jardinage",
+        "repas",
+        "cafe",
+        "gastronomie",
+        "nourriture"
+    ],
+    "frit": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "citron": [
+        "ingr\u00e9dients"
+    ],
+    "haricots": [
+        "ingr\u00e9dients",
+        "repas",
+        "cafe"
+    ],
+    "des noisettes": [
+        "ingr\u00e9dients"
+    ],
+    "l\u00e9gume": [
+        "ingr\u00e9dients",
+        "jardinage",
+        "repas"
+    ],
+    "orge": [
+        "ingr\u00e9dients"
+    ],
+    "soupe": [
+        "ingr\u00e9dients",
+        "repas",
+        "d\u00eener"
+    ],
+    "fromage": [
+        "ingr\u00e9dients",
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "levure": [
+        "ingr\u00e9dients"
+    ],
+    "\u00e0 base de plantes": [
+        "ingr\u00e9dients"
+    ],
+    "s\u00e9same": [
+        "ingr\u00e9dients",
+        "atelier"
+    ],
+    "cacahu\u00e8tes": [
+        "ingr\u00e9dients"
+    ],
+    "s\u00e9ch\u00e9": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "produits de beaut\u00e9": [
+        "ingr\u00e9dients"
+    ],
+    "crevette": [
+        "ingr\u00e9dients"
+    ],
+    "chocolat": [
+        "ingr\u00e9dients",
+        "cafe",
+        "d\u00e9gustation"
+    ],
+    "sucre": [
+        "ingr\u00e9dients",
+        "alcool",
+        "cafe"
+    ],
+    "poulet": [
+        "ingr\u00e9dients",
+        "repas",
+        "nourriture"
+    ],
+    "g\u00e2teaux": [
+        "ingr\u00e9dients"
+    ],
+    "aigre": [
+        "ingr\u00e9dients",
+        "d\u00e9gustation"
+    ],
+    "g\u00e2teau": [
+        "ingr\u00e9dients",
+        "repas",
+        "cafe"
+    ],
+    "poudre": [
+        "ingr\u00e9dients"
+    ],
+    "pomme de terre": [
+        "ingr\u00e9dients",
+        "repas"
+    ],
+    "lait": [
+        "ingr\u00e9dients",
+        "repas",
+        "cafe",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "moutarde": [
+        "ingr\u00e9dients"
+    ],
+    "cr\u00e8me": [
+        "ingr\u00e9dients",
+        "repas",
+        "cafe",
+        "d\u00e9gustation"
+    ],
+    "huiles": [
+        "ingr\u00e9dients",
+        "peinture"
+    ],
+    "v\u00e9g\u00e9tarien": [
+        "ingr\u00e9dients"
+    ],
+    "ma\u00efs": [
+        "ingr\u00e9dients",
+        "repas",
+        "cafe"
+    ],
+    "curry": [
+        "ingr\u00e9dients"
+    ],
+    "citron vert": [
+        "ingr\u00e9dients"
+    ],
+    "d\u00e9co": [
+        "art"
+    ],
+    "nouveau": [
+        "art"
+    ],
+    "galerie": [
+        "art",
+        "photographie",
+        "collection",
+        "musee"
+    ],
+    "organis\u00e9": [
+        "art",
+        "\u00c9v\u00e9nement",
+        "festival",
+        "competition",
+        "tournoi"
+    ],
+    "conservateur": [
+        "art",
+        "f\u00eate",
+        "musee"
+    ],
+    "mus\u00e9e": [
+        "art",
+        "photographie",
+        "collection"
+    ],
+    "collectionneur": [
+        "art"
+    ],
+    "sculpture": [
+        "art",
+        "dessin",
+        "photographie",
+        "collection",
+        "atelier",
+        "musee"
+    ],
+    "marchand": [
+        "art"
+    ],
+    "expos\u00e9": [
+        "art",
+        "dessin",
+        "travail",
+        "photographie",
+        "collection",
+        "exposition",
+        "musee",
+        "peinture"
+    ],
+    "la photographie": [
+        "art",
+        "dessin",
+        "jardinage",
+        "musee"
+    ],
+    "artistes": [
+        "art",
+        "musique"
+    ],
+    "impressions": [
+        "art",
+        "photographie",
+        "collection"
+    ],
+    "installation": [
+        "art",
+        "photographie"
+    ],
+    "critique": [
+        "art",
+        "musique"
+    ],
+    "ouvrages d'art": [
+        "art",
+        "peinture"
+    ],
+    "abstrait": [
+        "art",
+        "peinture"
+    ],
+    "contemporain": [
+        "art",
+        "musee"
+    ],
+    "bien": [
+        "art",
+        "dessin",
+        "photographie",
+        "musee"
+    ],
+    "historien": [
+        "art"
+    ],
+    "expositions": [
+        "art",
+        "collection",
+        "musee"
+    ],
+    "dessins": [
+        "art",
+        "dessin",
+        "collection",
+        "musee"
+    ],
+    "arts": [
+        "art",
+        "photographie",
+        "musee"
+    ],
+    "graphique": [
+        "art",
+        "dessin",
+        "photographie",
+        "danse",
+        "amusement"
+    ],
+    "artistique": [
+        "art",
+        "cr\u00e9ativit\u00e9",
+        "photographie"
+    ],
+    "peintre": [
+        "art",
+        "dessin",
+        "atelier",
+        "peinture"
+    ],
+    "artiste": [
+        "art"
+    ],
+    "architecture": [
+        "art",
+        "jardinage"
+    ],
+    "visuel": [
+        "art",
+        "photographie"
+    ],
+    "portrait": [
+        "art",
+        "dessin",
+        "photographie",
+        "collection",
+        "musee",
+        "peinture"
+    ],
+    "artisanat": [
+        "art",
+        "jardinage",
+        "plaisir",
+        "gastronomie",
+        "d\u00e9gustation",
+        "loisir"
+    ],
+    "conception": [
+        "art",
+        "innovation"
+    ],
+    "institut": [
+        "art",
+        "oenologie"
+    ],
+    "vid\u00e9os": [
+        "musique",
+        "partage"
+    ],
+    "conservatoire": [
+        "musique",
+        "chant"
+    ],
+    "vid\u00e9o": [
+        "musique"
+    ],
+    "genres": [
+        "musique"
+    ],
+    "paroles": [
+        "musique",
+        "\u00c9coute",
+        "chant"
+    ],
+    "mtv": [
+        "musique"
+    ],
+    "compositeur": [
+        "musique",
+        "concert"
+    ],
+    "ensemble": [
+        "musique",
+        "danse",
+        "instrument",
+        "festival",
+        "concert"
+    ],
+    "youtube": [
+        "musique",
+        "partage"
+    ],
+    "le jazz": [
+        "musique",
+        "danse",
+        "festival",
+        "concert"
+    ],
+    "populaire": [
+        "musique",
+        "danse",
+        "chant",
+        "instrument",
+        "festival"
+    ],
+    "piano": [
+        "musique",
+        "chant",
+        "instrument",
+        "concert"
+    ],
+    "violon": [
+        "musique",
+        "instrument",
+        "concert"
+    ],
+    "compos\u00e9": [
+        "musique"
+    ],
+    "composition": [
+        "musique"
+    ],
+    "conducteur": [
+        "musique",
+        "test",
+        "concert"
+    ],
+    "prix": [
+        "musique",
+        "\u00c9v\u00e9nement",
+        "innovation",
+        "festival",
+        "competition"
+    ],
+    "orchestre": [
+        "musique",
+        "instrument",
+        "festival",
+        "concert"
+    ],
+    "symphonie": [
+        "musique",
+        "festival",
+        "concert"
+    ],
+    "grammy": [
+        "musique"
+    ],
+    "musical": [
+        "musique",
+        "chant",
+        "instrument"
+    ],
+    "genre": [
+        "musique",
+        "social"
+    ],
+    "bande sonore": [
+        "musique",
+        "film"
+    ],
+    "duo": [
+        "musique",
+        "danse",
+        "chant"
+    ],
+    "chorale": [
+        "musique",
+        "chant",
+        "concert"
+    ],
+    "critiques": [
+        "musique"
+    ],
+    "instruments": [
+        "musique",
+        "chant",
+        "instrument"
+    ],
+    "bandes": [
+        "musique",
+        "festival",
+        "concert"
+    ],
+    "classique": [
+        "musique"
+    ],
+    "\u00e9tiquette": [
+        "musique"
+    ],
+    "hanche": [
+        "musique",
+        "danse"
+    ],
+    "cr\u00e9\u00e9": [
+        "musique",
+        "film"
+    ],
+    "vocal": [
+        "musique",
+        "chant"
+    ],
+    "graphiques": [
+        "musique",
+        "danse"
+    ],
+    "chansons": [
+        "musique",
+        "\u00c9coute",
+        "chant"
+    ],
+    "punk": [
+        "musique"
+    ],
+    "en chantant": [
+        "musique"
+    ],
+    "modes": [
+        "musique",
+        "danse"
+    ],
+    "bleus": [
+        "musique"
+    ],
+    "des sons": [
+        "musique",
+        "\u00c9coute",
+        "instrument"
+    ],
+    "chanson": [
+        "musique",
+        "chant"
+    ],
+    "album": [
+        "musique"
+    ],
+    "lib\u00e9r\u00e9": [
+        "musique"
+    ],
+    "foules": [
+        "dessin"
+    ],
+    "illustration": [
+        "dessin"
+    ],
+    "beaucoup": [
+        "dessin"
+    ],
+    "cours": [
+        "dessin",
+        "entra\u00eenement",
+        "enseignement",
+        "danse",
+        "chant",
+        "oenologie",
+        "formation"
+    ],
+    "attention": [
+        "dessin"
+    ],
+    "des bandes dessin\u00e9es": [
+        "dessin",
+        "rire"
+    ],
+    "dessin\u00e9": [
+        "dessin"
+    ],
+    "bande": [
+        "dessin"
+    ],
+    "bande dessin\u00e9e": [
+        "dessin",
+        "rire"
+    ],
+    "dessiner": [
+        "dessin",
+        "amical",
+        "tournoi"
+    ],
+    "tireur": [
+        "sport"
+    ],
+    "netball": [
+        "sport"
+    ],
+    "aviron": [
+        "sport"
+    ],
+    "handball": [
+        "sport"
+    ],
+    "des sports": [
+        "sport",
+        "raquette",
+        "loisir"
+    ],
+    "les athl\u00e8tes": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "competition"
+    ],
+    "pistolet": [
+        "sport"
+    ],
+    "des loisirs": [
+        "sport",
+        "d\u00e9tente",
+        "loisir"
+    ],
+    "ski": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "montagne"
+    ],
+    "lacrosse": [
+        "sport"
+    ],
+    "sportif": [
+        "sport",
+        "gastronomie",
+        "loisir"
+    ],
+    "v\u00e9lo": [
+        "sport",
+        "loisir",
+        "montagne"
+    ],
+    "escalade": [
+        "sport",
+        "montagne"
+    ],
+    "le rugby": [
+        "sport",
+        "competition"
+    ],
+    "athl\u00e9tisme": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "association",
+        "marche"
+    ],
+    "boxe": [
+        "sport"
+    ],
+    "gymnastique": [
+        "sport",
+        "exercice"
+    ],
+    "olympique": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "competition"
+    ],
+    "volley-ball": [
+        "sport",
+        "tournoi"
+    ],
+    "athl\u00e8te": [
+        "sport"
+    ],
+    "gouvernant": [
+        "sport",
+        "association"
+    ],
+    "jeux olympiques": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "competition"
+    ],
+    "polo": [
+        "sport"
+    ],
+    "tennis": [
+        "sport",
+        "raquette",
+        "loisir",
+        "tournoi"
+    ],
+    "f\u00e9d\u00e9ration": [
+        "sport",
+        "association",
+        "solidarit\u00e9"
+    ],
+    "utilitaire": [
+        "sport"
+    ],
+    "natation": [
+        "sport",
+        "loisir",
+        "competition"
+    ],
+    "courses": [
+        "sport"
+    ],
+    "criquet": [
+        "sport",
+        "test"
+    ],
+    "classification": [
+        "sport"
+    ],
+    "patinage": [
+        "sport",
+        "competition"
+    ],
+    "concurrents": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "competition"
+    ],
+    "p\u00eache": [
+        "sport",
+        "jardinage",
+        "\u00c9conomie",
+        "gastronomie",
+        "loisir"
+    ],
+    "football": [
+        "sport",
+        "association"
+    ],
+    "rivaliser": [
+        "sport",
+        "competition"
+    ],
+    "basket-ball": [
+        "sport",
+        "tournoi"
+    ],
+    "clubs": [
+        "sport",
+        "competition"
+    ],
+    "tournage": [
+        "sport",
+        "photographie",
+        "film"
+    ],
+    "voile": [
+        "sport",
+        "loisir"
+    ],
+    "emballer": [
+        "sport"
+    ],
+    "le hockey": [
+        "sport",
+        "tournoi"
+    ],
+    "fusil": [
+        "sport"
+    ],
+    "int\u00e9rieur": [
+        "sport",
+        "m\u00e9ditation",
+        "\u00c9v\u00e9nement",
+        "loisir",
+        "tournoi",
+        "peinture"
+    ],
+    "comp\u00e9titif": [
+        "sport",
+        "amical"
+    ],
+    "tourisme": [
+        "sport",
+        "\u00c9conomie",
+        "culture",
+        "gastronomie",
+        "loisir"
+    ],
+    "amateur": [
+        "sport"
+    ],
+    "lutte": [
+        "sport",
+        "\u00c9v\u00e9nement",
+        "solidarit\u00e9"
+    ],
+    "le golf": [
+        "sport",
+        "loisir",
+        "tournoi"
+    ],
+    "athl\u00e9tique": [
+        "sport",
+        "association"
+    ],
+    "en comp\u00e9tition": [
+        "sport",
+        "competition"
+    ],
+    "des exercices": [
+        "entra\u00eenement",
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "exercice",
+        "formation"
+    ],
+    "cadets": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "camp": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "raf": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "instructeur": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "escadron": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "attestation": [
+        "entra\u00eenement",
+        "gestion",
+        "formation"
+    ],
+    "a\u00e9rodrome": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "qualifi\u00e9": [
+        "entra\u00eenement",
+        "\u00c9v\u00e9nement",
+        "competition",
+        "tournoi",
+        "formation"
+    ],
+    "d\u00e9ploiement": [
+        "entra\u00eenement",
+        "exercice",
+        "formation"
+    ],
+    "en volant": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "comp\u00e9tences": [
+        "entra\u00eenement",
+        "lecture",
+        "cr\u00e9ativit\u00e9",
+        "volontariat",
+        "innovation",
+        "formation"
+    ],
+    "personnel": [
+        "entra\u00eenement",
+        "d\u00e9fense",
+        "formation"
+    ],
+    "tactique": [
+        "entra\u00eenement",
+        "d\u00e9fense",
+        "formation"
+    ],
+    "instruction": [
+        "entra\u00eenement",
+        "m\u00e9ditation",
+        "lecture",
+        "enseignement",
+        "formation"
+    ],
+    "s\u00e9ances": [
+        "entra\u00eenement",
+        "m\u00e9ditation",
+        "d\u00e9gustation",
+        "formation"
+    ],
+    "guerre": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "facilit\u00e9": [
+        "entra\u00eenement",
+        "r\u00e9paration",
+        "loisir",
+        "formation",
+        "d\u00e9tente"
+    ],
+    "combattant": [
+        "entra\u00eenement",
+        "d\u00e9fense",
+        "formation"
+    ],
+    "op\u00e9rationnel": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "combat": [
+        "entra\u00eenement",
+        "\u00c9v\u00e9nement",
+        "formation"
+    ],
+    "corps": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "naval": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "attribu\u00e9": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "d\u00e9ploy\u00e9": [
+        "entra\u00eenement",
+        "exercice",
+        "formation"
+    ],
+    "programmes": [
+        "entra\u00eenement",
+        "enseignement",
+        "formation"
+    ],
+    "pilote": [
+        "entra\u00eenement",
+        "test",
+        "formation"
+    ],
+    "pr\u00e9paration": [
+        "entra\u00eenement",
+        "repas",
+        "gastronomie",
+        "formation",
+        "nourriture"
+    ],
+    "bataillon": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "commande": [
+        "entra\u00eenement",
+        "d\u00e9fense",
+        "formation"
+    ],
+    "officiers": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "unit\u00e9": [
+        "entra\u00eenement",
+        "f\u00eate",
+        "solidarit\u00e9",
+        "formation"
+    ],
+    "aviation": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "la mise en r\u00e9seau": [
+        "social",
+        "partage"
+    ],
+    "r\u00e9formateur": [
+        "social"
+    ],
+    "normes": [
+        "social"
+    ],
+    "bien-\u00eatre": [
+        "social",
+        "enseignement",
+        "animaux",
+        "caritatif"
+    ],
+    "ouvrier": [
+        "social",
+        "construction"
+    ],
+    "les sciences": [
+        "social"
+    ],
+    "facebook": [
+        "social",
+        "partage"
+    ],
+    "d\u00e9mocrates": [
+        "social",
+        "f\u00eate"
+    ],
+    "twitter": [
+        "social"
+    ],
+    "sociologie": [
+        "social"
+    ],
+    "anthropologie": [
+        "social",
+        "musee"
+    ],
+    "psychologie": [
+        "social",
+        "m\u00e9ditation",
+        "cr\u00e9ativit\u00e9",
+        "motivation"
+    ],
+    "d\u00e9mocratique": [
+        "social",
+        "f\u00eate"
+    ],
+    "sciences humaines": [
+        "social"
+    ],
+    "interaction": [
+        "social",
+        "d\u00e9tente"
+    ],
+    "activiste": [
+        "social",
+        "solidarit\u00e9"
+    ],
+    "m\u00e9dias": [
+        "social"
+    ],
+    "r\u00e9seaux": [
+        "social",
+        "d\u00e9couverte",
+        "partage"
+    ],
+    "\u00e9galit\u00e9": [
+        "social",
+        "engagement",
+        "solidarit\u00e9"
+    ],
+    "s\u00e9curit\u00e9": [
+        "social",
+        "d\u00e9fense",
+        "nourriture"
+    ],
+    "\u00e9conomique": [
+        "social",
+        "\u00c9conomie",
+        "investissement",
+        "finance"
+    ],
+    "d\u00e9mocratie": [
+        "social",
+        "f\u00eate",
+        "engagement",
+        "solidarit\u00e9"
+    ],
+    "culturel": [
+        "social",
+        "culture"
+    ],
+    "commentaire": [
+        "social"
+    ],
+    "cr\u00e9dit": [
+        "social",
+        "investissement",
+        "finance"
+    ],
+    "mouvements": [
+        "social",
+        "danse",
+        "solidarit\u00e9"
+    ],
+    "probl\u00e8mes": [
+        "social",
+        "discussion",
+        "alcool"
+    ],
+    "justice": [
+        "social"
+    ],
+    "psychologique": [
+        "social",
+        "motivation"
+    ],
+    "responsabilit\u00e9": [
+        "social",
+        "enseignement"
+    ],
+    "avantages": [
+        "social"
+    ],
+    "des relations": [
+        "social"
+    ],
+    "politique": [
+        "social",
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "comportement": [
+        "social",
+        "motivation"
+    ],
+    "r\u00e9forme": [
+        "social",
+        "finance"
+    ],
+    "entreprise": [
+        "social",
+        "volontariat",
+        "innovation",
+        "investissement",
+        "gestion",
+        "oenologie",
+        "finance",
+        "f\u00eate"
+    ],
+    "t\u00e9l\u00e9scripteur": [
+        "\u00c9change"
+    ],
+    "nyse": [
+        "\u00c9change"
+    ],
+    "\u00e0 terme": [
+        "\u00c9change"
+    ],
+    "titres": [
+        "\u00c9change",
+        "investissement",
+        "finance"
+    ],
+    "marchandise": [
+        "\u00c9change"
+    ],
+    "action": [
+        "\u00c9change",
+        "investissement"
+    ],
+    "devise": [
+        "\u00c9change",
+        "\u00c9conomie"
+    ],
+    "seconde": [
+        "\u00c9change"
+    ],
+    "commerce": [
+        "\u00c9change",
+        "\u00c9conomie",
+        "investissement",
+        "solidarit\u00e9",
+        "finance"
+    ],
+    "prendre": [
+        "\u00c9change"
+    ],
+    "constituant": [
+        "\u00c9change"
+    ],
+    "dollar": [
+        "\u00c9change"
+    ],
+    "actions": [
+        "\u00c9change",
+        "investissement"
+    ],
+    "les taux": [
+        "\u00c9change",
+        "d\u00e9tente"
+    ],
+    "taux": [
+        "\u00c9change",
+        "d\u00e9tente"
+    ],
+    "mon\u00e9taire": [
+        "\u00c9change",
+        "\u00c9conomie",
+        "finance"
+    ],
+    "indice": [
+        "\u00c9change"
+    ],
+    "transactions": [
+        "\u00c9change"
+    ],
+    "serveur": [
+        "\u00c9change"
+    ],
+    "brouillon": [
+        "\u00c9change",
+        "dessin"
+    ],
+    "symbole": [
+        "\u00c9change"
+    ],
+    "id\u00e9es": [
+        "\u00c9change",
+        "discussion",
+        "cr\u00e9ativit\u00e9",
+        "innovation",
+        "partage",
+        "imagination"
+    ],
+    "t\u00e9l\u00e9phone": [
+        "\u00c9change",
+        "\u00c9coute"
+    ],
+    "paiement": [
+        "\u00c9change"
+    ],
+    "esp\u00e8ces": [
+        "\u00c9change",
+        "investissement",
+        "cafe",
+        "animaux"
+    ],
+    "\u00e9quit\u00e9": [
+        "\u00c9change",
+        "investissement",
+        "finance"
+    ],
+    "marchandises": [
+        "\u00c9change",
+        "\u00c9conomie"
+    ],
+    "commission": [
+        "\u00c9change"
+    ],
+    "march\u00e9": [
+        "\u00c9change",
+        "investissement",
+        "marche"
+    ],
+    "contrats": [
+        "\u00c9change"
+    ],
+    "r\u00e9serves": [
+        "\u00c9change",
+        "exploration",
+        "nature"
+    ],
+    "forums": [
+        "discussion"
+    ],
+    "forum": [
+        "discussion",
+        "innovation"
+    ],
+    "sujet": [
+        "discussion"
+    ],
+    "d\u00e9bat": [
+        "discussion"
+    ],
+    "planches": [
+        "discussion",
+        "caritatif"
+    ],
+    "discuter": [
+        "discussion",
+        "d\u00eener"
+    ],
+    "concernant": [
+        "discussion"
+    ],
+    "des questions": [
+        "discussion"
+    ],
+    "discut\u00e9": [
+        "discussion"
+    ],
+    "si": [
+        "discussion"
+    ],
+    "commentaires": [
+        "discussion",
+        "rire"
+    ],
+    "panneau": [
+        "discussion",
+        "instrument",
+        "d\u00e9gustation"
+    ],
+    "dialogue": [
+        "discussion"
+    ],
+    "participants": [
+        "discussion",
+        "\u00c9v\u00e9nement",
+        "atelier"
+    ],
+    "question": [
+        "discussion"
+    ],
+    "maharishi": [
+        "m\u00e9ditation"
+    ],
+    "pleine conscience": [
+        "m\u00e9ditation"
+    ],
+    "m\u00e9diter": [
+        "m\u00e9ditation"
+    ],
+    "yogique": [
+        "m\u00e9ditation"
+    ],
+    "samadhi": [
+        "m\u00e9ditation"
+    ],
+    "m\u00e9ditatif": [
+        "m\u00e9ditation"
+    ],
+    "contemplation": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "transcendantal": [
+        "m\u00e9ditation"
+    ],
+    "yogi": [
+        "m\u00e9ditation"
+    ],
+    "yoga": [
+        "m\u00e9ditation",
+        "d\u00e9tente"
+    ],
+    "contemplatif": [
+        "m\u00e9ditation"
+    ],
+    "mantra": [
+        "m\u00e9ditation"
+    ],
+    "theravada": [
+        "m\u00e9ditation"
+    ],
+    "quoi": [
+        "m\u00e9ditation"
+    ],
+    "zen": [
+        "m\u00e9ditation"
+    ],
+    "brahmane": [
+        "m\u00e9ditation"
+    ],
+    "upanishad": [
+        "m\u00e9ditation"
+    ],
+    "psalmodie": [
+        "m\u00e9ditation"
+    ],
+    "sutra": [
+        "m\u00e9ditation"
+    ],
+    "ashram": [
+        "m\u00e9ditation"
+    ],
+    "relaxation": [
+        "m\u00e9ditation"
+    ],
+    "bouddhiste": [
+        "m\u00e9ditation"
+    ],
+    "bouddhisme": [
+        "m\u00e9ditation"
+    ],
+    "dharma": [
+        "m\u00e9ditation"
+    ],
+    "pali": [
+        "m\u00e9ditation"
+    ],
+    "bouddha": [
+        "m\u00e9ditation"
+    ],
+    "spiritualit\u00e9": [
+        "m\u00e9ditation"
+    ],
+    "visualisation": [
+        "m\u00e9ditation"
+    ],
+    "\u00e9claircissement": [
+        "m\u00e9ditation"
+    ],
+    "swami": [
+        "m\u00e9ditation"
+    ],
+    "pri\u00e8re": [
+        "m\u00e9ditation",
+        "r\u00e9flexion",
+        "soiree"
+    ],
+    "praticien": [
+        "m\u00e9ditation"
+    ],
+    "spirituel": [
+        "m\u00e9ditation"
+    ],
+    "aper\u00e7u": [
+        "m\u00e9ditation"
+    ],
+    "respiration": [
+        "m\u00e9ditation",
+        "d\u00e9tente"
+    ],
+    "ja\u00efn": [
+        "m\u00e9ditation"
+    ],
+    "tib\u00e9tain": [
+        "m\u00e9ditation"
+    ],
+    "lama": [
+        "m\u00e9ditation"
+    ],
+    "gourou": [
+        "m\u00e9ditation"
+    ],
+    "haleine": [
+        "m\u00e9ditation",
+        "alcool"
+    ],
+    "hindouisme": [
+        "m\u00e9ditation"
+    ],
+    "les pratiques": [
+        "m\u00e9ditation",
+        "gestion"
+    ],
+    "retraite": [
+        "m\u00e9ditation"
+    ],
+    "conscience": [
+        "m\u00e9ditation",
+        "r\u00e9flexion",
+        "volontariat",
+        "organisation",
+        "caritatif"
+    ],
+    "sagesse": [
+        "m\u00e9ditation"
+    ],
+    "technique": [
+        "m\u00e9ditation",
+        "d\u00e9tente"
+    ],
+    "esprit": [
+        "m\u00e9ditation",
+        "changement",
+        "imagination",
+        "\u00c9coute"
+    ],
+    "gu\u00e9rison": [
+        "m\u00e9ditation"
+    ],
+    "exerc\u00e9": [
+        "m\u00e9ditation"
+    ],
+    "moine": [
+        "m\u00e9ditation"
+    ],
+    "techniques": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "jardinage",
+        "gastronomie"
+    ],
+    "calme": [
+        "m\u00e9ditation"
+    ],
+    "pratique": [
+        "m\u00e9ditation",
+        "jardinage",
+        "gastronomie",
+        "exercice"
+    ],
+    "soi": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "shiva": [
+        "m\u00e9ditation"
+    ],
+    "sanskrit": [
+        "m\u00e9ditation"
+    ],
+    "silence": [
+        "m\u00e9ditation"
+    ],
+    "pens\u00e9es": [
+        "m\u00e9ditation"
+    ],
+    "monast\u00e8re": [
+        "m\u00e9ditation"
+    ],
+    "stresser": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "exercice",
+        "exposition"
+    ],
+    "traditions": [
+        "m\u00e9ditation",
+        "culture",
+        "gastronomie"
+    ],
+    "concentration": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "alcool"
+    ],
+    "rituel": [
+        "m\u00e9ditation"
+    ],
+    "divin": [
+        "m\u00e9ditation"
+    ],
+    "hindou": [
+        "m\u00e9ditation",
+        "soiree"
+    ],
+    "th\u00e9rapie": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "engagement",
+        "exercice",
+        "exposition"
+    ],
+    "professeur": [
+        "m\u00e9ditation",
+        "enseignement"
+    ],
+    "tradition": [
+        "m\u00e9ditation"
+    ],
+    "centres": [
+        "m\u00e9ditation",
+        "volontariat",
+        "loisir"
+    ],
+    "s\u00e9ance": [
+        "m\u00e9ditation"
+    ],
+    "mental": [
+        "m\u00e9ditation",
+        "d\u00e9tente",
+        "alcool"
+    ],
+    "enseign\u00e9": [
+        "m\u00e9ditation"
+    ],
+    "culte": [
+        "m\u00e9ditation"
+    ],
+    "sri": [
+        "m\u00e9ditation",
+        "test"
+    ],
+    "tha\u00eflandais": [
+        "m\u00e9ditation"
+    ],
+    "temple": [
+        "m\u00e9ditation"
+    ],
+    "\u00e2me": [
+        "m\u00e9ditation"
+    ],
+    "martial": [
+        "m\u00e9ditation",
+        "solidarit\u00e9"
+    ],
+    "sacr\u00e9": [
+        "m\u00e9ditation"
+    ],
+    "philosophie": [
+        "m\u00e9ditation"
+    ],
+    "dieu": [
+        "m\u00e9ditation"
+    ],
+    "chemin": [
+        "m\u00e9ditation",
+        "marche"
+    ],
+    "implique": [
+        "m\u00e9ditation",
+        "d\u00e9tente"
+    ],
+    "ma\u00eetrise": [
+        "m\u00e9ditation",
+        "tournoi"
+    ],
+    "enseigner": [
+        "m\u00e9ditation"
+    ],
+    "objet": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "tha\u00eflande": [
+        "m\u00e9ditation"
+    ],
+    "cerveau": [
+        "m\u00e9ditation"
+    ],
+    "m\u00e9thode": [
+        "m\u00e9ditation"
+    ],
+    "biofeedback": [
+        "d\u00e9tente"
+    ],
+    "sphincter": [
+        "d\u00e9tente"
+    ],
+    "oscillateur": [
+        "d\u00e9tente"
+    ],
+    "hypnose": [
+        "d\u00e9tente"
+    ],
+    "massage": [
+        "d\u00e9tente"
+    ],
+    "contraction": [
+        "d\u00e9tente"
+    ],
+    "se d\u00e9tendre": [
+        "d\u00e9tente"
+    ],
+    "di\u00e9lectrique": [
+        "d\u00e9tente"
+    ],
+    "muscle": [
+        "d\u00e9tente",
+        "exercice"
+    ],
+    "d\u00e9tendu": [
+        "d\u00e9tente"
+    ],
+    "muscles": [
+        "d\u00e9tente",
+        "exercice"
+    ],
+    "anxi\u00e9t\u00e9": [
+        "d\u00e9tente"
+    ],
+    "spectroscopie": [
+        "d\u00e9tente"
+    ],
+    "\u00e9quilibre": [
+        "d\u00e9tente",
+        "exercice"
+    ],
+    "excit\u00e9": [
+        "d\u00e9tente"
+    ],
+    "approximation": [
+        "d\u00e9tente"
+    ],
+    "la censure": [
+        "d\u00e9tente"
+    ],
+    "p\u00e9nal": [
+        "d\u00e9tente"
+    ],
+    "stimulation": [
+        "d\u00e9tente"
+    ],
+    "tension": [
+        "d\u00e9tente"
+    ],
+    "la diffusion": [
+        "d\u00e9tente"
+    ],
+    "r\u00e9sonance": [
+        "d\u00e9tente"
+    ],
+    "pourriture": [
+        "d\u00e9tente"
+    ],
+    "restrictions": [
+        "d\u00e9tente"
+    ],
+    "lisse": [
+        "d\u00e9tente"
+    ],
+    "entier": [
+        "d\u00e9tente"
+    ],
+    "boissons": [
+        "d\u00e9tente",
+        "repas",
+        "alcool",
+        "cafe",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "magn\u00e9tique": [
+        "d\u00e9tente"
+    ],
+    "calcium": [
+        "d\u00e9tente"
+    ],
+    "rotation": [
+        "d\u00e9tente",
+        "r\u00e9flexion",
+        "raquette"
+    ],
+    "impulsion": [
+        "d\u00e9tente"
+    ],
+    "\u00e9lectrons": [
+        "d\u00e9tente"
+    ],
+    "cardiaque": [
+        "d\u00e9tente"
+    ],
+    "souche": [
+        "d\u00e9tente"
+    ],
+    "loisirs": [
+        "d\u00e9tente",
+        "gastronomie"
+    ],
+    "cognitif": [
+        "d\u00e9tente",
+        "motivation"
+    ],
+    "diminuer": [
+        "d\u00e9tente"
+    ],
+    "dynamique": [
+        "d\u00e9tente"
+    ],
+    "mol\u00e9cules": [
+        "d\u00e9tente"
+    ],
+    "\u00e9lectron": [
+        "d\u00e9tente"
+    ],
+    "contr\u00f4les": [
+        "d\u00e9tente"
+    ],
+    "lin\u00e9aire": [
+        "d\u00e9tente"
+    ],
+    "mol\u00e9culaire": [
+        "d\u00e9tente",
+        "gastronomie"
+    ],
+    "fluide": [
+        "d\u00e9tente"
+    ],
+    "lois": [
+        "d\u00e9tente",
+        "alcool"
+    ],
+    "tissu": [
+        "d\u00e9tente",
+        "r\u00e9paration",
+        "exposition"
+    ],
+    "constante": [
+        "d\u00e9tente"
+    ],
+    "douleur": [
+        "d\u00e9tente",
+        "exp\u00e9rience",
+        "plaisir"
+    ],
+    "d\u00e9pend": [
+        "d\u00e9tente",
+        "\u00c9conomie"
+    ],
+    "processus": [
+        "d\u00e9tente",
+        "innovation",
+        "travail"
+    ],
+    "m\u00e9thodes": [
+        "d\u00e9tente"
+    ],
+    "thermique": [
+        "d\u00e9tente"
+    ],
+    "m\u00e9canisme": [
+        "d\u00e9tente",
+        "r\u00e9paration"
+    ],
+    "boire": [
+        "d\u00e9tente",
+        "repas",
+        "aperitif",
+        "alcool",
+        "cafe",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "formule": [
+        "d\u00e9tente",
+        "r\u00e9flexion"
+    ],
+    "probl\u00e8me": [
+        "d\u00e9tente"
+    ],
+    "patient": [
+        "d\u00e9tente",
+        "am\u00e9lioration"
+    ],
+    "\u00e9quation": [
+        "d\u00e9tente"
+    ],
+    "fr\u00e9quence": [
+        "d\u00e9tente"
+    ],
+    "r\u00e9duire": [
+        "d\u00e9tente"
+    ],
+    "r\u00e8glements": [
+        "d\u00e9tente"
+    ],
+    "r\u00e9ponse": [
+        "d\u00e9tente"
+    ],
+    "r\u00e9gulation": [
+        "d\u00e9tente"
+    ],
+    "sang": [
+        "d\u00e9tente",
+        "alcool"
+    ],
+    "progressive": [
+        "d\u00e9tente",
+        "f\u00eate"
+    ],
+    "solution": [
+        "d\u00e9tente"
+    ],
+    "sympt\u00f4mes": [
+        "d\u00e9tente",
+        "exp\u00e9rience",
+        "am\u00e9lioration",
+        "alcool",
+        "exposition"
+    ],
+    "effets": [
+        "d\u00e9tente",
+        "alcool",
+        "exposition"
+    ],
+    "r\u00e8gles": [
+        "d\u00e9tente"
+    ],
+    "augmente": [
+        "d\u00e9tente",
+        "exposition"
+    ],
+    "mesur\u00e9": [
+        "d\u00e9tente"
+    ],
+    "r\u00e9duction": [
+        "d\u00e9tente",
+        "am\u00e9lioration"
+    ],
+    "alyah": [
+        "lecture"
+    ],
+    "math\u00e9matiques": [
+        "lecture",
+        "enseignement"
+    ],
+    "compr\u00e9hension": [
+        "lecture"
+    ],
+    "grade": [
+        "lecture"
+    ],
+    "\u00e0 haute voix": [
+        "lecture"
+    ],
+    "berkshire": [
+        "lecture"
+    ],
+    "alg\u00e8bre": [
+        "lecture"
+    ],
+    "notes": [
+        "lecture",
+        "enseignement"
+    ],
+    "\u00e9l\u00e8ves": [
+        "lecture",
+        "enseignement"
+    ],
+    "d\u00e9montr\u00e9": [
+        "lecture"
+    ],
+    "r\u00e9alisation": [
+        "lecture",
+        "am\u00e9lioration",
+        "motivation"
+    ],
+    "en \u00e9crivant": [
+        "lecture"
+    ],
+    "examen": [
+        "lecture",
+        "test"
+    ],
+    "la biologie": [
+        "lecture"
+    ],
+    "niveau": [
+        "lecture"
+    ],
+    "lire": [
+        "lecture"
+    ],
+    "mo\u00efse": [
+        "lecture"
+    ],
+    "montr\u00e9": [
+        "lecture"
+    ],
+    "leeds": [
+        "lecture"
+    ],
+    "litt\u00e9rature": [
+        "lecture",
+        "culture"
+    ],
+    "science": [
+        "lecture",
+        "innovation",
+        "oenologie"
+    ],
+    "\u00e9coute": [
+        "lecture",
+        "\u00c9coute"
+    ],
+    "l'alphab\u00e9tisation": [
+        "lecture",
+        "enseignement"
+    ],
+    "lecteur": [
+        "lecture"
+    ],
+    "pennsylvanie": [
+        "lecture",
+        "enseignement"
+    ],
+    "inscription": [
+        "lecture",
+        "enseignement"
+    ],
+    "lecteurs": [
+        "lecture",
+        "imagination"
+    ],
+    "assis": [
+        "lecture"
+    ],
+    "bible": [
+        "lecture"
+    ],
+    "test\u00e9": [
+        "lecture",
+        "test"
+    ],
+    "\u00e9l\u00e9mentaire": [
+        "lecture",
+        "enseignement"
+    ],
+    "texte": [
+        "lecture"
+    ],
+    "livres": [
+        "lecture",
+        "jardinage",
+        "collection"
+    ],
+    "huiti\u00e8me": [
+        "lecture"
+    ],
+    "sc\u00e9nario": [
+        "lecture",
+        "film"
+    ],
+    "cor\u00e9en": [
+        "lecture"
+    ],
+    "biblioth\u00e8que": [
+        "lecture",
+        "collection",
+        "musee"
+    ],
+    "\u00e9tudiants": [
+        "lecture",
+        "enseignement"
+    ],
+    "essais": [
+        "lecture",
+        "collection",
+        "test"
+    ],
+    "\u00e9couteurs": [
+        "\u00c9coute"
+    ],
+    "entendre": [
+        "\u00c9coute",
+        "rire"
+    ],
+    "soigneusement": [
+        "\u00c9coute"
+    ],
+    "ton": [
+        "\u00c9coute",
+        "rire",
+        "instrument"
+    ],
+    "conseil": [
+        "\u00c9coute",
+        "jardinage",
+        "d\u00e9fense"
+    ],
+    "conversation": [
+        "\u00c9coute",
+        "d\u00eener"
+    ],
+    "chanter": [
+        "\u00c9coute",
+        "rire",
+        "danse",
+        "chant"
+    ],
+    "messages": [
+        "\u00c9coute"
+    ],
+    "toi": [
+        "\u00c9coute",
+        "rire",
+        "amusement"
+    ],
+    "voix": [
+        "\u00c9coute",
+        "chant"
+    ],
+    "l'audio": [
+        "\u00c9coute"
+    ],
+    "apprendre": [
+        "\u00c9coute",
+        "motivation"
+    ],
+    "ruban adh\u00e9sif": [
+        "\u00c9coute"
+    ],
+    "comprendre": [
+        "\u00c9coute",
+        "travail"
+    ],
+    "radio": [
+        "\u00c9coute"
+    ],
+    "pense": [
+        "\u00c9coute",
+        "rire"
+    ],
+    "vraiment": [
+        "\u00c9coute",
+        "rire",
+        "amusement"
+    ],
+    "dire": [
+        "\u00c9coute",
+        "rire"
+    ],
+    "parler": [
+        "\u00c9coute",
+        "marche"
+    ],
+    "montre": [
+        "\u00c9coute",
+        "amusement"
+    ],
+    "sentir": [
+        "\u00c9coute",
+        "rire",
+        "amusement",
+        "exp\u00e9rience"
+    ],
+    "entendu": [
+        "\u00c9coute",
+        "rire"
+    ],
+    "message": [
+        "\u00c9coute"
+    ],
+    "r\u00e9cit": [
+        "\u00c9coute",
+        "chant"
+    ],
+    "c\u0153ur": [
+        "\u00c9coute"
+    ],
+    "vouloir": [
+        "\u00c9coute"
+    ],
+    "quelque chose": [
+        "\u00c9coute"
+    ],
+    "audience": [
+        "\u00c9coute"
+    ],
+    "pleurer": [
+        "rire"
+    ],
+    "fort": [
+        "rire"
+    ],
+    "en riant": [
+        "rire"
+    ],
+    "ri": [
+        "rire"
+    ],
+    "blagues": [
+        "rire"
+    ],
+    "dr\u00f4le": [
+        "rire",
+        "amusement"
+    ],
+    "sourire": [
+        "rire"
+    ],
+    "blague": [
+        "rire"
+    ],
+    "clown": [
+        "rire"
+    ],
+    "pleurs": [
+        "rire"
+    ],
+    "humour": [
+        "rire",
+        "amusement"
+    ],
+    "com\u00e9die": [
+        "rire",
+        "film"
+    ],
+    "\u00e9meute": [
+        "rire"
+    ],
+    "toi-m\u00eame": [
+        "rire"
+    ],
+    "com\u00e9dien": [
+        "rire"
+    ],
+    "demain": [
+        "rire"
+    ],
+    "piste": [
+        "rire",
+        "instrument",
+        "marche",
+        "nature",
+        "montagne"
+    ],
+    "amusant": [
+        "rire",
+        "sport",
+        "amusement"
+    ],
+    "larmes": [
+        "rire"
+    ],
+    "usine": [
+        "rire",
+        "jardinage"
+    ],
+    "public": [
+        "rire",
+        "festival",
+        "concert"
+    ],
+    "des moments": [
+        "rire"
+    ],
+    "dessin anim\u00e9": [
+        "rire"
+    ],
+    "appr\u00e9cier": [
+        "rire",
+        "amusement"
+    ],
+    "disney": [
+        "rire",
+        "divertissement",
+        "film"
+    ],
+    "heureux": [
+        "rire"
+    ],
+    "chose": [
+        "rire",
+        "amusement"
+    ],
+    "tout le monde": [
+        "rire"
+    ],
+    "hebdomadaire": [
+        "divertissement"
+    ],
+    "ce soir": [
+        "divertissement"
+    ],
+    "wwe": [
+        "divertissement",
+        "\u00c9v\u00e9nement"
+    ],
+    "dvd": [
+        "divertissement",
+        "film",
+        "concert"
+    ],
+    "sony": [
+        "divertissement"
+    ],
+    "lieux": [
+        "divertissement",
+        "festival",
+        "concert"
+    ],
+    "nintendo": [
+        "divertissement",
+        "jeux"
+    ],
+    "anim\u00e9": [
+        "divertissement",
+        "film"
+    ],
+    "interactif": [
+        "divertissement"
+    ],
+    "jeu": [
+        "divertissement",
+        "jeux"
+    ],
+    "industrie": [
+        "divertissement",
+        "\u00c9conomie"
+    ],
+    "des photos": [
+        "divertissement",
+        "photographie",
+        "film",
+        "peinture"
+    ],
+    "lieu": [
+        "divertissement",
+        "\u00c9v\u00e9nement",
+        "concert",
+        "loisir"
+    ],
+    "films": [
+        "divertissement",
+        "film"
+    ],
+    "fr\u00e8res": [
+        "divertissement"
+    ],
+    "productions": [
+        "divertissement"
+    ],
+    "avertisseur": [
+        "divertissement"
+    ],
+    "inc.": [
+        "divertissement"
+    ],
+    "animation": [
+        "divertissement",
+        "festival"
+    ],
+    "la programmation": [
+        "divertissement",
+        "raquette"
+    ],
+    "th\u00e9\u00e2tral": [
+        "divertissement",
+        "film",
+        "festival"
+    ],
+    "canal": [
+        "divertissement",
+        "d\u00e9couverte",
+        "construction"
+    ],
+    "suite": [
+        "divertissement",
+        "film"
+    ],
+    "autoris\u00e9": [
+        "divertissement"
+    ],
+    "t\u00e9l\u00e9vision": [
+        "divertissement"
+    ],
+    "distribu\u00e9": [
+        "divertissement"
+    ],
+    "filiale": [
+        "divertissement",
+        "investissement"
+    ],
+    "distribution": [
+        "divertissement"
+    ],
+    "journaliste": [
+        "divertissement"
+    ],
+    "universel": [
+        "divertissement"
+    ],
+    "enfants": [
+        "divertissement",
+        "d\u00e9couverte",
+        "amusement"
+    ],
+    "marxiste": [
+        "f\u00eate"
+    ],
+    "des places": [
+        "f\u00eate"
+    ],
+    "socialiste": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "coalition": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "candidat": [
+        "f\u00eate"
+    ],
+    "\u00e9lecteur": [
+        "f\u00eate"
+    ],
+    "s'av\u00e9rer": [
+        "f\u00eate"
+    ],
+    "d\u00e9put\u00e9s": [
+        "f\u00eate"
+    ],
+    "communiste": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "parlementaire": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "lib\u00e9ral": [
+        "f\u00eate"
+    ],
+    "candidats": [
+        "f\u00eate"
+    ],
+    "des soir\u00e9es": [
+        "f\u00eate",
+        "d\u00eener"
+    ],
+    "faction": [
+        "f\u00eate"
+    ],
+    "\u00e9lection": [
+        "f\u00eate"
+    ],
+    "communistes": [
+        "f\u00eate"
+    ],
+    "vote": [
+        "f\u00eate"
+    ],
+    "contest\u00e9": [
+        "f\u00eate",
+        "competition",
+        "tournoi"
+    ],
+    "nationaliste": [
+        "f\u00eate"
+    ],
+    "\u00e9lectoral": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "bulletin de vote": [
+        "f\u00eate"
+    ],
+    "alliance": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "opposition": [
+        "f\u00eate",
+        "solidarit\u00e9"
+    ],
+    "pr\u00e9sidentiel": [
+        "f\u00eate"
+    ],
+    "circonscription \u00e9lectorale": [
+        "f\u00eate"
+    ],
+    "parlement": [
+        "f\u00eate"
+    ],
+    "titulaire": [
+        "f\u00eate"
+    ],
+    "direction": [
+        "f\u00eate",
+        "changement",
+        "gestion"
+    ],
+    "congr\u00e8s": [
+        "f\u00eate"
+    ],
+    "\u00e9lu": [
+        "f\u00eate"
+    ],
+    "si\u00e8ge": [
+        "f\u00eate"
+    ],
+    "l\u00e9gislatif": [
+        "f\u00eate"
+    ],
+    "adjoint": [
+        "f\u00eate",
+        "finance"
+    ],
+    "r\u00e9publicain": [
+        "f\u00eate"
+    ],
+    "d\u00e9l\u00e9gu\u00e9s": [
+        "f\u00eate"
+    ],
+    "d\u00e9mocrate": [
+        "f\u00eate"
+    ],
+    "politicien": [
+        "f\u00eate"
+    ],
+    "armoire": [
+        "f\u00eate",
+        "finance"
+    ],
+    "billet": [
+        "f\u00eate",
+        "repas"
+    ],
+    "radical": [
+        "f\u00eate"
+    ],
+    "corps l\u00e9gislatif": [
+        "f\u00eate"
+    ],
+    "assembl\u00e9e": [
+        "f\u00eate"
+    ],
+    "ministre": [
+        "f\u00eate",
+        "finance"
+    ],
+    "nomination": [
+        "f\u00eate"
+    ],
+    "chambre des communes": [
+        "f\u00eate"
+    ],
+    "convention": [
+        "f\u00eate"
+    ],
+    "r\u00e9sign\u00e9": [
+        "f\u00eate"
+    ],
+    "secr\u00e9taire": [
+        "f\u00eate",
+        "d\u00e9fense"
+    ],
+    "forage": [
+        "exploration"
+    ],
+    "vagabond": [
+        "exploration"
+    ],
+    "raffinage": [
+        "exploration"
+    ],
+    "palestine": [
+        "exploration",
+        "solidarit\u00e9"
+    ],
+    "p\u00e9trole": [
+        "exploration"
+    ],
+    "mars": [
+        "exploration"
+    ],
+    "sismique": [
+        "exploration",
+        "r\u00e9flexion"
+    ],
+    "la colonisation": [
+        "exploration"
+    ],
+    "nasa": [
+        "exploration"
+    ],
+    "exploitation": [
+        "exploration",
+        "d\u00e9veloppement"
+    ],
+    "lunaire": [
+        "exploration"
+    ],
+    "uranium": [
+        "exploration"
+    ],
+    "au large": [
+        "exploration"
+    ],
+    "min\u00e9ral": [
+        "exploration"
+    ],
+    "vaisseau spatial": [
+        "exploration"
+    ],
+    "min\u00e9raux": [
+        "exploration"
+    ],
+    "arctique": [
+        "exploration"
+    ],
+    "extraction": [
+        "exploration"
+    ],
+    "huile": [
+        "exploration",
+        "d\u00e9couverte"
+    ],
+    "enqu\u00eate": [
+        "exploration"
+    ],
+    "exploitation mini\u00e8re": [
+        "exploration",
+        "\u00c9conomie"
+    ],
+    "exp\u00e9dition": [
+        "exploration",
+        "voyage",
+        "d\u00e9couverte"
+    ],
+    "explorant": [
+        "exploration"
+    ],
+    "d\u00e9p\u00f4ts": [
+        "exploration",
+        "d\u00e9couverte"
+    ],
+    "explorer": [
+        "exploration"
+    ],
+    "gaz": [
+        "exploration"
+    ],
+    "cartographie": [
+        "exploration"
+    ],
+    "grottes": [
+        "exploration"
+    ],
+    "grotte": [
+        "exploration",
+        "d\u00e9couverte"
+    ],
+    "explor\u00e9": [
+        "exploration"
+    ],
+    "g\u00e9ologique": [
+        "exploration"
+    ],
+    "explorateur": [
+        "exploration"
+    ],
+    "missions": [
+        "exploration"
+    ],
+    "minerai": [
+        "exploration"
+    ],
+    "puits": [
+        "exploration"
+    ],
+    "antarctique": [
+        "exploration",
+        "montagne"
+    ],
+    "lune": [
+        "exploration"
+    ],
+    "espace": [
+        "exploration"
+    ],
+    "le mien": [
+        "exploration"
+    ],
+    "bassin": [
+        "exploration"
+    ],
+    "solaire": [
+        "exploration"
+    ],
+    "ressources": [
+        "exploration",
+        "gestion",
+        "partage"
+    ],
+    "mines": [
+        "exploration"
+    ],
+    "production": [
+        "exploration"
+    ],
+    "th\u00e8mes": [
+        "exploration",
+        "inspiration"
+    ],
+    "mission": [
+        "exploration"
+    ],
+    "alaska": [
+        "exploration"
+    ],
+    "aventure": [
+        "exploration",
+        "voyage",
+        "innovation",
+        "investissement",
+        "amusement",
+        "imagination"
+    ],
+    "cuivre": [
+        "exploration"
+    ],
+    "blocs": [
+        "exploration"
+    ],
+    "voyages": [
+        "voyage",
+        "plaisir"
+    ],
+    "minutes": [
+        "voyage"
+    ],
+    "en voyageant": [
+        "voyage"
+    ],
+    "destination": [
+        "voyage",
+        "loisir"
+    ],
+    "myst\u00e8re": [
+        "voyage"
+    ],
+    "d\u00e9couvrir": [
+        "voyage",
+        "d\u00e9couverte"
+    ],
+    "former": [
+        "voyage"
+    ],
+    "heures": [
+        "voyage",
+        "soiree"
+    ],
+    "voyag\u00e9": [
+        "voyage"
+    ],
+    "ast\u00e9ro\u00efde": [
+        "d\u00e9couverte"
+    ],
+    "astronome": [
+        "d\u00e9couverte"
+    ],
+    "plan\u00e8tes": [
+        "d\u00e9couverte"
+    ],
+    "observations": [
+        "d\u00e9couverte"
+    ],
+    "plan\u00e8te": [
+        "d\u00e9couverte"
+    ],
+    "nobel": [
+        "d\u00e9couverte"
+    ],
+    "fossile": [
+        "d\u00e9couverte"
+    ],
+    "fossiles": [
+        "d\u00e9couverte"
+    ],
+    "observation": [
+        "d\u00e9couverte",
+        "r\u00e9flexion"
+    ],
+    "observatoire": [
+        "d\u00e9couverte",
+        "instrument"
+    ],
+    "tombeau": [
+        "d\u00e9couverte"
+    ],
+    "g\u00e9ographique": [
+        "d\u00e9couverte"
+    ],
+    "se pr\u00e9cipiter": [
+        "d\u00e9couverte",
+        "d\u00e9fense",
+        "soiree"
+    ],
+    "d\u00e9couvert": [
+        "d\u00e9couverte"
+    ],
+    "protocole": [
+        "d\u00e9couverte",
+        "engagement",
+        "partage"
+    ],
+    "adn": [
+        "d\u00e9couverte",
+        "r\u00e9paration"
+    ],
+    "or": [
+        "d\u00e9couverte"
+    ],
+    "tertiaire": [
+        "enseignement"
+    ],
+    "scolarit\u00e9": [
+        "enseignement"
+    ],
+    "professionnel": [
+        "enseignement",
+        "exposition"
+    ],
+    "accr\u00e9ditation": [
+        "enseignement",
+        "association"
+    ],
+    "jardin d'enfants": [
+        "enseignement"
+    ],
+    "programme d'\u00e9tudes": [
+        "enseignement"
+    ],
+    "obligatoire": [
+        "enseignement",
+        "repas"
+    ],
+    "financement": [
+        "enseignement",
+        "investissement",
+        "caritatif",
+        "finance"
+    ],
+    "coll\u00e8ges": [
+        "enseignement",
+        "association"
+    ],
+    "accr\u00e9dit\u00e9": [
+        "enseignement"
+    ],
+    "\u00e9ducatif": [
+        "enseignement",
+        "caritatif"
+    ],
+    "\u00e9coles": [
+        "enseignement"
+    ],
+    "dipl\u00f4me": [
+        "enseignement"
+    ],
+    "secondaire": [
+        "enseignement"
+    ],
+    "\u00e9tablissements": [
+        "enseignement",
+        "caritatif"
+    ],
+    "apprentissage": [
+        "enseignement",
+        "cr\u00e9ativit\u00e9",
+        "motivation"
+    ],
+    "certificat": [
+        "enseignement"
+    ],
+    "subventions": [
+        "enseignement",
+        "am\u00e9lioration",
+        "caritatif"
+    ],
+    "allaitement": [
+        "enseignement"
+    ],
+    "premier cycle": [
+        "enseignement"
+    ],
+    "l'obtention du dipl\u00f4me": [
+        "enseignement"
+    ],
+    "suisse": [
+        "enseignement"
+    ],
+    "inscrit": [
+        "enseignement",
+        "caritatif"
+    ],
+    "plus haut": [
+        "enseignement"
+    ],
+    "institution": [
+        "enseignement",
+        "caritatif"
+    ],
+    "c\u00e9libataire": [
+        "enseignement"
+    ],
+    "budget": [
+        "enseignement",
+        "finance"
+    ],
+    "acad\u00e9mique": [
+        "enseignement"
+    ],
+    "dipl\u00f4m\u00e9": [
+        "enseignement"
+    ],
+    "\u00e9cole": [
+        "enseignement"
+    ],
+    "statistiques": [
+        "enseignement"
+    ],
+    "degr\u00e9s": [
+        "enseignement"
+    ],
+    "la facult\u00e9": [
+        "enseignement"
+    ],
+    "universit\u00e9": [
+        "enseignement",
+        "oenologie"
+    ],
+    "originalit\u00e9": [
+        "cr\u00e9ativit\u00e9"
+    ],
+    "entrepreneuriat": [
+        "cr\u00e9ativit\u00e9",
+        "innovation"
+    ],
+    "cr\u00e9atif": [
+        "cr\u00e9ativit\u00e9",
+        "photographie",
+        "innovation",
+        "imagination",
+        "atelier",
+        "gastronomie"
+    ],
+    "r\u00e9soudre": [
+        "cr\u00e9ativit\u00e9",
+        "travail"
+    ],
+    "pens\u00e9e": [
+        "cr\u00e9ativit\u00e9",
+        "r\u00e9flexion",
+        "imagination"
+    ],
+    "innovant": [
+        "cr\u00e9ativit\u00e9",
+        "innovation"
+    ],
+    "excellence": [
+        "cr\u00e9ativit\u00e9",
+        "engagement",
+        "innovation"
+    ],
+    "droits d'auteur": [
+        "cr\u00e9ativit\u00e9",
+        "partage"
+    ],
+    "passion": [
+        "cr\u00e9ativit\u00e9"
+    ],
+    "comp\u00e9tence": [
+        "cr\u00e9ativit\u00e9",
+        "partage"
+    ],
+    "diversit\u00e9": [
+        "cr\u00e9ativit\u00e9",
+        "engagement"
+    ],
+    "talent": [
+        "cr\u00e9ativit\u00e9",
+        "chant"
+    ],
+    "expression": [
+        "cr\u00e9ativit\u00e9",
+        "construction",
+        "r\u00e9flexion"
+    ],
+    "intellectuel": [
+        "cr\u00e9ativit\u00e9",
+        "innovation"
+    ],
+    "vision": [
+        "cr\u00e9ativit\u00e9",
+        "imagination"
+    ],
+    "publicit\u00e9": [
+        "cr\u00e9ativit\u00e9",
+        "photographie"
+    ],
+    "permis": [
+        "construction",
+        "alcool"
+    ],
+    "prestataire": [
+        "construction",
+        "d\u00e9fense"
+    ],
+    "barrage": [
+        "construction"
+    ],
+    "compl\u00e9t\u00e9": [
+        "construction"
+    ],
+    "commenc\u00e9": [
+        "construction",
+        "photographie"
+    ],
+    "ach\u00e8vement": [
+        "construction"
+    ],
+    "tunnel": [
+        "construction"
+    ],
+    "b\u00e9ton": [
+        "construction"
+    ],
+    "retard\u00e9": [
+        "construction"
+    ],
+    "des ponts": [
+        "construction",
+        "r\u00e9paration"
+    ],
+    "co\u00fbt": [
+        "construction"
+    ],
+    "entretien": [
+        "construction",
+        "r\u00e9paration"
+    ],
+    "pont": [
+        "construction"
+    ],
+    "projets": [
+        "construction",
+        "volontariat",
+        "d\u00e9veloppement",
+        "am\u00e9lioration",
+        "investissement",
+        "caritatif"
+    ],
+    "r\u00e9servoir": [
+        "construction"
+    ],
+    "b\u00e2timent": [
+        "construction"
+    ],
+    "b\u00e2timents": [
+        "construction"
+    ],
+    "mat\u00e9riaux": [
+        "construction"
+    ],
+    "phase": [
+        "construction"
+    ],
+    "frais": [
+        "construction",
+        "r\u00e9paration",
+        "repas",
+        "gastronomie",
+        "nourriture"
+    ],
+    "projet": [
+        "construction"
+    ],
+    "architecte": [
+        "construction"
+    ],
+    "la tour": [
+        "construction"
+    ],
+    "homologue": [
+        "r\u00e9paration"
+    ],
+    "drainage": [
+        "r\u00e9paration",
+        "am\u00e9lioration"
+    ],
+    "r\u00e9vision": [
+        "r\u00e9paration"
+    ],
+    "nettoyage": [
+        "r\u00e9paration",
+        "am\u00e9lioration"
+    ],
+    "r\u00e9par\u00e9": [
+        "r\u00e9paration"
+    ],
+    "r\u00e9plication": [
+        "r\u00e9paration"
+    ],
+    "boutique": [
+        "r\u00e9paration",
+        "cafe",
+        "atelier",
+        "d\u00e9gustation",
+        "peinture"
+    ],
+    "d\u00e9g\u00e2ts": [
+        "r\u00e9paration"
+    ],
+    "dommage": [
+        "r\u00e9paration"
+    ],
+    "endommag\u00e9": [
+        "r\u00e9paration"
+    ],
+    "d\u00e9chir\u00e9": [
+        "r\u00e9paration"
+    ],
+    "consultant": [
+        "r\u00e9paration",
+        "gestion"
+    ],
+    "d\u00e9fauts": [
+        "r\u00e9paration"
+    ],
+    "g\u00e8nes": [
+        "r\u00e9paration"
+    ],
+    "sentier": [
+        "r\u00e9paration",
+        "exposition"
+    ],
+    "chantier naval": [
+        "r\u00e9paration"
+    ],
+    "d\u00e9p\u00f4t": [
+        "r\u00e9paration"
+    ],
+    "soupape": [
+        "r\u00e9paration"
+    ],
+    "remplacement": [
+        "r\u00e9paration"
+    ],
+    "pauses": [
+        "r\u00e9paration",
+        "repas"
+    ],
+    "cour": [
+        "r\u00e9paration"
+    ],
+    "machinerie": [
+        "r\u00e9paration"
+    ],
+    "dock": [
+        "r\u00e9paration"
+    ],
+    "bateau": [
+        "r\u00e9paration",
+        "plaisir"
+    ],
+    "importe": [
+        "r\u00e9paration",
+        "volontariat",
+        "am\u00e9lioration"
+    ],
+    "prot\u00e9ines": [
+        "r\u00e9paration"
+    ],
+    "restaurer": [
+        "r\u00e9paration"
+    ],
+    "restauration": [
+        "r\u00e9paration",
+        "gastronomie"
+    ],
+    "g\u00e8ne": [
+        "r\u00e9paration"
+    ],
+    "conservation": [
+        "r\u00e9paration",
+        "am\u00e9lioration",
+        "gestion",
+        "nature"
+    ],
+    "genou": [
+        "r\u00e9paration"
+    ],
+    "reconstruction": [
+        "r\u00e9paration"
+    ],
+    "prot\u00e9ine": [
+        "r\u00e9paration",
+        "repas"
+    ],
+    "\u00e9quipement": [
+        "r\u00e9paration"
+    ],
+    "navires": [
+        "r\u00e9paration"
+    ],
+    "chirurgie": [
+        "r\u00e9paration"
+    ],
+    "r\u00e9cup\u00e9ration": [
+        "r\u00e9paration"
+    ],
+    "remplacer": [
+        "r\u00e9paration"
+    ],
+    "cellules": [
+        "r\u00e9paration"
+    ],
+    "cancer": [
+        "r\u00e9paration",
+        "exposition",
+        "caritatif"
+    ],
+    "cass\u00e9": [
+        "r\u00e9paration"
+    ],
+    "v\u00e9hicules": [
+        "r\u00e9paration"
+    ],
+    "navigu\u00e9": [
+        "r\u00e9paration"
+    ],
+    "des arbres": [
+        "r\u00e9paration",
+        "jardinage",
+        "am\u00e9lioration"
+    ],
+    "transport": [
+        "r\u00e9paration"
+    ],
+    "horticulture": [
+        "jardinage"
+    ],
+    "agriculture": [
+        "jardinage",
+        "\u00c9conomie",
+        "cafe",
+        "nourriture"
+    ],
+    "jardinier": [
+        "jardinage"
+    ],
+    "am\u00e9nagement paysager": [
+        "jardinage"
+    ],
+    "horticole": [
+        "jardinage"
+    ],
+    "charpenterie": [
+        "jardinage"
+    ],
+    "couture": [
+        "jardinage"
+    ],
+    "plantation": [
+        "jardinage",
+        "cafe"
+    ],
+    "organique": [
+        "jardinage",
+        "cafe",
+        "nourriture"
+    ],
+    "botanique": [
+        "jardinage"
+    ],
+    "passionn\u00e9s": [
+        "jardinage",
+        "gastronomie"
+    ],
+    "garderie": [
+        "jardinage"
+    ],
+    "parcelles": [
+        "jardinage"
+    ],
+    "paysage": [
+        "jardinage",
+        "photographie",
+        "nature",
+        "peinture"
+    ],
+    "cultivation": [
+        "jardinage",
+        "cafe"
+    ],
+    "plantes": [
+        "jardinage",
+        "animaux"
+    ],
+    "pelouse": [
+        "jardinage"
+    ],
+    "durable": [
+        "jardinage",
+        "engagement",
+        "d\u00e9veloppement",
+        "innovation",
+        "gestion"
+    ],
+    "fleur": [
+        "jardinage"
+    ],
+    "irrigation": [
+        "jardinage"
+    ],
+    "cultures": [
+        "jardinage",
+        "\u00c9conomie",
+        "cafe",
+        "nourriture"
+    ],
+    "des fruits": [
+        "jardinage",
+        "repas",
+        "cafe",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "mode de vie": [
+        "jardinage",
+        "gastronomie"
+    ],
+    "outils": [
+        "jardinage",
+        "gestion",
+        "atelier"
+    ],
+    "pr\u00e9sentateur": [
+        "jardinage"
+    ],
+    "expert": [
+        "jardinage"
+    ],
+    "fruit": [
+        "jardinage",
+        "repas",
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "fleurs": [
+        "jardinage"
+    ],
+    "croissance": [
+        "jardinage",
+        "innovation",
+        "\u00c9conomie",
+        "investissement",
+        "d\u00e9veloppement"
+    ],
+    "graines": [
+        "jardinage",
+        "cafe",
+        "tournoi",
+        "nourriture"
+    ],
+    "animal": [
+        "jardinage",
+        "animaux"
+    ],
+    "graine": [
+        "jardinage",
+        "tournoi"
+    ],
+    "ext\u00e9rieur": [
+        "jardinage",
+        "loisir",
+        "tournoi",
+        "peinture"
+    ],
+    "chasse": [
+        "jardinage",
+        "animaux"
+    ],
+    "fermes": [
+        "jardinage",
+        "cafe",
+        "animaux"
+    ],
+    "grandir": [
+        "jardinage"
+    ],
+    "\u00e9levage": [
+        "jardinage",
+        "volontariat",
+        "\u00c9conomie",
+        "caritatif",
+        "social"
+    ],
+    "experts": [
+        "jardinage",
+        "d\u00e9gustation"
+    ],
+    "illustr\u00e9": [
+        "jardinage"
+    ],
+    "outil": [
+        "jardinage",
+        "instrument"
+    ],
+    "colonne": [
+        "jardinage"
+    ],
+    "grandi": [
+        "jardinage",
+        "cafe"
+    ],
+    "ferme": [
+        "jardinage",
+        "investissement",
+        "gestion"
+    ],
+    "photojournalisme": [
+        "photographie"
+    ],
+    "photographique": [
+        "photographie"
+    ],
+    "photographe": [
+        "photographie"
+    ],
+    "cin\u00e9matographie": [
+        "photographie"
+    ],
+    "photo": [
+        "photographie",
+        "exposition"
+    ],
+    "photographier": [
+        "photographie",
+        "exposition"
+    ],
+    "cam\u00e9ra": [
+        "photographie",
+        "film",
+        "exposition"
+    ],
+    "envelopp\u00e9": [
+        "photographie"
+    ],
+    "photos": [
+        "photographie",
+        "partage"
+    ],
+    "lentilles": [
+        "photographie"
+    ],
+    "lentille": [
+        "photographie",
+        "exposition"
+    ],
+    "images": [
+        "photographie",
+        "film",
+        "imagination",
+        "concert",
+        "peinture"
+    ],
+    "imagerie": [
+        "photographie",
+        "imagination"
+    ],
+    "a\u00e9rien": [
+        "photographie"
+    ],
+    "\u00e9dition": [
+        "photographie",
+        "tournoi"
+    ],
+    "mode": [
+        "photographie"
+    ],
+    "impression": [
+        "photographie"
+    ],
+    "tirer": [
+        "photographie",
+        "dessin"
+    ],
+    "\u00e9clairage": [
+        "photographie"
+    ],
+    "num\u00e9rique": [
+        "photographie"
+    ],
+    "image": [
+        "photographie",
+        "r\u00e9flexion",
+        "peinture",
+        "film"
+    ],
+    "studio": [
+        "photographie"
+    ],
+    "documentaire": [
+        "photographie",
+        "festival"
+    ],
+    "film\u00e9": [
+        "photographie",
+        "film",
+        "concert"
+    ],
+    "sc\u00e8nes": [
+        "photographie",
+        "film",
+        "peinture"
+    ],
+    "journalisme": [
+        "photographie"
+    ],
+    "moyen": [
+        "photographie",
+        "r\u00e9flexion"
+    ],
+    "tir": [
+        "photographie"
+    ],
+    "mettant en vedette": [
+        "film",
+        "raquette"
+    ],
+    "refaire": [
+        "film"
+    ],
+    "t\u00e9lougou": [
+        "film"
+    ],
+    "th\u00e9\u00e2tre": [
+        "film",
+        "danse",
+        "festival",
+        "atelier",
+        "d\u00eener"
+    ],
+    "pourri": [
+        "film"
+    ],
+    "\u00e9toil\u00e9": [
+        "film"
+    ],
+    "tomates": [
+        "film"
+    ],
+    "bande-annonce": [
+        "film"
+    ],
+    "cin\u00e9ma": [
+        "film",
+        "festival",
+        "gastronomie",
+        "loisir"
+    ],
+    "dirig\u00e9": [
+        "film"
+    ],
+    "adaptation": [
+        "film"
+    ],
+    "hindi": [
+        "film"
+    ],
+    "horreur": [
+        "film"
+    ],
+    "\u00e9toiles": [
+        "film"
+    ],
+    "hollywoodien": [
+        "film",
+        "marche"
+    ],
+    "acteurs": [
+        "film"
+    ],
+    "acteur": [
+        "film"
+    ],
+    "bo\u00eete": [
+        "film"
+    ],
+    "d\u00e9peint": [
+        "film"
+    ],
+    "actrice": [
+        "film"
+    ],
+    "base de donn\u00e9es": [
+        "film"
+    ],
+    "premi\u00e8re": [
+        "film",
+        "festival",
+        "concert"
+    ],
+    "\u00e9cran": [
+        "film",
+        "test"
+    ],
+    "les r\u00f4les": [
+        "film"
+    ],
+    "danses": [
+        "danse"
+    ],
+    "chor\u00e9graphie": [
+        "danse"
+    ],
+    "chor\u00e9graphe": [
+        "danse"
+    ],
+    "troupe": [
+        "danse"
+    ],
+    "ballet": [
+        "danse"
+    ],
+    "dansant": [
+        "danse",
+        "chant",
+        "c\u00e9l\u00e9bration"
+    ],
+    "salle de bal": [
+        "danse"
+    ],
+    "danseur": [
+        "danse"
+    ],
+    "disco": [
+        "danse"
+    ],
+    "routine": [
+        "danse",
+        "exercice"
+    ],
+    "robinet": [
+        "danse"
+    ],
+    "diffusion": [
+        "danse",
+        "r\u00e9flexion"
+    ],
+    "remixer": [
+        "danse"
+    ],
+    "beats": [
+        "danse"
+    ],
+    "se d\u00e9place": [
+        "danse"
+    ],
+    "rythme": [
+        "danse"
+    ],
+    "effectu\u00e9": [
+        "danse",
+        "concert"
+    ],
+    "r\u00e9volution": [
+        "danse"
+    ],
+    "pas": [
+        "danse",
+        "instrument"
+    ],
+    "m\u00e9langer": [
+        "danse"
+    ],
+    "pointu": [
+        "danse"
+    ],
+    "tambour": [
+        "danse",
+        "instrument"
+    ],
+    "effectuer": [
+        "danse",
+        "chant",
+        "concert",
+        "exercice"
+    ],
+    "drame": [
+        "danse"
+    ],
+    "panneau d'affichage": [
+        "danse"
+    ],
+    "simple": [
+        "danse"
+    ],
+    "hymnes": [
+        "chant"
+    ],
+    "a chant\u00e9": [
+        "chant",
+        "concert"
+    ],
+    "refrain": [
+        "chant",
+        "concert"
+    ],
+    "cow-boy": [
+        "chant"
+    ],
+    "t\u00e9nor": [
+        "chant"
+    ],
+    "soprano": [
+        "chant"
+    ],
+    "hymne": [
+        "chant"
+    ],
+    "choral": [
+        "chant"
+    ],
+    "audition": [
+        "chant"
+    ],
+    "chant\u00e9": [
+        "chant"
+    ],
+    "harmonie": [
+        "chant"
+    ],
+    "talents": [
+        "chant"
+    ],
+    "gospel": [
+        "chant"
+    ],
+    "idole": [
+        "chant"
+    ],
+    "versets": [
+        "chant"
+    ],
+    "r\u00e9gler": [
+        "chant"
+    ],
+    "verset": [
+        "chant"
+    ],
+    "professionnellement": [
+        "chant"
+    ],
+    "m\u00e9lodie": [
+        "chant"
+    ],
+    "support": [
+        "chant",
+        "tournoi"
+    ],
+    "op\u00e9ra": [
+        "chant",
+        "festival",
+        "concert"
+    ],
+    "concours": [
+        "chant",
+        "competition"
+    ],
+    "chanteur": [
+        "chant",
+        "concert"
+    ],
+    "guitare": [
+        "chant",
+        "instrument"
+    ],
+    "trio": [
+        "chant"
+    ],
+    "solo": [
+        "chant",
+        "concert"
+    ],
+    "agissant": [
+        "chant"
+    ],
+    "ils": [
+        "instrument"
+    ],
+    "luth": [
+        "instrument"
+    ],
+    "mandoline": [
+        "instrument"
+    ],
+    "cordes": [
+        "instrument",
+        "raquette"
+    ],
+    "\u00e0 l'\u00e9coute": [
+        "instrument"
+    ],
+    "fabricant": [
+        "instrument",
+        "cafe"
+    ],
+    "clarinette": [
+        "instrument"
+    ],
+    "fl\u00fbte": [
+        "instrument"
+    ],
+    "r\u00e9glage": [
+        "instrument"
+    ],
+    "harpe": [
+        "instrument"
+    ],
+    "accession": [
+        "instrument"
+    ],
+    "t\u00e9lescope": [
+        "instrument"
+    ],
+    "violoncelle": [
+        "instrument"
+    ],
+    "saxophone": [
+        "instrument"
+    ],
+    "percussion": [
+        "instrument"
+    ],
+    "alto": [
+        "instrument"
+    ],
+    "trompette": [
+        "instrument"
+    ],
+    "grappe": [
+        "instrument"
+    ],
+    "organe": [
+        "instrument",
+        "concert"
+    ],
+    "clavier": [
+        "instrument"
+    ],
+    "tuyaux": [
+        "instrument"
+    ],
+    "cha\u00eene": [
+        "instrument",
+        "cafe",
+        "nourriture"
+    ],
+    "laiton": [
+        "instrument",
+        "organisation"
+    ],
+    "basse": [
+        "instrument"
+    ],
+    "a invent\u00e9": [
+        "instrument"
+    ],
+    "mesure": [
+        "instrument"
+    ],
+    "corne": [
+        "instrument"
+    ],
+    "la mesure": [
+        "instrument"
+    ],
+    "tuyau": [
+        "instrument"
+    ],
+    "se rendre": [
+        "instrument"
+    ],
+    "atterrissage": [
+        "instrument",
+        "d\u00e9fense"
+    ],
+    "acoustique": [
+        "instrument"
+    ],
+    "roseau": [
+        "instrument"
+    ],
+    "cl\u00e9s": [
+        "instrument"
+    ],
+    "son": [
+        "instrument"
+    ],
+    "tambours": [
+        "instrument"
+    ],
+    "cou": [
+        "instrument"
+    ],
+    "vol": [
+        "instrument",
+        "test"
+    ],
+    "\u00e9lectrique": [
+        "instrument"
+    ],
+    "souvenirs": [
+        "collection"
+    ],
+    "po\u00e8mes": [
+        "collection"
+    ],
+    "artefacts": [
+        "collection",
+        "musee"
+    ],
+    "sp\u00e9cimens": [
+        "collection",
+        "musee"
+    ],
+    "histoires": [
+        "collection"
+    ],
+    "tomes": [
+        "collection"
+    ],
+    "archive": [
+        "collection",
+        "musee"
+    ],
+    "les archives": [
+        "collection",
+        "musee"
+    ],
+    "log\u00e9": [
+        "collection",
+        "musee"
+    ],
+    "fait don": [
+        "collection",
+        "musee",
+        "caritatif"
+    ],
+    "contes": [
+        "collection",
+        "imagination"
+    ],
+    "po\u00e9sie": [
+        "collection"
+    ],
+    "articles": [
+        "collection",
+        "musee",
+        "nourriture"
+    ],
+    "compilation": [
+        "collection"
+    ],
+    "objets": [
+        "collection",
+        "musee"
+    ],
+    "documents": [
+        "collection"
+    ],
+    "papiers": [
+        "collection"
+    ],
+    "biblioth\u00e8ques": [
+        "collection",
+        "loisir"
+    ],
+    "\u00e9crits": [
+        "collection"
+    ],
+    "collect\u00e9": [
+        "collection"
+    ],
+    "manuscrit": [
+        "collection"
+    ],
+    "\u00e9dit\u00e9": [
+        "collection"
+    ],
+    "relatif": [
+        "collection"
+    ],
+    "journaux": [
+        "collection"
+    ],
+    "comprend": [
+        "collection"
+    ],
+    "affich\u00e9": [
+        "collection",
+        "musee"
+    ],
+    "publi\u00e9": [
+        "collection"
+    ],
+    "fiction": [
+        "collection",
+        "imagination"
+    ],
+    "imprim\u00e9": [
+        "collection"
+    ],
+    "afficher": [
+        "collection",
+        "musee"
+    ],
+    "rare": [
+        "collection"
+    ],
+    "travaux": [
+        "collection"
+    ],
+    "contient": [
+        "collection"
+    ],
+    "r\u00e9fraction": [
+        "r\u00e9flexion"
+    ],
+    "coefficient": [
+        "r\u00e9flexion"
+    ],
+    "n\u00e9buleuse": [
+        "r\u00e9flexion"
+    ],
+    "sym\u00e9trie": [
+        "r\u00e9flexion"
+    ],
+    "r\u00e9fractif": [
+        "r\u00e9flexion"
+    ],
+    "reflets": [
+        "r\u00e9flexion"
+    ],
+    "diffraction": [
+        "r\u00e9flexion"
+    ],
+    "miroir": [
+        "r\u00e9flexion"
+    ],
+    "imp\u00e9dance": [
+        "r\u00e9flexion"
+    ],
+    "r\u00e9fl\u00e9chissant": [
+        "r\u00e9flexion"
+    ],
+    "miroirs": [
+        "r\u00e9flexion"
+    ],
+    "brillant": [
+        "r\u00e9flexion"
+    ],
+    "incidence": [
+        "r\u00e9flexion"
+    ],
+    "perpendiculaire": [
+        "r\u00e9flexion"
+    ],
+    "longueur d'onde": [
+        "r\u00e9flexion"
+    ],
+    "refl\u00e9t\u00e9": [
+        "r\u00e9flexion"
+    ],
+    "absorption": [
+        "r\u00e9flexion"
+    ],
+    "angle": [
+        "r\u00e9flexion"
+    ],
+    "des rayons": [
+        "r\u00e9flexion"
+    ],
+    "vagues": [
+        "r\u00e9flexion"
+    ],
+    "optique": [
+        "r\u00e9flexion"
+    ],
+    "avion": [
+        "r\u00e9flexion"
+    ],
+    "vecteur": [
+        "r\u00e9flexion"
+    ],
+    "transmission": [
+        "r\u00e9flexion"
+    ],
+    "axe": [
+        "r\u00e9flexion"
+    ],
+    "faisceau": [
+        "r\u00e9flexion"
+    ],
+    "lumi\u00e8re": [
+        "r\u00e9flexion"
+    ],
+    "vague": [
+        "r\u00e9flexion"
+    ],
+    "refl\u00e9ter": [
+        "r\u00e9flexion"
+    ],
+    "surface": [
+        "r\u00e9flexion"
+    ],
+    "radiation": [
+        "r\u00e9flexion",
+        "exposition"
+    ],
+    "exp\u00e9riences": [
+        "r\u00e9flexion",
+        "exp\u00e9rience",
+        "partage"
+    ],
+    "matrice": [
+        "r\u00e9flexion"
+    ],
+    "principe": [
+        "r\u00e9flexion",
+        "plaisir"
+    ],
+    "incident": [
+        "r\u00e9flexion"
+    ],
+    "interface": [
+        "r\u00e9flexion"
+    ],
+    "r\u00e9alit\u00e9": [
+        "r\u00e9flexion",
+        "imagination"
+    ],
+    "durabilit\u00e9": [
+        "engagement",
+        "innovation"
+    ],
+    "d\u00e9vouement": [
+        "engagement"
+    ],
+    "int\u00e9grit\u00e9": [
+        "engagement"
+    ],
+    "des principes": [
+        "engagement"
+    ],
+    "valeurs": [
+        "engagement"
+    ],
+    "engag\u00e9": [
+        "engagement"
+    ],
+    "b\u00e9n\u00e9volat": [
+        "volontariat"
+    ],
+    "b\u00e9n\u00e9voles": [
+        "volontariat"
+    ],
+    "service militaire": [
+        "volontariat"
+    ],
+    "b\u00e9n\u00e9vole": [
+        "volontariat",
+        "caritatif"
+    ],
+    "opportunit\u00e9s": [
+        "volontariat",
+        "investissement",
+        "loisir"
+    ],
+    "collecte de fonds": [
+        "volontariat",
+        "caritatif"
+    ],
+    "les organismes de bienfaisance": [
+        "volontariat",
+        "caritatif"
+    ],
+    "sans-abri": [
+        "volontariat"
+    ],
+    "volontaire": [
+        "volontariat",
+        "caritatif"
+    ],
+    "charitable": [
+        "volontariat"
+    ],
+    "charit\u00e9": [
+        "volontariat",
+        "caritatif"
+    ],
+    "abri": [
+        "volontariat",
+        "nourriture"
+    ],
+    "clinique": [
+        "volontariat"
+    ],
+    "portion": [
+        "volontariat",
+        "caritatif"
+    ],
+    "initiatives": [
+        "volontariat",
+        "innovation",
+        "caritatif"
+    ],
+    "arm\u00e9es": [
+        "volontariat"
+    ],
+    "fian\u00e7ailles": [
+        "volontariat"
+    ],
+    "infirmi\u00e8re": [
+        "volontariat"
+    ],
+    "outre-mer": [
+        "volontariat"
+    ],
+    "civique": [
+        "volontariat",
+        "caritatif"
+    ],
+    "jeunesse": [
+        "volontariat"
+    ],
+    "employ\u00e9": [
+        "volontariat"
+    ],
+    "\u00e0 l'\u00e9tranger": [
+        "volontariat"
+    ],
+    "communaut\u00e9": [
+        "volontariat"
+    ],
+    "participant": [
+        "volontariat",
+        "tournoi"
+    ],
+    "sida": [
+        "volontariat",
+        "caritatif"
+    ],
+    "servir": [
+        "volontariat"
+    ],
+    "activit\u00e9s": [
+        "volontariat",
+        "caritatif",
+        "loisir"
+    ],
+    "service": [
+        "volontariat"
+    ],
+    "initiative": [
+        "volontariat",
+        "innovation",
+        "finance"
+    ],
+    "virtuel": [
+        "volontariat"
+    ],
+    "devoir": [
+        "volontariat"
+    ],
+    "communaut\u00e9s": [
+        "volontariat"
+    ],
+    "aide": [
+        "volontariat",
+        "jeux",
+        "caritatif",
+        "tournoi"
+    ],
+    "assister": [
+        "volontariat"
+    ],
+    "participer": [
+        "volontariat"
+    ],
+    "en ligne": [
+        "volontariat"
+    ],
+    "standardisation": [
+        "organisation"
+    ],
+    "iso": [
+        "organisation",
+        "gestion"
+    ],
+    "organisationnel": [
+        "organisation",
+        "gestion"
+    ],
+    "scout": [
+        "organisation"
+    ],
+    "promouvoir": [
+        "organisation",
+        "caritatif"
+    ],
+    "d\u00e9di\u00e9": [
+        "organisation",
+        "musee"
+    ],
+    "adh\u00e9sion": [
+        "organisation",
+        "association"
+    ],
+    "objectifs": [
+        "organisation",
+        "innovation",
+        "jeux",
+        "amical",
+        "caritatif"
+    ],
+    "coop\u00e9ration": [
+        "organisation",
+        "d\u00e9veloppement",
+        "solidarit\u00e9"
+    ],
+    "fond\u00e9": [
+        "organisation",
+        "oenologie"
+    ],
+    "cano\u00eb": [
+        "\u00c9v\u00e9nement"
+    ],
+    "slalom": [
+        "\u00c9v\u00e9nement"
+    ],
+    "jeux paralympiques": [
+        "\u00c9v\u00e9nement"
+    ],
+    "poker": [
+        "\u00c9v\u00e9nement",
+        "tournoi"
+    ],
+    "sprint": [
+        "\u00c9v\u00e9nement"
+    ],
+    "poids lourd": [
+        "\u00c9v\u00e9nement",
+        "tournoi"
+    ],
+    "d\u00e9tenu": [
+        "\u00c9v\u00e9nement",
+        "c\u00e9l\u00e9bration",
+        "festival",
+        "competition",
+        "tournoi"
+    ],
+    "style libre": [
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "competition"
+    ],
+    "relais": [
+        "\u00c9v\u00e9nement",
+        "jeux"
+    ],
+    "qualification": [
+        "\u00c9v\u00e9nement",
+        "amical",
+        "competition",
+        "tournoi"
+    ],
+    "\u00e9t\u00e9": [
+        "\u00c9v\u00e9nement"
+    ],
+    "marathon": [
+        "\u00c9v\u00e9nement",
+        "marche"
+    ],
+    "se rallier": [
+        "\u00c9v\u00e9nement",
+        "solidarit\u00e9"
+    ],
+    "bronze": [
+        "\u00c9v\u00e9nement",
+        "jeux"
+    ],
+    "p\u00e9kin": [
+        "\u00c9v\u00e9nement"
+    ],
+    "ar\u00e8ne": [
+        "\u00c9v\u00e9nement",
+        "jeux",
+        "concert",
+        "tournoi"
+    ],
+    "\u00e9tiqueter": [
+        "\u00c9v\u00e9nement",
+        "tournoi"
+    ],
+    "m\u00e9daille": [
+        "\u00c9v\u00e9nement",
+        "d\u00e9fense",
+        "jeux"
+    ],
+    "fin de semaine": [
+        "\u00c9v\u00e9nement",
+        "c\u00e9l\u00e9bration",
+        "festival",
+        "soiree"
+    ],
+    "\u00e9v\u00e9nements": [
+        "\u00c9v\u00e9nement"
+    ],
+    "dod": [
+        "d\u00e9fense"
+    ],
+    "adc": [
+        "d\u00e9fense"
+    ],
+    "m\u00e9ritoire": [
+        "d\u00e9fense"
+    ],
+    "autorisation": [
+        "d\u00e9fense"
+    ],
+    "infraction": [
+        "d\u00e9fense"
+    ],
+    "avocats": [
+        "d\u00e9fense"
+    ],
+    "missile": [
+        "d\u00e9fense",
+        "test"
+    ],
+    "avocat": [
+        "d\u00e9fense"
+    ],
+    "poursuite": [
+        "d\u00e9fense"
+    ],
+    "m\u00e8tres": [
+        "d\u00e9fense",
+        "jeux"
+    ],
+    "d\u00e9fensive": [
+        "d\u00e9fense"
+    ],
+    "radar": [
+        "d\u00e9fense"
+    ],
+    "agence": [
+        "d\u00e9fense",
+        "gestion"
+    ],
+    "intelligence": [
+        "d\u00e9fense"
+    ],
+    "strat\u00e8ge": [
+        "d\u00e9fense"
+    ],
+    "les forces": [
+        "d\u00e9fense"
+    ],
+    "civil": [
+        "d\u00e9fense"
+    ],
+    "artillerie": [
+        "d\u00e9fense"
+    ],
+    "arm\u00e9": [
+        "d\u00e9fense"
+    ],
+    "strat\u00e9gique": [
+        "d\u00e9fense",
+        "gestion"
+    ],
+    "air": [
+        "d\u00e9fense",
+        "travail"
+    ],
+    "forcer": [
+        "d\u00e9fense"
+    ],
+    "fonds": [
+        "d\u00e9fense",
+        "innovation",
+        "investissement",
+        "caritatif",
+        "solidarit\u00e9",
+        "finance"
+    ],
+    "discr\u00e9tion": [
+        "exercice"
+    ],
+    "physiologie": [
+        "exercice"
+    ],
+    "prudence": [
+        "exercice"
+    ],
+    "aptitude": [
+        "exercice",
+        "loisir"
+    ],
+    "juridiction": [
+        "exercice"
+    ],
+    "amphibie": [
+        "exercice"
+    ],
+    "clause": [
+        "exercice"
+    ],
+    "sauter": [
+        "exercice"
+    ],
+    "pouvoirs": [
+        "exercice"
+    ],
+    "la souverainet\u00e9": [
+        "exercice"
+    ],
+    "otan": [
+        "exercice"
+    ],
+    "option": [
+        "exercice"
+    ],
+    "r\u00e9gime": [
+        "exercice",
+        "repas",
+        "animaux",
+        "nourriture"
+    ],
+    "judiciaire": [
+        "exercice"
+    ],
+    "en bonne sant\u00e9": [
+        "exercice",
+        "nourriture"
+    ],
+    "intensit\u00e9": [
+        "exercice"
+    ],
+    "jugement": [
+        "exercice",
+        "d\u00e9gustation"
+    ],
+    "transporteur": [
+        "exercice"
+    ],
+    "les fonctions": [
+        "exercice"
+    ],
+    "barres": [
+        "exercice",
+        "repas",
+        "alcool",
+        "cafe"
+    ],
+    "autorit\u00e9": [
+        "exercice"
+    ],
+    "men\u00e9": [
+        "exercice"
+    ],
+    "poids": [
+        "exercice"
+    ],
+    "amendement": [
+        "exercice"
+    ],
+    "constitutionnel": [
+        "exercice"
+    ],
+    "maritime": [
+        "exercice",
+        "musee"
+    ],
+    "religion": [
+        "exercice",
+        "culture"
+    ],
+    "impliquant": [
+        "exercice"
+    ],
+    "odi": [
+        "test"
+    ],
+    "guichet": [
+        "test"
+    ],
+    "manches": [
+        "test",
+        "jeux"
+    ],
+    "cendres": [
+        "test"
+    ],
+    "essai": [
+        "test"
+    ],
+    "partitions": [
+        "test"
+    ],
+    "batteur": [
+        "test"
+    ],
+    "indes": [
+        "test"
+    ],
+    "quilleur": [
+        "test"
+    ],
+    "\u00e9valuation": [
+        "test",
+        "d\u00e9gustation",
+        "exposition"
+    ],
+    "allumettes": [
+        "test",
+        "amical",
+        "competition",
+        "tournoi"
+    ],
+    "d\u00e9pistage": [
+        "test",
+        "festival"
+    ],
+    "bowling": [
+        "test",
+        "loisir"
+    ],
+    "au b\u00e2ton": [
+        "test",
+        "jeux"
+    ],
+    "ovale": [
+        "test"
+    ],
+    "hypoth\u00e8se": [
+        "test"
+    ],
+    "correspondre": [
+        "test",
+        "amical",
+        "tournoi"
+    ],
+    "\u00e9chantillon": [
+        "test",
+        "d\u00e9gustation"
+    ],
+    "prototype": [
+        "test"
+    ],
+    "d\u00e9terminer": [
+        "test",
+        "tournoi",
+        "influence"
+    ],
+    "admission": [
+        "test",
+        "alcool",
+        "nourriture"
+    ],
+    "r\u00e9sultats": [
+        "test",
+        "motivation"
+    ],
+    "administr\u00e9": [
+        "test"
+    ],
+    "pakistan": [
+        "test"
+    ],
+    "bangladesh": [
+        "test"
+    ],
+    "fus\u00e9e": [
+        "test"
+    ],
+    "\u00e9chantillons": [
+        "test",
+        "d\u00e9gustation"
+    ],
+    "australie": [
+        "test",
+        "oenologie"
+    ],
+    "interdire": [
+        "test",
+        "alcool"
+    ],
+    "court": [
+        "test",
+        "jeux"
+    ],
+    "marqu\u00e9": [
+        "test",
+        "jeux",
+        "amical"
+    ],
+    "sujets": [
+        "test"
+    ],
+    "n\u00e9pal": [
+        "d\u00e9veloppement"
+    ],
+    "mise en \u0153uvre": [
+        "d\u00e9veloppement",
+        "raquette"
+    ],
+    "les technologies": [
+        "d\u00e9veloppement",
+        "innovation",
+        "imagination"
+    ],
+    "infrastructure": [
+        "d\u00e9veloppement",
+        "am\u00e9lioration",
+        "\u00c9conomie",
+        "investissement",
+        "finance"
+    ],
+    "soci\u00e9t\u00e9": [
+        "d\u00e9veloppement",
+        "investissement",
+        "finance"
+    ],
+    "am\u00e9liorations": [
+        "am\u00e9lioration"
+    ],
+    "chronique": [
+        "am\u00e9lioration",
+        "alcool",
+        "exposition"
+    ],
+    "efficacit\u00e9": [
+        "am\u00e9lioration"
+    ],
+    "qualit\u00e9": [
+        "am\u00e9lioration"
+    ],
+    "am\u00e9lior\u00e9": [
+        "am\u00e9lioration"
+    ],
+    "pr\u00e9d\u00e9cesseur": [
+        "am\u00e9lioration"
+    ],
+    "am\u00e9liorer": [
+        "am\u00e9lioration"
+    ],
+    "environnemental": [
+        "am\u00e9lioration"
+    ],
+    "pr\u00e9c\u00e9dent": [
+        "am\u00e9lioration"
+    ],
+    "les patients": [
+        "am\u00e9lioration"
+    ],
+    "comp\u00e9titivit\u00e9": [
+        "innovation"
+    ],
+    "la cr\u00e9ativit\u00e9": [
+        "innovation",
+        "motivation",
+        "imagination"
+    ],
+    "nouveaut\u00e9s": [
+        "innovation"
+    ],
+    "entrepreneurs": [
+        "innovation"
+    ],
+    "technologique": [
+        "innovation"
+    ],
+    "technologie": [
+        "innovation"
+    ],
+    "brevets": [
+        "innovation"
+    ],
+    "laboratoire": [
+        "innovation",
+        "atelier"
+    ],
+    "invention": [
+        "innovation"
+    ],
+    "moyeu": [
+        "innovation"
+    ],
+    "strat\u00e9gie": [
+        "innovation",
+        "investissement",
+        "gestion"
+    ],
+    "entreprises": [
+        "innovation",
+        "\u00c9conomie",
+        "investissement"
+    ],
+    "recherche": [
+        "innovation"
+    ],
+    "strat\u00e9gies": [
+        "innovation",
+        "\u00c9conomie",
+        "investissement",
+        "gestion"
+    ],
+    "brevet": [
+        "innovation"
+    ],
+    "solutions": [
+        "innovation",
+        "gestion"
+    ],
+    "collaboration": [
+        "innovation",
+        "partage"
+    ],
+    "commercialisation": [
+        "innovation",
+        "gestion",
+        "finance"
+    ],
+    "mondial": [
+        "innovation",
+        "investissement"
+    ],
+    "produit": [
+        "innovation",
+        "aperitif",
+        "caritatif"
+    ],
+    "d\u00e9fis": [
+        "innovation"
+    ],
+    "sommet": [
+        "innovation",
+        "montagne"
+    ],
+    "pib": [
+        "\u00c9conomie",
+        "investissement"
+    ],
+    "r\u00e9cession": [
+        "\u00c9conomie"
+    ],
+    "inflation": [
+        "\u00c9conomie"
+    ],
+    "mobilit\u00e9": [
+        "\u00c9conomie"
+    ],
+    "ch\u00f4mage": [
+        "\u00c9conomie"
+    ],
+    "capitalisme": [
+        "\u00c9conomie"
+    ],
+    "d\u00e9pendant": [
+        "\u00c9conomie"
+    ],
+    "les industries": [
+        "\u00c9conomie",
+        "investissement"
+    ],
+    "b\u00e9tail": [
+        "\u00c9conomie",
+        "cafe",
+        "animaux"
+    ],
+    "secteur": [
+        "\u00c9conomie",
+        "investissement",
+        "finance"
+    ],
+    "exporter": [
+        "\u00c9conomie",
+        "cafe"
+    ],
+    "agricole": [
+        "\u00c9conomie",
+        "cafe",
+        "oenologie",
+        "nourriture"
+    ],
+    "emplois": [
+        "\u00c9conomie"
+    ],
+    "fabrication": [
+        "\u00c9conomie"
+    ],
+    "\u00e9conomie": [
+        "\u00c9conomie",
+        "investissement",
+        "gestion",
+        "finance"
+    ],
+    "brut": [
+        "\u00c9conomie"
+    ],
+    "domin\u00e9": [
+        "\u00c9conomie"
+    ],
+    "emploi": [
+        "\u00c9conomie",
+        "cafe",
+        "travail",
+        "exercice"
+    ],
+    "coton": [
+        "\u00c9conomie",
+        "cafe"
+    ],
+    "crise": [
+        "\u00c9conomie"
+    ],
+    "bancaire": [
+        "\u00c9conomie",
+        "investissement",
+        "gestion",
+        "finance"
+    ],
+    "industriel": [
+        "\u00c9conomie"
+    ],
+    "d\u00e9clin": [
+        "\u00c9conomie"
+    ],
+    "milliard": [
+        "\u00c9conomie",
+        "investissement"
+    ],
+    "dette": [
+        "\u00c9conomie",
+        "investissement",
+        "finance"
+    ],
+    "richesse": [
+        "\u00c9conomie",
+        "investissement"
+    ],
+    "consommation": [
+        "\u00c9conomie",
+        "repas",
+        "alcool",
+        "cafe",
+        "loisir",
+        "nourriture"
+    ],
+    "touristique": [
+        "\u00c9conomie",
+        "gastronomie",
+        "loisir"
+    ],
+    "banquier": [
+        "investissement"
+    ],
+    "courtage": [
+        "investissement"
+    ],
+    "investissements": [
+        "investissement",
+        "finance"
+    ],
+    "haie": [
+        "investissement"
+    ],
+    "investir": [
+        "investissement"
+    ],
+    "actif": [
+        "investissement",
+        "gestion",
+        "finance"
+    ],
+    "investisseur": [
+        "investissement"
+    ],
+    "portefeuille": [
+        "investissement",
+        "finance"
+    ],
+    "conseillers": [
+        "investissement"
+    ],
+    "investi": [
+        "investissement"
+    ],
+    "actifs": [
+        "investissement",
+        "gestion",
+        "finance"
+    ],
+    "institutionnel": [
+        "investissement"
+    ],
+    "miser": [
+        "investissement"
+    ],
+    "llc": [
+        "investissement"
+    ],
+    "les partenaires": [
+        "investissement"
+    ],
+    "avoirs": [
+        "investissement"
+    ],
+    "des \u00e9conomies": [
+        "investissement"
+    ],
+    "banques": [
+        "investissement",
+        "finance"
+    ],
+    "pension": [
+        "investissement"
+    ],
+    "banque": [
+        "investissement",
+        "finance"
+    ],
+    "conseiller": [
+        "investissement"
+    ],
+    "consultatif": [
+        "investissement",
+        "finance"
+    ],
+    "capital": [
+        "investissement"
+    ],
+    "confiance": [
+        "investissement",
+        "caritatif"
+    ],
+    "obligations": [
+        "investissement"
+    ],
+    "pr\u00eats": [
+        "investissement",
+        "finance"
+    ],
+    "financier": [
+        "investissement",
+        "finance"
+    ],
+    "clients": [
+        "investissement",
+        "gestion"
+    ],
+    "mutuel": [
+        "investissement",
+        "solidarit\u00e9"
+    ],
+    "assurance": [
+        "investissement",
+        "finance"
+    ],
+    "lt\u00e9e": [
+        "investissement",
+        "gestion",
+        "loisir",
+        "finance"
+    ],
+    "profit": [
+        "investissement"
+    ],
+    "pdg": [
+        "investissement"
+    ],
+    "acquisition": [
+        "investissement"
+    ],
+    "les d\u00e9cisions": [
+        "investissement",
+        "influence"
+    ],
+    "g\u00e9rant": [
+        "investissement",
+        "gestion",
+        "finance"
+    ],
+    "million": [
+        "investissement"
+    ],
+    "domaine": [
+        "investissement",
+        "oenologie"
+    ],
+    "risque": [
+        "investissement",
+        "alcool",
+        "exposition"
+    ],
+    "imp\u00f4t": [
+        "investissement",
+        "finance"
+    ],
+    "holding": [
+        "investissement"
+    ],
+    "vente au d\u00e9tail": [
+        "investissement",
+        "loisir"
+    ],
+    "mba": [
+        "gestion",
+        "finance"
+    ],
+    "comptabilit\u00e9": [
+        "gestion",
+        "finance"
+    ],
+    "ressource": [
+        "gestion",
+        "imagination"
+    ],
+    "logiciel": [
+        "gestion"
+    ],
+    "g\u00e9rer": [
+        "gestion"
+    ],
+    "surveillance": [
+        "gestion"
+    ],
+    "client": [
+        "gestion"
+    ],
+    "faune": [
+        "gestion",
+        "animaux",
+        "nature"
+    ],
+    "syst\u00e8mes": [
+        "gestion"
+    ],
+    "d\u00e9chets": [
+        "gestion",
+        "loisir",
+        "nourriture"
+    ],
+    "planification": [
+        "gestion",
+        "finance"
+    ],
+    "ing\u00e9nierie": [
+        "gestion"
+    ],
+    "des dossiers": [
+        "partage"
+    ],
+    "baiser": [
+        "partage"
+    ],
+    "les accords": [
+        "partage"
+    ],
+    "devoirs": [
+        "partage"
+    ],
+    "d\u00e9poser": [
+        "partage"
+    ],
+    "connaissance": [
+        "partage"
+    ],
+    "information": [
+        "partage"
+    ],
+    "partager": [
+        "partage"
+    ],
+    "partag\u00e9": [
+        "partage"
+    ],
+    "arrangement": [
+        "partage",
+        "organisation"
+    ],
+    "accord": [
+        "partage",
+        "travail"
+    ],
+    "donn\u00e9es": [
+        "partage"
+    ],
+    "\u00e9vident": [
+        "influence"
+    ],
+    "extrins\u00e8que": [
+        "motivation"
+    ],
+    "intrins\u00e8que": [
+        "motivation"
+    ],
+    "r\u00e9compenses": [
+        "motivation"
+    ],
+    "satisfaction": [
+        "motivation",
+        "plaisir",
+        "loisir"
+    ],
+    "motiv\u00e9": [
+        "motivation"
+    ],
+    "r\u00e9compense": [
+        "motivation"
+    ],
+    "\u00e9motion": [
+        "motivation"
+    ],
+    "d\u00e9sir": [
+        "motivation",
+        "plaisir"
+    ],
+    "attitudes": [
+        "motivation"
+    ],
+    "th\u00e9ories": [
+        "motivation"
+    ],
+    "derri\u00e8re": [
+        "motivation",
+        "inspiration"
+    ],
+    "th\u00e9orie": [
+        "motivation"
+    ],
+    "s'engager": [
+        "motivation"
+    ],
+    "\u00e9motionnel": [
+        "motivation",
+        "plaisir"
+    ],
+    "facteurs": [
+        "motivation",
+        "exposition"
+    ],
+    "personnalit\u00e9": [
+        "motivation"
+    ],
+    "per\u00e7u": [
+        "motivation"
+    ],
+    "atteindre": [
+        "motivation"
+    ],
+    "croyances": [
+        "motivation"
+    ],
+    "morale": [
+        "motivation"
+    ],
+    "sexuel": [
+        "motivation",
+        "plaisir"
+    ],
+    "peur": [
+        "motivation"
+    ],
+    "fictif": [
+        "inspiration"
+    ],
+    "po\u00e8tes": [
+        "inspiration"
+    ],
+    "po\u00e8me": [
+        "inspiration",
+        "imagination"
+    ],
+    "roman": [
+        "inspiration"
+    ],
+    "personnage": [
+        "inspiration"
+    ],
+    "inspir\u00e9": [
+        "inspiration"
+    ],
+    "est venu": [
+        "inspiration"
+    ],
+    "agr\u00e9able": [
+        "amusement"
+    ],
+    "aimant": [
+        "amusement"
+    ],
+    "passionnant": [
+        "amusement"
+    ],
+    "divertissant": [
+        "amusement"
+    ],
+    "truc": [
+        "amusement"
+    ],
+    "gameplay": [
+        "amusement",
+        "jeux"
+    ],
+    "\u00e9couter": [
+        "amusement"
+    ],
+    "monter": [
+        "amusement",
+        "marche",
+        "montagne"
+    ],
+    "lou\u00e9": [
+        "amusement"
+    ],
+    "en train de regarder": [
+        "amusement",
+        "plaisir"
+    ],
+    "int\u00e9ressant": [
+        "amusement"
+    ],
+    "peu": [
+        "amusement"
+    ],
+    "eucharistie": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "anniversaire": [
+        "c\u00e9l\u00e9bration",
+        "concert",
+        "d\u00eener"
+    ],
+    "feux d'artifice": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "festivit\u00e9s": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "centenaire": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "liturgie": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "festin": [
+        "c\u00e9l\u00e9bration",
+        "repas",
+        "festival"
+    ],
+    "jubil\u00e9": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "parade": [
+        "c\u00e9l\u00e9bration",
+        "festival"
+    ],
+    "carnaval": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "procession": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "c\u00e9l\u00e9brer": [
+        "c\u00e9l\u00e9bration",
+        "festival",
+        "concert",
+        "d\u00eener"
+    ],
+    "c\u00e9l\u00e8bre": [
+        "c\u00e9l\u00e9bration",
+        "festival"
+    ],
+    "comm\u00e9morer": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "p\u00e2ques": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "m\u00e9c\u00e8ne": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "vacances": [
+        "c\u00e9l\u00e9bration",
+        "loisir"
+    ],
+    "r\u00e9colte": [
+        "c\u00e9l\u00e9bration",
+        "d\u00e9gustation"
+    ],
+    "no\u00ebl": [
+        "c\u00e9l\u00e9bration",
+        "d\u00eener"
+    ],
+    "honneur": [
+        "c\u00e9l\u00e9bration",
+        "d\u00eener"
+    ],
+    "calendrier": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "c\u00e9r\u00e9monie": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "masse": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "occasion": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "mariage": [
+        "c\u00e9l\u00e9bration",
+        "d\u00eener"
+    ],
+    "jour": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "\u00e9v\u00e9nement": [
+        "c\u00e9l\u00e9bration",
+        "tournoi"
+    ],
+    "ind\u00e9pendance": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "climat": [
+        "changement"
+    ],
+    "en changeant": [
+        "changement"
+    ],
+    "changements": [
+        "changement"
+    ],
+    "imaginaire": [
+        "imagination"
+    ],
+    "imaginer": [
+        "imagination"
+    ],
+    "fantaisie": [
+        "imagination",
+        "atelier"
+    ],
+    "perception": [
+        "imagination"
+    ],
+    "r\u00eaves": [
+        "imagination"
+    ],
+    "sens": [
+        "imagination"
+    ],
+    "beaut\u00e9": [
+        "imagination",
+        "plaisir"
+    ],
+    "lanc\u00e9": [
+        "jeux"
+    ],
+    "rbi": [
+        "jeux"
+    ],
+    "points": [
+        "jeux"
+    ],
+    "chauves-souris": [
+        "jeux"
+    ],
+    "gagne": [
+        "jeux",
+        "tournoi"
+    ],
+    "pertes": [
+        "jeux"
+    ],
+    "au fil du temps": [
+        "jeux",
+        "tournoi"
+    ],
+    "m\u00e8tre": [
+        "jeux",
+        "exposition"
+    ],
+    "\u00e9liminatoires": [
+        "jeux",
+        "tournoi"
+    ],
+    "xbox": [
+        "jeux"
+    ],
+    "espn": [
+        "jeux"
+    ],
+    "lnh": [
+        "jeux"
+    ],
+    "les coups": [
+        "jeux"
+    ],
+    "stade": [
+        "jeux",
+        "amical"
+    ],
+    "notation": [
+        "jeux",
+        "amical"
+    ],
+    "arcade": [
+        "jeux"
+    ],
+    "tra\u00een\u00e9e": [
+        "jeux"
+    ],
+    "sox": [
+        "jeux"
+    ],
+    "nba": [
+        "jeux",
+        "association"
+    ],
+    "d\u00e9butant": [
+        "jeux"
+    ],
+    "\u00e8re": [
+        "jeux"
+    ],
+    "note": [
+        "jeux"
+    ],
+    "commonwealth": [
+        "jeux"
+    ],
+    "fini": [
+        "jeux"
+    ],
+    "g\u00e9ants": [
+        "jeux"
+    ],
+    "saison": [
+        "jeux"
+    ],
+    "gagn\u00e9": [
+        "jeux",
+        "tournoi"
+    ],
+    "pourcentage": [
+        "jeux"
+    ],
+    "d\u00e9parts": [
+        "jeux"
+    ],
+    "tigres": [
+        "jeux",
+        "animaux"
+    ],
+    "asiatique": [
+        "jeux"
+    ],
+    "jou\u00e9": [
+        "jeux",
+        "tournoi"
+    ],
+    "bol": [
+        "jeux"
+    ],
+    "blessure": [
+        "jeux"
+    ],
+    "\u00e9quipe": [
+        "jeux",
+        "amical",
+        "raquette",
+        "tournoi"
+    ],
+    "la frange": [
+        "festival"
+    ],
+    "filtr\u00e9": [
+        "festival"
+    ],
+    "danse du soleil": [
+        "festival"
+    ],
+    "cannes": [
+        "festival"
+    ],
+    "jury": [
+        "festival",
+        "competition"
+    ],
+    "annuellement": [
+        "festival"
+    ],
+    "vitrine": [
+        "festival"
+    ],
+    "annuel": [
+        "festival"
+    ],
+    "international": [
+        "festival"
+    ],
+    "venise": [
+        "festival"
+    ],
+    "nomm\u00e9": [
+        "festival"
+    ],
+    "des cultures": [
+        "culture",
+        "gastronomie"
+    ],
+    "avant jc": [
+        "culture"
+    ],
+    "civilisation": [
+        "culture"
+    ],
+    "poterie": [
+        "culture"
+    ],
+    "arch\u00e9ologique": [
+        "culture",
+        "musee"
+    ],
+    "douane": [
+        "culture",
+        "gastronomie"
+    ],
+    "les peuples": [
+        "culture",
+        "solidarit\u00e9"
+    ],
+    "patrimoine": [
+        "culture",
+        "gastronomie",
+        "musee"
+    ],
+    "indig\u00e8ne": [
+        "culture",
+        "gastronomie"
+    ],
+    "r\u00e9cital": [
+        "concert",
+        "lecture"
+    ],
+    "symphonique": [
+        "concert"
+    ],
+    "pianiste": [
+        "concert"
+    ],
+    "philharmonique": [
+        "concert"
+    ],
+    "soliste": [
+        "concert"
+    ],
+    "violoniste": [
+        "concert"
+    ],
+    "visites": [
+        "concert",
+        "d\u00e9gustation"
+    ],
+    "colis\u00e9e": [
+        "concert"
+    ],
+    "concerto": [
+        "concert"
+    ],
+    "promoteur": [
+        "concert"
+    ],
+    "carnegie": [
+        "concert"
+    ],
+    "tourn\u00e9e": [
+        "concert",
+        "tournoi"
+    ],
+    "r\u00e9pertoire": [
+        "concert"
+    ],
+    "marcher": [
+        "concert"
+    ],
+    "salle": [
+        "concert",
+        "loisir"
+    ],
+    "des billets": [
+        "concert"
+    ],
+    "quatuor": [
+        "concert"
+    ],
+    "groupe": [
+        "concert"
+    ],
+    "en direct": [
+        "concert",
+        "exp\u00e9rience"
+    ],
+    "interpr\u00e8te": [
+        "concert"
+    ],
+    "performance": [
+        "concert"
+    ],
+    "tokyo": [
+        "concert"
+    ],
+    "hommage": [
+        "concert"
+    ],
+    "avec": [
+        "concert"
+    ],
+    "foule": [
+        "concert"
+    ],
+    "enregistrement": [
+        "concert"
+    ],
+    "midi": [
+        "repas"
+    ],
+    "dessert": [
+        "repas",
+        "d\u00eener"
+    ],
+    "souper": [
+        "repas",
+        "d\u00eener"
+    ],
+    "mang\u00e9": [
+        "repas",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "collation": [
+        "repas"
+    ],
+    "je\u00fbne": [
+        "repas"
+    ],
+    "pain": [
+        "repas",
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "d\u00e9jeuner": [
+        "repas",
+        "d\u00eener"
+    ],
+    "insuline": [
+        "repas"
+    ],
+    "manger": [
+        "repas",
+        "animaux",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "a mang\u00e9": [
+        "repas"
+    ],
+    "glucose": [
+        "repas"
+    ],
+    "locaux": [
+        "repas"
+    ],
+    "menu": [
+        "repas",
+        "d\u00e9gustation",
+        "d\u00eener"
+    ],
+    "pr\u00e9par\u00e9": [
+        "repas",
+        "gastronomie"
+    ],
+    "consomm\u00e9": [
+        "repas",
+        "alcool",
+        "nourriture"
+    ],
+    "sch\u00e8me": [
+        "repas",
+        "raquette",
+        "peinture"
+    ],
+    "riz": [
+        "repas",
+        "cafe",
+        "gastronomie",
+        "nourriture"
+    ],
+    "sandwich": [
+        "repas"
+    ],
+    "th\u00e9": [
+        "repas",
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener"
+    ],
+    "jouets": [
+        "repas"
+    ],
+    "bl\u00e9": [
+        "repas"
+    ],
+    "graisse": [
+        "repas",
+        "gastronomie"
+    ],
+    "caf\u00e9": [
+        "repas",
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "alimentation": [
+        "repas",
+        "animaux",
+        "nourriture"
+    ],
+    "\u0153ufs": [
+        "repas",
+        "gastronomie",
+        "nourriture"
+    ],
+    "vin": [
+        "repas",
+        "aperitif",
+        "alcool",
+        "gastronomie",
+        "oenologie",
+        "d\u00e9gustation",
+        "d\u00eener",
+        "nourriture"
+    ],
+    "poisson": [
+        "repas",
+        "animaux",
+        "gastronomie",
+        "nourriture"
+    ],
+    "apr\u00e8s-midi": [
+        "repas",
+        "soiree",
+        "d\u00e9gustation"
+    ],
+    "\u0153uf": [
+        "repas"
+    ],
+    "t\u00eate": [
+        "repas"
+    ],
+    "grain": [
+        "repas"
+    ],
+    "soir\u00e9e": [
+        "repas",
+        "d\u00eener"
+    ],
+    "la plus proche": [
+        "repas"
+    ],
+    "doux": [
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "rapide": [
+        "repas"
+    ],
+    "gratuit": [
+        "repas"
+    ],
+    "par": [
+        "repas"
+    ],
+    "traditionnellement": [
+        "repas"
+    ],
+    "choix": [
+        "repas"
+    ],
+    "campari": [
+        "aperitif"
+    ],
+    "am\u00e9ricain": [
+        "aperitif"
+    ],
+    "liqueur": [
+        "aperitif"
+    ],
+    "cocktail": [
+        "aperitif"
+    ],
+    "vins": [
+        "aperitif",
+        "alcool",
+        "gastronomie",
+        "oenologie",
+        "d\u00e9gustation"
+    ],
+    "destruction": [
+        "aperitif"
+    ],
+    "verre": [
+        "aperitif",
+        "d\u00e9gustation"
+    ],
+    "mixte": [
+        "aperitif"
+    ],
+    "italien": [
+        "aperitif"
+    ],
+    "mot": [
+        "aperitif",
+        "discussion"
+    ],
+    "italie": [
+        "aperitif"
+    ],
+    "g\u00e9n\u00e9ralement": [
+        "aperitif"
+    ],
+    "blanc": [
+        "aperitif"
+    ],
+    "servi": [
+        "aperitif"
+    ],
+    "intoxication": [
+        "alcool"
+    ],
+    "fr\u00e9n\u00e9sie": [
+        "alcool"
+    ],
+    "atf": [
+        "alcool"
+    ],
+    "m\u00e9thanol": [
+        "alcool"
+    ],
+    "alcoolisme": [
+        "alcool"
+    ],
+    "distill\u00e9": [
+        "alcool"
+    ],
+    "ivre": [
+        "alcool"
+    ],
+    "\u00e9thanol": [
+        "alcool"
+    ],
+    "alcoolique": [
+        "alcool"
+    ],
+    "bac": [
+        "alcool"
+    ],
+    "d\u00e9pendance": [
+        "alcool"
+    ],
+    "\u00e9ther": [
+        "alcool"
+    ],
+    "le tabac": [
+        "alcool",
+        "cafe"
+    ],
+    "abus": [
+        "alcool"
+    ],
+    "breuvages": [
+        "alcool",
+        "cafe",
+        "nourriture"
+    ],
+    "fermentation": [
+        "alcool"
+    ],
+    "interdiction": [
+        "alcool"
+    ],
+    "boisson": [
+        "alcool",
+        "cafe",
+        "d\u00e9gustation",
+        "nourriture"
+    ],
+    "armes \u00e0 feu": [
+        "alcool"
+    ],
+    "temp\u00e9rance": [
+        "alcool"
+    ],
+    "en buvant": [
+        "alcool",
+        "cafe"
+    ],
+    "drogues": [
+        "alcool"
+    ],
+    "empoisonnement": [
+        "alcool",
+        "exposition",
+        "nourriture"
+    ],
+    "cigarettes": [
+        "alcool",
+        "cafe"
+    ],
+    "coca\u00efne": [
+        "alcool"
+    ],
+    "bi\u00e8re": [
+        "alcool",
+        "cafe",
+        "d\u00e9gustation"
+    ],
+    "marijuana": [
+        "alcool"
+    ],
+    "cannabis": [
+        "alcool"
+    ],
+    "m\u00e9dicament": [
+        "alcool",
+        "nourriture"
+    ],
+    "substance": [
+        "alcool",
+        "exposition"
+    ],
+    "fumeur": [
+        "alcool"
+    ],
+    "retrait": [
+        "alcool"
+    ],
+    "jeu d'argent": [
+        "alcool",
+        "raquette"
+    ],
+    "enzyme": [
+        "alcool"
+    ],
+    "foie": [
+        "alcool",
+        "exposition"
+    ],
+    "interdit": [
+        "alcool"
+    ],
+    "r\u00e9habilitation": [
+        "alcool"
+    ],
+    "esprits": [
+        "alcool",
+        "d\u00e9gustation"
+    ],
+    "syndrome": [
+        "alcool"
+    ],
+    "contenu": [
+        "alcool"
+    ],
+    "acide": [
+        "alcool"
+    ],
+    "bouteille": [
+        "alcool",
+        "d\u00e9gustation"
+    ],
+    "d\u00e9sordre": [
+        "alcool"
+    ],
+    "grossesse": [
+        "alcool"
+    ],
+    "volume": [
+        "alcool"
+    ],
+    "ill\u00e9gal": [
+        "alcool",
+        "raquette"
+    ],
+    "preuve": [
+        "alcool"
+    ],
+    "r\u00e9action": [
+        "alcool"
+    ],
+    "conduite": [
+        "alcool"
+    ],
+    "banni": [
+        "alcool"
+    ],
+    "liquide": [
+        "alcool"
+    ],
+    "la pr\u00e9vention": [
+        "alcool"
+    ],
+    "ventes": [
+        "alcool"
+    ],
+    "m\u00e9lange": [
+        "alcool"
+    ],
+    "limite": [
+        "alcool",
+        "exposition"
+    ],
+    "traitement": [
+        "alcool",
+        "nourriture",
+        "discussion"
+    ],
+    "avancement": [
+        "association"
+    ],
+    "aba": [
+        "association"
+    ],
+    "coll\u00e9gial": [
+        "association",
+        "tournoi"
+    ],
+    "\u00e9claireurs": [
+        "association"
+    ],
+    "anciens \u00e9l\u00e8ves": [
+        "association"
+    ],
+    "ncaa": [
+        "association",
+        "tournoi"
+    ],
+    "affili\u00e9": [
+        "association"
+    ],
+    "r\u00f4tissoire": [
+        "cafe"
+    ],
+    "arabica": [
+        "cafe"
+    ],
+    "expresso": [
+        "cafe"
+    ],
+    "robuste": [
+        "cafe"
+    ],
+    "grillage": [
+        "cafe"
+    ],
+    "brass\u00e9": [
+        "cafe"
+    ],
+    "manioc": [
+        "cafe"
+    ],
+    "canne \u00e0 sucre": [
+        "cafe"
+    ],
+    "bananes": [
+        "cafe"
+    ],
+    "haricot": [
+        "cafe"
+    ],
+    "pot": [
+        "cafe"
+    ],
+    "brassage": [
+        "cafe",
+        "d\u00e9gustation"
+    ],
+    "recadrer": [
+        "cafe",
+        "nourriture",
+        "travail"
+    ],
+    "tasses": [
+        "cafe"
+    ],
+    "banane": [
+        "cafe"
+    ],
+    "canne": [
+        "cafe"
+    ],
+    "instantan\u00e9": [
+        "cafe"
+    ],
+    "filtre": [
+        "cafe"
+    ],
+    "sp\u00e9cialit\u00e9": [
+        "cafe"
+    ],
+    "cultiv\u00e9": [
+        "cafe"
+    ],
+    "plant\u00e9": [
+        "cafe"
+    ],
+    "caoutchouc": [
+        "cafe",
+        "raquette"
+    ],
+    "ethiopie": [
+        "cafe"
+    ],
+    "go\u00fbt": [
+        "cafe",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "colombie": [
+        "cafe"
+    ],
+    "marques": [
+        "cafe"
+    ],
+    "machines": [
+        "cafe"
+    ],
+    "bar": [
+        "cafe"
+    ],
+    "magasins": [
+        "cafe",
+        "nourriture"
+    ],
+    "terrains": [
+        "cafe",
+        "plaisir"
+    ],
+    "marque": [
+        "cafe"
+    ],
+    "palmier": [
+        "cafe"
+    ],
+    "tonnes": [
+        "cafe"
+    ],
+    "maisons": [
+        "cafe"
+    ],
+    "producteurs": [
+        "cafe"
+    ],
+    "des produits": [
+        "cafe",
+        "gastronomie",
+        "nourriture"
+    ],
+    "extraterrestre": [
+        "rencontre"
+    ],
+    "cr\u00e9ature": [
+        "rencontre"
+    ],
+    "myst\u00e9rieux": [
+        "rencontre"
+    ],
+    "cr\u00e9atures": [
+        "rencontre",
+        "animaux"
+    ],
+    "monstre": [
+        "rencontre"
+    ],
+    "\u00e9trange": [
+        "rencontre"
+    ],
+    "des difficult\u00e9s": [
+        "rencontre"
+    ],
+    "ennemis": [
+        "rencontre"
+    ],
+    "notori\u00e9t\u00e9": [
+        "marche"
+    ],
+    "vigne": [
+        "marche"
+    ],
+    "tour de batte": [
+        "marche"
+    ],
+    "boulevard": [
+        "marche"
+    ],
+    "saut": [
+        "marche"
+    ],
+    "lancer": [
+        "marche"
+    ],
+    "loin": [
+        "marche"
+    ],
+    "jambes": [
+        "marche"
+    ],
+    "les bois": [
+        "marche"
+    ],
+    "al\u00e9atoire": [
+        "marche"
+    ],
+    "des rues": [
+        "marche"
+    ],
+    "qualificatif": [
+        "amical",
+        "tournoi"
+    ],
+    "fifa": [
+        "amical",
+        "tournoi"
+    ],
+    "casquettes": [
+        "amical"
+    ],
+    "afc": [
+        "amical"
+    ],
+    "euro": [
+        "amical"
+    ],
+    "rempla\u00e7ant": [
+        "amical"
+    ],
+    "hostile": [
+        "amical"
+    ],
+    "agencements": [
+        "amical"
+    ],
+    "rapports": [
+        "amical"
+    ],
+    "rivalit\u00e9": [
+        "amical",
+        "competition"
+    ],
+    "fixation": [
+        "amical",
+        "r\u00e9paration"
+    ],
+    "rica": [
+        "amical"
+    ],
+    "uruguay": [
+        "amical"
+    ],
+    "but": [
+        "amical",
+        "caritatif"
+    ],
+    "tasse": [
+        "amical",
+        "competition",
+        "tournoi"
+    ],
+    "atmosph\u00e8re": [
+        "amical"
+    ],
+    "minute": [
+        "amical"
+    ],
+    "pr\u00e9liminaire": [
+        "amical",
+        "competition",
+        "tournoi"
+    ],
+    "casquette": [
+        "amical"
+    ],
+    "d\u00e9faite": [
+        "amical"
+    ],
+    "fant\u00f4me": [
+        "amical"
+    ],
+    "norv\u00e8ge": [
+        "amical"
+    ],
+    "gagner": [
+        "amical",
+        "tournoi"
+    ],
+    "argentine": [
+        "amical"
+    ],
+    "croatie": [
+        "amical"
+    ],
+    "ennemi": [
+        "amical"
+    ],
+    "roumanie": [
+        "amical"
+    ],
+    "feu": [
+        "amical"
+    ],
+    "danemark": [
+        "amical"
+    ],
+    "br\u00e9sil": [
+        "amical"
+    ],
+    "hongrie": [
+        "amical"
+    ],
+    "le portugal": [
+        "amical"
+    ],
+    "repositionner": [
+        "plaisir"
+    ],
+    "h\u00e9ro\u00efsme": [
+        "plaisir"
+    ],
+    "les plaisirs": [
+        "plaisir"
+    ],
+    "jouissance": [
+        "plaisir"
+    ],
+    "en pr\u00e9sentant": [
+        "plaisir"
+    ],
+    "piscine noire": [
+        "plaisir"
+    ],
+    "navigation de plaisance": [
+        "plaisir",
+        "loisir"
+    ],
+    "jet\u00e9e": [
+        "plaisir"
+    ],
+    "bonheur": [
+        "plaisir"
+    ],
+    "bateaux": [
+        "plaisir",
+        "loisir"
+    ],
+    "nommer": [
+        "plaisir"
+    ],
+    "extraordinaire": [
+        "plaisir"
+    ],
+    "chaque fois que": [
+        "plaisir"
+    ],
+    "d\u00f4me": [
+        "plaisir"
+    ],
+    "joie": [
+        "plaisir"
+    ],
+    "plage": [
+        "plaisir"
+    ],
+    "croisi\u00e8re": [
+        "plaisir"
+    ],
+    "sexe": [
+        "plaisir"
+    ],
+    "\u00e9quitation": [
+        "plaisir"
+    ],
+    "voyant": [
+        "plaisir"
+    ],
+    "station baln\u00e9aire": [
+        "plaisir",
+        "loisir",
+        "montagne",
+        "r\u00e9paration"
+    ],
+    "les chevaux": [
+        "plaisir",
+        "animaux"
+    ],
+    "sentiment": [
+        "plaisir"
+    ],
+    "ajuster": [
+        "plaisir"
+    ],
+    "voit": [
+        "plaisir"
+    ],
+    "zoos": [
+        "animaux"
+    ],
+    "ch\u00e8vres": [
+        "animaux"
+    ],
+    "lapins": [
+        "animaux"
+    ],
+    "zoo": [
+        "animaux"
+    ],
+    "animaux domestiques": [
+        "animaux"
+    ],
+    "reptiles": [
+        "animaux"
+    ],
+    "les cochons": [
+        "animaux"
+    ],
+    "les \u00e9l\u00e9phants": [
+        "animaux"
+    ],
+    "cruaut\u00e9": [
+        "animaux"
+    ],
+    "renards": [
+        "animaux"
+    ],
+    "singes": [
+        "animaux"
+    ],
+    "humain": [
+        "animaux"
+    ],
+    "vaches": [
+        "animaux"
+    ],
+    "cerf": [
+        "animaux"
+    ],
+    "humains": [
+        "animaux",
+        "exposition"
+    ],
+    "chass\u00e9": [
+        "animaux"
+    ],
+    "chats": [
+        "animaux"
+    ],
+    "mammif\u00e8res": [
+        "animaux"
+    ],
+    "serpents": [
+        "animaux"
+    ],
+    "mouton": [
+        "animaux"
+    ],
+    "chiens": [
+        "animaux"
+    ],
+    "souris": [
+        "animaux"
+    ],
+    "les rats": [
+        "animaux"
+    ],
+    "v\u00e9t\u00e9rinaire": [
+        "animaux"
+    ],
+    "insectes": [
+        "animaux",
+        "nourriture"
+    ],
+    "des oiseaux": [
+        "animaux"
+    ],
+    "pr\u00e9dateurs": [
+        "animaux"
+    ],
+    "\u00e9l\u00e9phant": [
+        "animaux"
+    ],
+    "loups": [
+        "animaux"
+    ],
+    "sauvage": [
+        "animaux",
+        "nature"
+    ],
+    "proie": [
+        "animaux"
+    ],
+    "organismes": [
+        "animaux"
+    ],
+    "animal de compagnie": [
+        "animaux"
+    ],
+    "en voie de disparition": [
+        "animaux",
+        "nature"
+    ],
+    "fourrure": [
+        "animaux"
+    ],
+    "reproduction": [
+        "animaux",
+        "entra\u00eenement",
+        "enseignement",
+        "formation"
+    ],
+    "race": [
+        "animaux"
+    ],
+    "les lions": [
+        "animaux"
+    ],
+    "lion": [
+        "animaux",
+        "montagne"
+    ],
+    "\u00e9teint": [
+        "animaux"
+    ],
+    "bact\u00e9ries": [
+        "animaux"
+    ],
+    "ours": [
+        "animaux"
+    ],
+    "tigre": [
+        "animaux"
+    ],
+    "chat": [
+        "animaux"
+    ],
+    "a subi": [
+        "animaux"
+    ],
+    "chien": [
+        "animaux"
+    ],
+    "oiseau": [
+        "animaux"
+    ],
+    "habitat": [
+        "animaux"
+    ],
+    "primev\u00e8re": [
+        "soiree"
+    ],
+    "robe": [
+        "soiree",
+        "d\u00eener"
+    ],
+    "nouvelles": [
+        "soiree"
+    ],
+    "pri\u00e8res": [
+        "soiree"
+    ],
+    "matin": [
+        "soiree"
+    ],
+    "h\u00e9raut": [
+        "soiree"
+    ],
+    "fente": [
+        "soiree"
+    ],
+    "ancre": [
+        "soiree"
+    ],
+    "dimanche": [
+        "soiree"
+    ],
+    "t\u00e9l\u00e9graphe": [
+        "soiree"
+    ],
+    "minuit": [
+        "soiree"
+    ],
+    "poste": [
+        "soiree"
+    ],
+    "samedi": [
+        "soiree"
+    ],
+    "jeudi": [
+        "soiree"
+    ],
+    "vendredi": [
+        "soiree"
+    ],
+    "lundi": [
+        "soiree"
+    ],
+    "session": [
+        "soiree"
+    ],
+    "standard": [
+        "soiree"
+    ],
+    "la chronique": [
+        "soiree"
+    ],
+    "des classes": [
+        "soiree"
+    ],
+    "journal": [
+        "soiree"
+    ],
+    "ukrainien": [
+        "soiree"
+    ],
+    "mail": [
+        "soiree"
+    ],
+    "heure": [
+        "soiree"
+    ],
+    "nuit": [
+        "soiree",
+        "d\u00eener"
+    ],
+    "porter": [
+        "soiree"
+    ],
+    "tous les jours": [
+        "soiree"
+    ],
+    "protection": [
+        "nature"
+    ],
+    "r\u00e9serve": [
+        "nature"
+    ],
+    "pr\u00e9server": [
+        "nature"
+    ],
+    "les sentiers": [
+        "nature",
+        "montagne"
+    ],
+    "\u00e9valu\u00e9": [
+        "nature"
+    ],
+    "prot\u00e9g\u00e9": [
+        "nature"
+    ],
+    "parcs": [
+        "nature",
+        "loisir"
+    ],
+    "pr\u00e9occupation": [
+        "nature"
+    ],
+    "iowa": [
+        "atelier"
+    ],
+    "gastronomique": [
+        "gastronomie"
+    ],
+    "gourmet": [
+        "gastronomie"
+    ],
+    "bonbons": [
+        "gastronomie"
+    ],
+    "livre de recettes": [
+        "gastronomie"
+    ],
+    "sp\u00e9cialit\u00e9s": [
+        "gastronomie"
+    ],
+    "hospitalit\u00e9": [
+        "gastronomie",
+        "loisir"
+    ],
+    "p\u00e9ruvien": [
+        "gastronomie"
+    ],
+    "basque": [
+        "gastronomie"
+    ],
+    "catalan": [
+        "gastronomie"
+    ],
+    "agneau": [
+        "gastronomie"
+    ],
+    "l'unesco": [
+        "gastronomie"
+    ],
+    "olive": [
+        "gastronomie"
+    ],
+    "h\u00f4tels": [
+        "gastronomie",
+        "loisir"
+    ],
+    "discipline": [
+        "gastronomie"
+    ],
+    "\u00e9quitable": [
+        "gastronomie"
+    ],
+    "guide": [
+        "gastronomie"
+    ],
+    "vari\u00e9": [
+        "gastronomie"
+    ],
+    "renomm\u00e9": [
+        "gastronomie"
+    ],
+    "typique": [
+        "gastronomie"
+    ],
+    "m\u00e9diterran\u00e9en": [
+        "gastronomie"
+    ],
+    "visiteurs": [
+        "gastronomie",
+        "d\u00e9gustation",
+        "musee"
+    ],
+    "ancien": [
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "riche": [
+        "gastronomie"
+    ],
+    "conserv\u00e9": [
+        "gastronomie"
+    ],
+    "singapour": [
+        "gastronomie"
+    ],
+    "chimique": [
+        "gastronomie",
+        "exposition"
+    ],
+    "des": [
+        "gastronomie"
+    ],
+    "en plus": [
+        "gastronomie",
+        "caritatif"
+    ],
+    "traditionnel": [
+        "gastronomie"
+    ],
+    "etc.": [
+        "gastronomie"
+    ],
+    "vari\u00e9t\u00e9": [
+        "gastronomie",
+        "oenologie",
+        "changement"
+    ],
+    "viticulture": [
+        "oenologie"
+    ],
+    "attends": [
+        "oenologie"
+    ],
+    "bordeaux": [
+        "oenologie",
+        "d\u00e9gustation"
+    ],
+    "vignoble": [
+        "oenologie",
+        "d\u00e9gustation"
+    ],
+    "brock": [
+        "oenologie"
+    ],
+    "raisin": [
+        "oenologie",
+        "d\u00e9gustation"
+    ],
+    "ad\u00e9la\u00efde": [
+        "oenologie"
+    ],
+    "chimie": [
+        "oenologie"
+    ],
+    "davis": [
+        "oenologie"
+    ],
+    "degr\u00e9": [
+        "oenologie"
+    ],
+    "campus": [
+        "oenologie"
+    ],
+    "offert": [
+        "oenologie"
+    ],
+    "france": [
+        "oenologie"
+    ],
+    "californie": [
+        "oenologie"
+    ],
+    "canada": [
+        "oenologie"
+    ],
+    "\u00e9pouse": [
+        "oenologie"
+    ],
+    "d\u00e9gustateur": [
+        "d\u00e9gustation"
+    ],
+    "sommelier": [
+        "d\u00e9gustation"
+    ],
+    "ar\u00f4mes": [
+        "d\u00e9gustation"
+    ],
+    "menus": [
+        "d\u00e9gustation"
+    ],
+    "chardonnay": [
+        "d\u00e9gustation"
+    ],
+    "whisky": [
+        "d\u00e9gustation"
+    ],
+    "caves": [
+        "d\u00e9gustation"
+    ],
+    "vodka": [
+        "d\u00e9gustation"
+    ],
+    "ar\u00f4me": [
+        "d\u00e9gustation"
+    ],
+    "cabernet": [
+        "d\u00e9gustation"
+    ],
+    "d\u00e9licieux": [
+        "d\u00e9gustation"
+    ],
+    "distillerie": [
+        "d\u00e9gustation"
+    ],
+    "napa": [
+        "d\u00e9gustation"
+    ],
+    "pinot": [
+        "d\u00e9gustation"
+    ],
+    "homard": [
+        "d\u00e9gustation"
+    ],
+    "ch\u00e2teau": [
+        "d\u00e9gustation"
+    ],
+    "brasserie": [
+        "d\u00e9gustation"
+    ],
+    "champagne": [
+        "d\u00e9gustation"
+    ],
+    "pommes": [
+        "d\u00e9gustation"
+    ],
+    "bourgogne": [
+        "d\u00e9gustation"
+    ],
+    "aveugle": [
+        "d\u00e9gustation"
+    ],
+    "raisins": [
+        "d\u00e9gustation"
+    ],
+    "odeur": [
+        "d\u00e9gustation"
+    ],
+    "noir": [
+        "d\u00e9gustation"
+    ],
+    "amer": [
+        "d\u00e9gustation"
+    ],
+    "lunettes": [
+        "d\u00e9gustation"
+    ],
+    "chair": [
+        "d\u00e9gustation"
+    ],
+    "vari\u00e9t\u00e9s": [
+        "d\u00e9gustation"
+    ],
+    "prime": [
+        "d\u00e9gustation"
+    ],
+    "ench\u00e8res": [
+        "d\u00e9gustation"
+    ],
+    "remarques": [
+        "d\u00e9gustation"
+    ],
+    "baril": [
+        "d\u00e9gustation"
+    ],
+    "cool": [
+        "d\u00e9gustation"
+    ],
+    "juges": [
+        "d\u00e9gustation",
+        "competition"
+    ],
+    "crit\u00e8res": [
+        "d\u00e9gustation"
+    ],
+    "journ\u00e9e de travail": [
+        "exposition"
+    ],
+    "inhalation": [
+        "exposition",
+        "inspiration"
+    ],
+    "ingestion": [
+        "exposition"
+    ],
+    "obturateur": [
+        "exposition"
+    ],
+    "ppm": [
+        "exposition"
+    ],
+    "amiante": [
+        "exposition"
+    ],
+    "ultra-violet": [
+        "exposition"
+    ],
+    "lumi\u00e8re du soleil": [
+        "exposition"
+    ],
+    "pesticides": [
+        "exposition"
+    ],
+    "ouverture": [
+        "exposition"
+    ],
+    "dose": [
+        "exposition"
+    ],
+    "radioactif": [
+        "exposition"
+    ],
+    "produits chimiques": [
+        "exposition"
+    ],
+    "contamination": [
+        "exposition"
+    ],
+    "toxicit\u00e9": [
+        "exposition"
+    ],
+    "respiratoire": [
+        "exposition"
+    ],
+    "doses": [
+        "exposition"
+    ],
+    "toxique": [
+        "exposition",
+        "alcool"
+    ],
+    "lieu de travail": [
+        "exposition",
+        "travail"
+    ],
+    "dangereux": [
+        "exposition"
+    ],
+    "des risques": [
+        "exposition"
+    ],
+    "n\u00e9gatif": [
+        "exposition"
+    ],
+    "peau": [
+        "exposition"
+    ],
+    "fum\u00e9e": [
+        "exposition"
+    ],
+    "poussi\u00e8re": [
+        "exposition"
+    ],
+    "poumon": [
+        "exposition"
+    ],
+    "aigu": [
+        "exposition"
+    ],
+    "a\u00e9roport\u00e9": [
+        "exposition"
+    ],
+    "mercure": [
+        "exposition"
+    ],
+    "compensation": [
+        "exposition"
+    ],
+    "pollution": [
+        "exposition"
+    ],
+    "infection": [
+        "exposition"
+    ],
+    "bruit": [
+        "exposition",
+        "raquette"
+    ],
+    "compos\u00e9s": [
+        "exposition"
+    ],
+    "cause": [
+        "exposition"
+    ],
+    "maladies": [
+        "exposition"
+    ],
+    "oxyg\u00e8ne": [
+        "exposition"
+    ],
+    "les niveaux": [
+        "exposition"
+    ],
+    "\u00e9clair": [
+        "exposition"
+    ],
+    "limites": [
+        "exposition"
+    ],
+    "maladie": [
+        "exposition"
+    ],
+    "affecter": [
+        "exposition"
+    ],
+    "causes": [
+        "exposition",
+        "caritatif"
+    ],
+    "smithsonien": [
+        "musee"
+    ],
+    "doit": [
+        "musee"
+    ],
+    "antiquit\u00e9s": [
+        "musee"
+    ],
+    "arch\u00e9ologie": [
+        "musee"
+    ],
+    "affiche": [
+        "musee"
+    ],
+    "r\u00e9trospective": [
+        "musee"
+    ],
+    "histoire": [
+        "musee"
+    ],
+    "amsterdam": [
+        "musee"
+    ],
+    "naturel": [
+        "musee"
+    ],
+    "permanent": [
+        "musee"
+    ],
+    "moderne": [
+        "musee"
+    ],
+    "historique": [
+        "musee"
+    ],
+    "d\u00e9vou\u00e9": [
+        "musee"
+    ],
+    "pr\u00e9servation": [
+        "musee",
+        "caritatif"
+    ],
+    "ouvert": [
+        "musee"
+    ],
+    "veste": [
+        "d\u00eener"
+    ],
+    "demande": [
+        "d\u00eener"
+    ],
+    "invitation": [
+        "d\u00eener",
+        "tournoi"
+    ],
+    "raconte": [
+        "d\u00eener"
+    ],
+    "h\u00f4tel": [
+        "d\u00eener",
+        "loisir"
+    ],
+    "veille": [
+        "d\u00eener",
+        "soiree"
+    ],
+    "invit\u00e9": [
+        "d\u00eener"
+    ],
+    "mme": [
+        "d\u00eener"
+    ],
+    "faire la f\u00eate": [
+        "d\u00eener",
+        "solidarit\u00e9",
+        "raquette"
+    ],
+    "lit": [
+        "d\u00eener"
+    ],
+    "amis": [
+        "d\u00eener"
+    ],
+    "obama": [
+        "d\u00eener"
+    ],
+    "plaque": [
+        "d\u00eener"
+    ],
+    "philanthropique": [
+        "caritatif"
+    ],
+    "n\u00e9cessiteux": [
+        "caritatif"
+    ],
+    "efforts": [
+        "caritatif"
+    ],
+    "philanthropie": [
+        "caritatif"
+    ],
+    "exemption": [
+        "caritatif"
+    ],
+    "fondations": [
+        "caritatif"
+    ],
+    "fondation": [
+        "caritatif"
+    ],
+    "don": [
+        "caritatif"
+    ],
+    "d\u00e9sactiv\u00e9": [
+        "caritatif"
+    ],
+    "non lucratif": [
+        "caritatif"
+    ],
+    "humanitaire": [
+        "caritatif"
+    ],
+    "fins": [
+        "caritatif"
+    ],
+    "cadeaux": [
+        "caritatif"
+    ],
+    "contributions": [
+        "caritatif"
+    ],
+    "anciens combattants": [
+        "caritatif"
+    ],
+    "donation": [
+        "caritatif"
+    ],
+    "curateur": [
+        "caritatif"
+    ],
+    "administrateurs": [
+        "caritatif"
+    ],
+    "payant": [
+        "caritatif"
+    ],
+    "cadeau": [
+        "caritatif"
+    ],
+    "chercher": [
+        "caritatif"
+    ],
+    "avantage": [
+        "caritatif"
+    ],
+    "donnant": [
+        "caritatif"
+    ],
+    "relief": [
+        "caritatif"
+    ],
+    "malade": [
+        "caritatif"
+    ],
+    "pauvre": [
+        "caritatif"
+    ],
+    "augmenter": [
+        "caritatif"
+    ],
+    "les soutiens": [
+        "caritatif"
+    ],
+    "statut": [
+        "caritatif"
+    ],
+    "financ\u00e9": [
+        "caritatif"
+    ],
+    "propri\u00e9t\u00e9": [
+        "caritatif"
+    ],
+    "bras": [
+        "caritatif"
+    ],
+    "assistance": [
+        "caritatif"
+    ],
+    "h\u00f4pital": [
+        "caritatif"
+    ],
+    "contribution": [
+        "caritatif"
+    ],
+    "fournir": [
+        "caritatif",
+        "nourriture"
+    ],
+    "revenu": [
+        "caritatif",
+        "finance"
+    ],
+    "lecher": [
+        "solidarit\u00e9"
+    ],
+    "anarchiste": [
+        "solidarit\u00e9"
+    ],
+    "communisme": [
+        "solidarit\u00e9"
+    ],
+    "bloc": [
+        "solidarit\u00e9"
+    ],
+    "mouvement": [
+        "solidarit\u00e9"
+    ],
+    "gaza": [
+        "solidarit\u00e9"
+    ],
+    "occuper": [
+        "solidarit\u00e9"
+    ],
+    "gr\u00e8ve": [
+        "solidarit\u00e9"
+    ],
+    "manifestation": [
+        "solidarit\u00e9",
+        "r\u00e9flexion"
+    ],
+    "lgbt": [
+        "solidarit\u00e9"
+    ],
+    "polonais": [
+        "solidarit\u00e9"
+    ],
+    "pologne": [
+        "solidarit\u00e9"
+    ],
+    "gr\u00e8ves": [
+        "solidarit\u00e9"
+    ],
+    "victimes": [
+        "solidarit\u00e9"
+    ],
+    "cuba": [
+        "solidarit\u00e9"
+    ],
+    "collectif": [
+        "solidarit\u00e9"
+    ],
+    "cubain": [
+        "solidarit\u00e9"
+    ],
+    "lib\u00e9ration": [
+        "solidarit\u00e9"
+    ],
+    "syndicat": [
+        "solidarit\u00e9"
+    ],
+    "r\u00e9fugi\u00e9s": [
+        "solidarit\u00e9"
+    ],
+    "varsovie": [
+        "solidarit\u00e9"
+    ],
+    "islamique": [
+        "solidarit\u00e9"
+    ],
+    "chili": [
+        "solidarit\u00e9"
+    ],
+    "libert\u00e9": [
+        "solidarit\u00e9"
+    ],
+    "indon\u00e9sie": [
+        "solidarit\u00e9"
+    ],
+    "campagne": [
+        "solidarit\u00e9"
+    ],
+    "r\u00e9volutionnaire": [
+        "solidarit\u00e9"
+    ],
+    "amiti\u00e9": [
+        "solidarit\u00e9"
+    ],
+    "paix": [
+        "solidarit\u00e9"
+    ],
+    "sociale": [
+        "solidarit\u00e9",
+        "amical"
+    ],
+    "coup droit": [
+        "raquette"
+    ],
+    "revers": [
+        "raquette"
+    ],
+    "tap\u00e9": [
+        "raquette"
+    ],
+    "racket": [
+        "raquette"
+    ],
+    "extorsion": [
+        "raquette"
+    ],
+    "enfil\u00e9": [
+        "raquette"
+    ],
+    "z\u00e9zayer": [
+        "raquette"
+    ],
+    "squash": [
+        "raquette",
+        "loisir"
+    ],
+    "pagayer": [
+        "raquette"
+    ],
+    "poign\u00e9e": [
+        "raquette",
+        "travail"
+    ],
+    "mafia": [
+        "raquette"
+    ],
+    "badminton": [
+        "raquette"
+    ],
+    "bandit": [
+        "raquette"
+    ],
+    "ruisseau": [
+        "raquette",
+        "montagne"
+    ],
+    "python": [
+        "raquette"
+    ],
+    "harlem": [
+        "raquette"
+    ],
+    "compilateur": [
+        "raquette"
+    ],
+    "balle": [
+        "raquette"
+    ],
+    "accident vasculaire c\u00e9r\u00e9bral": [
+        "raquette"
+    ],
+    "chauve souris": [
+        "raquette"
+    ],
+    "frappe": [
+        "raquette"
+    ],
+    "filet": [
+        "raquette"
+    ],
+    "faux": [
+        "raquette"
+    ],
+    "des balles": [
+        "raquette"
+    ],
+    "crime": [
+        "raquette"
+    ],
+    "gang": [
+        "raquette"
+    ],
+    "dialecte": [
+        "raquette"
+    ],
+    "cleveland": [
+        "raquette"
+    ],
+    "battement": [
+        "raquette",
+        "competition",
+        "tournoi"
+    ],
+    "arr\u00eat\u00e9": [
+        "raquette"
+    ],
+    "salle de sport": [
+        "loisir"
+    ],
+    "somerset": [
+        "loisir"
+    ],
+    "piscine": [
+        "loisir"
+    ],
+    "centre": [
+        "loisir"
+    ],
+    "agr\u00e9ments": [
+        "loisir"
+    ],
+    "sa": [
+        "loisir"
+    ],
+    "stations baln\u00e9aires": [
+        "loisir"
+    ],
+    "cher": [
+        "loisir"
+    ],
+    "larry": [
+        "loisir"
+    ],
+    "r\u00e9cr\u00e9atif": [
+        "loisir"
+    ],
+    "costume": [
+        "loisir"
+    ],
+    "spa": [
+        "loisir"
+    ],
+    "achats": [
+        "loisir"
+    ],
+    "gymnase": [
+        "loisir"
+    ],
+    "compagnie a\u00e9rienne": [
+        "loisir"
+    ],
+    "casino": [
+        "loisir"
+    ],
+    "prestations de service": [
+        "loisir"
+    ],
+    "complexe": [
+        "loisir"
+    ],
+    "responsable": [
+        "loisir"
+    ],
+    "activit\u00e9": [
+        "loisir"
+    ],
+    "tribunaux": [
+        "loisir",
+        "tournoi"
+    ],
+    "parc": [
+        "loisir"
+    ],
+    "les manches": [
+        "competition",
+        "tournoi"
+    ],
+    "entr\u00e9es": [
+        "competition"
+    ],
+    "gagnant": [
+        "competition",
+        "tournoi"
+    ],
+    "champions": [
+        "competition",
+        "tournoi"
+    ],
+    "troph\u00e9e": [
+        "competition",
+        "tournoi"
+    ],
+    "\u00e9limin\u00e9": [
+        "competition",
+        "tournoi"
+    ],
+    "qualifier": [
+        "competition",
+        "tournoi"
+    ],
+    "rond": [
+        "competition",
+        "tournoi"
+    ],
+    "sponsoris\u00e9": [
+        "competition"
+    ],
+    "d\u00e9fendre": [
+        "competition",
+        "tournoi"
+    ],
+    "lente": [
+        "tournoi"
+    ],
+    "gains": [
+        "tournoi"
+    ],
+    "atp": [
+        "tournoi"
+    ],
+    "ensemenc\u00e9": [
+        "tournoi"
+    ],
+    "challenger": [
+        "tournoi",
+        "competition"
+    ],
+    "sur invitation": [
+        "tournoi"
+    ],
+    "sept": [
+        "tournoi"
+    ],
+    "couchette": [
+        "tournoi"
+    ],
+    "demi-finale": [
+        "tournoi"
+    ],
+    "pga": [
+        "tournoi"
+    ],
+    "curling": [
+        "tournoi"
+    ],
+    "cic": [
+        "tournoi"
+    ],
+    "mvp": [
+        "tournoi"
+    ],
+    "offre": [
+        "tournoi"
+    ],
+    "acc": [
+        "tournoi"
+    ],
+    "c\u0153urs": [
+        "tournoi"
+    ],
+    "automatique": [
+        "tournoi"
+    ],
+    "copa": [
+        "tournoi"
+    ],
+    "wimbledon": [
+        "tournoi"
+    ],
+    "vaincu": [
+        "tournoi"
+    ],
+    "champion": [
+        "tournoi"
+    ],
+    "\u00e9checs": [
+        "tournoi"
+    ],
+    "claquer": [
+        "tournoi"
+    ],
+    "argile": [
+        "tournoi"
+    ],
+    "assommer": [
+        "tournoi"
+    ],
+    "championnat": [
+        "tournoi"
+    ],
+    "\u00e9limination": [
+        "tournoi"
+    ],
+    "perdant": [
+        "tournoi"
+    ],
+    "\u00e9ventuel": [
+        "tournoi"
+    ],
+    "boulevers\u00e9": [
+        "tournoi"
+    ],
+    "conf\u00e9rence": [
+        "tournoi"
+    ],
+    "arri\u00e8re-plan": [
+        "tournoi"
+    ],
+    "inaugural": [
+        "tournoi"
+    ],
+    "seize": [
+        "tournoi"
+    ],
+    "final": [
+        "tournoi"
+    ],
+    "joueurs": [
+        "tournoi"
+    ],
+    "battre": [
+        "tournoi"
+    ],
+    "format": [
+        "tournoi"
+    ],
+    "rouge-gorge": [
+        "tournoi"
+    ],
+    "li\u00e9": [
+        "tournoi"
+    ],
+    "cons\u00e9cutif": [
+        "tournoi"
+    ],
+    "perdu": [
+        "tournoi"
+    ],
+    "classement": [
+        "tournoi"
+    ],
+    "victoires": [
+        "tournoi"
+    ],
+    "vernis": [
+        "peinture"
+    ],
+    "acrylique": [
+        "peinture"
+    ],
+    "pinceaux": [
+        "peinture"
+    ],
+    "toile": [
+        "peinture"
+    ],
+    "mural": [
+        "peinture"
+    ],
+    "pigment": [
+        "peinture"
+    ],
+    "brosse": [
+        "peinture",
+        "rencontre"
+    ],
+    "plus mince": [
+        "peinture"
+    ],
+    "enrobage": [
+        "peinture"
+    ],
+    "graffiti": [
+        "peinture"
+    ],
+    "vaporisateur": [
+        "peinture"
+    ],
+    "sch\u00e9mas": [
+        "peinture"
+    ],
+    "peint": [
+        "peinture"
+    ],
+    "couleurs": [
+        "peinture"
+    ],
+    "encre": [
+        "peinture"
+    ],
+    "garniture": [
+        "peinture"
+    ],
+    "couches": [
+        "peinture"
+    ],
+    "wagon": [
+        "peinture"
+    ],
+    "couleur": [
+        "peinture"
+    ],
+    "cuir": [
+        "peinture"
+    ],
+    "roues": [
+        "peinture"
+    ],
+    "panneaux": [
+        "peinture"
+    ],
+    "repr\u00e9sentant": [
+        "peinture"
+    ],
+    "appliqu\u00e9": [
+        "peinture"
+    ],
+    "couche": [
+        "peinture"
+    ],
+    "plastique": [
+        "peinture"
+    ],
+    "visages": [
+        "peinture"
+    ],
+    "cyclisme": [
+        "montagne"
+    ],
+    "andes": [
+        "montagne"
+    ],
+    "cordill\u00e8re": [
+        "montagne"
+    ],
+    "alpes": [
+        "montagne"
+    ],
+    "ros\u00e9e": [
+        "montagne"
+    ],
+    "massif": [
+        "montagne"
+    ],
+    "pics": [
+        "montagne"
+    ],
+    "gammes": [
+        "montagne"
+    ],
+    "montagnes": [
+        "montagne"
+    ],
+    "pistes": [
+        "montagne"
+    ],
+    "appalaches": [
+        "montagne"
+    ],
+    "randonn\u00e9e": [
+        "montagne"
+    ],
+    "\u00e9l\u00e9vation": [
+        "montagne"
+    ],
+    "glacier": [
+        "montagne"
+    ],
+    "culminer": [
+        "montagne"
+    ],
+    "cr\u00eates": [
+        "montagne"
+    ],
+    "p\u00e9rou": [
+        "montagne"
+    ],
+    "gamme": [
+        "montagne"
+    ],
+    "cr\u00eate": [
+        "montagne"
+    ],
+    "r\u00e9gion sauvage": [
+        "montagne"
+    ],
+    "vall\u00e9es": [
+        "montagne"
+    ],
+    "alpin": [
+        "montagne"
+    ],
+    "prairies": [
+        "montagne"
+    ],
+    "surplombant": [
+        "montagne"
+    ],
+    "grimp\u00e9": [
+        "montagne"
+    ],
+    "se l\u00e8ve": [
+        "montagne"
+    ],
+    "plateau": [
+        "montagne"
+    ],
+    "canton": [
+        "montagne"
+    ],
+    "bolivie": [
+        "montagne"
+    ],
+    "rocheux": [
+        "montagne"
+    ],
+    "volcanique": [
+        "montagne"
+    ],
+    "pente": [
+        "montagne"
+    ],
+    "raide": [
+        "montagne"
+    ],
+    "grimper": [
+        "montagne"
+    ],
+    "pin": [
+        "montagne"
+    ],
+    "altitude": [
+        "montagne"
+    ],
+    "bassin versant": [
+        "montagne"
+    ],
+    "atteint": [
+        "montagne"
+    ],
+    "ruisseaux": [
+        "montagne"
+    ],
+    "terrain": [
+        "montagne"
+    ],
+    "nevada": [
+        "montagne"
+    ],
+    "les flux": [
+        "montagne"
+    ],
+    "wyoming": [
+        "montagne"
+    ],
+    "passer": [
+        "montagne",
+        "marche"
+    ],
+    "le plus \u00e9lev\u00e9": [
+        "montagne"
+    ],
+    "sierra": [
+        "montagne"
+    ],
+    "mensonges": [
+        "montagne"
+    ],
+    "situ\u00e9": [
+        "montagne"
+    ],
+    "hauteur": [
+        "montagne"
+    ],
+    "vall\u00e9e": [
+        "montagne"
+    ],
+    "voir": [
+        "montagne",
+        "rencontre"
+    ],
+    "nord-est": [
+        "montagne"
+    ],
+    "sud-ouest": [
+        "montagne"
+    ],
+    "montana": [
+        "montagne"
+    ],
+    "passe": [
+        "montagne"
+    ],
+    "colorado": [
+        "montagne"
+    ],
+    "for\u00eat": [
+        "montagne"
+    ],
+    "canyon": [
+        "montagne"
+    ],
+    "fronti\u00e8re": [
+        "montagne"
+    ],
+    "neige": [
+        "montagne"
+    ],
+    "\u00e9cart": [
+        "montagne"
+    ],
+    "les for\u00eats": [
+        "montagne"
+    ],
+    "sud-est": [
+        "montagne"
+    ],
+    "se connecte": [
+        "montagne"
+    ],
+    "nord ouest": [
+        "montagne"
+    ],
+    "lac": [
+        "montagne"
+    ],
+    "province": [
+        "montagne"
+    ],
+    "sous-comit\u00e9": [
+        "finance"
+    ],
+    "imposition": [
+        "finance"
+    ],
+    "tr\u00e9sorerie": [
+        "finance"
+    ],
+    "minist\u00e8re": [
+        "finance"
+    ],
+    "comit\u00e9": [
+        "finance"
+    ],
+    "fiscal": [
+        "finance"
+    ],
+    "affaires": [
+        "finance"
+    ],
+    "pr\u00e9sident": [
+        "finance"
+    ],
+    "administration": [
+        "finance",
+        "nourriture",
+        "organisation"
+    ],
+    "pr\u00eat": [
+        "finance"
+    ],
+    "fda": [
+        "nourriture"
+    ],
+    "nutrition": [
+        "nourriture"
+    ],
+    "fournitures": [
+        "nourriture"
+    ],
+    "vendeurs": [
+        "nourriture"
+    ],
+    "faim": [
+        "nourriture"
+    ],
+    "v\u00eatements": [
+        "nourriture"
+    ],
+    "prises \u00e9lectriques": [
+        "nourriture"
+    ],
+    "cha\u00eenes": [
+        "nourriture"
+    ],
+    "les larves": [
+        "nourriture"
+    ],
+    "consommateur": [
+        "nourriture"
+    ],
+    "prouesse": [
+        "art"
+    ],
+    "talent artistique": [
+        "art"
+    ],
+    "beaux-arts": [
+        "art"
+    ],
+    "mati\u00e8re non textuelle": [
+        "art"
+    ],
+    "cr\u00e9ation artistique": [
+        "art"
+    ],
+    "production artistique": [
+        "art"
+    ],
+    "comp\u00e9tence sup\u00e9rieure": [
+        "art"
+    ],
+    "m\u00e9decine": [
+        "musique"
+    ],
+    "euphonie": [
+        "musique"
+    ],
+    "partition": [
+        "musique"
+    ],
+    "loterie": [
+        "dessin"
+    ],
+    "r\u00e9daction": [
+        "dessin"
+    ],
+    "dessin industriel": [
+        "dessin"
+    ],
+    "jouer": [
+        "sport",
+        "travail",
+        "amusement",
+        "rencontre"
+    ],
+    "fonctionnalit\u00e9": [
+        "sport"
+    ],
+    "se vanter": [
+        "sport"
+    ],
+    "alouette": [
+        "sport"
+    ],
+    "gambader": [
+        "sport"
+    ],
+    "faire des cabrioles": [
+        "sport"
+    ],
+    "se d\u00e9fouler": [
+        "sport"
+    ],
+    "mutation": [
+        "sport"
+    ],
+    "fouiller": [
+        "sport"
+    ],
+    "mutant": [
+        "sport"
+    ],
+    "distraire": [
+        "sport"
+    ],
+    "gaiet\u00e9": [
+        "sport",
+        "amusement"
+    ],
+    "courir autour": [
+        "sport"
+    ],
+    "non-r\u00e9sident": [
+        "sport"
+    ],
+    "sportive": [
+        "sport"
+    ],
+    "alouette \u00e0 propos": [
+        "sport"
+    ],
+    "\u00e9ducation": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "toilettage": [
+        "entra\u00eenement",
+        "formation"
+    ],
+    "gr\u00e9gaire": [
+        "social"
+    ],
+    "ethnique": [
+        "social"
+    ],
+    "interpersonnel": [
+        "social"
+    ],
+    "sociable": [
+        "social",
+        "amical"
+    ],
+    "mixer": [
+        "social"
+    ],
+    "soci\u00e9tal": [
+        "social"
+    ],
+    "fourmillement": [
+        "social"
+    ],
+    "changer": [
+        "\u00c9change",
+        "changement"
+    ],
+    "navette": [
+        "\u00c9change",
+        "changement"
+    ],
+    "convertir": [
+        "\u00c9change",
+        "changement"
+    ],
+    "substitution": [
+        "\u00c9change"
+    ],
+    "central": [
+        "\u00c9change"
+    ],
+    "\u00e9change": [
+        "\u00c9change",
+        "changement"
+    ],
+    "basculer": [
+        "\u00c9change"
+    ],
+    "\u00e9change de t\u00e9l\u00e9phone": [
+        "\u00c9change"
+    ],
+    "discours": [
+        "discussion"
+    ],
+    "donner et prendre": [
+        "discussion"
+    ],
+    "r\u00eaver": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "rumination": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "pr\u00e9venance": [
+        "m\u00e9ditation",
+        "r\u00e9flexion"
+    ],
+    "repos": [
+        "d\u00e9tente"
+    ],
+    "lib\u00e9ralisation": [
+        "d\u00e9tente"
+    ],
+    "rel\u00e2chement": [
+        "d\u00e9tente"
+    ],
+    "comportement de relaxation": [
+        "d\u00e9tente"
+    ],
+    "version": [
+        "lecture"
+    ],
+    "interpr\u00e9tation": [
+        "lecture"
+    ],
+    "r\u00e9citation": [
+        "lecture"
+    ],
+    "relev\u00e9 de compteur": [
+        "lecture"
+    ],
+    "conscient": [
+        "\u00c9coute"
+    ],
+    "prenez garde": [
+        "\u00c9coute"
+    ],
+    "gag": [
+        "rire"
+    ],
+    "plaisanter": [
+        "rire"
+    ],
+    "yak": [
+        "rire"
+    ],
+    "farce": [
+        "rire"
+    ],
+    "respiration sifflante": [
+        "rire"
+    ],
+    "exprimer sa joie": [
+        "rire"
+    ],
+    "exprimer sa gaiet\u00e9": [
+        "rire"
+    ],
+    "parti politique": [
+        "f\u00eate"
+    ],
+    "exp\u00e9dition g\u00e9ographique": [
+        "exploration"
+    ],
+    "voyager": [
+        "voyage"
+    ],
+    "trouver": [
+        "d\u00e9couverte",
+        "rencontre"
+    ],
+    "perc\u00e9e": [
+        "d\u00e9couverte"
+    ],
+    "la p\u00e9dagogie": [
+        "enseignement"
+    ],
+    "d\u00e9partement d'\u00e9ducation": [
+        "enseignement"
+    ],
+    "activit\u00e9 \u00e9ducative": [
+        "enseignement"
+    ],
+    "d\u00e9partement de l'\u00e9ducation": [
+        "enseignement"
+    ],
+    "\u00eatre": [
+        "travail"
+    ],
+    "courir": [
+        "travail",
+        "test"
+    ],
+    "aller": [
+        "travail"
+    ],
+    "adresse": [
+        "travail"
+    ],
+    "fonction": [
+        "travail"
+    ],
+    "acte": [
+        "travail"
+    ],
+    "apporter": [
+        "travail"
+    ],
+    "couverture": [
+        "travail"
+    ],
+    "\u00e9tude": [
+        "travail"
+    ],
+    "traiter": [
+        "travail"
+    ],
+    "suivre": [
+        "travail"
+    ],
+    "cultiver": [
+        "travail"
+    ],
+    "charrue": [
+        "travail"
+    ],
+    "\u0153uvre": [
+        "travail"
+    ],
+    "assouvir": [
+        "travail"
+    ],
+    "l\u00e9cher": [
+        "travail"
+    ],
+    "fonctionner": [
+        "travail"
+    ],
+    "p\u00e9trir": [
+        "travail"
+    ],
+    "travailler sur": [
+        "travail"
+    ],
+    "fait pour": [
+        "travail"
+    ],
+    "corps de travail": [
+        "travail"
+    ],
+    "d\u00e9chiffrer": [
+        "travail"
+    ],
+    "oeuvre": [
+        "travail"
+    ],
+    "se mettre au travail": [
+        "travail"
+    ],
+    "faire du travail": [
+        "travail"
+    ],
+    "structure": [
+        "construction"
+    ],
+    "torsion": [
+        "construction"
+    ],
+    "synth\u00e8se mentale": [
+        "construction"
+    ],
+    "r\u00e9parer": [
+        "r\u00e9paration"
+    ],
+    "m\u00e9decin": [
+        "r\u00e9paration"
+    ],
+    "hanter": [
+        "r\u00e9paration"
+    ],
+    "boisseau": [
+        "r\u00e9paration"
+    ],
+    "tra\u00eener": [
+        "r\u00e9paration"
+    ],
+    "raccommodage": [
+        "r\u00e9paration"
+    ],
+    "aborder": [
+        "r\u00e9paration"
+    ],
+    "terrain d'estampage": [
+        "r\u00e9paration"
+    ],
+    "remettre \u00e0 neuf": [
+        "r\u00e9paration"
+    ],
+    "prise de photo": [
+        "photographie"
+    ],
+    "feuilleter": [
+        "film"
+    ],
+    "exposition d'images": [
+        "film"
+    ],
+    "image anim\u00e9e": [
+        "film"
+    ],
+    "terpsichore": [
+        "danse"
+    ],
+    "voyage la lumi\u00e8re fantastique": [
+        "danse"
+    ],
+    "cancans": [
+        "chant"
+    ],
+    "m\u00e9lodieux": [
+        "chant"
+    ],
+    "cantabile": [
+        "chant"
+    ],
+    "m\u00e9lodique": [
+        "chant"
+    ],
+    "vocaliser": [
+        "chant"
+    ],
+    "pion": [
+        "instrument"
+    ],
+    "instrumenter": [
+        "instrument"
+    ],
+    "instrument juridique": [
+        "instrument"
+    ],
+    "document l\u00e9gal": [
+        "instrument"
+    ],
+    "document officiel": [
+        "instrument"
+    ],
+    "appel": [
+        "collection"
+    ],
+    "compendium": [
+        "collection"
+    ],
+    "sollicitation": [
+        "collection"
+    ],
+    "agr\u00e9gation": [
+        "collection"
+    ],
+    "assemblage": [
+        "collection"
+    ],
+    "accumulation": [
+        "collection"
+    ],
+    "collecte": [
+        "collection"
+    ],
+    "rassemblement": [
+        "collection"
+    ],
+    "r\u00e9flectivit\u00e9": [
+        "r\u00e9flexion"
+    ],
+    "image miroir": [
+        "r\u00e9flexion"
+    ],
+    "all\u00e9geance": [
+        "engagement"
+    ],
+    "loyaut\u00e9": [
+        "engagement"
+    ],
+    "consignation": [
+        "engagement"
+    ],
+    "syst\u00e8me": [
+        "organisation"
+    ],
+    "constitution": [
+        "organisation"
+    ],
+    "gouvernance": [
+        "organisation"
+    ],
+    "\u00e9tablissement": [
+        "organisation"
+    ],
+    "cas": [
+        "\u00c9v\u00e9nement"
+    ],
+    "la d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "le d\u00e9ni": [
+        "d\u00e9fense"
+    ],
+    "justification": [
+        "d\u00e9fense"
+    ],
+    "r\u00e9futation": [
+        "d\u00e9fense"
+    ],
+    "exception p\u00e9remptoire": [
+        "d\u00e9fense"
+    ],
+    "m\u00e9canisme de d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "\u00e9quipe de d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "\u00e9quipe en d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "d\u00e9partement de la d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "minist\u00e8re de la d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "mesure d\u00e9fensive": [
+        "d\u00e9fense"
+    ],
+    "r\u00e9action de d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "avocats de la d\u00e9fense": [
+        "d\u00e9fense"
+    ],
+    "structure d\u00e9fensive": [
+        "d\u00e9fense"
+    ],
+    "faire": [
+        "exercice"
+    ],
+    "utiliser": [
+        "exercice"
+    ],
+    "percer": [
+        "exercice"
+    ],
+    "exemple": [
+        "exercice"
+    ],
+    "exercer": [
+        "exercice"
+    ],
+    "usage": [
+        "exercice"
+    ],
+    "utilisation": [
+        "exercice"
+    ],
+    "faire de l'exercice": [
+        "exercice"
+    ],
+    "exercice physique": [
+        "exercice"
+    ],
+    "l'effort physique": [
+        "exercice"
+    ],
+    "s\u00e9ance d'entra\u00eenement": [
+        "exercice"
+    ],
+    "obtenir": [
+        "exp\u00e9rience"
+    ],
+    "avoir": [
+        "exp\u00e9rience"
+    ],
+    "savoir": [
+        "exp\u00e9rience"
+    ],
+    "recevoir": [
+        "exp\u00e9rience",
+        "rencontre"
+    ],
+    "subir": [
+        "exp\u00e9rience"
+    ],
+    "traverser": [
+        "exp\u00e9rience"
+    ],
+    "v\u00e9rifier": [
+        "test"
+    ],
+    "mod\u00e8le": [
+        "test"
+    ],
+    "proc\u00e8s": [
+        "test"
+    ],
+    "prouver": [
+        "test"
+    ],
+    "essayer": [
+        "test"
+    ],
+    "examiner": [
+        "test"
+    ],
+    "questionnaire": [
+        "test"
+    ],
+    "exp\u00e9rimental": [
+        "test"
+    ],
+    "test psychom\u00e9trique": [
+        "test"
+    ],
+    "test mental": [
+        "test"
+    ],
+    "tests mentaux": [
+        "test"
+    ],
+    "\u00e9volution": [
+        "d\u00e9veloppement"
+    ],
+    "l'ontogen\u00e8se": [
+        "d\u00e9veloppement"
+    ],
+    "maturation": [
+        "d\u00e9veloppement"
+    ],
+    "ontogen\u00e8se": [
+        "d\u00e9veloppement"
+    ],
+    "avance": [
+        "am\u00e9lioration"
+    ],
+    "excogitation": [
+        "innovation"
+    ],
+    "\u00e9pargne": [
+        "\u00c9conomie"
+    ],
+    "syst\u00e8me \u00e9conomique": [
+        "\u00c9conomie"
+    ],
+    "fonds d'investissement": [
+        "investissement"
+    ],
+    "articulation": [
+        "partage"
+    ],
+    "communion": [
+        "partage"
+    ],
+    "g\u00e9n\u00e9reux": [
+        "partage"
+    ],
+    "forme": [
+        "influence"
+    ],
+    "charme": [
+        "influence"
+    ],
+    "r\u00e9glementer": [
+        "influence"
+    ],
+    "tenter": [
+        "influence"
+    ],
+    "agir sur": [
+        "influence"
+    ],
+    "besoin": [
+        "motivation"
+    ],
+    "motif": [
+        "motivation"
+    ],
+    "en remuant": [
+        "inspiration"
+    ],
+    "id\u00e9e originale": [
+        "inspiration"
+    ],
+    "respirer": [
+        "inspiration"
+    ],
+    "d\u00e9tournement": [
+        "amusement"
+    ],
+    "espi\u00e8glerie": [
+        "amusement"
+    ],
+    "festivit\u00e9": [
+        "c\u00e9l\u00e9bration"
+    ],
+    "transfert": [
+        "changement"
+    ],
+    "modifier": [
+        "changement"
+    ],
+    "varier": [
+        "changement"
+    ],
+    "modification": [
+        "changement"
+    ],
+    "alt\u00e9ration": [
+        "changement"
+    ],
+    "approfondir": [
+        "changement"
+    ],
+    "ing\u00e9niosit\u00e9": [
+        "imagination"
+    ],
+    "imagerie mentale": [
+        "imagination"
+    ],
+    "acculturation": [
+        "culture"
+    ],
+    "enivrant": [
+        "alcool"
+    ],
+    "boisson alcoolis\u00e9e": [
+        "alcool"
+    ],
+    "cravate": [
+        "association"
+    ],
+    "connexion": [
+        "association"
+    ],
+    "affiliation": [
+        "association"
+    ],
+    "rapport": [
+        "association"
+    ],
+    "attacher": [
+        "association"
+    ],
+    "ombre": [
+        "cafe"
+    ],
+    "java": [
+        "cafe"
+    ],
+    "terre d'ombre br\u00fbl\u00e9e": [
+        "cafe"
+    ],
+    "marron profond": [
+        "cafe"
+    ],
+    "grain de caf\u00e9": [
+        "cafe"
+    ],
+    "caf\u00e9ier": [
+        "cafe"
+    ],
+    "frapper": [
+        "rencontre"
+    ],
+    "rencontrer": [
+        "rencontre"
+    ],
+    "chance": [
+        "rencontre"
+    ],
+    "bosse": [
+        "rencontre"
+    ],
+    "choc": [
+        "rencontre"
+    ],
+    "arriver": [
+        "rencontre"
+    ],
+    "r\u00e9union": [
+        "rencontre"
+    ],
+    "prendre en charge": [
+        "rencontre"
+    ],
+    "affrontement": [
+        "rencontre"
+    ],
+    "escarmouche": [
+        "rencontre"
+    ],
+    "\u00e9preuve de force": [
+        "rencontre"
+    ],
+    "percuter": [
+        "rencontre"
+    ],
+    "se r\u00e9unir": [
+        "rencontre"
+    ],
+    "rassembler": [
+        "rencontre"
+    ],
+    "courir \u00e0 travers": [
+        "rencontre"
+    ],
+    "tomb\u00e9 sur": [
+        "rencontre"
+    ],
+    "venir sur": [
+        "rencontre"
+    ],
+    "passerelle": [
+        "marche"
+    ],
+    "paseo": [
+        "marche"
+    ],
+    "mani\u00e8re de marcher": [
+        "marche"
+    ],
+    "marche de la vie": [
+        "marche"
+    ],
+    "base sur balles": [
+        "marche"
+    ],
+    "intime": [
+        "amical"
+    ],
+    "aimable": [
+        "amical"
+    ],
+    "cordial": [
+        "amical"
+    ],
+    "affable": [
+        "amical"
+    ],
+    "confortable": [
+        "amical"
+    ],
+    "g\u00e9nial": [
+        "amical"
+    ],
+    "favorable": [
+        "amical"
+    ],
+    "informel": [
+        "amical"
+    ],
+    "camarade": [
+        "amical"
+    ],
+    "copain": [
+        "amical"
+    ],
+    "de bon voisinage": [
+        "amical"
+    ],
+    "camaraderie": [
+        "amical"
+    ],
+    "compagnon": [
+        "amical"
+    ],
+    "bien dispos\u00e9": [
+        "amical"
+    ],
+    "salut-compagnon-bien-rencontr\u00e9": [
+        "amical"
+    ],
+    "couthie": [
+        "amical"
+    ],
+    "courtois": [
+        "amical"
+    ],
+    "paralysie-walsy": [
+        "amical"
+    ],
+    "je vous salue": [
+        "amical"
+    ],
+    "le soir": [
+        "soiree"
+    ],
+    "monde": [
+        "nature"
+    ],
+    "univers": [
+        "nature"
+    ],
+    "cosmos": [
+        "nature"
+    ],
+    "existence": [
+        "nature"
+    ],
+    "cr\u00e9ation": [
+        "nature"
+    ],
+    "macrocosme": [
+        "nature"
+    ],
+    "\u00e9tat de la nature": [
+        "nature"
+    ],
+    "\u00e9tat naturel": [
+        "nature"
+    ],
+    "phenomene naturel": [
+        "nature"
+    ],
+    "\u0153nologie": [
+        "oenologie"
+    ],
+    "en sirotant": [
+        "d\u00e9gustation"
+    ],
+    "savourer": [
+        "d\u00e9gustation"
+    ],
+    "vuln\u00e9rabilit\u00e9": [
+        "exposition"
+    ],
+    "gentil": [
+        "caritatif"
+    ],
+    "bienveillant": [
+        "caritatif"
+    ],
+    "sympathique": [
+        "caritatif"
+    ],
+    "bienfaisant": [
+        "caritatif"
+    ],
+    "gentiment": [
+        "caritatif"
+    ],
+    "\u00e9l\u00e9mosynaire": [
+        "caritatif"
+    ],
+    "se d\u00e9lecter": [
+        "raquette"
+    ],
+    "dissonance": [
+        "raquette"
+    ],
+    "wassail": [
+        "raquette"
+    ],
+    "oups": [
+        "raquette"
+    ],
+    "stratag\u00e8me frauduleux": [
+        "raquette"
+    ],
+    "rendre heureux": [
+        "raquette"
+    ],
+    "faire whoopie": [
+        "raquette"
+    ],
+    "entreprise ill\u00e9gitime": [
+        "raquette"
+    ],
+    "temps libre": [
+        "loisir"
+    ],
+    "contention": [
+        "competition"
+    ],
+    "rival": [
+        "competition"
+    ],
+    "concurrent": [
+        "competition"
+    ],
+    "rouge": [
+        "peinture"
+    ],
+    "fard \u00e0 joues": [
+        "peinture"
+    ],
+    "nutritif": [
+        "nourriture"
+    ]
+}
