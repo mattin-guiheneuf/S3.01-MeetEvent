@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['extraire_5ftags_5funiques_0',['extraire_tags_uniques',['../namespace_faire___corpus.html#aa2aeeaf4b949478a42e9dea753e2b685',1,'Faire_Corpus']]]
+  ['fusionnerbiencorpus_0',['fusionnerBienCorpus',['../crea_dico_syn_tag_8php.html#ade346dd7dab61adefd3ae97a0c3a1136',1,'creaDicoSynTag.php']]],
+  ['fusionnercorpus_1',['fusionnerCorpus',['../crea_dico_syn_tag_8php.html#ad5315f4681b6e428493d80f730586dbd',1,'creaDicoSynTag.php']]]
 ];

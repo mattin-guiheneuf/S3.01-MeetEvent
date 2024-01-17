@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['faire_5fcorpus_2epy_0',['Faire_Corpus.py',['../_faire___corpus_8py.html',1,'']]]
+  ['main_2ephp_0',['main.php',['../main_8php.html',1,'']]],
+  ['module_2ephp_1',['module.php',['../module_8php.html',1,'']]],
+  ['mot_2ephp_2',['Mot.php',['../_mot_8php.html',1,'']]]
 ];

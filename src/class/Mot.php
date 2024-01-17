@@ -2,57 +2,65 @@
 
 
 /**
- * Classe représentant un Mot.
+ * @file Mot.php
+ * @author Yannis Duvignau
+ * @brief Fichier contenant la classe Mot
+ * @details Contient la structure de la classe Mot ayant un id et un libellé
+ * @version 1.0
  */
 class Mot {
-    // ATTRIBUTS
+    /** Attributs */
     /**
-     * @var int l'id du Mot
+     * @brief L'identifiant du mot
+     * @var int 
      */
     private $id;
 
     /**
-     * @var string le libelle du Mot
+     * @brief Le libellé du mot
+     * @var string 
      */
     private $libelle = "";
 
-    //CONSTRUCTEUR
+    /** Constructeur */
+    /**
+     * @brief Constructeur de la classe Mot
+     * @param string
+     */
     public function __construct(string $lib){
         $this->setLibelle($lib);
     }
-    // GETTERS ET SETTERS
-    //id
+    
+    /** Encapsulation */
+    /** $id */
     /**
-     * Obtient l'id du Mot.
-     *
-     * @return int ID.
+     * @brief Obtient l'identifiant du mot
+     * @return int $id Identifiant du mot
      */
     public function getId() {
         return $this->id;
     }
+    
     /**
-     * Attribuer l'id à un Mot.
-     *
-     * @param int $id un id représentant l'id du Mot.
+     * @brief Attribut l'identifiant au mot
+     * @param int [in] Identifiant du mot
      */
     public function setId(int $id) {
         $this->id = $id;
     }
 
-    //libelle
+    /** $libelle */
     /**
-     * Obtient le libelle du Mot.
-     *
-     * @return string Libelle.
+     * @brief Obtient le libellé du mot
+     * @return string $libelle Libellé du mot
      */
     public function getLibelle() {
         return $this->libelle;
     }
 
     /**
-     * Attribuer le libelle à un Mot.
-     *
-     * @param string $libelle un libelle représentant le libelle du Mot.
+     * @brief Attribut le libellé au mot
+     * @param string [in] Libellé du mot
      */
     public function setLibelle(string $libelle) {
         $this->libelle = $libelle;
