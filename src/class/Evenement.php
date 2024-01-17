@@ -285,7 +285,23 @@ class Evenement {
         echo "<br><br>-----------------------------------";
         echo "<br>L'évènement ".$this->getTitre()." (".$this->getId().") est relié aux tags grâce à : ";
         echo '<br>';
-        print_r($dicoMotToTag);
+        foreach ($dicoMotToTag as $mot => $listeLien) {
+            echo '<br>' . $mot . ' est relié à : <br>';
+            foreach ($listeLien as $lien) {
+                echo '  - ';
+                if(is_array($lien)){
+                    foreach ($lien[1] as $motLien) {
+                        echo $motLien . ' ';
+                    }
+                    echo ' par le mot ' . $lien[0];
+                }
+                else {
+                    print_r($lien);
+                }
+                echo '<br>';
+            }
+            /* echo '<br>'; */
+        }
         echo "<br>-----------------------------------";
 
         // Maj donnes.json

@@ -267,17 +267,21 @@ class Utilisateur {
         echo "<br>Utilisateur ".$this->getNom()." (".$this->getId().") est relié aux tags grâce à : ";
         echo '<br>';
         foreach ($dicoMotToTag as $mot => $listeLien) {
-            echo $mot . ' est relié à : ';
+            echo '<br>' . $mot . ' est relié à : <br>';
             foreach ($listeLien as $lien) {
+                echo '  - ';
                 if(is_array($lien)){
-                    print_r($lien[1]);
+                    foreach ($lien[1] as $motLien) {
+                        echo $motLien . ' ';
+                    }
                     echo ' par le mot ' . $lien[0];
                 }
                 else {
                     print_r($lien);
                 }
+                echo '<br>';
             }
-            echo '<br>';
+            /* echo '<br>'; */
         }
         echo "<br>-----------------------------------";
 
