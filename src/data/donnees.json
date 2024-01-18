@@ -181,7 +181,7 @@
     ],
     "evenements": [
         {
-            "id": 10024,
+            "id": 1,
             "titre": "Festival de musique en plein air",
             "date": "2023-08-20",
             "heure": "15:30",
@@ -205,7 +205,7 @@
             ]
         },
         {
-            "id": 10025,
+            "id": 2,
             "titre": "Concert choeurs basques",
             "date": "2023-11-19",
             "heure": "15:30",
@@ -229,7 +229,7 @@
             ]
         },
         {
-            "id": 10026,
+            "id": 3,
             "titre": "Repas sanglier ACCA",
             "date": "2023-11-24",
             "heure": "15:30",
@@ -302,7 +302,7 @@
             ]
         },
         {
-            "id": 10027,
+            "id": 4,
             "titre": "Cercle des lecteurs",
             "date": "2023-12-02",
             "heure": "15:30",
@@ -354,7 +354,7 @@
             ]
         },
         {
-            "id": 10028,
+            "id": 5,
             "titre": "Seance de Sport - Seniors",
             "date": "2023-15-12",
             "heure": "15:30",
@@ -408,6 +408,109 @@
                 "rire",
                 "instrument",
                 "nature"
+            ]
+        },
+        {
+            "id": 6,
+            "titre": "Meet up Web 3.0 de Biarritz",
+            "date": "03\/02\/2024",
+            "heure": "18:30",
+            "lieu": "A\u00e9roport de Biarritz-Pays Basque",
+            "mots": [
+                "internet",
+                "nouvelle",
+                "g\u00e9n\u00e9ration"
+            ],
+            "tags": [
+                "exploration",
+                "discussion",
+                "animaux",
+                "d\u00e9couverte",
+                "engagement",
+                "partage",
+                "d\u00e9tente",
+                "social",
+                "collection",
+                "musee",
+                "echange",
+                "film",
+                "volontariat",
+                "investissement",
+                "oenologie",
+                "alcool",
+                "raquette",
+                "repas",
+                "cafe",
+                "gastronomie",
+                "d\u00e9gustation",
+                "association",
+                "ecoute",
+                "d\u00e9veloppement",
+                "innovation",
+                "imagination",
+                "organisation",
+                "exercice",
+                "gestion",
+                "divertissement",
+                "musique",
+                "photographie",
+                "economie",
+                "finance",
+                "loisir",
+                "cr\u00e9ativit\u00e9",
+                "soiree",
+                "changement",
+                "f\u00eate",
+                "inspiration",
+                "construction",
+                "r\u00e9paration",
+                "nourriture",
+                "solidarit\u00e9",
+                "r\u00e9flexion"
+            ]
+        },
+        {
+            "id": 7,
+            "titre": "Immersion EDHEC campus de Paris",
+            "date": "21\/02\/2024",
+            "heure": "13:30",
+            "lieu": "Le Centorial Paris",
+            "mots": [
+                "apprentissage",
+                "apprendre",
+                "immersion"
+            ],
+            "tags": [
+                "enseignement",
+                "cr\u00e9ativit\u00e9",
+                "motivation",
+                "ecoute",
+                "repas",
+                "d\u00eener",
+                "amusement",
+                "lecture",
+                "partage",
+                "entra\u00eenement",
+                "m\u00e9ditation",
+                "formation",
+                "photographie",
+                "exposition",
+                "cuisine",
+                "d\u00e9tente",
+                "volontariat",
+                "dessin",
+                "danse",
+                "chant",
+                "oenologie",
+                "voyage",
+                "plaisir",
+                "alcool",
+                "loisir",
+                "r\u00e9flexion",
+                "exp\u00e9rience",
+                "d\u00e9gustation",
+                "imagination",
+                "test"
             ]
         }
     ]

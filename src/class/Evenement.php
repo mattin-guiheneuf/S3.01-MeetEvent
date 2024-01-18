@@ -308,7 +308,7 @@ class Evenement {
         // Lire le contenu JSON depuis le fichier
         $contenuJSON = file_get_contents('./data/donnees.json');
         $donnees = json_decode($contenuJSON, true);
-        $donnees['evenements'][$this->getId()-1-10000]['tags'] = $realListeTag;
+        $donnees['evenements'][$this->getId()-1]['tags'] = $realListeTag;
         file_put_contents('./data/donnees.json', json_encode($donnees, JSON_PRETTY_PRINT));
 
         // Renvoyer

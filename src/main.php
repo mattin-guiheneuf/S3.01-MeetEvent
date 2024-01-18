@@ -201,14 +201,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             case 'creerUtilisateur':
                 // Logique pour créer un utilisateur
                 $nom = $_POST['nom'];
-                $id = $donnees['utilisateurs'][count($donnees['utilisateurs']) - 1]['id'] + 1;
-                $user_courrant = new Utilisateur($id,[]);
+                $id_user = $donnees['utilisateurs'][count($donnees['utilisateurs']) - 1]['id'] + 1;
+                $user_courrant = new Utilisateur($id_user,[]);
                 
                 // Récupère la liste de mots envoyée par le formulaire
                 $motsListe = isset($_POST['motsListe']) ? json_decode($_POST['motsListe']) : [];
 
                 //on crée ajout l'utilisateur dans la BD
-                $user_courrant->setId($id);
+                $user_courrant->setId($id_user);
                 $user_courrant->setNom($nom);
                 //Création liste de mot objet
                 $listeMot_objet = array();
@@ -226,8 +226,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $date = $_POST['date'];
                 $heure = $_POST['heure'];
                 $lieu = $_POST['lieu'];
-                $id = $donnees['evenements'][count($donnees['evenements']) - 1]['id'] + 1;
-                $event_courrant = new Evenement($id,[]);
+                $id_event = $donnees['evenements'][count($donnees['evenements']) - 1]['id'] + 1;
+                $event_courrant = new Evenement($id_event,[]);
 
                 // Récupère la liste de mots envoyée par le formulaire
                 $motsListe = isset($_POST['motsListeEvenement']) ? json_decode($_POST['motsListeEvenement']) : [];
@@ -235,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     echo "putain de merde ";
                 }
                 //on crée ajout l'utilisateur dans la BD
-                $event_courrant->setId($id);
+                $event_courrant->setId($id_event);
                 $event_courrant->setTitre($titre);
                 $event_courrant->setDate($date);
                 $event_courrant->setHeure($heure);
