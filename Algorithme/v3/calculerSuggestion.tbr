@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>Algorithme</nom>
-  <date_creation>17/1/2024 13:35</date_creation>
+  <date_creation>18/1/2024 18:52</date_creation>
   <Elements>
     <Action>
       <Position>892;30</Position>
@@ -14,7 +14,7 @@
       <DetailsVideVisible>1</DetailsVideVisible>
       <Enfants>
         <Action>
-          <Position>125;205</Position>
+          <Position>181;191</Position>
           <StyleLien>1</StyleLien>
           <PreAssertion>?</PreAssertion>
           <PostAssertion>userPreferences</PostAssertion>

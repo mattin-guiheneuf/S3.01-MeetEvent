@@ -62,7 +62,7 @@ class Recommandation {
 
     /**
      * @brief Attribut l'utilisateur pour la recommandation
-     * @param Utilsateur [in] Utilisateur pour la recommandation 
+     * @param Utilisateur [in] Utilisateur pour la recommandation 
      */
     public function setUtilisateur(Utilisateur $user){
         $this->monUtilisateur = $user;
@@ -88,8 +88,8 @@ class Recommandation {
 
     /**
      * @brief Calculer le produit scalaire
-     * @param int
-     * @param int
+     * @param array
+     * @param array
      * @return int
      */
     private function dotProduct($vec1, $vec2) {
@@ -104,7 +104,7 @@ class Recommandation {
 
     /**
      * @brief Calculer la norme
-     * @param int
+     * @param array
      * @return int
      */
     private function norm($vec) {
@@ -115,9 +115,9 @@ class Recommandation {
 
     /**
      * @brief Calculer la similarité cosinus
-     * @param int
-     * @param int
-     * @return int
+     * @param array
+     * @param array
+     * @return string
      */
     private function cosineSimilarity($vec1, $vec2) {
         $dot = $this->dotProduct($vec1, $vec2);
