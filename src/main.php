@@ -206,9 +206,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 // Récupère la liste de mots envoyée par le formulaire
                 $motsListe = isset($_POST['motsListe']) ? json_decode($_POST['motsListe']) : [];
-                if ($motsListe===[]) {
-                    echo "putain de merde ";
-                }
+
                 //on crée ajout l'utilisateur dans la BD
                 $user_courrant->setId($id);
                 $user_courrant->setNom($nom);
@@ -217,6 +215,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 foreach($motsListe as $motX){
                     $listeMot_objet[]= new Mot($motX);
                 }
+                //On attributs les mots de l'utilisateur
                 $user_courrant->setMots($listeMot_objet);
                 $user_courrant->definirDescription($dicoSynTag);
                 break;
