@@ -51,7 +51,7 @@
                 }
             } */
 
-            // Mots liés
+            /* // Mots liés
             $listeTrgTagCourant = trgAvecAPI(strtolower(tradMotFrToAng($tagCourant))); // On exploite l'API pour récupérer les synonymes du tagCourant
             
             foreach($listeTrgTagCourant as $trgTagCrt) // Pour chaque synonyme du tagCourant
@@ -66,9 +66,9 @@
                 {
                     $dicoSynTag[$trgTagCourant] = array(strtolower($tagCourant)); // Donc on l'ajoute associé à son tag
                 }
-            }
+            } */
 
-            /* // Mots génériques
+            // Mots génériques
             $listeGenTagCourant = genAvecAPI(strtolower(tradMotFrToAng($tagCourant))); // On exploite l'API pour récupérer les synonymes du tagCourant
             
             foreach($listeGenTagCourant as $genTagCrt) // Pour chaque synonyme du tagCourant
@@ -83,11 +83,11 @@
                 {
                     $dicoSynTag[$genTagCourant] = array(strtolower($tagCourant)); // Donc on l'ajoute associé à son tag
                 }
-            } */
+            }
         }
 
         echo "encodage<br>";
-        file_put_contents('./data/dicoSynTagTrg.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
+        file_put_contents('./data/dicoSynTagGen.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
         echo "encodage terminé<br><br>";
 
         return $dicoSynTag;
@@ -98,32 +98,32 @@
 
     // Vrai cropus de tags
     $CORPUS_TAG = [
-        "Cuisine", "Ingrédients", "Art",
-        "Musique", "Dessin", "Sport", "Entraînement", "Social", "Échange",
+        "Cuisine", "Art",
+        "Musique", "Dessin", "Sport", "Entraînement", "Social",
         "Discussion", "Méditation", "Détente", "Lecture", "Écoute","Rire",
         "Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
         "Enseignement", "Travail", "Créativité", "Construction",
-        "Réparation", "Jardinage", "Photographie", "Film", "Danse", "Chant", 
+        "Jardinage", "Photographie", "Film", "Danse", "Chant", 
         "Instrument", "Collection", "Informatique", "Réflexion",
         "Engagement", "Volontariat", "Organisation",
         "Événement", "Défense", "Exercice", "Expérience", "Test",
         "Développement", "Amélioration", "Innovation", "Économie",
-        "Investissement", "Gestion", "Partage", "Influence", "Motivation",
+        "Partage", "Influence", "Motivation",
         "Inspiration", "Amusement",
         "Célébration", "Changement",
         "Imagination", "Jeux", "Festival",
         "Culture", "Concert", "Repas", "Aperitif", "Alcool",
-        "Association", "Cafe", "Rencontre",
+        "Association", "Rencontre",
         "Marche", "Amical",
         "Plaisir", "Jeu de société", "Animaux",
         "Soiree", "Nature", "Paysages", "Atelier", 
-        "Gastronomie", "Oenologie", "Dégustation", "Exposition", "Musee",
+        "Gastronomie", "Dégustation", "Exposition", "Musee",
         "Dîner", "Caritatif", "Solidarité", "Raquette", "Loisir",
-        "Competition", "Tournoi", "Peinture", "Montagne",
-        "Finance", "Formation", "Nourriture"
+        "Competition", "Tournoi", "Montagne",
+        "Finance", "Formation","Océan"
     ];
 
-    //creaDicoSynTag($CORPUS_TAG);
+    creaDicoSynTag($CORPUS_TAG);
 
     // Pour optimiser et faciliter la création du dictionnaire, on effectue chaque étape (synonymes, mots liés et mots génériques) séparément (commenter chaque partie dans le code, etc)
     // Nécéssité de modifier le fichier de destination à chaque fois pour ne pas écraser les données (directement dans le code ou mettre en paramètre)
