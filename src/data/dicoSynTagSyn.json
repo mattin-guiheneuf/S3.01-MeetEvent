@@ -2,9 +2,6 @@
     "cuisine": [
         "cuisine"
     ],
-    "ingr\u00e9dients": [
-        "ingr\u00e9dients"
-    ],
     "art": [
         "art"
     ],
@@ -25,9 +22,6 @@
     ],
     "social": [
         "social"
-    ],
-    "\u00c9change": [
-        "\u00c9change"
     ],
     "discussion": [
         "discussion"
@@ -77,9 +71,6 @@
     "construction": [
         "construction"
     ],
-    "r\u00e9paration": [
-        "r\u00e9paration"
-    ],
     "jardinage": [
         "jardinage"
     ],
@@ -117,12 +108,6 @@
     "organisation": [
         "organisation"
     ],
-    "\u00c9v\u00e9nement": [
-        "\u00c9v\u00e9nement"
-    ],
-    "d\u00e9fense": [
-        "d\u00e9fense"
-    ],
     "exercice": [
         "exercice",
         "travail"
@@ -145,12 +130,6 @@
     "\u00c9conomie": [
         "\u00c9conomie"
     ],
-    "investissement": [
-        "investissement"
-    ],
-    "gestion": [
-        "gestion"
-    ],
     "partage": [
         "partage"
     ],
@@ -171,8 +150,7 @@
         "c\u00e9l\u00e9bration"
     ],
     "changement": [
-        "changement",
-        "\u00c9change"
+        "changement"
     ],
     "imagination": [
         "imagination"
@@ -200,9 +178,6 @@
     ],
     "association": [
         "association"
-    ],
-    "cafe": [
-        "cafe"
     ],
     "rencontre": [
         "rencontre"
@@ -238,9 +213,6 @@
     "gastronomie": [
         "gastronomie"
     ],
-    "oenologie": [
-        "oenologie"
-    ],
     "d\u00e9gustation": [
         "d\u00e9gustation"
     ],
@@ -259,9 +231,6 @@
     "solidarit\u00e9": [
         "solidarit\u00e9"
     ],
-    "raquette": [
-        "raquette"
-    ],
     "loisir": [
         "loisir"
     ],
@@ -270,9 +239,6 @@
     ],
     "tournoi": [
         "tournoi"
-    ],
-    "peinture": [
-        "peinture"
     ],
     "montagne": [
         "montagne"
@@ -284,8 +250,8 @@
         "formation",
         "organisation"
     ],
-    "nourriture": [
-        "nourriture"
+    "oc\u00e9an": [
+        "oc\u00e9an"
     ],
     "prouesse": [
         "art"
@@ -444,34 +410,6 @@
     ],
     "fourmillement": [
         "social"
-    ],
-    "changer": [
-        "\u00c9change",
-        "changement"
-    ],
-    "navette": [
-        "\u00c9change",
-        "changement"
-    ],
-    "convertir": [
-        "\u00c9change",
-        "changement"
-    ],
-    "substitution": [
-        "\u00c9change"
-    ],
-    "central": [
-        "\u00c9change"
-    ],
-    "\u00e9change": [
-        "\u00c9change",
-        "changement"
-    ],
-    "basculer": [
-        "\u00c9change"
-    ],
-    "\u00e9change de t\u00e9l\u00e9phone": [
-        "\u00c9change"
     ],
     "mot": [
         "discussion"
@@ -724,42 +662,6 @@
     "synth\u00e8se mentale": [
         "construction"
     ],
-    "r\u00e9parer": [
-        "r\u00e9paration"
-    ],
-    "m\u00e9decin": [
-        "r\u00e9paration"
-    ],
-    "station baln\u00e9aire": [
-        "r\u00e9paration"
-    ],
-    "restaurer": [
-        "r\u00e9paration"
-    ],
-    "hanter": [
-        "r\u00e9paration"
-    ],
-    "boisseau": [
-        "r\u00e9paration"
-    ],
-    "tra\u00eener": [
-        "r\u00e9paration"
-    ],
-    "fixation": [
-        "r\u00e9paration"
-    ],
-    "raccommodage": [
-        "r\u00e9paration"
-    ],
-    "aborder": [
-        "r\u00e9paration"
-    ],
-    "terrain d'estampage": [
-        "r\u00e9paration"
-    ],
-    "remettre \u00e0 neuf": [
-        "r\u00e9paration"
-    ],
     "horticulture": [
         "jardinage"
     ],
@@ -894,54 +796,6 @@
     ],
     "\u00e9tablissement": [
         "organisation"
-    ],
-    "cas": [
-        "\u00c9v\u00e9nement"
-    ],
-    "la d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "le d\u00e9ni": [
-        "d\u00e9fense"
-    ],
-    "justification": [
-        "d\u00e9fense"
-    ],
-    "r\u00e9futation": [
-        "d\u00e9fense"
-    ],
-    "exception p\u00e9remptoire": [
-        "d\u00e9fense"
-    ],
-    "dod": [
-        "d\u00e9fense"
-    ],
-    "m\u00e9canisme de d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "\u00e9quipe de d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "\u00e9quipe en d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "d\u00e9partement de la d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "minist\u00e8re de la d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "mesure d\u00e9fensive": [
-        "d\u00e9fense"
-    ],
-    "r\u00e9action de d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "avocats de la d\u00e9fense": [
-        "d\u00e9fense"
-    ],
-    "structure d\u00e9fensive": [
-        "d\u00e9fense"
     ],
     "faire": [
         "exercice"
@@ -1091,18 +945,6 @@
     "syst\u00e8me \u00e9conomique": [
         "\u00c9conomie"
     ],
-    "investir": [
-        "investissement"
-    ],
-    "fonds d'investissement": [
-        "investissement"
-    ],
-    "direction": [
-        "gestion"
-    ],
-    "g\u00e9rant": [
-        "gestion"
-    ],
     "articulation": [
         "partage"
     ],
@@ -1160,13 +1002,25 @@
     "festivit\u00e9": [
         "c\u00e9l\u00e9bration"
     ],
+    "\u00e9change": [
+        "changement"
+    ],
+    "changer": [
+        "changement"
+    ],
     "transfert": [
         "changement"
     ],
     "modifier": [
         "changement"
     ],
+    "navette": [
+        "changement"
+    ],
     "vari\u00e9t\u00e9": [
+        "changement"
+    ],
+    "convertir": [
         "changement"
     ],
     "varier": [
@@ -1228,27 +1082,6 @@
     ],
     "attacher": [
         "association"
-    ],
-    "chocolat": [
-        "cafe"
-    ],
-    "ombre": [
-        "cafe"
-    ],
-    "java": [
-        "cafe"
-    ],
-    "terre d'ombre br\u00fbl\u00e9e": [
-        "cafe"
-    ],
-    "marron profond": [
-        "cafe"
-    ],
-    "grain de caf\u00e9": [
-        "cafe"
-    ],
-    "caf\u00e9ier": [
-        "cafe"
     ],
     "voir": [
         "rencontre"
@@ -1427,9 +1260,6 @@
     "boutique": [
         "atelier"
     ],
-    "\u0153nologie": [
-        "oenologie"
-    ],
     "go\u00fbt": [
         "d\u00e9gustation"
     ],
@@ -1469,36 +1299,6 @@
     "philanthropique": [
         "caritatif"
     ],
-    "se d\u00e9lecter": [
-        "raquette"
-    ],
-    "bruit": [
-        "raquette"
-    ],
-    "dissonance": [
-        "raquette"
-    ],
-    "wassail": [
-        "raquette"
-    ],
-    "oups": [
-        "raquette"
-    ],
-    "stratag\u00e8me frauduleux": [
-        "raquette"
-    ],
-    "faire la f\u00eate": [
-        "raquette"
-    ],
-    "rendre heureux": [
-        "raquette"
-    ],
-    "faire whoopie": [
-        "raquette"
-    ],
-    "entreprise ill\u00e9gitime": [
-        "raquette"
-    ],
     "temps libre": [
         "loisir"
     ],
@@ -1520,16 +1320,10 @@
     "challenger": [
         "competition"
     ],
-    "rouge": [
-        "peinture"
-    ],
-    "fard \u00e0 joues": [
-        "peinture"
-    ],
     "monter": [
         "montagne"
     ],
-    "nutritif": [
-        "nourriture"
+    "mer": [
+        "oc\u00e9an"
     ]
 }

@@ -1,20 +1,11 @@
 {
     "cuisine": [
         "cuisine",
-        "ingr\u00e9dients",
         "volontariat",
         "repas",
         "gastronomie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
-    ],
-    "ingr\u00e9dients": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00eener"
     ],
     "art": [
         "art",
@@ -31,12 +22,10 @@
     "dessin": [
         "dessin",
         "art",
-        "photographie",
-        "peinture"
+        "photographie"
     ],
     "sport": [
         "sport",
-        "raquette",
         "loisir"
     ],
     "entra\u00eenement": [
@@ -45,9 +34,6 @@
     ],
     "social": [
         "social"
-    ],
-    "\u00c9change": [
-        "\u00c9change"
     ],
     "discussion": [
         "discussion"
@@ -83,7 +69,8 @@
     ],
     "voyage": [
         "voyage",
-        "loisir"
+        "loisir",
+        "oc\u00e9an"
     ],
     "d\u00e9couverte": [
         "d\u00e9couverte",
@@ -103,10 +90,6 @@
     ],
     "construction": [
         "construction"
-    ],
-    "r\u00e9paration": [
-        "r\u00e9paration",
-        "atelier"
     ],
     "jardinage": [
         "jardinage"
@@ -153,12 +136,6 @@
         "caritatif",
         "solidarit\u00e9"
     ],
-    "\u00c9v\u00e9nement": [
-        "\u00c9v\u00e9nement"
-    ],
-    "d\u00e9fense": [
-        "d\u00e9fense"
-    ],
     "exercice": [
         "exercice",
         "entra\u00eenement",
@@ -179,7 +156,6 @@
     ],
     "am\u00e9lioration": [
         "am\u00e9lioration",
-        "r\u00e9paration",
         "engagement"
     ],
     "innovation": [
@@ -189,19 +165,6 @@
     ],
     "\u00c9conomie": [
         "\u00c9conomie"
-    ],
-    "investissement": [
-        "investissement",
-        "\u00c9conomie",
-        "gestion",
-        "finance"
-    ],
-    "gestion": [
-        "gestion",
-        "innovation",
-        "investissement",
-        "oenologie",
-        "finance"
     ],
     "partage": [
         "partage"
@@ -258,11 +221,9 @@
     "repas": [
         "repas",
         "cuisine",
-        "ingr\u00e9dients",
         "aperitif",
         "soiree",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
     ],
     "aperitif": [
         "aperitif"
@@ -273,9 +234,6 @@
     ],
     "association": [
         "association"
-    ],
-    "cafe": [
-        "cafe"
     ],
     "rencontre": [
         "rencontre"
@@ -307,14 +265,10 @@
     ],
     "atelier": [
         "atelier",
-        "r\u00e9paration",
         "photographie"
     ],
     "gastronomie": [
         "gastronomie"
-    ],
-    "oenologie": [
-        "oenologie"
     ],
     "d\u00e9gustation": [
         "d\u00e9gustation",
@@ -327,8 +281,7 @@
         "photographie",
         "alcool",
         "animaux",
-        "musee",
-        "peinture"
+        "musee"
     ],
     "musee": [
         "musee"
@@ -347,9 +300,6 @@
     "solidarit\u00e9": [
         "solidarit\u00e9"
     ],
-    "raquette": [
-        "raquette"
-    ],
     "loisir": [
         "loisir"
     ],
@@ -360,34 +310,18 @@
         "tournoi",
         "competition"
     ],
-    "peinture": [
-        "peinture",
-        "art",
-        "dessin",
-        "photographie",
-        "atelier"
-    ],
     "montagne": [
         "montagne"
     ],
     "finance": [
         "finance",
-        "\u00c9conomie",
-        "investissement",
-        "gestion"
+        "\u00c9conomie"
     ],
     "formation": [
         "formation"
     ],
-    "nourriture": [
-        "nourriture",
-        "cuisine",
-        "jardinage",
-        "repas",
-        "cafe",
-        "animaux",
-        "gastronomie",
-        "d\u00e9gustation"
+    "oc\u00e9an": [
+        "oc\u00e9an"
     ],
     "garde-manger": [
         "cuisine"
@@ -446,12 +380,10 @@
     ],
     "cuisson": [
         "cuisine",
-        "ingr\u00e9dients",
         "jardinage",
         "repas",
         "gastronomie",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "chef": [
         "cuisine",
@@ -459,9 +391,7 @@
         "repas",
         "gastronomie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "raquette",
-        "nourriture"
+        "d\u00eener"
     ],
     "couteau": [
         "cuisine"
@@ -481,7 +411,6 @@
     ],
     "recettes": [
         "cuisine",
-        "ingr\u00e9dients",
         "gastronomie",
         "d\u00e9gustation"
     ],
@@ -510,8 +439,7 @@
         "cuisine"
     ],
     "salon": [
-        "cuisine",
-        "cafe"
+        "cuisine"
     ],
     "pi\u00e8ces": [
         "cuisine",
@@ -525,12 +453,10 @@
     ],
     "plats": [
         "cuisine",
-        "ingr\u00e9dients",
         "repas",
         "gastronomie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
     ],
     "escalier": [
         "cuisine"
@@ -538,16 +464,15 @@
     "restaurant": [
         "cuisine",
         "repas",
-        "cafe",
         "gastronomie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
     ],
     "sol": [
         "cuisine",
         "jardinage",
-        "danse"
+        "danse",
+        "oc\u00e9an"
     ],
     "sous-sol": [
         "cuisine"
@@ -568,8 +493,7 @@
         "cuisine"
     ],
     "garage": [
-        "cuisine",
-        "r\u00e9paration"
+        "cuisine"
     ],
     "aile": [
         "cuisine"
@@ -591,9 +515,7 @@
     "tableau": [
         "cuisine",
         "repas",
-        "cafe",
-        "d\u00eener",
-        "raquette"
+        "d\u00eener"
     ],
     "meubles": [
         "cuisine",
@@ -602,15 +524,21 @@
     "petit-d\u00e9jeuner": [
         "cuisine",
         "repas",
-        "cafe",
         "d\u00eener"
     ],
     "charpente": [
         "cuisine"
     ],
     "plafond": [
+        "cuisine"
+    ],
+    "nourriture": [
         "cuisine",
-        "peinture"
+        "jardinage",
+        "repas",
+        "animaux",
+        "gastronomie",
+        "d\u00e9gustation"
     ],
     "porte": [
         "cuisine"
@@ -634,7 +562,6 @@
     ],
     "installations": [
         "cuisine",
-        "r\u00e9paration",
         "loisir"
     ],
     "fen\u00eatre": [
@@ -648,13 +575,11 @@
     ],
     "viande": [
         "cuisine",
-        "ingr\u00e9dients",
         "repas",
         "animaux",
         "gastronomie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
     ],
     "invit\u00e9s": [
         "cuisine",
@@ -663,8 +588,7 @@
         "d\u00eener"
     ],
     "des murs": [
-        "cuisine",
-        "peinture"
+        "cuisine"
     ],
     "cadre": [
         "cuisine"
@@ -675,349 +599,6 @@
     "appartement": [
         "cuisine",
         "d\u00eener"
-    ],
-    "coriandre": [
-        "ingr\u00e9dients"
-    ],
-    "citrique": [
-        "ingr\u00e9dients"
-    ],
-    "hach\u00e9": [
-        "ingr\u00e9dients"
-    ],
-    "ail": [
-        "ingr\u00e9dients"
-    ],
-    "oignons": [
-        "ingr\u00e9dients"
-    ],
-    "c\u00e9leri": [
-        "ingr\u00e9dients"
-    ],
-    "curcuma": [
-        "ingr\u00e9dients"
-    ],
-    "persil": [
-        "ingr\u00e9dients"
-    ],
-    "bouillon": [
-        "ingr\u00e9dients"
-    ],
-    "tofu": [
-        "ingr\u00e9dients"
-    ],
-    "oignon": [
-        "ingr\u00e9dients"
-    ],
-    "\u00e9pices": [
-        "ingr\u00e9dients",
-        "cafe"
-    ],
-    "carottes": [
-        "ingr\u00e9dients"
-    ],
-    "p\u00e2te": [
-        "ingr\u00e9dients"
-    ],
-    "recette": [
-        "ingr\u00e9dients",
-        "gastronomie"
-    ],
-    "sirop": [
-        "ingr\u00e9dients"
-    ],
-    "cannelle": [
-        "ingr\u00e9dients"
-    ],
-    "ingr\u00e9dient": [
-        "ingr\u00e9dients"
-    ],
-    "sauce": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "farine": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "vinaigre": [
-        "ingr\u00e9dients"
-    ],
-    "cuit": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie",
-        "d\u00e9gustation",
-        "nourriture"
-    ],
-    "tomate": [
-        "ingr\u00e9dients"
-    ],
-    "laitue": [
-        "ingr\u00e9dients"
-    ],
-    "soja": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "porc": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie"
-    ],
-    "beurre": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "plat": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie",
-        "d\u00e9gustation",
-        "d\u00eener"
-    ],
-    "herbes": [
-        "ingr\u00e9dients",
-        "jardinage",
-        "gastronomie"
-    ],
-    "houblon": [
-        "ingr\u00e9dients",
-        "musique",
-        "danse"
-    ],
-    "caf\u00e9ine": [
-        "ingr\u00e9dients",
-        "cafe"
-    ],
-    "amidon": [
-        "ingr\u00e9dients"
-    ],
-    "additifs": [
-        "ingr\u00e9dients"
-    ],
-    "p\u00e2tisserie": [
-        "ingr\u00e9dients",
-        "gastronomie"
-    ],
-    "vanille": [
-        "ingr\u00e9dients"
-    ],
-    "r\u00f4ti": [
-        "ingr\u00e9dients",
-        "cafe"
-    ],
-    "rago\u00fbt": [
-        "ingr\u00e9dients",
-        "gastronomie"
-    ],
-    "nouilles": [
-        "ingr\u00e9dients"
-    ],
-    "poivre": [
-        "ingr\u00e9dients",
-        "cafe"
-    ],
-    "le chili": [
-        "ingr\u00e9dients"
-    ],
-    "malt": [
-        "ingr\u00e9dients"
-    ],
-    "p\u00e2tes": [
-        "ingr\u00e9dients"
-    ],
-    "\u00e9pic\u00e9": [
-        "ingr\u00e9dients"
-    ],
-    "chou": [
-        "ingr\u00e9dients"
-    ],
-    "gingembre": [
-        "ingr\u00e9dients"
-    ],
-    "bouilli": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "saveur": [
-        "ingr\u00e9dients",
-        "cafe",
-        "d\u00e9gustation"
-    ],
-    "champignons": [
-        "ingr\u00e9dients",
-        "animaux"
-    ],
-    "noix de coco": [
-        "ingr\u00e9dients"
-    ],
-    "salade": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "saucisse": [
-        "ingr\u00e9dients"
-    ],
-    "vitamines": [
-        "ingr\u00e9dients"
-    ],
-    "safran": [
-        "ingr\u00e9dients"
-    ],
-    "cacao": [
-        "ingr\u00e9dients",
-        "cafe"
-    ],
-    "jus": [
-        "ingr\u00e9dients",
-        "d\u00e9gustation"
-    ],
-    "patates": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "b\u0153uf": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie"
-    ],
-    "fruit de mer": [
-        "ingr\u00e9dients",
-        "gastronomie"
-    ],
-    "l\u00e9gumes": [
-        "ingr\u00e9dients",
-        "jardinage",
-        "repas",
-        "cafe",
-        "gastronomie",
-        "nourriture"
-    ],
-    "frit": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "citron": [
-        "ingr\u00e9dients"
-    ],
-    "haricots": [
-        "ingr\u00e9dients",
-        "repas",
-        "cafe"
-    ],
-    "des noisettes": [
-        "ingr\u00e9dients"
-    ],
-    "l\u00e9gume": [
-        "ingr\u00e9dients",
-        "jardinage",
-        "repas"
-    ],
-    "orge": [
-        "ingr\u00e9dients"
-    ],
-    "soupe": [
-        "ingr\u00e9dients",
-        "repas",
-        "d\u00eener"
-    ],
-    "fromage": [
-        "ingr\u00e9dients",
-        "repas",
-        "gastronomie",
-        "d\u00e9gustation"
-    ],
-    "levure": [
-        "ingr\u00e9dients"
-    ],
-    "\u00e0 base de plantes": [
-        "ingr\u00e9dients"
-    ],
-    "s\u00e9same": [
-        "ingr\u00e9dients",
-        "atelier"
-    ],
-    "cacahu\u00e8tes": [
-        "ingr\u00e9dients"
-    ],
-    "s\u00e9ch\u00e9": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "produits de beaut\u00e9": [
-        "ingr\u00e9dients"
-    ],
-    "crevette": [
-        "ingr\u00e9dients"
-    ],
-    "chocolat": [
-        "ingr\u00e9dients",
-        "cafe",
-        "d\u00e9gustation"
-    ],
-    "sucre": [
-        "ingr\u00e9dients",
-        "alcool",
-        "cafe"
-    ],
-    "poulet": [
-        "ingr\u00e9dients",
-        "repas",
-        "nourriture"
-    ],
-    "g\u00e2teaux": [
-        "ingr\u00e9dients"
-    ],
-    "aigre": [
-        "ingr\u00e9dients",
-        "d\u00e9gustation"
-    ],
-    "g\u00e2teau": [
-        "ingr\u00e9dients",
-        "repas",
-        "cafe"
-    ],
-    "poudre": [
-        "ingr\u00e9dients"
-    ],
-    "pomme de terre": [
-        "ingr\u00e9dients",
-        "repas"
-    ],
-    "lait": [
-        "ingr\u00e9dients",
-        "repas",
-        "cafe",
-        "d\u00e9gustation",
-        "nourriture"
-    ],
-    "moutarde": [
-        "ingr\u00e9dients"
-    ],
-    "cr\u00e8me": [
-        "ingr\u00e9dients",
-        "repas",
-        "cafe",
-        "d\u00e9gustation"
-    ],
-    "huiles": [
-        "ingr\u00e9dients",
-        "peinture"
-    ],
-    "v\u00e9g\u00e9tarien": [
-        "ingr\u00e9dients"
-    ],
-    "ma\u00efs": [
-        "ingr\u00e9dients",
-        "repas",
-        "cafe"
-    ],
-    "curry": [
-        "ingr\u00e9dients"
-    ],
-    "citron vert": [
-        "ingr\u00e9dients"
     ],
     "d\u00e9co": [
         "art"
@@ -1033,7 +614,6 @@
     ],
     "organis\u00e9": [
         "art",
-        "\u00c9v\u00e9nement",
         "festival",
         "competition",
         "tournoi"
@@ -1062,6 +642,12 @@
     "marchand": [
         "art"
     ],
+    "peinture": [
+        "art",
+        "dessin",
+        "photographie",
+        "atelier"
+    ],
     "expos\u00e9": [
         "art",
         "dessin",
@@ -1069,8 +655,7 @@
         "photographie",
         "collection",
         "exposition",
-        "musee",
-        "peinture"
+        "musee"
     ],
     "la photographie": [
         "art",
@@ -1096,12 +681,10 @@
         "musique"
     ],
     "ouvrages d'art": [
-        "art",
-        "peinture"
+        "art"
     ],
     "abstrait": [
-        "art",
-        "peinture"
+        "art"
     ],
     "contemporain": [
         "art",
@@ -1147,8 +730,7 @@
     "peintre": [
         "art",
         "dessin",
-        "atelier",
-        "peinture"
+        "atelier"
     ],
     "artiste": [
         "art"
@@ -1166,8 +748,7 @@
         "dessin",
         "photographie",
         "collection",
-        "musee",
-        "peinture"
+        "musee"
     ],
     "artisanat": [
         "art",
@@ -1181,8 +762,7 @@
         "art"
     ],
     "institut": [
-        "art",
-        "oenologie"
+        "art"
     ],
     "vid\u00e9os": [
         "musique",
@@ -1258,7 +838,6 @@
     ],
     "prix": [
         "musique",
-        "\u00c9v\u00e9nement",
         "innovation",
         "festival",
         "competition"
@@ -1284,11 +863,16 @@
     ],
     "genre": [
         "musique",
-        "social"
+        "social",
+        "oc\u00e9an"
     ],
     "bande sonore": [
         "musique",
         "film"
+    ],
+    "houblon": [
+        "musique",
+        "danse"
     ],
     "duo": [
         "musique",
@@ -1383,7 +967,6 @@
         "enseignement",
         "danse",
         "chant",
-        "oenologie",
         "formation"
     ],
     "attention": [
@@ -1422,12 +1005,10 @@
     ],
     "des sports": [
         "sport",
-        "raquette",
         "loisir"
     ],
     "les athl\u00e8tes": [
         "sport",
-        "\u00c9v\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1441,7 +1022,6 @@
     ],
     "ski": [
         "sport",
-        "\u00c9v\u00e9nement",
         "montagne"
     ],
     "lacrosse": [
@@ -1467,7 +1047,6 @@
     ],
     "athl\u00e9tisme": [
         "sport",
-        "\u00c9v\u00e9nement",
         "jeux",
         "association",
         "marche"
@@ -1481,7 +1060,6 @@
     ],
     "olympique": [
         "sport",
-        "\u00c9v\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1498,7 +1076,6 @@
     ],
     "jeux olympiques": [
         "sport",
-        "\u00c9v\u00e9nement",
         "jeux",
         "competition"
     ],
@@ -1507,7 +1084,6 @@
     ],
     "tennis": [
         "sport",
-        "raquette",
         "loisir",
         "tournoi"
     ],
@@ -1540,7 +1116,6 @@
     ],
     "concurrents": [
         "sport",
-        "\u00c9v\u00e9nement",
         "competition"
     ],
     "p\u00eache": [
@@ -1573,7 +1148,8 @@
     ],
     "voile": [
         "sport",
-        "loisir"
+        "loisir",
+        "oc\u00e9an"
     ],
     "emballer": [
         "sport"
@@ -1588,10 +1164,9 @@
     "int\u00e9rieur": [
         "sport",
         "m\u00e9ditation",
-        "\u00c9v\u00e9nement",
         "loisir",
         "tournoi",
-        "peinture"
+        "oc\u00e9an"
     ],
     "comp\u00e9titif": [
         "sport",
@@ -1609,7 +1184,6 @@
     ],
     "lutte": [
         "sport",
-        "\u00c9v\u00e9nement",
         "solidarit\u00e9"
     ],
     "le golf": [
@@ -1654,7 +1228,6 @@
     ],
     "attestation": [
         "entra\u00eenement",
-        "gestion",
         "formation"
     ],
     "a\u00e9rodrome": [
@@ -1663,7 +1236,6 @@
     ],
     "qualifi\u00e9": [
         "entra\u00eenement",
-        "\u00c9v\u00e9nement",
         "competition",
         "tournoi",
         "formation"
@@ -1687,12 +1259,10 @@
     ],
     "personnel": [
         "entra\u00eenement",
-        "d\u00e9fense",
         "formation"
     ],
     "tactique": [
         "entra\u00eenement",
-        "d\u00e9fense",
         "formation"
     ],
     "instruction": [
@@ -1714,13 +1284,11 @@
     ],
     "facilit\u00e9": [
         "entra\u00eenement",
-        "r\u00e9paration",
         "loisir",
         "formation"
     ],
     "combattant": [
         "entra\u00eenement",
-        "d\u00e9fense",
         "formation"
     ],
     "op\u00e9rationnel": [
@@ -1729,7 +1297,6 @@
     ],
     "combat": [
         "entra\u00eenement",
-        "\u00c9v\u00e9nement",
         "formation"
     ],
     "corps": [
@@ -1763,8 +1330,7 @@
         "entra\u00eenement",
         "repas",
         "gastronomie",
-        "formation",
-        "nourriture"
+        "formation"
     ],
     "bataillon": [
         "entra\u00eenement",
@@ -1772,7 +1338,6 @@
     ],
     "commande": [
         "entra\u00eenement",
-        "d\u00e9fense",
         "formation"
     ],
     "officiers": [
@@ -1865,14 +1430,11 @@
         "solidarit\u00e9"
     ],
     "s\u00e9curit\u00e9": [
-        "social",
-        "d\u00e9fense",
-        "nourriture"
+        "social"
     ],
     "\u00e9conomique": [
         "social",
         "\u00c9conomie",
-        "investissement",
         "finance"
     ],
     "d\u00e9mocratie": [
@@ -1890,7 +1452,6 @@
     ],
     "cr\u00e9dit": [
         "social",
-        "investissement",
         "finance"
     ],
     "mouvements": [
@@ -1937,132 +1498,7 @@
         "social",
         "volontariat",
         "innovation",
-        "investissement",
-        "gestion",
-        "oenologie",
         "finance"
-    ],
-    "t\u00e9l\u00e9scripteur": [
-        "\u00c9change"
-    ],
-    "nyse": [
-        "\u00c9change"
-    ],
-    "\u00e0 terme": [
-        "\u00c9change"
-    ],
-    "titres": [
-        "\u00c9change",
-        "investissement",
-        "finance"
-    ],
-    "marchandise": [
-        "\u00c9change"
-    ],
-    "action": [
-        "\u00c9change",
-        "investissement"
-    ],
-    "devise": [
-        "\u00c9change",
-        "\u00c9conomie"
-    ],
-    "seconde": [
-        "\u00c9change"
-    ],
-    "commerce": [
-        "\u00c9change",
-        "\u00c9conomie",
-        "investissement",
-        "solidarit\u00e9",
-        "finance"
-    ],
-    "prendre": [
-        "\u00c9change"
-    ],
-    "constituant": [
-        "\u00c9change"
-    ],
-    "dollar": [
-        "\u00c9change"
-    ],
-    "actions": [
-        "\u00c9change",
-        "investissement"
-    ],
-    "les taux": [
-        "\u00c9change",
-        "d\u00e9tente"
-    ],
-    "taux": [
-        "\u00c9change",
-        "d\u00e9tente"
-    ],
-    "mon\u00e9taire": [
-        "\u00c9change",
-        "\u00c9conomie",
-        "finance"
-    ],
-    "indice": [
-        "\u00c9change"
-    ],
-    "transactions": [
-        "\u00c9change"
-    ],
-    "serveur": [
-        "\u00c9change"
-    ],
-    "brouillon": [
-        "\u00c9change"
-    ],
-    "symbole": [
-        "\u00c9change"
-    ],
-    "id\u00e9es": [
-        "\u00c9change",
-        "discussion",
-        "cr\u00e9ativit\u00e9",
-        "innovation",
-        "partage",
-        "imagination"
-    ],
-    "t\u00e9l\u00e9phone": [
-        "\u00c9change",
-        "\u00c9coute"
-    ],
-    "paiement": [
-        "\u00c9change"
-    ],
-    "esp\u00e8ces": [
-        "\u00c9change",
-        "investissement",
-        "cafe",
-        "animaux"
-    ],
-    "\u00e9quit\u00e9": [
-        "\u00c9change",
-        "investissement",
-        "finance"
-    ],
-    "marchandises": [
-        "\u00c9change",
-        "\u00c9conomie"
-    ],
-    "commission": [
-        "\u00c9change"
-    ],
-    "march\u00e9": [
-        "\u00c9change",
-        "investissement",
-        "marche"
-    ],
-    "contrats": [
-        "\u00c9change"
-    ],
-    "r\u00e9serves": [
-        "\u00c9change",
-        "exploration",
-        "nature"
     ],
     "forums": [
         "discussion"
@@ -2111,8 +1547,14 @@
     ],
     "participants": [
         "discussion",
-        "\u00c9v\u00e9nement",
         "atelier"
+    ],
+    "id\u00e9es": [
+        "discussion",
+        "cr\u00e9ativit\u00e9",
+        "innovation",
+        "partage",
+        "imagination"
     ],
     "question": [
         "discussion"
@@ -2246,8 +1688,7 @@
         "m\u00e9ditation"
     ],
     "les pratiques": [
-        "m\u00e9ditation",
-        "gestion"
+        "m\u00e9ditation"
     ],
     "retraite": [
         "m\u00e9ditation"
@@ -2511,9 +1952,7 @@
         "d\u00e9tente",
         "repas",
         "alcool",
-        "cafe",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "magn\u00e9tique": [
         "d\u00e9tente"
@@ -2523,8 +1962,7 @@
     ],
     "rotation": [
         "d\u00e9tente",
-        "r\u00e9flexion",
-        "raquette"
+        "r\u00e9flexion"
     ],
     "impulsion": [
         "d\u00e9tente"
@@ -2577,7 +2015,6 @@
     ],
     "tissu": [
         "d\u00e9tente",
-        "r\u00e9paration",
         "exposition"
     ],
     "constante": [
@@ -2603,17 +2040,14 @@
         "d\u00e9tente"
     ],
     "m\u00e9canisme": [
-        "d\u00e9tente",
-        "r\u00e9paration"
+        "d\u00e9tente"
     ],
     "boire": [
         "d\u00e9tente",
         "repas",
         "aperitif",
         "alcool",
-        "cafe",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "formule": [
         "d\u00e9tente",
@@ -2641,6 +2075,9 @@
     "r\u00e9ponse": [
         "d\u00e9tente"
     ],
+    "les taux": [
+        "d\u00e9tente"
+    ],
     "r\u00e9gulation": [
         "d\u00e9tente"
     ],
@@ -2653,6 +2090,9 @@
         "f\u00eate"
     ],
     "solution": [
+        "d\u00e9tente"
+    ],
+    "taux": [
         "d\u00e9tente"
     ],
     "sympt\u00f4mes": [
@@ -2750,8 +2190,7 @@
     ],
     "science": [
         "lecture",
-        "innovation",
-        "oenologie"
+        "innovation"
     ],
     "\u00e9coute": [
         "lecture",
@@ -2839,8 +2278,7 @@
     ],
     "conseil": [
         "\u00c9coute",
-        "jardinage",
-        "d\u00e9fense"
+        "jardinage"
     ],
     "conversation": [
         "\u00c9coute",
@@ -2909,6 +2347,9 @@
     "entendu": [
         "\u00c9coute",
         "rire"
+    ],
+    "t\u00e9l\u00e9phone": [
+        "\u00c9coute"
     ],
     "message": [
         "\u00c9coute"
@@ -3033,8 +2474,7 @@
         "divertissement"
     ],
     "wwe": [
-        "divertissement",
-        "\u00c9v\u00e9nement"
+        "divertissement"
     ],
     "dvd": [
         "divertissement",
@@ -3071,12 +2511,10 @@
     "des photos": [
         "divertissement",
         "photographie",
-        "film",
-        "peinture"
+        "film"
     ],
     "lieu": [
         "divertissement",
-        "\u00c9v\u00e9nement",
         "concert",
         "loisir"
     ],
@@ -3101,8 +2539,7 @@
         "festival"
     ],
     "la programmation": [
-        "divertissement",
-        "raquette"
+        "divertissement"
     ],
     "th\u00e9\u00e2tral": [
         "divertissement",
@@ -3128,8 +2565,7 @@
         "divertissement"
     ],
     "filiale": [
-        "divertissement",
-        "investissement"
+        "divertissement"
     ],
     "distribution": [
         "divertissement"
@@ -3302,8 +2738,7 @@
         "f\u00eate"
     ],
     "secr\u00e9taire": [
-        "f\u00eate",
-        "d\u00e9fense"
+        "f\u00eate"
     ],
     "forage": [
         "exploration"
@@ -3344,7 +2779,8 @@
         "exploration"
     ],
     "au large": [
-        "exploration"
+        "exploration",
+        "oc\u00e9an"
     ],
     "min\u00e9ral": [
         "exploration"
@@ -3356,7 +2792,8 @@
         "exploration"
     ],
     "arctique": [
-        "exploration"
+        "exploration",
+        "oc\u00e9an"
     ],
     "extraction": [
         "exploration"
@@ -3375,7 +2812,8 @@
     "exp\u00e9dition": [
         "exploration",
         "voyage",
-        "d\u00e9couverte"
+        "d\u00e9couverte",
+        "oc\u00e9an"
     ],
     "explorant": [
         "exploration"
@@ -3420,7 +2858,12 @@
     ],
     "antarctique": [
         "exploration",
-        "montagne"
+        "montagne",
+        "oc\u00e9an"
+    ],
+    "r\u00e9serves": [
+        "exploration",
+        "nature"
     ],
     "lune": [
         "exploration"
@@ -3432,14 +2875,14 @@
         "exploration"
     ],
     "bassin": [
-        "exploration"
+        "exploration",
+        "oc\u00e9an"
     ],
     "solaire": [
         "exploration"
     ],
     "ressources": [
         "exploration",
-        "gestion",
         "partage"
     ],
     "mines": [
@@ -3462,7 +2905,6 @@
         "exploration",
         "voyage",
         "innovation",
-        "investissement",
         "amusement",
         "imagination"
     ],
@@ -3541,7 +2983,6 @@
     ],
     "se pr\u00e9cipiter": [
         "d\u00e9couverte",
-        "d\u00e9fense",
         "soiree"
     ],
     "d\u00e9couvert": [
@@ -3553,8 +2994,7 @@
         "partage"
     ],
     "adn": [
-        "d\u00e9couverte",
-        "r\u00e9paration"
+        "d\u00e9couverte"
     ],
     "or": [
         "d\u00e9couverte"
@@ -3585,7 +3025,6 @@
     ],
     "financement": [
         "enseignement",
-        "investissement",
         "caritatif",
         "finance"
     ],
@@ -3675,8 +3114,7 @@
         "enseignement"
     ],
     "universit\u00e9": [
-        "enseignement",
-        "oenologie"
+        "enseignement"
     ],
     "originalit\u00e9": [
         "cr\u00e9ativit\u00e9"
@@ -3748,8 +3186,7 @@
         "alcool"
     ],
     "prestataire": [
-        "construction",
-        "d\u00e9fense"
+        "construction"
     ],
     "barrage": [
         "construction"
@@ -3774,15 +3211,13 @@
         "construction"
     ],
     "des ponts": [
-        "construction",
-        "r\u00e9paration"
+        "construction"
     ],
     "co\u00fbt": [
         "construction"
     ],
     "entretien": [
-        "construction",
-        "r\u00e9paration"
+        "construction"
     ],
     "pont": [
         "construction"
@@ -3792,7 +3227,6 @@
         "volontariat",
         "d\u00e9veloppement",
         "am\u00e9lioration",
-        "investissement",
         "caritatif"
     ],
     "r\u00e9servoir": [
@@ -3812,10 +3246,8 @@
     ],
     "frais": [
         "construction",
-        "r\u00e9paration",
         "repas",
-        "gastronomie",
-        "nourriture"
+        "gastronomie"
     ],
     "projet": [
         "construction"
@@ -3826,170 +3258,12 @@
     "la tour": [
         "construction"
     ],
-    "homologue": [
-        "r\u00e9paration"
-    ],
-    "drainage": [
-        "r\u00e9paration",
-        "am\u00e9lioration"
-    ],
-    "r\u00e9vision": [
-        "r\u00e9paration"
-    ],
-    "nettoyage": [
-        "r\u00e9paration",
-        "am\u00e9lioration"
-    ],
-    "r\u00e9par\u00e9": [
-        "r\u00e9paration"
-    ],
-    "r\u00e9plication": [
-        "r\u00e9paration"
-    ],
-    "boutique": [
-        "r\u00e9paration",
-        "cafe",
-        "atelier",
-        "d\u00e9gustation",
-        "peinture"
-    ],
-    "d\u00e9g\u00e2ts": [
-        "r\u00e9paration"
-    ],
-    "dommage": [
-        "r\u00e9paration"
-    ],
-    "endommag\u00e9": [
-        "r\u00e9paration"
-    ],
-    "d\u00e9chir\u00e9": [
-        "r\u00e9paration"
-    ],
-    "consultant": [
-        "r\u00e9paration",
-        "gestion"
-    ],
-    "d\u00e9fauts": [
-        "r\u00e9paration"
-    ],
-    "g\u00e8nes": [
-        "r\u00e9paration"
-    ],
-    "sentier": [
-        "r\u00e9paration",
-        "exposition"
-    ],
-    "chantier naval": [
-        "r\u00e9paration"
-    ],
-    "d\u00e9p\u00f4t": [
-        "r\u00e9paration"
-    ],
-    "soupape": [
-        "r\u00e9paration"
-    ],
-    "remplacement": [
-        "r\u00e9paration"
-    ],
-    "pauses": [
-        "r\u00e9paration",
-        "repas"
-    ],
-    "cour": [
-        "r\u00e9paration"
-    ],
-    "machinerie": [
-        "r\u00e9paration"
-    ],
-    "dock": [
-        "r\u00e9paration"
-    ],
-    "bateau": [
-        "r\u00e9paration",
-        "plaisir"
-    ],
-    "importe": [
-        "r\u00e9paration",
-        "volontariat",
-        "am\u00e9lioration"
-    ],
-    "prot\u00e9ines": [
-        "r\u00e9paration"
-    ],
-    "restaurer": [
-        "r\u00e9paration"
-    ],
-    "restauration": [
-        "r\u00e9paration",
-        "gastronomie"
-    ],
-    "g\u00e8ne": [
-        "r\u00e9paration"
-    ],
-    "conservation": [
-        "r\u00e9paration",
-        "am\u00e9lioration",
-        "gestion",
-        "nature"
-    ],
-    "genou": [
-        "r\u00e9paration"
-    ],
-    "reconstruction": [
-        "r\u00e9paration"
-    ],
-    "prot\u00e9ine": [
-        "r\u00e9paration",
-        "repas"
-    ],
-    "\u00e9quipement": [
-        "r\u00e9paration"
-    ],
-    "navires": [
-        "r\u00e9paration"
-    ],
-    "chirurgie": [
-        "r\u00e9paration"
-    ],
-    "r\u00e9cup\u00e9ration": [
-        "r\u00e9paration"
-    ],
-    "remplacer": [
-        "r\u00e9paration"
-    ],
-    "cellules": [
-        "r\u00e9paration"
-    ],
-    "cancer": [
-        "r\u00e9paration",
-        "exposition",
-        "caritatif"
-    ],
-    "cass\u00e9": [
-        "r\u00e9paration"
-    ],
-    "v\u00e9hicules": [
-        "r\u00e9paration"
-    ],
-    "navigu\u00e9": [
-        "r\u00e9paration"
-    ],
-    "des arbres": [
-        "r\u00e9paration",
-        "jardinage",
-        "am\u00e9lioration"
-    ],
-    "transport": [
-        "r\u00e9paration"
-    ],
     "horticulture": [
         "jardinage"
     ],
     "agriculture": [
         "jardinage",
-        "\u00c9conomie",
-        "cafe",
-        "nourriture"
+        "\u00c9conomie"
     ],
     "jardinier": [
         "jardinage"
@@ -4007,13 +3281,23 @@
         "jardinage"
     ],
     "plantation": [
+        "jardinage"
+    ],
+    "l\u00e9gumes": [
         "jardinage",
-        "cafe"
+        "repas",
+        "gastronomie"
+    ],
+    "herbes": [
+        "jardinage",
+        "gastronomie"
+    ],
+    "l\u00e9gume": [
+        "jardinage",
+        "repas"
     ],
     "organique": [
-        "jardinage",
-        "cafe",
-        "nourriture"
+        "jardinage"
     ],
     "botanique": [
         "jardinage"
@@ -4031,12 +3315,10 @@
     "paysage": [
         "jardinage",
         "photographie",
-        "nature",
-        "peinture"
+        "nature"
     ],
     "cultivation": [
-        "jardinage",
-        "cafe"
+        "jardinage"
     ],
     "plantes": [
         "jardinage",
@@ -4049,8 +3331,7 @@
         "jardinage",
         "engagement",
         "d\u00e9veloppement",
-        "innovation",
-        "gestion"
+        "innovation"
     ],
     "fleur": [
         "jardinage"
@@ -4060,16 +3341,12 @@
     ],
     "cultures": [
         "jardinage",
-        "\u00c9conomie",
-        "cafe",
-        "nourriture"
+        "\u00c9conomie"
     ],
     "des fruits": [
         "jardinage",
         "repas",
-        "cafe",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "mode de vie": [
         "jardinage",
@@ -4077,7 +3354,6 @@
     ],
     "outils": [
         "jardinage",
-        "gestion",
         "atelier"
     ],
     "pr\u00e9sentateur": [
@@ -4089,7 +3365,6 @@
     "fruit": [
         "jardinage",
         "repas",
-        "cafe",
         "gastronomie",
         "d\u00e9gustation"
     ],
@@ -4099,14 +3374,11 @@
     "croissance": [
         "jardinage",
         "innovation",
-        "\u00c9conomie",
-        "investissement"
+        "\u00c9conomie"
     ],
     "graines": [
         "jardinage",
-        "cafe",
-        "tournoi",
-        "nourriture"
+        "tournoi"
     ],
     "animal": [
         "jardinage",
@@ -4119,8 +3391,7 @@
     "ext\u00e9rieur": [
         "jardinage",
         "loisir",
-        "tournoi",
-        "peinture"
+        "tournoi"
     ],
     "chasse": [
         "jardinage",
@@ -4128,7 +3399,6 @@
     ],
     "fermes": [
         "jardinage",
-        "cafe",
         "animaux"
     ],
     "grandir": [
@@ -4154,13 +3424,14 @@
         "jardinage"
     ],
     "grandi": [
-        "jardinage",
-        "cafe"
+        "jardinage"
     ],
     "ferme": [
+        "jardinage"
+    ],
+    "des arbres": [
         "jardinage",
-        "investissement",
-        "gestion"
+        "am\u00e9lioration"
     ],
     "photojournalisme": [
         "photographie"
@@ -4203,8 +3474,7 @@
         "photographie",
         "film",
         "imagination",
-        "concert",
-        "peinture"
+        "concert"
     ],
     "imagerie": [
         "photographie"
@@ -4233,8 +3503,7 @@
     ],
     "image": [
         "photographie",
-        "r\u00e9flexion",
-        "peinture"
+        "r\u00e9flexion"
     ],
     "studio": [
         "photographie"
@@ -4250,8 +3519,7 @@
     ],
     "sc\u00e8nes": [
         "photographie",
-        "film",
-        "peinture"
+        "film"
     ],
     "journalisme": [
         "photographie"
@@ -4264,8 +3532,7 @@
         "photographie"
     ],
     "mettant en vedette": [
-        "film",
-        "raquette"
+        "film"
     ],
     "refaire": [
         "film"
@@ -4533,15 +3800,13 @@
         "instrument"
     ],
     "cordes": [
-        "instrument",
-        "raquette"
+        "instrument"
     ],
     "\u00e0 l'\u00e9coute": [
         "instrument"
     ],
     "fabricant": [
-        "instrument",
-        "cafe"
+        "instrument"
     ],
     "clarinette": [
         "instrument"
@@ -4590,9 +3855,7 @@
         "instrument"
     ],
     "cha\u00eene": [
-        "instrument",
-        "cafe",
-        "nourriture"
+        "instrument"
     ],
     "laiton": [
         "instrument"
@@ -4619,8 +3882,7 @@
         "instrument"
     ],
     "atterrissage": [
-        "instrument",
-        "d\u00e9fense"
+        "instrument"
     ],
     "acoustique": [
         "instrument"
@@ -4693,8 +3955,7 @@
     ],
     "articles": [
         "collection",
-        "musee",
-        "nourriture"
+        "musee"
     ],
     "compilation": [
         "collection"
@@ -4819,7 +4080,8 @@
         "r\u00e9flexion"
     ],
     "vagues": [
-        "r\u00e9flexion"
+        "r\u00e9flexion",
+        "oc\u00e9an"
     ],
     "optique": [
         "r\u00e9flexion"
@@ -4843,13 +4105,15 @@
         "r\u00e9flexion"
     ],
     "vague": [
-        "r\u00e9flexion"
+        "r\u00e9flexion",
+        "oc\u00e9an"
     ],
     "refl\u00e9ter": [
         "r\u00e9flexion"
     ],
     "surface": [
-        "r\u00e9flexion"
+        "r\u00e9flexion",
+        "oc\u00e9an"
     ],
     "radiation": [
         "r\u00e9flexion",
@@ -4911,7 +4175,6 @@
     ],
     "opportunit\u00e9s": [
         "volontariat",
-        "investissement",
         "loisir"
     ],
     "collecte de fonds": [
@@ -4937,8 +4200,7 @@
         "caritatif"
     ],
     "abri": [
-        "volontariat",
-        "nourriture"
+        "volontariat"
     ],
     "clinique": [
         "volontariat"
@@ -5010,6 +4272,10 @@
     "devoir": [
         "volontariat"
     ],
+    "importe": [
+        "volontariat",
+        "am\u00e9lioration"
+    ],
     "communaut\u00e9s": [
         "volontariat"
     ],
@@ -5032,12 +4298,10 @@
         "organisation"
     ],
     "iso": [
-        "organisation",
-        "gestion"
+        "organisation"
     ],
     "organisationnel": [
-        "organisation",
-        "gestion"
+        "organisation"
     ],
     "scout": [
         "organisation"
@@ -5067,170 +4331,7 @@
         "solidarit\u00e9"
     ],
     "fond\u00e9": [
-        "organisation",
-        "oenologie"
-    ],
-    "cano\u00eb": [
-        "\u00c9v\u00e9nement"
-    ],
-    "slalom": [
-        "\u00c9v\u00e9nement"
-    ],
-    "jeux paralympiques": [
-        "\u00c9v\u00e9nement"
-    ],
-    "poker": [
-        "\u00c9v\u00e9nement",
-        "tournoi"
-    ],
-    "sprint": [
-        "\u00c9v\u00e9nement"
-    ],
-    "poids lourd": [
-        "\u00c9v\u00e9nement",
-        "tournoi"
-    ],
-    "d\u00e9tenu": [
-        "\u00c9v\u00e9nement",
-        "c\u00e9l\u00e9bration",
-        "festival",
-        "competition",
-        "tournoi"
-    ],
-    "style libre": [
-        "\u00c9v\u00e9nement",
-        "jeux",
-        "competition"
-    ],
-    "relais": [
-        "\u00c9v\u00e9nement",
-        "jeux"
-    ],
-    "qualification": [
-        "\u00c9v\u00e9nement",
-        "amical",
-        "competition",
-        "tournoi"
-    ],
-    "\u00e9t\u00e9": [
-        "\u00c9v\u00e9nement"
-    ],
-    "marathon": [
-        "\u00c9v\u00e9nement",
-        "marche"
-    ],
-    "se rallier": [
-        "\u00c9v\u00e9nement",
-        "solidarit\u00e9"
-    ],
-    "bronze": [
-        "\u00c9v\u00e9nement",
-        "jeux"
-    ],
-    "p\u00e9kin": [
-        "\u00c9v\u00e9nement"
-    ],
-    "ar\u00e8ne": [
-        "\u00c9v\u00e9nement",
-        "jeux",
-        "concert",
-        "tournoi"
-    ],
-    "\u00e9tiqueter": [
-        "\u00c9v\u00e9nement",
-        "tournoi"
-    ],
-    "m\u00e9daille": [
-        "\u00c9v\u00e9nement",
-        "d\u00e9fense",
-        "jeux"
-    ],
-    "fin de semaine": [
-        "\u00c9v\u00e9nement",
-        "c\u00e9l\u00e9bration",
-        "festival",
-        "soiree"
-    ],
-    "\u00e9v\u00e9nements": [
-        "\u00c9v\u00e9nement"
-    ],
-    "dod": [
-        "d\u00e9fense"
-    ],
-    "adc": [
-        "d\u00e9fense"
-    ],
-    "m\u00e9ritoire": [
-        "d\u00e9fense"
-    ],
-    "autorisation": [
-        "d\u00e9fense"
-    ],
-    "infraction": [
-        "d\u00e9fense"
-    ],
-    "avocats": [
-        "d\u00e9fense"
-    ],
-    "missile": [
-        "d\u00e9fense",
-        "test"
-    ],
-    "avocat": [
-        "d\u00e9fense"
-    ],
-    "poursuite": [
-        "d\u00e9fense"
-    ],
-    "m\u00e8tres": [
-        "d\u00e9fense",
-        "jeux"
-    ],
-    "d\u00e9fensive": [
-        "d\u00e9fense"
-    ],
-    "radar": [
-        "d\u00e9fense"
-    ],
-    "agence": [
-        "d\u00e9fense",
-        "gestion"
-    ],
-    "intelligence": [
-        "d\u00e9fense"
-    ],
-    "strat\u00e8ge": [
-        "d\u00e9fense"
-    ],
-    "les forces": [
-        "d\u00e9fense"
-    ],
-    "civil": [
-        "d\u00e9fense"
-    ],
-    "artillerie": [
-        "d\u00e9fense"
-    ],
-    "arm\u00e9": [
-        "d\u00e9fense"
-    ],
-    "strat\u00e9gique": [
-        "d\u00e9fense",
-        "gestion"
-    ],
-    "air": [
-        "d\u00e9fense"
-    ],
-    "forcer": [
-        "d\u00e9fense"
-    ],
-    "fonds": [
-        "d\u00e9fense",
-        "innovation",
-        "investissement",
-        "caritatif",
-        "solidarit\u00e9",
-        "finance"
+        "organisation"
     ],
     "discr\u00e9tion": [
         "exercice"
@@ -5272,15 +4373,13 @@
     "r\u00e9gime": [
         "exercice",
         "repas",
-        "animaux",
-        "nourriture"
+        "animaux"
     ],
     "judiciaire": [
         "exercice"
     ],
     "en bonne sant\u00e9": [
-        "exercice",
-        "nourriture"
+        "exercice"
     ],
     "intensit\u00e9": [
         "exercice"
@@ -5298,8 +4397,7 @@
     "barres": [
         "exercice",
         "repas",
-        "alcool",
-        "cafe"
+        "alcool"
     ],
     "autorit\u00e9": [
         "exercice"
@@ -5318,7 +4416,8 @@
     ],
     "maritime": [
         "exercice",
-        "musee"
+        "musee",
+        "oc\u00e9an"
     ],
     "religion": [
         "exercice",
@@ -5389,6 +4488,9 @@
         "amical",
         "tournoi"
     ],
+    "missile": [
+        "test"
+    ],
     "\u00e9chantillon": [
         "test",
         "d\u00e9gustation"
@@ -5402,8 +4504,7 @@
     ],
     "admission": [
         "test",
-        "alcool",
-        "nourriture"
+        "alcool"
     ],
     "r\u00e9sultats": [
         "test",
@@ -5426,8 +4527,7 @@
         "d\u00e9gustation"
     ],
     "australie": [
-        "test",
-        "oenologie"
+        "test"
     ],
     "interdire": [
         "test",
@@ -5449,8 +4549,7 @@
         "d\u00e9veloppement"
     ],
     "mise en \u0153uvre": [
-        "d\u00e9veloppement",
-        "raquette"
+        "d\u00e9veloppement"
     ],
     "les technologies": [
         "d\u00e9veloppement",
@@ -5461,13 +4560,17 @@
         "d\u00e9veloppement",
         "am\u00e9lioration",
         "\u00c9conomie",
-        "investissement",
         "finance"
     ],
     "soci\u00e9t\u00e9": [
         "d\u00e9veloppement",
-        "investissement",
         "finance"
+    ],
+    "nettoyage": [
+        "am\u00e9lioration"
+    ],
+    "drainage": [
+        "am\u00e9lioration"
     ],
     "am\u00e9liorations": [
         "am\u00e9lioration"
@@ -5482,6 +4585,10 @@
     ],
     "qualit\u00e9": [
         "am\u00e9lioration"
+    ],
+    "conservation": [
+        "am\u00e9lioration",
+        "nature"
     ],
     "am\u00e9lior\u00e9": [
         "am\u00e9lioration"
@@ -5535,43 +4642,45 @@
         "innovation"
     ],
     "strat\u00e9gie": [
-        "innovation",
-        "investissement",
-        "gestion"
+        "innovation"
     ],
     "entreprises": [
         "innovation",
-        "\u00c9conomie",
-        "investissement"
+        "\u00c9conomie"
     ],
     "recherche": [
         "innovation"
     ],
     "strat\u00e9gies": [
         "innovation",
-        "\u00c9conomie",
-        "investissement",
-        "gestion"
+        "\u00c9conomie"
     ],
     "brevet": [
         "innovation"
     ],
     "solutions": [
-        "innovation",
-        "gestion"
+        "innovation"
     ],
     "collaboration": [
         "innovation",
         "partage"
     ],
+    "fonds": [
+        "innovation",
+        "caritatif",
+        "solidarit\u00e9",
+        "finance"
+    ],
     "commercialisation": [
         "innovation",
-        "gestion",
         "finance"
     ],
     "mondial": [
+        "innovation"
+    ],
+    "gestion": [
         "innovation",
-        "investissement"
+        "finance"
     ],
     "produit": [
         "innovation",
@@ -5586,8 +4695,7 @@
         "montagne"
     ],
     "pib": [
-        "\u00c9conomie",
-        "investissement"
+        "\u00c9conomie"
     ],
     "r\u00e9cession": [
         "\u00c9conomie"
@@ -5607,29 +4715,29 @@
     "d\u00e9pendant": [
         "\u00c9conomie"
     ],
-    "les industries": [
+    "mon\u00e9taire": [
         "\u00c9conomie",
-        "investissement"
+        "finance"
+    ],
+    "les industries": [
+        "\u00c9conomie"
     ],
     "b\u00e9tail": [
         "\u00c9conomie",
-        "cafe",
         "animaux"
     ],
     "secteur": [
         "\u00c9conomie",
-        "investissement",
         "finance"
     ],
     "exporter": [
-        "\u00c9conomie",
-        "cafe"
+        "\u00c9conomie"
+    ],
+    "devise": [
+        "\u00c9conomie"
     ],
     "agricole": [
-        "\u00c9conomie",
-        "cafe",
-        "oenologie",
-        "nourriture"
+        "\u00c9conomie"
     ],
     "emplois": [
         "\u00c9conomie"
@@ -5639,8 +4747,6 @@
     ],
     "\u00e9conomie": [
         "\u00c9conomie",
-        "investissement",
-        "gestion",
         "finance"
     ],
     "brut": [
@@ -5650,20 +4756,28 @@
         "\u00c9conomie"
     ],
     "emploi": [
-        "\u00c9conomie",
-        "cafe"
+        "\u00c9conomie"
+    ],
+    "marchandises": [
+        "\u00c9conomie"
     ],
     "coton": [
-        "\u00c9conomie",
-        "cafe"
+        "\u00c9conomie"
     ],
     "crise": [
         "\u00c9conomie"
     ],
+    "investissement": [
+        "\u00c9conomie",
+        "finance"
+    ],
+    "commerce": [
+        "\u00c9conomie",
+        "solidarit\u00e9",
+        "finance"
+    ],
     "bancaire": [
         "\u00c9conomie",
-        "investissement",
-        "gestion",
         "finance"
     ],
     "industriel": [
@@ -5673,225 +4787,25 @@
         "\u00c9conomie"
     ],
     "milliard": [
-        "\u00c9conomie",
-        "investissement"
+        "\u00c9conomie"
     ],
     "dette": [
         "\u00c9conomie",
-        "investissement",
         "finance"
     ],
     "richesse": [
-        "\u00c9conomie",
-        "investissement"
+        "\u00c9conomie"
     ],
     "consommation": [
         "\u00c9conomie",
         "repas",
         "alcool",
-        "cafe",
-        "loisir",
-        "nourriture"
+        "loisir"
     ],
     "touristique": [
         "\u00c9conomie",
         "gastronomie",
         "loisir"
-    ],
-    "banquier": [
-        "investissement"
-    ],
-    "courtage": [
-        "investissement"
-    ],
-    "investissements": [
-        "investissement",
-        "finance"
-    ],
-    "haie": [
-        "investissement"
-    ],
-    "investir": [
-        "investissement"
-    ],
-    "actif": [
-        "investissement",
-        "gestion",
-        "finance"
-    ],
-    "investisseur": [
-        "investissement"
-    ],
-    "portefeuille": [
-        "investissement",
-        "finance"
-    ],
-    "conseillers": [
-        "investissement"
-    ],
-    "investi": [
-        "investissement"
-    ],
-    "actifs": [
-        "investissement",
-        "gestion",
-        "finance"
-    ],
-    "institutionnel": [
-        "investissement"
-    ],
-    "miser": [
-        "investissement"
-    ],
-    "llc": [
-        "investissement"
-    ],
-    "les partenaires": [
-        "investissement"
-    ],
-    "avoirs": [
-        "investissement"
-    ],
-    "des \u00e9conomies": [
-        "investissement"
-    ],
-    "banques": [
-        "investissement",
-        "finance"
-    ],
-    "pension": [
-        "investissement"
-    ],
-    "banque": [
-        "investissement",
-        "finance"
-    ],
-    "conseiller": [
-        "investissement"
-    ],
-    "consultatif": [
-        "investissement",
-        "finance"
-    ],
-    "capital": [
-        "investissement"
-    ],
-    "confiance": [
-        "investissement",
-        "caritatif"
-    ],
-    "obligations": [
-        "investissement"
-    ],
-    "pr\u00eats": [
-        "investissement",
-        "finance"
-    ],
-    "financier": [
-        "investissement",
-        "finance"
-    ],
-    "clients": [
-        "investissement",
-        "gestion"
-    ],
-    "mutuel": [
-        "investissement",
-        "solidarit\u00e9"
-    ],
-    "assurance": [
-        "investissement",
-        "finance"
-    ],
-    "lt\u00e9e": [
-        "investissement",
-        "gestion",
-        "loisir",
-        "finance"
-    ],
-    "profit": [
-        "investissement"
-    ],
-    "pdg": [
-        "investissement"
-    ],
-    "acquisition": [
-        "investissement"
-    ],
-    "les d\u00e9cisions": [
-        "investissement",
-        "influence"
-    ],
-    "g\u00e9rant": [
-        "investissement",
-        "gestion",
-        "finance"
-    ],
-    "million": [
-        "investissement"
-    ],
-    "domaine": [
-        "investissement",
-        "oenologie"
-    ],
-    "risque": [
-        "investissement",
-        "alcool",
-        "exposition"
-    ],
-    "imp\u00f4t": [
-        "investissement",
-        "finance"
-    ],
-    "holding": [
-        "investissement"
-    ],
-    "vente au d\u00e9tail": [
-        "investissement",
-        "loisir"
-    ],
-    "mba": [
-        "gestion",
-        "finance"
-    ],
-    "comptabilit\u00e9": [
-        "gestion",
-        "finance"
-    ],
-    "ressource": [
-        "gestion"
-    ],
-    "logiciel": [
-        "gestion"
-    ],
-    "g\u00e9rer": [
-        "gestion"
-    ],
-    "surveillance": [
-        "gestion"
-    ],
-    "client": [
-        "gestion"
-    ],
-    "faune": [
-        "gestion",
-        "animaux",
-        "nature"
-    ],
-    "syst\u00e8mes": [
-        "gestion"
-    ],
-    "d\u00e9chets": [
-        "gestion",
-        "loisir",
-        "nourriture"
-    ],
-    "planification": [
-        "gestion",
-        "finance"
-    ],
-    "ing\u00e9nierie": [
-        "gestion"
     ],
     "des dossiers": [
         "partage"
@@ -5930,6 +4844,9 @@
         "partage"
     ],
     "\u00e9vident": [
+        "influence"
+    ],
+    "les d\u00e9cisions": [
         "influence"
     ],
     "extrins\u00e8que": [
@@ -6139,6 +5056,11 @@
         "c\u00e9l\u00e9bration",
         "d\u00eener"
     ],
+    "fin de semaine": [
+        "c\u00e9l\u00e9bration",
+        "festival",
+        "soiree"
+    ],
     "calendrier": [
         "c\u00e9l\u00e9bration"
     ],
@@ -6158,6 +5080,12 @@
     "jour": [
         "c\u00e9l\u00e9bration"
     ],
+    "d\u00e9tenu": [
+        "c\u00e9l\u00e9bration",
+        "festival",
+        "competition",
+        "tournoi"
+    ],
     "\u00e9v\u00e9nement": [
         "c\u00e9l\u00e9bration",
         "tournoi"
@@ -6166,7 +5094,8 @@
         "c\u00e9l\u00e9bration"
     ],
     "climat": [
-        "changement"
+        "changement",
+        "oc\u00e9an"
     ],
     "en changeant": [
         "changement"
@@ -6228,6 +5157,10 @@
         "jeux",
         "tournoi"
     ],
+    "style libre": [
+        "jeux",
+        "competition"
+    ],
     "xbox": [
         "jeux"
     ],
@@ -6251,6 +5184,9 @@
     "arcade": [
         "jeux"
     ],
+    "relais": [
+        "jeux"
+    ],
     "tra\u00een\u00e9e": [
         "jeux"
     ],
@@ -6270,6 +5206,14 @@
     "note": [
         "jeux"
     ],
+    "ar\u00e8ne": [
+        "jeux",
+        "concert",
+        "tournoi"
+    ],
+    "m\u00e8tres": [
+        "jeux"
+    ],
     "commonwealth": [
         "jeux"
     ],
@@ -6280,6 +5224,12 @@
         "jeux"
     ],
     "saison": [
+        "jeux"
+    ],
+    "m\u00e9daille": [
+        "jeux"
+    ],
+    "bronze": [
         "jeux"
     ],
     "gagn\u00e9": [
@@ -6312,7 +5262,6 @@
     "\u00e9quipe": [
         "jeux",
         "amical",
-        "raquette",
         "tournoi"
     ],
     "la frange": [
@@ -6467,6 +5416,9 @@
     "midi": [
         "repas"
     ],
+    "soja": [
+        "repas"
+    ],
     "dessert": [
         "repas",
         "d\u00eener"
@@ -6477,38 +5429,82 @@
     ],
     "mang\u00e9": [
         "repas",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "collation": [
         "repas"
+    ],
+    "salade": [
+        "repas"
+    ],
+    "cuit": [
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "soupe": [
+        "repas",
+        "d\u00eener"
     ],
     "je\u00fbne": [
         "repas"
     ],
     "pain": [
         "repas",
-        "cafe",
         "gastronomie",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "d\u00e9jeuner": [
         "repas",
         "d\u00eener"
     ],
+    "bouilli": [
+        "repas"
+    ],
+    "farine": [
+        "repas"
+    ],
+    "plat": [
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation",
+        "d\u00eener"
+    ],
     "insuline": [
         "repas"
+    ],
+    "frit": [
+        "repas"
+    ],
+    "patates": [
+        "repas"
+    ],
+    "haricots": [
+        "repas"
+    ],
+    "poulet": [
+        "repas"
+    ],
+    "porc": [
+        "repas",
+        "gastronomie"
     ],
     "manger": [
         "repas",
         "animaux",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
+    ],
+    "sauce": [
+        "repas"
     ],
     "a mang\u00e9": [
         "repas"
+    ],
+    "ingr\u00e9dients": [
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation"
     ],
     "glucose": [
         "repas"
@@ -6521,32 +5517,50 @@
         "d\u00e9gustation",
         "d\u00eener"
     ],
+    "b\u0153uf": [
+        "repas",
+        "gastronomie"
+    ],
     "pr\u00e9par\u00e9": [
         "repas",
         "gastronomie"
     ],
+    "beurre": [
+        "repas"
+    ],
     "consomm\u00e9": [
         "repas",
-        "alcool",
-        "nourriture"
+        "alcool"
     ],
     "sch\u00e8me": [
-        "repas",
-        "raquette",
-        "peinture"
+        "repas"
+    ],
+    "pomme de terre": [
+        "repas"
     ],
     "riz": [
         "repas",
-        "cafe",
-        "gastronomie",
-        "nourriture"
+        "gastronomie"
     ],
     "sandwich": [
         "repas"
     ],
+    "s\u00e9ch\u00e9": [
+        "repas"
+    ],
+    "ma\u00efs": [
+        "repas"
+    ],
+    "fromage": [
+        "repas",
+        "gastronomie",
+        "d\u00e9gustation"
+    ],
+    "g\u00e2teau": [
+        "repas"
+    ],
     "th\u00e9": [
         "repas",
-        "cafe",
         "gastronomie",
         "d\u00e9gustation",
         "d\u00eener"
@@ -6563,40 +5577,41 @@
     ],
     "caf\u00e9": [
         "repas",
-        "cafe",
         "gastronomie",
         "d\u00e9gustation"
     ],
     "alimentation": [
         "repas",
-        "animaux",
-        "nourriture"
+        "animaux"
+    ],
+    "lait": [
+        "repas",
+        "d\u00e9gustation"
     ],
     "\u0153ufs": [
         "repas",
-        "gastronomie",
-        "nourriture"
+        "gastronomie"
     ],
     "vin": [
         "repas",
         "aperitif",
         "alcool",
         "gastronomie",
-        "oenologie",
         "d\u00e9gustation",
-        "d\u00eener",
-        "nourriture"
+        "d\u00eener"
     ],
     "poisson": [
         "repas",
         "animaux",
-        "gastronomie",
-        "nourriture"
+        "gastronomie"
     ],
     "apr\u00e8s-midi": [
         "repas",
         "soiree",
         "d\u00e9gustation"
+    ],
+    "prot\u00e9ine": [
+        "repas"
     ],
     "\u0153uf": [
         "repas"
@@ -6604,8 +5619,15 @@
     "t\u00eate": [
         "repas"
     ],
+    "pauses": [
+        "repas"
+    ],
     "grain": [
         "repas"
+    ],
+    "cr\u00e8me": [
+        "repas",
+        "d\u00e9gustation"
     ],
     "soir\u00e9e": [
         "repas",
@@ -6650,7 +5672,6 @@
         "aperitif",
         "alcool",
         "gastronomie",
-        "oenologie",
         "d\u00e9gustation"
     ],
     "destruction": [
@@ -6718,16 +5739,13 @@
         "alcool"
     ],
     "le tabac": [
-        "alcool",
-        "cafe"
+        "alcool"
     ],
     "abus": [
         "alcool"
     ],
     "breuvages": [
-        "alcool",
-        "cafe",
-        "nourriture"
+        "alcool"
     ],
     "fermentation": [
         "alcool"
@@ -6737,9 +5755,7 @@
     ],
     "boisson": [
         "alcool",
-        "cafe",
-        "d\u00e9gustation",
-        "nourriture"
+        "d\u00e9gustation"
     ],
     "armes \u00e0 feu": [
         "alcool"
@@ -6748,27 +5764,23 @@
         "alcool"
     ],
     "en buvant": [
-        "alcool",
-        "cafe"
+        "alcool"
     ],
     "drogues": [
         "alcool"
     ],
     "empoisonnement": [
         "alcool",
-        "exposition",
-        "nourriture"
+        "exposition"
     ],
     "cigarettes": [
-        "alcool",
-        "cafe"
+        "alcool"
     ],
     "coca\u00efne": [
         "alcool"
     ],
     "bi\u00e8re": [
         "alcool",
-        "cafe",
         "d\u00e9gustation"
     ],
     "marijuana": [
@@ -6778,12 +5790,10 @@
         "alcool"
     ],
     "m\u00e9dicament": [
-        "alcool",
-        "nourriture"
+        "alcool"
     ],
     "substance": [
-        "alcool",
-        "exposition"
+        "alcool"
     ],
     "fumeur": [
         "alcool"
@@ -6792,8 +5802,7 @@
         "alcool"
     ],
     "jeu d'argent": [
-        "alcool",
-        "raquette"
+        "alcool"
     ],
     "enzyme": [
         "alcool"
@@ -6807,6 +5816,10 @@
     ],
     "r\u00e9habilitation": [
         "alcool"
+    ],
+    "substances": [
+        "alcool",
+        "exposition"
     ],
     "esprits": [
         "alcool",
@@ -6835,13 +5848,15 @@
         "alcool"
     ],
     "ill\u00e9gal": [
-        "alcool",
-        "raquette"
+        "alcool"
     ],
     "preuve": [
         "alcool"
     ],
     "r\u00e9action": [
+        "alcool"
+    ],
+    "sucre": [
         "alcool"
     ],
     "conduite": [
@@ -6856,6 +5871,10 @@
     "la pr\u00e9vention": [
         "alcool"
     ],
+    "risque": [
+        "alcool",
+        "exposition"
+    ],
     "ventes": [
         "alcool"
     ],
@@ -6867,8 +5886,7 @@
         "exposition"
     ],
     "traitement": [
-        "alcool",
-        "nourriture"
+        "alcool"
     ],
     "avancement": [
         "association"
@@ -6892,123 +5910,6 @@
     ],
     "affili\u00e9": [
         "association"
-    ],
-    "r\u00f4tissoire": [
-        "cafe"
-    ],
-    "arabica": [
-        "cafe"
-    ],
-    "expresso": [
-        "cafe"
-    ],
-    "robuste": [
-        "cafe"
-    ],
-    "grillage": [
-        "cafe"
-    ],
-    "brass\u00e9": [
-        "cafe"
-    ],
-    "manioc": [
-        "cafe"
-    ],
-    "canne \u00e0 sucre": [
-        "cafe"
-    ],
-    "bananes": [
-        "cafe"
-    ],
-    "haricot": [
-        "cafe"
-    ],
-    "pot": [
-        "cafe"
-    ],
-    "brassage": [
-        "cafe",
-        "d\u00e9gustation"
-    ],
-    "recadrer": [
-        "cafe",
-        "nourriture"
-    ],
-    "tasses": [
-        "cafe"
-    ],
-    "banane": [
-        "cafe"
-    ],
-    "canne": [
-        "cafe"
-    ],
-    "instantan\u00e9": [
-        "cafe"
-    ],
-    "filtre": [
-        "cafe"
-    ],
-    "sp\u00e9cialit\u00e9": [
-        "cafe"
-    ],
-    "cultiv\u00e9": [
-        "cafe"
-    ],
-    "plant\u00e9": [
-        "cafe"
-    ],
-    "caoutchouc": [
-        "cafe",
-        "raquette"
-    ],
-    "ethiopie": [
-        "cafe"
-    ],
-    "go\u00fbt": [
-        "cafe",
-        "gastronomie",
-        "d\u00e9gustation"
-    ],
-    "colombie": [
-        "cafe"
-    ],
-    "marques": [
-        "cafe"
-    ],
-    "machines": [
-        "cafe"
-    ],
-    "bar": [
-        "cafe"
-    ],
-    "magasins": [
-        "cafe",
-        "nourriture"
-    ],
-    "terrains": [
-        "cafe",
-        "plaisir"
-    ],
-    "marque": [
-        "cafe"
-    ],
-    "palmier": [
-        "cafe"
-    ],
-    "tonnes": [
-        "cafe"
-    ],
-    "maisons": [
-        "cafe"
-    ],
-    "producteurs": [
-        "cafe"
-    ],
-    "des produits": [
-        "cafe",
-        "gastronomie",
-        "nourriture"
     ],
     "extraterrestre": [
         "rencontre"
@@ -7041,6 +5942,9 @@
     "vigne": [
         "marche"
     ],
+    "march\u00e9": [
+        "marche"
+    ],
     "tour de batte": [
         "marche"
     ],
@@ -7057,6 +5961,9 @@
         "marche"
     ],
     "jambes": [
+        "marche"
+    ],
+    "marathon": [
         "marche"
     ],
     "les bois": [
@@ -7094,6 +6001,11 @@
     "agencements": [
         "amical"
     ],
+    "qualification": [
+        "amical",
+        "competition",
+        "tournoi"
+    ],
     "rapports": [
         "amical"
     ],
@@ -7119,7 +6031,8 @@
         "tournoi"
     ],
     "atmosph\u00e8re": [
-        "amical"
+        "amical",
+        "oc\u00e9an"
     ],
     "minute": [
         "amical"
@@ -7216,14 +6129,22 @@
     "d\u00f4me": [
         "plaisir"
     ],
+    "terrains": [
+        "plaisir"
+    ],
     "joie": [
         "plaisir"
     ],
     "plage": [
+        "plaisir",
+        "oc\u00e9an"
+    ],
+    "bateau": [
         "plaisir"
     ],
     "croisi\u00e8re": [
-        "plaisir"
+        "plaisir",
+        "oc\u00e9an"
     ],
     "sexe": [
         "plaisir"
@@ -7310,6 +6231,9 @@
     "serpents": [
         "animaux"
     ],
+    "champignons": [
+        "animaux"
+    ],
     "mouton": [
         "animaux"
     ],
@@ -7326,8 +6250,7 @@
         "animaux"
     ],
     "insectes": [
-        "animaux",
-        "nourriture"
+        "animaux"
     ],
     "des oiseaux": [
         "animaux"
@@ -7369,6 +6292,10 @@
     "les lions": [
         "animaux"
     ],
+    "faune": [
+        "animaux",
+        "nature"
+    ],
     "lion": [
         "animaux",
         "montagne"
@@ -7389,6 +6316,9 @@
         "animaux"
     ],
     "a subi": [
+        "animaux"
+    ],
+    "esp\u00e8ces": [
         "animaux"
     ],
     "chien": [
@@ -7509,6 +6439,16 @@
     "pr\u00e9occupation": [
         "nature"
     ],
+    "s\u00e9same": [
+        "atelier"
+    ],
+    "r\u00e9paration": [
+        "atelier"
+    ],
+    "boutique": [
+        "atelier",
+        "d\u00e9gustation"
+    ],
     "iowa": [
         "atelier"
     ],
@@ -7518,13 +6458,25 @@
     "gourmet": [
         "gastronomie"
     ],
+    "p\u00e2tisserie": [
+        "gastronomie"
+    ],
     "bonbons": [
+        "gastronomie"
+    ],
+    "rago\u00fbt": [
         "gastronomie"
     ],
     "livre de recettes": [
         "gastronomie"
     ],
     "sp\u00e9cialit\u00e9s": [
+        "gastronomie"
+    ],
+    "recette": [
+        "gastronomie"
+    ],
+    "fruit de mer": [
         "gastronomie"
     ],
     "hospitalit\u00e9": [
@@ -7537,6 +6489,9 @@
     "basque": [
         "gastronomie"
     ],
+    "restauration": [
+        "gastronomie"
+    ],
     "catalan": [
         "gastronomie"
     ],
@@ -7545,6 +6500,10 @@
     ],
     "l'unesco": [
         "gastronomie"
+    ],
+    "go\u00fbt": [
+        "gastronomie",
+        "d\u00e9gustation"
     ],
     "olive": [
         "gastronomie"
@@ -7571,8 +6530,12 @@
     "typique": [
         "gastronomie"
     ],
-    "m\u00e9diterran\u00e9en": [
+    "des produits": [
         "gastronomie"
+    ],
+    "m\u00e9diterran\u00e9en": [
+        "gastronomie",
+        "oc\u00e9an"
     ],
     "visiteurs": [
         "gastronomie",
@@ -7610,64 +6573,15 @@
         "gastronomie"
     ],
     "vari\u00e9t\u00e9": [
-        "gastronomie",
-        "oenologie"
-    ],
-    "viticulture": [
-        "oenologie"
-    ],
-    "attends": [
-        "oenologie"
-    ],
-    "bordeaux": [
-        "oenologie",
-        "d\u00e9gustation"
-    ],
-    "vignoble": [
-        "oenologie",
-        "d\u00e9gustation"
-    ],
-    "brock": [
-        "oenologie"
-    ],
-    "raisin": [
-        "oenologie",
-        "d\u00e9gustation"
-    ],
-    "ad\u00e9la\u00efde": [
-        "oenologie"
-    ],
-    "chimie": [
-        "oenologie"
-    ],
-    "davis": [
-        "oenologie"
-    ],
-    "degr\u00e9": [
-        "oenologie"
-    ],
-    "campus": [
-        "oenologie"
-    ],
-    "offert": [
-        "oenologie"
-    ],
-    "france": [
-        "oenologie"
-    ],
-    "californie": [
-        "oenologie"
-    ],
-    "canada": [
-        "oenologie"
-    ],
-    "\u00e9pouse": [
-        "oenologie"
+        "gastronomie"
     ],
     "d\u00e9gustateur": [
         "d\u00e9gustation"
     ],
     "sommelier": [
+        "d\u00e9gustation"
+    ],
+    "vignoble": [
         "d\u00e9gustation"
     ],
     "ar\u00f4mes": [
@@ -7706,10 +6620,16 @@
     "pinot": [
         "d\u00e9gustation"
     ],
+    "saveur": [
+        "d\u00e9gustation"
+    ],
     "homard": [
         "d\u00e9gustation"
     ],
     "ch\u00e2teau": [
+        "d\u00e9gustation"
+    ],
+    "brassage": [
         "d\u00e9gustation"
     ],
     "brasserie": [
@@ -7718,10 +6638,19 @@
     "champagne": [
         "d\u00e9gustation"
     ],
+    "aigre": [
+        "d\u00e9gustation"
+    ],
     "pommes": [
         "d\u00e9gustation"
     ],
     "bourgogne": [
+        "d\u00e9gustation"
+    ],
+    "bordeaux": [
+        "d\u00e9gustation"
+    ],
+    "raisin": [
         "d\u00e9gustation"
     ],
     "aveugle": [
@@ -7736,6 +6665,9 @@
     "noir": [
         "d\u00e9gustation"
     ],
+    "chocolat": [
+        "d\u00e9gustation"
+    ],
     "amer": [
         "d\u00e9gustation"
     ],
@@ -7743,6 +6675,9 @@
         "d\u00e9gustation"
     ],
     "chair": [
+        "d\u00e9gustation"
+    ],
+    "jus": [
         "d\u00e9gustation"
     ],
     "vari\u00e9t\u00e9s": [
@@ -7836,6 +6771,9 @@
     "n\u00e9gatif": [
         "exposition"
     ],
+    "sentier": [
+        "exposition"
+    ],
     "peau": [
         "exposition"
     ],
@@ -7867,8 +6805,7 @@
         "exposition"
     ],
     "bruit": [
-        "exposition",
-        "raquette"
+        "exposition"
     ],
     "compos\u00e9s": [
         "exposition"
@@ -7884,6 +6821,10 @@
     ],
     "les niveaux": [
         "exposition"
+    ],
+    "cancer": [
+        "exposition",
+        "caritatif"
     ],
     "\u00e9clair": [
         "exposition"
@@ -7988,6 +6929,9 @@
     ],
     "plaque": [
         "d\u00eener"
+    ],
+    "confiance": [
+        "caritatif"
     ],
     "philanthropique": [
         "caritatif"
@@ -8095,8 +7039,7 @@
         "caritatif"
     ],
     "fournir": [
-        "caritatif",
-        "nourriture"
+        "caritatif"
     ],
     "revenu": [
         "caritatif",
@@ -8156,6 +7099,9 @@
     "lib\u00e9ration": [
         "solidarit\u00e9"
     ],
+    "mutuel": [
+        "solidarit\u00e9"
+    ],
     "syndicat": [
         "solidarit\u00e9"
     ],
@@ -8168,6 +7114,9 @@
     "islamique": [
         "solidarit\u00e9"
     ],
+    "se rallier": [
+        "solidarit\u00e9"
+    ],
     "chili": [
         "solidarit\u00e9"
     ],
@@ -8175,7 +7124,8 @@
         "solidarit\u00e9"
     ],
     "indon\u00e9sie": [
-        "solidarit\u00e9"
+        "solidarit\u00e9",
+        "oc\u00e9an"
     ],
     "campagne": [
         "solidarit\u00e9"
@@ -8192,100 +7142,6 @@
     "sociale": [
         "solidarit\u00e9"
     ],
-    "coup droit": [
-        "raquette"
-    ],
-    "revers": [
-        "raquette"
-    ],
-    "tap\u00e9": [
-        "raquette"
-    ],
-    "racket": [
-        "raquette"
-    ],
-    "extorsion": [
-        "raquette"
-    ],
-    "enfil\u00e9": [
-        "raquette"
-    ],
-    "z\u00e9zayer": [
-        "raquette"
-    ],
-    "squash": [
-        "raquette",
-        "loisir"
-    ],
-    "pagayer": [
-        "raquette"
-    ],
-    "poign\u00e9e": [
-        "raquette"
-    ],
-    "mafia": [
-        "raquette"
-    ],
-    "badminton": [
-        "raquette"
-    ],
-    "bandit": [
-        "raquette"
-    ],
-    "ruisseau": [
-        "raquette",
-        "montagne"
-    ],
-    "python": [
-        "raquette"
-    ],
-    "harlem": [
-        "raquette"
-    ],
-    "compilateur": [
-        "raquette"
-    ],
-    "balle": [
-        "raquette"
-    ],
-    "accident vasculaire c\u00e9r\u00e9bral": [
-        "raquette"
-    ],
-    "chauve souris": [
-        "raquette"
-    ],
-    "frappe": [
-        "raquette"
-    ],
-    "filet": [
-        "raquette"
-    ],
-    "faux": [
-        "raquette"
-    ],
-    "des balles": [
-        "raquette"
-    ],
-    "crime": [
-        "raquette"
-    ],
-    "gang": [
-        "raquette"
-    ],
-    "dialecte": [
-        "raquette"
-    ],
-    "cleveland": [
-        "raquette"
-    ],
-    "battement": [
-        "raquette",
-        "competition",
-        "tournoi"
-    ],
-    "arr\u00eat\u00e9": [
-        "raquette"
-    ],
     "salle de sport": [
         "loisir"
     ],
@@ -8296,6 +7152,9 @@
         "loisir"
     ],
     "centre": [
+        "loisir"
+    ],
+    "squash": [
         "loisir"
     ],
     "agr\u00e9ments": [
@@ -8322,6 +7181,9 @@
     "spa": [
         "loisir"
     ],
+    "vente au d\u00e9tail": [
+        "loisir"
+    ],
     "achats": [
         "loisir"
     ],
@@ -8340,10 +7202,17 @@
     "complexe": [
         "loisir"
     ],
+    "lt\u00e9e": [
+        "loisir",
+        "finance"
+    ],
     "responsable": [
         "loisir"
     ],
     "activit\u00e9": [
+        "loisir"
+    ],
+    "d\u00e9chets": [
         "loisir"
     ],
     "tribunaux": [
@@ -8359,6 +7228,10 @@
     ],
     "entr\u00e9es": [
         "competition"
+    ],
+    "battement": [
+        "competition",
+        "tournoi"
     ],
     "gagnant": [
         "competition",
@@ -8448,6 +7321,9 @@
     "wimbledon": [
         "tournoi"
     ],
+    "poker": [
+        "tournoi"
+    ],
     "vaincu": [
         "tournoi"
     ],
@@ -8473,6 +7349,12 @@
         "tournoi"
     ],
     "perdant": [
+        "tournoi"
+    ],
+    "\u00e9tiqueter": [
+        "tournoi"
+    ],
+    "poids lourd": [
         "tournoi"
     ],
     "\u00e9ventuel": [
@@ -8522,87 +7404,6 @@
     ],
     "victoires": [
         "tournoi"
-    ],
-    "vernis": [
-        "peinture"
-    ],
-    "acrylique": [
-        "peinture"
-    ],
-    "pinceaux": [
-        "peinture"
-    ],
-    "toile": [
-        "peinture"
-    ],
-    "mural": [
-        "peinture"
-    ],
-    "pigment": [
-        "peinture"
-    ],
-    "brosse": [
-        "peinture"
-    ],
-    "plus mince": [
-        "peinture"
-    ],
-    "enrobage": [
-        "peinture"
-    ],
-    "graffiti": [
-        "peinture"
-    ],
-    "vaporisateur": [
-        "peinture"
-    ],
-    "sch\u00e9mas": [
-        "peinture"
-    ],
-    "peint": [
-        "peinture"
-    ],
-    "couleurs": [
-        "peinture"
-    ],
-    "encre": [
-        "peinture"
-    ],
-    "garniture": [
-        "peinture"
-    ],
-    "couches": [
-        "peinture"
-    ],
-    "wagon": [
-        "peinture"
-    ],
-    "couleur": [
-        "peinture"
-    ],
-    "cuir": [
-        "peinture"
-    ],
-    "roues": [
-        "peinture"
-    ],
-    "panneaux": [
-        "peinture"
-    ],
-    "repr\u00e9sentant": [
-        "peinture"
-    ],
-    "appliqu\u00e9": [
-        "peinture"
-    ],
-    "couche": [
-        "peinture"
-    ],
-    "plastique": [
-        "peinture"
-    ],
-    "visages": [
-        "peinture"
     ],
     "cyclisme": [
         "montagne"
@@ -8742,6 +7543,9 @@
     "sierra": [
         "montagne"
     ],
+    "ruisseau": [
+        "montagne"
+    ],
     "mensonges": [
         "montagne"
     ],
@@ -8805,13 +7609,40 @@
     "province": [
         "montagne"
     ],
+    "comptabilit\u00e9": [
+        "finance"
+    ],
     "sous-comit\u00e9": [
+        "finance"
+    ],
+    "mba": [
         "finance"
     ],
     "imposition": [
         "finance"
     ],
+    "pr\u00eats": [
+        "finance"
+    ],
+    "titres": [
+        "finance"
+    ],
     "tr\u00e9sorerie": [
+        "finance"
+    ],
+    "actif": [
+        "finance"
+    ],
+    "financier": [
+        "finance"
+    ],
+    "portefeuille": [
+        "finance"
+    ],
+    "\u00e9quit\u00e9": [
+        "finance"
+    ],
+    "investissements": [
         "finance"
     ],
     "minist\u00e8re": [
@@ -8823,47 +7654,178 @@
     "fiscal": [
         "finance"
     ],
+    "assurance": [
+        "finance"
+    ],
+    "banque": [
+        "finance"
+    ],
     "affaires": [
         "finance"
     ],
     "pr\u00e9sident": [
         "finance"
     ],
+    "imp\u00f4t": [
+        "finance"
+    ],
+    "banques": [
+        "finance"
+    ],
+    "consultatif": [
+        "finance"
+    ],
     "administration": [
-        "finance",
-        "nourriture"
+        "finance"
+    ],
+    "planification": [
+        "finance"
     ],
     "pr\u00eat": [
         "finance"
     ],
-    "fda": [
-        "nourriture"
+    "g\u00e9rant": [
+        "finance"
     ],
-    "nutrition": [
-        "nourriture"
+    "actifs": [
+        "finance"
     ],
-    "fournitures": [
-        "nourriture"
+    "acidification": [
+        "oc\u00e9an"
     ],
-    "vendeurs": [
-        "nourriture"
+    "m\u00e9ridien": [
+        "oc\u00e9an"
     ],
-    "faim": [
-        "nourriture"
+    "tsunami": [
+        "oc\u00e9an"
     ],
-    "v\u00eatements": [
-        "nourriture"
+    "profondeurs": [
+        "oc\u00e9an"
     ],
-    "prises \u00e9lectriques": [
-        "nourriture"
+    "courants": [
+        "oc\u00e9an"
     ],
-    "cha\u00eenes": [
-        "nourriture"
+    "doublure": [
+        "oc\u00e9an"
     ],
-    "les larves": [
-        "nourriture"
+    "oc\u00e9ans": [
+        "oc\u00e9an"
     ],
-    "consommateur": [
-        "nourriture"
+    "oc\u00e9anique": [
+        "oc\u00e9an"
+    ],
+    "maurice": [
+        "oc\u00e9an"
+    ],
+    "madagascar": [
+        "oc\u00e9an"
+    ],
+    "cyclone": [
+        "oc\u00e9an"
+    ],
+    "r\u00e9cif": [
+        "oc\u00e9an"
+    ],
+    "corail": [
+        "oc\u00e9an"
+    ],
+    "littoral": [
+        "oc\u00e9an"
+    ],
+    "p\u00f4le": [
+        "oc\u00e9an"
+    ],
+    "tremblement de terre": [
+        "oc\u00e9an"
+    ],
+    "mers": [
+        "oc\u00e9an"
+    ],
+    "golfe": [
+        "oc\u00e9an"
+    ],
+    "pacifique": [
+        "oc\u00e9an"
+    ],
+    "atlantique": [
+        "oc\u00e9an"
+    ],
+    "escorte": [
+        "oc\u00e9an"
+    ],
+    "des eaux": [
+        "oc\u00e9an"
+    ],
+    "latitude": [
+        "oc\u00e9an"
+    ],
+    "d\u00e9troit": [
+        "oc\u00e9an"
+    ],
+    "des plages": [
+        "oc\u00e9an"
+    ],
+    "profondeur": [
+        "oc\u00e9an"
+    ],
+    "mer": [
+        "oc\u00e9an"
+    ],
+    "\u00eeles": [
+        "oc\u00e9an"
+    ],
+    "cara\u00efbes": [
+        "oc\u00e9an"
+    ],
+    "tropical": [
+        "oc\u00e9an"
+    ],
+    "circulation": [
+        "oc\u00e9an"
+    ],
+    "c\u00f4tier": [
+        "oc\u00e9an"
+    ],
+    "cap": [
+        "oc\u00e9an"
+    ],
+    "panama": [
+        "oc\u00e9an"
+    ],
+    "peu profond": [
+        "oc\u00e9an"
+    ],
+    "marin": [
+        "oc\u00e9an"
+    ],
+    "hawaii": [
+        "oc\u00e9an"
+    ],
+    "c\u00f4te": [
+        "oc\u00e9an"
+    ],
+    "sous-marin": [
+        "oc\u00e9an"
+    ],
+    "les vents": [
+        "oc\u00e9an"
+    ],
+    "ouragan": [
+        "oc\u00e9an"
+    ],
+    "continental": [
+        "oc\u00e9an"
+    ],
+    "navires": [
+        "oc\u00e9an"
+    ],
+    "cercle": [
+        "oc\u00e9an"
+    ],
+    "chaud": [
+        "oc\u00e9an"
+    ],
+    "guin\u00e9e": [
+        "oc\u00e9an"
     ]
 }

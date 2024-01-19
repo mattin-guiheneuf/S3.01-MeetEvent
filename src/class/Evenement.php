@@ -254,8 +254,8 @@ class Evenement {
                 }
 
                 // Si pas trouvé c'est que pas liable avec le dicoSynTag donc avec le corpus
-                if (!(array_key_exists($motCourant,$dicoMotToTag))) {
-                    $dicoMotToTag[$motCourant] = array('Impossible à lier'); // On enregistre qu'il n'est pas liable
+                if (empty($dicoMotToTag[$motCourant])) {
+                    array_push($dicoMotToTag[$motCourant],'Impossible à lier'); // On enregistre qu'il n'est pas liable
                 }
             }
         }

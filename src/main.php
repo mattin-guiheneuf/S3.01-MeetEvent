@@ -45,29 +45,30 @@ $donnees = json_decode($contenuJSON, true);
 //____________________________________________________________________________________//
 
 //Transformer les tags en objet Tag
-$liste = ["Cuisine", "Ingrédients", "Art",
-"Musique", "Dessin", "Sport", "Entraînement", "Social", "Echange",
-"Discussion", "Méditation", "Détente", "Lecture", "Ecoute","Rire",
-"Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
-"Enseignement", "Travail", "Créativité", "Construction",
-"Réparation", "Jardinage", "Photographie", "Film", "Danse", "Chant", 
-"Instrument", "Collection", "Informatique", "Réflexion",
-"Engagement", "Volontariat", "Organisation",
-"Evénement", "Défense", "Exercice", "Expérience", "Test",
-"Développement", "Amélioration", "Innovation", "Economie",
-"Investissement", "Gestion", "Partage", "Influence", "Motivation",
-"Inspiration", "Amusement",
-"Célébration", "Changement",
-"Imagination", "Jeux", "Festival",
-"Culture", "Concert", "Repas", "Aperitif", "Alcool",
-"Association", "Cafe", "Rencontre",
-"Marche", "Amical",
-"Plaisir", "Jeu de société", "Animaux",
-"Soiree", "Nature", "Paysages", "Atelier", 
-"Gastronomie", "Oenologie", "Dégustation", "Exposition", "Musee",
-"Dîner", "Caritatif", "Solidarité", "Raquette", "Loisir",
-"Competition", "Tournoi", "Peinture", "Montagne",
-"Finance", "Formation", "Nourriture"];
+$liste = [
+    "Cuisine", "Art",
+    "Musique", "Dessin", "Sport", "Entraînement", "Social",
+    "Discussion", "Méditation", "Détente", "Lecture", "Écoute","Rire",
+    "Divertissement", "Fête", "Exploration", "Voyage", "Découverte", 
+    "Enseignement", "Travail", "Créativité", "Construction",
+    "Jardinage", "Photographie", "Film", "Danse", "Chant", 
+    "Instrument", "Collection", "Informatique", "Réflexion",
+    "Engagement", "Volontariat", "Organisation",
+    "Exercice", "Expérience", "Test",
+    "Développement", "Amélioration", "Innovation", "Économie",
+    "Partage", "Influence", "Motivation",
+    "Inspiration", "Amusement",
+    "Célébration", "Changement",
+    "Imagination", "Jeux", "Festival",
+    "Culture", "Concert", "Repas", "Aperitif", "Alcool",
+    "Association", "Rencontre",
+    "Marche", "Amical",
+    "Plaisir", "Jeu de société", "Animaux",
+    "Soiree", "Nature", "Paysages", "Atelier", 
+    "Gastronomie", "Dégustation", "Exposition", "Musee",
+    "Dîner", "Caritatif", "Solidarité", "Loisir",
+    "Competition", "Tournoi", "Montagne",
+    "Finance", "Formation","Océan"];
 foreach ($liste as $tag) {
     $list_tag_corpus[] = new Tag(strtolower($tag));
 }

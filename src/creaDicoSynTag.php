@@ -87,6 +87,7 @@
         }
 
         echo "encodage<br>";
+        // Destination du fichier à modifier si jamais (ou ajouter un paramètres)
         file_put_contents('./data/dicoSynTagGen.json',json_encode($dicoSynTag,JSON_PRETTY_PRINT));
         echo "encodage terminé<br><br>";
 
@@ -106,7 +107,7 @@
         "Jardinage", "Photographie", "Film", "Danse", "Chant", 
         "Instrument", "Collection", "Informatique", "Réflexion",
         "Engagement", "Volontariat", "Organisation",
-        "Événement", "Défense", "Exercice", "Expérience", "Test",
+        "Exercice", "Expérience", "Test",
         "Développement", "Amélioration", "Innovation", "Économie",
         "Partage", "Influence", "Motivation",
         "Inspiration", "Amusement",
@@ -118,12 +119,12 @@
         "Plaisir", "Jeu de société", "Animaux",
         "Soiree", "Nature", "Paysages", "Atelier", 
         "Gastronomie", "Dégustation", "Exposition", "Musee",
-        "Dîner", "Caritatif", "Solidarité", "Raquette", "Loisir",
+        "Dîner", "Caritatif", "Solidarité", "Loisir",
         "Competition", "Tournoi", "Montagne",
         "Finance", "Formation","Océan"
     ];
 
-    creaDicoSynTag($CORPUS_TAG);
+    //creaDicoSynTag($CORPUS_TAG);
 
     // Pour optimiser et faciliter la création du dictionnaire, on effectue chaque étape (synonymes, mots liés et mots génériques) séparément (commenter chaque partie dans le code, etc)
     // Nécéssité de modifier le fichier de destination à chaque fois pour ne pas écraser les données (directement dans le code ou mettre en paramètre)
